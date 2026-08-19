@@ -110,22 +110,6 @@
             flex-wrap: wrap;
         }
 
-        .search-box input {
-            padding: 4px 0;
-            border: none;
-            background-color: transparent;
-            color: var(--text-color);
-            font-family: var(--font-main);
-            border-radius: 0;
-            width: 300px;
-            outline: none;
-            font-size: 0.9rem;
-        }
-
-        .search-box input::placeholder {
-            color: var(--text-soft);
-        }
-
         .controls {
             display: flex;
             gap: 18px;
@@ -154,28 +138,25 @@
             text-underline-offset: 4px;
         }
 
-        /* Stats Bar */
-        .stats-bar {
-            display: flex;
-            gap: 28px;
-            margin-bottom: 20px;
-            padding: 0;
-            background-color: transparent;
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            flex-wrap: wrap;
+        .controls button:disabled {
+            opacity: 0.25;
+            cursor: default;
         }
 
-        .stat-item {
-            background-color: transparent;
-            padding: 0;
-            color: var(--text-soft);
-        }
-
-        .stat-item span {
-            color: var(--text-color);
+        .week-label {
+            font-family: var(--font-heading);
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .week-today-link {
+            font-size: 0.75rem !important;
+            color: var(--text-soft) !important;
+            text-decoration: underline;
+            text-underline-offset: 3px;
         }
 
         /* TV Guide Grid */
@@ -301,11 +282,12 @@
             margin-bottom: 0;
         }
 
-        .drama-card-header {
+        .drama-card-footer {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             gap: 4px;
+            margin-top: 2px;
         }
 
         .drama-title-link {
@@ -508,7 +490,7 @@
         }
 
         @media print {
-            .toolbar, .stats-bar, .modal-overlay { display: none !important; }
+            .toolbar, .modal-overlay { display: none !important; }
             body { background: white; color: black; }
             .grid-container { box-shadow: none; border: none; }
             th, td { border: 1px solid #ccc; }
@@ -517,7 +499,6 @@
         @media (max-width: 768px) {
             .modal-content { flex-direction: column; }
             .modal-poster { width: 100px; margin: 0 auto; }
-            .search-box input { width: 100%; margin-bottom: 8px; }
             .toolbar { flex-direction: column; align-items: stretch; }
             .controls { display: flex; flex-wrap: wrap; gap: 5px; }
             .controls button { flex: 1; margin: 0; }
@@ -536,13 +517,11 @@
     </h1>
 
     <div class="toolbar">
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="드라마 제목, 배우(김혜준, 안보현, 박보검...) 검색... (단축키: /)">
-        </div>
         <div class="controls" id="weekToggle">
-            <button id="btnWeekLast">◀ 지난 주</button>
-            <button id="btnWeekThis" class="active">이번 주</button>
-            <button id="btnWeekNext">▶ 다음 주</button>
+            <button id="btnWeekPrev" title="이전 주">◀</button>
+            <span class="week-label" id="weekLabel">이번 주</span>
+            <button id="btnWeekNext" title="다음 주">▶</button>
+            <button id="btnWeekToday" class="week-today-link" style="display:none;">오늘로</button>
         </div>
         <div class="controls">
             <button id="btnWatchlist">내 리스트만 보기</button>
@@ -551,13 +530,6 @@
             <button id="btnThemeCRT" title="단축키: 2">다크</button>
             <button id="btnThemeModern" title="단축키: 3">네이비</button>
         </div>
-    </div>
-
-    <div class="stats-bar" id="statsBar">
-        <div class="stat-item">이 주 방영작 <span id="statTotal">0</span>편</div>
-        <div class="stat-item">오늘(<span id="statTodayKr"></span>) 방영 <span id="statToday">0</span>편</div>
-        <div class="stat-item">내 찜 목록 <span id="statWatchlist">0</span>편</div>
-        <div class="stat-item">평균 시청률 <span id="statRating">0.0</span>%</div>
     </div>
 
     <div class="grid-container">
@@ -804,8 +776,9 @@ const COLUMNS = [...DAY_ORDER, "Batch"];
 let myWatchlist = JSON.parse(localStorage.getItem('kdrama_watchlist')) || [];
 let currentTheme = localStorage.getItem('kdrama_theme') || 'paper';
 let showOnlyWatchlist = false;
-let searchQuery = "";
-let currentWeekOffset = 0; // 0 = 이번 주, 1 = 다음 주
+let currentWeekOffset = 0; // 0 = 이번 주. 음수 = 지난 주들, 양수 = 다음 주들.
+const WEEK_OFFSET_MIN = -4; // 최대 한 달 전
+const WEEK_OFFSET_MAX = 4;  // 최대 한 달 후
 
 // Today detection (US Eastern Time)
 function getUSEasternDay() {
@@ -881,7 +854,6 @@ function updateLiveClock() {
 
 // DOM Elements
 const guideBody = document.getElementById('guideBody');
-const searchInput = document.getElementById('searchInput');
 const btnWatchlist = document.getElementById('btnWatchlist');
 
 // Init
@@ -911,9 +883,21 @@ function renderWeek() {
     updateDateHeaders(currentWeekOffset);
     highlightToday();
     renderGrid();
-    document.getElementById('btnWeekLast').classList.toggle('active', currentWeekOffset === -1);
-    document.getElementById('btnWeekThis').classList.toggle('active', currentWeekOffset === 0);
-    document.getElementById('btnWeekNext').classList.toggle('active', currentWeekOffset === 1);
+
+    // 주 라벨: 이번 주/지난 주/다음 주는 말로, 그 이상은 "N주 전/후"로 + 실제 날짜 범위를 항상 같이 보여준다.
+    const weekDates = getWeekDates(currentWeekOffset);
+    const isoToMD = iso => { const [, m, d] = iso.split('-'); return `${parseInt(m,10)}/${parseInt(d,10)}`; };
+    const rangeStr = `(${isoToMD(weekDates[0].dateISO)}~${isoToMD(weekDates[6].dateISO)})`;
+    let weekWord;
+    if (currentWeekOffset === 0) weekWord = '이번 주';
+    else if (currentWeekOffset === -1) weekWord = '지난 주';
+    else if (currentWeekOffset === 1) weekWord = '다음 주';
+    else weekWord = currentWeekOffset < 0 ? `${-currentWeekOffset}주 전` : `${currentWeekOffset}주 후`;
+    document.getElementById('weekLabel').textContent = `${weekWord} ${rangeStr}`;
+
+    document.getElementById('btnWeekPrev').disabled = currentWeekOffset <= WEEK_OFFSET_MIN;
+    document.getElementById('btnWeekNext').disabled = currentWeekOffset >= WEEK_OFFSET_MAX;
+    document.getElementById('btnWeekToday').style.display = currentWeekOffset === 0 ? 'none' : 'inline';
 }
 
 // Highlight today's column (다음 주를 보고 있을 땐 오늘이 그 주에 없으므로 하이라이트 없음)
@@ -950,11 +934,6 @@ function renderGrid() {
 
     // Filter data
     const filteredData = DRAMA_DATA.filter(drama => {
-        // Search
-        if(searchQuery && !drama.title.toLowerCase().includes(searchQuery) &&
-           !drama.engTitle.toLowerCase().includes(searchQuery) &&
-           !drama.cast.toLowerCase().includes(searchQuery)) return false;
-
         // Watchlist
         if(showOnlyWatchlist && !myWatchlist.includes(drama.id)) return false;
 
@@ -963,11 +942,6 @@ function renderGrid() {
 
     const weekDates = getWeekDates(currentWeekOffset); // [{key, dateISO, label, isToday}, ...] Mon~Sun
     const weekSundayISO = getWeekSundayISO(currentWeekOffset);
-
-    let countAiringToday = 0;
-    let totalRating = 0;
-    let validRatings = 0;
-    const dramasThisWeek = new Set();
 
     CHANNELS.forEach(ch => {
         const tr = document.createElement('tr');
@@ -1000,7 +974,6 @@ function renderGrid() {
                 td.textContent = '-';
             } else {
                 cellDramas.forEach(drama => {
-                    dramasThisWeek.add(drama.id);
                     const isStarred = myWatchlist.includes(drama.id);
                     let epText = "";
                     if(day === 'Batch') epText = drama.batchEp || '전편 공개';
@@ -1008,45 +981,28 @@ function renderGrid() {
 
                     const platObj = drama.platforms.find(p => p.name.includes(ch.id)) || drama.platforms[0];
 
+                    // 제목을 최대한 넓게 보여주기 위해 별표/정보는 제목 아래 줄로 내린다.
                     const card = document.createElement('div');
                     card.className = 'drama-card';
                     card.innerHTML = `
-                        <div class="drama-card-header">
-                            <a href="${platObj.url}" target="_blank" rel="noopener" class="drama-title-link" title="${drama.title} 바로 시청 (새 창)">
-                                ${drama.title}
-                            </a>
+                        <a href="${platObj.url}" target="_blank" rel="noopener" class="drama-title-link" title="${drama.title} 바로 시청 (새 창)">
+                            ${drama.title}
+                        </a>
+                        <div class="drama-card-footer">
+                            <span class="ep-tag">${epText}</span>
                             <div class="card-actions">
                                 <button class="btn-icon btn-star ${isStarred ? '' : 'empty'}" onclick="toggleStar('${drama.id}', event)" title="내 리스트">${isStarred ? '★' : '☆'}</button>
                                 <button class="btn-icon btn-info" onclick="openModal('${drama.id}')" title="상세 정보">정보</button>
                             </div>
                         </div>
-                        <div class="ep-tag">${epText}</div>
                     `;
                     td.appendChild(card);
-
-                    if(dateInfo && dateInfo.isToday) countAiringToday++;
-
-                    if(!isNaN(parseFloat(drama.rating))) {
-                        totalRating += parseFloat(drama.rating);
-                        validRatings++;
-                    }
                 });
             }
             tr.appendChild(td);
         });
         guideBody.appendChild(tr);
     });
-
-    // Update Stats (선택된 주 기준)
-    document.getElementById('statTotal').textContent = dramasThisWeek.size;
-    document.getElementById('statToday').textContent = currentWeekOffset === 0 ? countAiringToday : '–';
-    const statTodayKrEl = document.getElementById('statTodayKr');
-    if (statTodayKrEl) {
-        if (currentWeekOffset === 0) statTodayKrEl.textContent = DAY_KR[todayStr] || todayStr;
-        else statTodayKrEl.textContent = currentWeekOffset < 0 ? '지난 주' : '다음 주';
-    }
-    document.getElementById('statWatchlist').textContent = myWatchlist.length;
-    document.getElementById('statRating').textContent = validRatings ? (totalRating/validRatings).toFixed(1) : "0.0";
 }
 
 // Watchlist toggle
@@ -1168,27 +1124,22 @@ function spinRoulette() {
 
 // Event Listeners
 function setupListeners() {
-    searchInput.addEventListener('input', (e) => {
-        searchQuery = e.target.value.toLowerCase();
-        renderGrid();
-    });
-
     btnWatchlist.addEventListener('click', () => {
         showOnlyWatchlist = !showOnlyWatchlist;
         btnWatchlist.classList.toggle('active');
         renderGrid();
     });
 
-    document.getElementById('btnWeekLast').addEventListener('click', () => {
-        currentWeekOffset = -1;
-        renderWeek();
-    });
-    document.getElementById('btnWeekThis').addEventListener('click', () => {
-        currentWeekOffset = 0;
+    document.getElementById('btnWeekPrev').addEventListener('click', () => {
+        currentWeekOffset = Math.max(WEEK_OFFSET_MIN, currentWeekOffset - 1);
         renderWeek();
     });
     document.getElementById('btnWeekNext').addEventListener('click', () => {
-        currentWeekOffset = 1;
+        currentWeekOffset = Math.min(WEEK_OFFSET_MAX, currentWeekOffset + 1);
+        renderWeek();
+    });
+    document.getElementById('btnWeekToday').addEventListener('click', () => {
+        currentWeekOffset = 0;
         renderWeek();
     });
 
@@ -1210,15 +1161,11 @@ function setupListeners() {
     // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
         if(e.key === 'Escape') closeModal();
-        if(e.key === '/' && document.activeElement !== searchInput) {
-            e.preventDefault();
-            searchInput.focus();
-        }
-        if(document.activeElement !== searchInput) {
-            if(e.key === '1') setTheme('paper');
-            if(e.key === '2') setTheme('crt');
-            if(e.key === '3') setTheme('modern');
-        }
+        if(e.key === '1') setTheme('paper');
+        if(e.key === '2') setTheme('crt');
+        if(e.key === '3') setTheme('modern');
+        if(e.key === 'ArrowLeft') document.getElementById('btnWeekPrev').click();
+        if(e.key === 'ArrowRight') document.getElementById('btnWeekNext').click();
     });
 }
 
