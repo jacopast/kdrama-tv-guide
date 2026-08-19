@@ -1,0 +1,137 @@
+[
+  {
+    "id": "my-bias-my-boss",
+    "title": "최애의 사원",
+    "engTitle": "My Bias, My Boss",
+    "schedule": {
+      "2026-08-10": "EP 03",
+      "2026-08-11": "EP 04",
+      "2026-08-17": "EP 05",
+      "2026-08-18": "EP 06",
+      "2026-08-24": "EP 07",
+      "2026-08-25": "EP 08"
+    },
+    "isBatch": false,
+    "episodes": "12부작",
+    "rating": "4.0% (5회, 닐슨코리아 전국가구)",
+    "cast": "강훈, 김혜준, 차우민, 유나",
+    "synopsis": "이름처럼 뭐든 남다른 신입사원 남다름이 회사에서 자신이 좋아하던 아이돌 겸 배우 강하기를 상사로 만나며 벌어지는 오피스 로맨틱 코미디. tvN, 2026년 8월 3일 첫방(매주 월·화).",
+    "platforms": [
+      { "name": "Viki", "label": "Rakuten Viki", "url": "https://www.viki.com/tv/41633c-my-bias-my-boss" }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "ok-lets-get-divorced",
+    "title": "그래, 이혼하자",
+    "engTitle": "OK! Let's Get Divorced",
+    "schedule": {
+      "2026-08-19": "EP 01 (첫방)",
+      "2026-08-20": "EP 02",
+      "2026-08-26": "EP 03",
+      "2026-08-27": "EP 04"
+    },
+    "isBatch": false,
+    "episodes": "12부작",
+    "rating": "TBD (오늘 첫방, 다음 확인 시 업데이트)",
+    "cast": "이민정, 김지석, 기은세",
+    "synopsis": "지칠 대로 지친 결혼 생활에 종지부를 찍으려는 웨딩드레스숍 대표 부부가 진짜 이혼을 위해 부딪히며 서로의 진심을 되돌아보는 리얼 이혼 로맨틱 코미디. KBS Joy, 2026년 8월 19일 첫방(매주 수·목).",
+    "platforms": [
+      { "name": "Kocowa", "label": "KOCOWA+", "url": "https://www.kocowa.com/en_us/main" }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "flex-x-cop-2",
+    "title": "재벌X형사 시즌 2",
+    "engTitle": "Flex x Cop Season 2",
+    "schedule": {
+      "2026-08-14": "EP 03",
+      "2026-08-15": "EP 04",
+      "2026-08-21": "EP 05",
+      "2026-08-22": "EP 06",
+      "2026-08-28": "EP 07",
+      "2026-08-29": "EP 08"
+    },
+    "isBatch": false,
+    "episodes": "14부작",
+    "rating": "5.8% (2회, 닐슨코리아 전국가구)",
+    "cast": "안보현, 정은채, 강상준, 김신비",
+    "synopsis": "재벌 3세 낙하산 형사 진이수가 새 파트너와 함께 더 거대한 재벌가 부패 카르텔을 쫓는 통쾌한 수사극. SBS, 2026년 8월 7일 첫방(매주 금·토), 시즌1 뛰어넘는 화제성으로 출발.",
+    "platforms": [
+      { "name": "Hulu", "label": "Hulu / Disney+", "url": "https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a" }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "a-trap-called-desire",
+    "title": "욕망의 덫",
+    "engTitle": "A Trap Called Desire",
+    "schedule": {
+      "2026-08-10": "EP 01",
+      "2026-08-11": "EP 02",
+      "2026-08-12": "EP 03",
+      "2026-08-13": "EP 04",
+      "2026-08-14": "EP 05",
+      "2026-08-17": "EP 06",
+      "2026-08-18": "EP 07",
+      "2026-08-19": "EP 08",
+      "2026-08-20": "EP 09",
+      "2026-08-21": "EP 10",
+      "2026-08-24": "EP 11",
+      "2026-08-25": "EP 12",
+      "2026-08-26": "EP 13",
+      "2026-08-27": "EP 14",
+      "2026-08-28": "EP 15"
+    },
+    "isBatch": false,
+    "episodes": "106부작 (KBS2 일일드라마)",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "장서희, 전혜원, 주새벽, 설정환, 장세현, 유태웅, 윤해영",
+    "synopsis": "살인 누명을 쓰고 삶을 송두리째 빼앗긴 여성이 거대한 욕망에 맞서 자신의 인생을 되찾아가는 운명 복원 리벤지극. KBS2, 2026년 8월 10일 첫방(매주 월~금).",
+    "platforms": [
+      { "name": "Kocowa", "label": "KOCOWA+", "url": "https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire" }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "our-sticky-love",
+    "title": "이런 엿같은 사랑",
+    "engTitle": "Our Sticky Love",
+    "schedule": {},
+    "isBatch": true,
+    "releaseDate": "2026-08-07",
+    "batchEp": "12부작 전편 공개 (8/7~)",
+    "episodes": "12부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "정해인, 하영, 허성태",
+    "synopsis": "기억을 잃은 검사 고은새 앞에 자신이 동거 중인 남자친구라 주장하는 전직 복서 장태하가 나타나며 시작되는 시크릿 로맨스. Netflix, 2026년 8월 7일 전편 공개.",
+    "platforms": [
+      { "name": "Netflix", "label": "Netflix US", "url": "https://www.netflix.com/title/82048302" }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "mousetrap",
+    "title": "들쥐",
+    "engTitle": "Mousetrap",
+    "schedule": {},
+    "isBatch": true,
+    "releaseDate": "2026-08-28",
+    "batchEp": "10부작 전편 공개 (8/28~)",
+    "episodes": "10부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "류준열, 설경구, 이규형",
+    "synopsis": "이름과 얼굴, 삶까지 도둑맞은 은둔 소설가가 사채업자와 손잡고 '들쥐'라 불리는 정체불명의 인물에게서 자신의 인생을 되찾으려는 미스터리 추적 스릴러. Netflix, 2026년 8월 28일 전편 공개 예정.",
+    "platforms": [
+      { "name": "Netflix", "label": "Netflix US", "url": "https://www.netflix.com/title/81991749" }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  }
+]

@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📺 K-Drama US Streaming TV Guide | 미국 K-드라마 주간 편성표</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Do+Hyeon&family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;600;800&family=VT323&display=swap');
+
+        :root {
+            --bg-color: #fdf5e6;
+            --text-color: #2b2b2b;
+            --border-color: #8b4513;
+            --cell-bg: #fff8dc;
+            --header-bg: #deb887;
+            --sticky-bg: #f5deb3;
+            --btn-bg: #d2b48c;
+            --btn-text: #000;
+            --link-color: #8b0000;
+            --today-glow: 0 0 12px rgba(218, 165, 32, 0.9);
+            --today-bg: #fff9d2;
+            --today-border: #daa520;
+            --font-main: 'Noto Sans KR', sans-serif;
+            --font-heading: 'Do Hyeon', sans-serif;
+            --font-mono: 'IBM Plex Mono', monospace;
+            --shadow: 4px 4px 0px #8b4513;
+            --transition: all 0.25s ease;
+            --empty-pattern: radial-gradient(#d2b48c 1px, transparent 1px);
+        }
+
+        [data-theme="crt"] {
+            --bg-color: #000;
+            --text-color: #33ff33;
+            --border-color: #33ff33;
+            --cell-bg: #001100;
+            --header-bg: #002200;
+            --sticky-bg: #001a00;
+            --btn-bg: #003300;
+            --btn-text: #33ff33;
+            --link-color: #33ff33;
+            --today-glow: 0 0 15px #33ff33;
+            --today-bg: #003300;
+            --today-border: #33ff33;
+            --font-main: 'VT323', monospace;
+            --font-heading: 'VT323', monospace;
+            --font-mono: 'VT323', monospace;
+            --shadow: none;
+            --empty-pattern: radial-gradient(#003300 1px, transparent 1px);
+        }
+
+        [data-theme="modern"] {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --border-color: #334155;
+            --cell-bg: #1e293b;
+            --header-bg: #0f172a;
+            --sticky-bg: #1e293b;
+            --btn-bg: #3b82f6;
+            --btn-text: #ffffff;
+            --link-color: #38bdf8;
+            --today-glow: 0 0 15px rgba(59, 130, 246, 0.5);
+            --today-bg: #1e3a8a;
+            --today-border: #60a5fa;
+            --font-main: 'Noto Sans KR', sans-serif;
+            --font-heading: 'Noto Sans KR', sans-serif;
+            --font-mono: 'IBM Plex Mono', monospace;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --empty-pattern: radial-gradient(#334155 1px, transparent 1px);
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: var(--transition);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 16px;
+            font-size: 14px;
+        }
+
+        /* CRT Scanline Effect */
+        [data-theme="crt"]::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 9999;
+            background-size: 100% 3px, 6px 100%;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .live-clock-badge {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: normal;
+            background: var(--cell-bg);
+            padding: 4px 10px;
+            border: 1.5px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        /* Toolbar */
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .search-box input {
+            padding: 8px 12px;
+            border: 2px solid var(--border-color);
+            background-color: var(--cell-bg);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            border-radius: 4px;
+            width: 320px;
+            outline: none;
+            font-size: 0.9rem;
+        }
+
+        .search-box input:focus {
+            box-shadow: var(--today-glow);
+        }
+
+        .controls {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .controls button {
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border: 2px solid var(--border-color);
+            padding: 7px 12px;
+            cursor: pointer;
+            font-family: var(--font-heading);
+            font-size: 0.95rem;
+            border-radius: 4px;
+            box-shadow: 2px 2px 0px var(--border-color);
+        }
+
+        .controls button:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 3px 3px 0px var(--border-color);
+        }
+
+        .controls button.active {
+            filter: brightness(1.2);
+            border-width: 2px;
+            background: var(--text-color);
+            color: var(--bg-color);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 14px;
+            padding: 8px 12px;
+            background-color: var(--cell-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            flex-wrap: wrap;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-item {
+            background-color: var(--bg-color);
+            padding: 4px 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        /* TV Guide Grid */
+        .grid-container {
+            overflow-x: auto;
+            border: 3px solid var(--border-color);
+            box-shadow: var(--shadow);
+            background-color: var(--bg-color);
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1260px;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 8px 6px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--header-bg);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        th.channel-th {
+            width: 160px;
+            left: 0;
+            z-index: 20;
+            background-color: var(--sticky-bg);
+        }
+
+        th.batch-th {
+            width: 180px;
+            background-color: rgba(220, 53, 69, 0.15);
+            color: #dc3545;
+        }
+
+        [data-theme="crt"] th.batch-th {
+            color: #ffff00;
+        }
+
+        /* Sticky First Column for Channels */
+        td:first-child {
+            position: sticky;
+            left: 0;
+            background-color: var(--sticky-bg);
+            z-index: 5;
+            font-family: var(--font-mono);
+            font-weight: bold;
+            text-align: center;
+            border-right: 2px solid var(--border-color);
+            vertical-align: middle;
+            padding: 10px 6px;
+        }
+
+        .ch-logo {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: white;
+            font-size: 0.78rem;
+            margin-top: 4px;
+            font-weight: 800;
+            border: 1px solid var(--border-color);
+        }
+        .ch-num-netflix { background-color: #e50914; }
+        .ch-num-viki { background-color: #0096c7; }
+        .ch-num-kocowa { background-color: #1d4ed8; }
+        .ch-num-hulu { background-color: #10b981; color: #000; }
+        .ch-num-prime { background-color: #0284c7; }
+        .ch-num-apple { background-color: #4b5563; }
+
+        /* Today Highlight */
+        .today-col {
+            background-color: var(--today-bg) !important;
+            box-shadow: inset 0 0 8px rgba(218, 165, 32, 0.3);
+            border-left: 2px solid var(--today-border) !important;
+            border-right: 2px solid var(--today-border) !important;
+        }
+
+        .today-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            background: #dc3545;
+            color: #fff;
+            padding: 1px 5px;
+            border-radius: 3px;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+
+        /* Empty Cell Pattern */
+        .empty-cell {
+            background-image: var(--empty-pattern);
+            background-size: 8px 8px;
+            text-align: center;
+            color: rgba(128,128,128,0.4);
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            padding-top: 15px;
+        }
+
+        /* Drama Card inside grid cell */
+        .drama-card {
+            background-color: var(--cell-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 6px;
+            margin-bottom: 6px;
+            box-shadow: 1.5px 1.5px 0px var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .drama-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .drama-card:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 2.5px 2.5px 0px var(--border-color);
+        }
+
+        .drama-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .drama-title-link {
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            color: var(--link-color);
+            text-decoration: none;
+            cursor: pointer;
+            line-height: 1.15;
+            word-break: keep-all;
+        }
+
+        .drama-title-link:hover {
+            text-decoration: underline;
+            color: #dc3545;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 2px;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .btn-icon {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 1px 2px;
+            font-size: 0.8rem;
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        .btn-icon:hover {
+            opacity: 1;
+            transform: scale(1.15);
+        }
+
+        .btn-star {
+            color: #f59f00 !important;
+            opacity: 1 !important;
+            font-size: 0.9rem;
+        }
+
+        .btn-star.empty {
+            color: var(--text-color) !important;
+            opacity: 0.4 !important;
+        }
+
+        .ep-tag {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: bold;
+            font-family: var(--font-mono);
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 1px 4px;
+            border-radius: 2px;
+            color: #c92a2a;
+            align-self: flex-start;
+        }
+
+        [data-theme="crt"] .ep-tag {
+            color: #ffff00;
+        }
+
+        /* Modals */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.65);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            backdrop-filter: blur(2px);
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--cell-bg);
+            border: 3px solid var(--border-color);
+            box-shadow: 8px 8px 0px var(--border-color);
+            border-radius: 8px;
+            max-width: 580px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            gap: 16px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #dc3545;
+            color: #fff;
+            border: 2px solid var(--border-color);
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 28px;
+            height: 28px;
+            line-height: 22px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .modal-poster {
+            width: 140px;
+            flex-shrink: 0;
+        }
+
+        .modal-poster img {
+            width: 100%;
+            border-radius: 4px;
+            border: 2px solid var(--border-color);
+            object-fit: cover;
+        }
+
+        .modal-info {
+            flex-grow: 1;
+            font-size: 0.88rem;
+            line-height: 1.45;
+        }
+
+        .modal-info h2 {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 2px;
+        }
+
+        .modal-star-btn {
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border: 2px solid var(--border-color);
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 12px;
+            font-family: var(--font-heading);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Roulette Modal */
+        .roulette-container {
+            text-align: center;
+            padding: 16px;
+            width: 100%;
+        }
+
+        .slot-machine {
+            font-size: 1.8rem;
+            height: 54px;
+            overflow: hidden;
+            border: 2px solid var(--border-color);
+            background-color: var(--bg-color);
+            margin: 16px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            color: #dc3545;
+        }
+
+        [data-theme="crt"] .slot-machine {
+            color: #33ff33;
+        }
+
+        .slot-poster {
+            width: 160px;
+            margin: 0 auto 12px;
+            display: none;
+        }
+
+        .slot-poster img {
+            width: 100%;
+            border-radius: 6px;
+            border: 2px solid var(--border-color);
+        }
+
+        @media print {
+            .toolbar, .stats-bar, .modal-overlay { display: none !important; }
+            body { background: white; color: black; }
+            .grid-container { box-shadow: none; border: none; }
+            th, td { border: 1px solid #ccc; }
+        }
+
+        @media (max-width: 768px) {
+            .modal-content { flex-direction: column; }
+            .modal-poster { width: 100px; margin: 0 auto; }
+            .search-box input { width: 100%; margin-bottom: 8px; }
+            .toolbar { flex-direction: column; align-items: stretch; }
+            .controls { display: flex; flex-wrap: wrap; gap: 5px; }
+            .controls button { flex: 1; margin: 0; }
+        }
+    </style>
+</head>
+<body data-theme="paper">
+
+<div class="container">
+    <h1>
+        <div>
+            <span>📺 K-DRAMA US STREAMING TV GUIDE</span>
+            <span style="font-size: 0.95rem; color: #c92a2a; font-family: var(--font-mono); font-weight: normal; margin-left: 8px;">[📅 2026년 8월 3주차: 8/17 ~ 8/23 주간 본방]</span>
+        </div>
+        <span class="live-clock-badge" id="liveClock">US EST --:--:--</span>
+    </h1>
+
+    <div class="toolbar">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="드라마 제목, 배우(김혜준, 안보현, 박보검...) 검색... (단축키: /)">
+        </div>
+        <div class="controls" id="weekToggle">
+            <button id="btnWeekLast">◀ 지난 주</button>
+            <button id="btnWeekThis" class="active">📅 이번 주</button>
+            <button id="btnWeekNext">▶ 다음 주</button>
+        </div>
+        <div class="controls">
+            <button id="btnWatchlist">⭐ 내 리스트만 보기</button>
+            <button id="btnRoulette" style="background:#f59f00; color:#000;">🎲 오늘 뭐 보지?</button>
+            <button id="btnThemePaper" title="단축키: 1">📰 90s 신문</button>
+            <button id="btnThemeCRT" title="단축키: 2">📺 CRT</button>
+            <button id="btnThemeModern" title="단축키: 3">✨ 모던 OTT</button>
+        </div>
+    </div>
+
+    <div class="stats-bar" id="statsBar">
+        <div class="stat-item">📊 이 주 방영작: <span id="statTotal">0</span>편</div>
+        <div class="stat-item">📅 오늘(<span id="statTodayKr"></span>) 방영: <span id="statToday">0</span>편</div>
+        <div class="stat-item">⭐ 내 찜 목록: <span id="statWatchlist">0</span>편</div>
+        <div class="stat-item">📊 평균 시청률: <span id="statRating">0.0</span>%</div>
+    </div>
+
+    <div class="grid-container">
+        <table id="guideTable">
+            <thead>
+                <tr>
+                    <th class="channel-th">CHANNEL / OTT</th>
+                    <th data-day="Mon">월 (8/17)</th>
+                    <th data-day="Tue">화 (8/18)</th>
+                    <th data-day="Wed">수 (8/19)</th>
+                    <th data-day="Thu">목 (8/20)</th>
+                    <th data-day="Fri">금 (8/21)</th>
+                    <th data-day="Sat">토 (8/22)</th>
+                    <th data-day="Sun">일 (8/23)</th>
+                    <th class="batch-th" data-day="Batch">⚡ 전편 공개 (BATCH)</th>
+                </tr>
+            </thead>
+            <tbody id="guideBody">
+                <!-- Rows injected via JS -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Details Modal -->
+<div class="modal-overlay" id="detailsModal">
+    <div class="modal-content">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <div class="modal-poster">
+            <img id="modalImg" src="" alt="Poster" onerror="this.src='https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80'">
+        </div>
+        <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+            <p id="modalEngTitle" style="color: gray; margin-top: -2px; font-family: var(--font-mono); font-size: 0.85rem;"></p>
+            <p style="margin: 8px 0;"><strong>방영 회차:</strong> <span id="modalEpisodes"></span> | <strong>시청률:</strong> 📊 <span id="modalRating"></span></p>
+            <p style="margin: 6px 0;"><strong>출연진:</strong> <span id="modalCast"></span></p>
+            <p style="margin: 8px 0; background: var(--bg-color); padding: 8px; border: 1px solid var(--border-color); border-radius: 4px;">
+                <strong>줄거리:</strong> <span id="modalSynopsis"></span>
+            </p>
+            <div id="modalPlatforms" style="margin-top: 12px;"></div>
+            <button class="modal-star-btn" id="modalToggleStar">⭐ 내 리스트에 추가</button>
+        </div>
+    </div>
+</div>
+
+<!-- Roulette Modal -->
+<div class="modal-overlay" id="rouletteModal">
+    <div class="modal-content" style="max-width: 420px; display: block;">
+        <button class="modal-close" id="closeRoulette">&times;</button>
+        <div class="roulette-container">
+            <h2 style="font-family: var(--font-heading); margin-top: 0;">🎲 오늘의 K-드라마 채널 서핑</h2>
+            <div class="slot-poster" id="roulettePoster">
+                <img id="rouletteImg" src="" alt="Drama Poster" onerror="this.src='https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80'">
+            </div>
+            <div class="slot-machine">
+                <div class="slot-content" id="slotContent">준비 완료!</div>
+            </div>
+            <div id="rouletteLinks" style="margin-bottom: 12px; display: none;"></div>
+            <button id="btnSpin" style="background:#f59f00; color:#000; padding:10px 24px; border:2px solid var(--border-color); border-radius:4px; font-family:var(--font-heading); cursor:pointer; font-size:1.15rem; font-weight:bold;">
+                채널 돌리기 (SPIN!) 🔄
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+const DRAMA_DATA = [
+  {
+    "id": "my-bias-my-boss",
+    "title": "최애의 사원",
+    "engTitle": "My Bias, My Boss",
+    "schedule": {
+      "2026-08-10": "EP 03",
+      "2026-08-11": "EP 04",
+      "2026-08-17": "EP 05",
+      "2026-08-18": "EP 06",
+      "2026-08-24": "EP 07",
+      "2026-08-25": "EP 08"
+    },
+    "isBatch": false,
+    "episodes": "12부작",
+    "rating": "4.0% (5회, 닐슨코리아 전국가구)",
+    "cast": "강훈, 김혜준, 차우민, 유나",
+    "synopsis": "이름처럼 뭐든 남다른 신입사원 남다름이 회사에서 자신이 좋아하던 아이돌 겸 배우 강하기를 상사로 만나며 벌어지는 오피스 로맨틱 코미디. tvN, 2026년 8월 3일 첫방(매주 월·화).",
+    "platforms": [
+      {
+        "name": "Viki",
+        "label": "Rakuten Viki",
+        "url": "https://www.viki.com/tv/41633c-my-bias-my-boss"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "ok-lets-get-divorced",
+    "title": "그래, 이혼하자",
+    "engTitle": "OK! Let's Get Divorced",
+    "schedule": {
+      "2026-08-19": "EP 01 (첫방)",
+      "2026-08-20": "EP 02",
+      "2026-08-26": "EP 03",
+      "2026-08-27": "EP 04"
+    },
+    "isBatch": false,
+    "episodes": "12부작",
+    "rating": "TBD (오늘 첫방, 다음 확인 시 업데이트)",
+    "cast": "이민정, 김지석, 기은세",
+    "synopsis": "지칠 대로 지친 결혼 생활에 종지부를 찍으려는 웨딩드레스숍 대표 부부가 진짜 이혼을 위해 부딪히며 서로의 진심을 되돌아보는 리얼 이혼 로맨틱 코미디. KBS Joy, 2026년 8월 19일 첫방(매주 수·목).",
+    "platforms": [
+      {
+        "name": "Kocowa",
+        "label": "KOCOWA+",
+        "url": "https://www.kocowa.com/en_us/main"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "flex-x-cop-2",
+    "title": "재벌X형사 시즌 2",
+    "engTitle": "Flex x Cop Season 2",
+    "schedule": {
+      "2026-08-14": "EP 03",
+      "2026-08-15": "EP 04",
+      "2026-08-21": "EP 05",
+      "2026-08-22": "EP 06",
+      "2026-08-28": "EP 07",
+      "2026-08-29": "EP 08"
+    },
+    "isBatch": false,
+    "episodes": "14부작",
+    "rating": "5.8% (2회, 닐슨코리아 전국가구)",
+    "cast": "안보현, 정은채, 강상준, 김신비",
+    "synopsis": "재벌 3세 낙하산 형사 진이수가 새 파트너와 함께 더 거대한 재벌가 부패 카르텔을 쫓는 통쾌한 수사극. SBS, 2026년 8월 7일 첫방(매주 금·토), 시즌1 뛰어넘는 화제성으로 출발.",
+    "platforms": [
+      {
+        "name": "Hulu",
+        "label": "Hulu / Disney+",
+        "url": "https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "a-trap-called-desire",
+    "title": "욕망의 덫",
+    "engTitle": "A Trap Called Desire",
+    "schedule": {
+      "2026-08-10": "EP 01",
+      "2026-08-11": "EP 02",
+      "2026-08-12": "EP 03",
+      "2026-08-13": "EP 04",
+      "2026-08-14": "EP 05",
+      "2026-08-17": "EP 06",
+      "2026-08-18": "EP 07",
+      "2026-08-19": "EP 08",
+      "2026-08-20": "EP 09",
+      "2026-08-21": "EP 10",
+      "2026-08-24": "EP 11",
+      "2026-08-25": "EP 12",
+      "2026-08-26": "EP 13",
+      "2026-08-27": "EP 14",
+      "2026-08-28": "EP 15"
+    },
+    "isBatch": false,
+    "episodes": "106부작 (KBS2 일일드라마)",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "장서희, 전혜원, 주새벽, 설정환, 장세현, 유태웅, 윤해영",
+    "synopsis": "살인 누명을 쓰고 삶을 송두리째 빼앗긴 여성이 거대한 욕망에 맞서 자신의 인생을 되찾아가는 운명 복원 리벤지극. KBS2, 2026년 8월 10일 첫방(매주 월~금).",
+    "platforms": [
+      {
+        "name": "Kocowa",
+        "label": "KOCOWA+",
+        "url": "https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "our-sticky-love",
+    "title": "이런 엿같은 사랑",
+    "engTitle": "Our Sticky Love",
+    "schedule": {},
+    "isBatch": true,
+    "releaseDate": "2026-08-07",
+    "batchEp": "12부작 전편 공개 (8/7~)",
+    "episodes": "12부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "정해인, 하영, 허성태",
+    "synopsis": "기억을 잃은 검사 고은새 앞에 자신이 동거 중인 남자친구라 주장하는 전직 복서 장태하가 나타나며 시작되는 시크릿 로맨스. Netflix, 2026년 8월 7일 전편 공개.",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com/title/82048302"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "mousetrap",
+    "title": "들쥐",
+    "engTitle": "Mousetrap",
+    "schedule": {},
+    "isBatch": true,
+    "releaseDate": "2026-08-28",
+    "batchEp": "10부작 전편 공개 (8/28~)",
+    "episodes": "10부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "류준열, 설경구, 이규형",
+    "synopsis": "이름과 얼굴, 삶까지 도둑맞은 은둔 소설가가 사채업자와 손잡고 '들쥐'라 불리는 정체불명의 인물에게서 자신의 인생을 되찾으려는 미스터리 추적 스릴러. Netflix, 2026년 8월 28일 전편 공개 예정.",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com/title/81991749"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  }
+];
+
+// CHANNELS
+const CHANNELS = [
+  { id: "Netflix", num: "CH 01", name: "NETFLIX", cssClass: "ch-num-netflix" },
+  { id: "Viki", num: "CH 02", name: "RAKUTEN VIKI", cssClass: "ch-num-viki" },
+  { id: "Hulu", num: "CH 03", name: "HULU / D+", cssClass: "ch-num-hulu" },
+  { id: "Prime Video", num: "CH 04", name: "PRIME VIDEO", cssClass: "ch-num-prime" },
+  { id: "Apple TV+", num: "CH 05", name: "APPLE TV+", cssClass: "ch-num-apple" },
+  { id: "Kocowa", num: "CH 06", name: "KOCOWA+", cssClass: "ch-num-kocowa" }
+];
+
+const DAY_ORDER = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+const DAY_KR = { Mon: "월", Tue: "화", Wed: "수", Thu: "목", Fri: "금", Sat: "토", Sun: "일" };
+const COLUMNS = [...DAY_ORDER, "Batch"];
+
+// State
+let myWatchlist = JSON.parse(localStorage.getItem('kdrama_watchlist')) || [];
+let currentTheme = localStorage.getItem('kdrama_theme') || 'paper';
+let showOnlyWatchlist = false;
+let searchQuery = "";
+let currentWeekOffset = 0; // 0 = 이번 주, 1 = 다음 주
+
+// Today detection (US Eastern Time)
+function getUSEasternDay() {
+    const options = { timeZone: "America/New_York", weekday: 'short' };
+    const dayName = new Intl.DateTimeFormat('en-US', options).format(new Date());
+    return dayName; // "Mon", "Tue", etc.
+}
+const todayStr = getUSEasternDay();
+
+// Compute "today" and week Mondays in US Eastern time so the header never goes stale like a hardcoded date would.
+function getUSEasternDate() {
+    const parts = new Intl.DateTimeFormat('en-US', { timeZone: "America/New_York", year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+    const map = {};
+    parts.forEach(p => map[p.type] = p.value);
+    return new Date(`${map.year}-${map.month}-${map.day}T12:00:00`); // noon avoids DST edge issues
+}
+function toISODate(d) {
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+const todayISO = toISODate(getUSEasternDate());
+
+function getWeekMonday(offset) {
+    const today = getUSEasternDate();
+    const jsWeekday = today.getDay(); // 0=Sun..6=Sat
+    const mondayOffset = jsWeekday === 0 ? -6 : 1 - jsWeekday;
+    const monday = new Date(today);
+    monday.setDate(today.getDate() + mondayOffset + offset * 7);
+    return monday;
+}
+// 선택된 주(offset)의 월~일 7일치 {key, dateISO, label} 배열을 계산한다.
+function getWeekDates(offset) {
+    const monday = getWeekMonday(offset);
+    return DAY_ORDER.map((key, i) => {
+        const d = new Date(monday);
+        d.setDate(monday.getDate() + i);
+        const dateISO = toISODate(d);
+        let label = `${DAY_KR[key]} (${d.getMonth() + 1}/${d.getDate()})`;
+        return { key, dateISO, label, isToday: dateISO === todayISO };
+    });
+}
+function getWeekSundayISO(offset) {
+    const dates = getWeekDates(offset);
+    return dates[dates.length - 1].dateISO;
+}
+
+function updateDateHeaders(offset) {
+    const weekDates = getWeekDates(offset);
+    weekDates.forEach(({ key, label }) => {
+        const th = document.querySelector(`th[data-day="${key}"]`);
+        if (th) th.textContent = label;
+    });
+}
+
+// Live Clock
+function updateLiveClock() {
+    const options = { timeZone: "America/New_York", hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+    const timeStr = new Intl.DateTimeFormat('en-US', options).format(new Date());
+    const el = document.getElementById('liveClock');
+    if (el) el.textContent = `US EST ${timeStr}`;
+}
+
+// DOM Elements
+const guideBody = document.getElementById('guideBody');
+const searchInput = document.getElementById('searchInput');
+const btnWatchlist = document.getElementById('btnWatchlist');
+
+// Init
+function init() {
+    setTheme(currentTheme);
+    renderWeek();
+    setupListeners();
+    updateLiveClock();
+    setInterval(updateLiveClock, 1000);
+}
+
+// 이번 주 / 다음 주 전환 시 헤더 날짜·오늘 하이라이트·그리드를 한 번에 다시 그린다.
+function renderWeek() {
+    updateDateHeaders(currentWeekOffset);
+    highlightToday();
+    renderGrid();
+    document.getElementById('btnWeekLast').classList.toggle('active', currentWeekOffset === -1);
+    document.getElementById('btnWeekThis').classList.toggle('active', currentWeekOffset === 0);
+    document.getElementById('btnWeekNext').classList.toggle('active', currentWeekOffset === 1);
+}
+
+// Highlight today's column (다음 주를 보고 있을 땐 오늘이 그 주에 없으므로 하이라이트 없음)
+function highlightToday() {
+    const headers = document.querySelectorAll('th[data-day]');
+    headers.forEach((th) => {
+        th.classList.remove('today-col');
+        const badge = th.querySelector('.today-badge');
+        if (badge) badge.remove();
+    });
+    if (currentWeekOffset !== 0) return;
+    const headerToday = document.querySelector(`th[data-day="${todayStr}"]`);
+    if (headerToday) {
+        headerToday.classList.add('today-col');
+        headerToday.innerHTML += ' <span class="today-badge">📍 오늘</span>';
+    }
+}
+
+// Theme management
+function setTheme(theme) {
+    currentTheme = theme;
+    document.body.setAttribute('data-theme', theme);
+    localStorage.setItem('kdrama_theme', theme);
+
+    document.querySelectorAll('.controls button[id^="btnTheme"]').forEach(btn => btn.classList.remove('active'));
+    if (theme === 'paper') document.getElementById('btnThemePaper').classList.add('active');
+    if (theme === 'crt') document.getElementById('btnThemeCRT').classList.add('active');
+    if (theme === 'modern') document.getElementById('btnThemeModern').classList.add('active');
+}
+
+// Render the grid for the currently selected week (currentWeekOffset)
+function renderGrid() {
+    guideBody.innerHTML = '';
+
+    // Filter data
+    const filteredData = DRAMA_DATA.filter(drama => {
+        // Search
+        if(searchQuery && !drama.title.toLowerCase().includes(searchQuery) &&
+           !drama.engTitle.toLowerCase().includes(searchQuery) &&
+           !drama.cast.toLowerCase().includes(searchQuery)) return false;
+
+        // Watchlist
+        if(showOnlyWatchlist && !myWatchlist.includes(drama.id)) return false;
+
+        return true;
+    });
+
+    const weekDates = getWeekDates(currentWeekOffset); // [{key, dateISO, label, isToday}, ...] Mon~Sun
+    const weekSundayISO = getWeekSundayISO(currentWeekOffset);
+
+    let countAiringToday = 0;
+    let totalRating = 0;
+    let validRatings = 0;
+    const dramasThisWeek = new Set();
+
+    CHANNELS.forEach(ch => {
+        const tr = document.createElement('tr');
+
+        // Channel cell
+        const tdCh = document.createElement('td');
+        tdCh.innerHTML = `<div>${ch.num}</div><div class="ch-logo ${ch.cssClass}">${ch.name}</div>`;
+        tr.appendChild(tdCh);
+
+        // Days
+        COLUMNS.forEach(day => {
+            const td = document.createElement('td');
+            const dateInfo = weekDates.find(w => w.key === day); // undefined for 'Batch'
+            if(dateInfo && dateInfo.isToday) td.classList.add('today-col');
+
+            // Find dramas for this channel and this exact calendar date (or the Batch column)
+            const cellDramas = filteredData.filter(d => {
+                const isOnCh = d.platforms.some(p => p.name.includes(ch.id));
+                if(!isOnCh) return false;
+                if(day === 'Batch') return d.isBatch && d.releaseDate && d.releaseDate >= weekDates[0].dateISO && d.releaseDate <= weekSundayISO;
+                return !d.isBatch && d.schedule && Object.prototype.hasOwnProperty.call(d.schedule, dateInfo.dateISO);
+            });
+
+            if(cellDramas.length === 0) {
+                td.classList.add('empty-cell');
+                td.textContent = '-';
+            } else {
+                cellDramas.forEach(drama => {
+                    dramasThisWeek.add(drama.id);
+                    const isStarred = myWatchlist.includes(drama.id);
+                    let epText = "";
+                    if(day === 'Batch') epText = drama.batchEp || '전편 공개';
+                    else epText = drama.schedule[dateInfo.dateISO];
+
+                    const platObj = drama.platforms.find(p => p.name.includes(ch.id)) || drama.platforms[0];
+
+                    const card = document.createElement('div');
+                    card.className = 'drama-card';
+                    card.innerHTML = `
+                        <div class="drama-card-header">
+                            <a href="${platObj.url}" target="_blank" rel="noopener" class="drama-title-link" title="${drama.title} 바로 시청 (새 창)">
+                                ▶ ${drama.title}
+                            </a>
+                            <div class="card-actions">
+                                <button class="btn-icon btn-star ${isStarred ? '' : 'empty'}" onclick="toggleStar('${drama.id}', event)" title="내 리스트">${isStarred ? '★' : '☆'}</button>
+                                <button class="btn-icon" onclick="openModal('${drama.id}')" title="상세 정보">ℹ️</button>
+                            </div>
+                        </div>
+                        <div class="ep-tag">${epText}</div>
+                    `;
+                    td.appendChild(card);
+
+                    if(dateInfo && dateInfo.isToday) countAiringToday++;
+
+                    if(!isNaN(parseFloat(drama.rating))) {
+                        totalRating += parseFloat(drama.rating);
+                        validRatings++;
+                    }
+                });
+            }
+            tr.appendChild(td);
+        });
+        guideBody.appendChild(tr);
+    });
+
+    // Update Stats (선택된 주 기준)
+    document.getElementById('statTotal').textContent = dramasThisWeek.size;
+    document.getElementById('statToday').textContent = currentWeekOffset === 0 ? countAiringToday : '–';
+    const statTodayKrEl = document.getElementById('statTodayKr');
+    if (statTodayKrEl) {
+        if (currentWeekOffset === 0) statTodayKrEl.textContent = DAY_KR[todayStr] || todayStr;
+        else statTodayKrEl.textContent = currentWeekOffset < 0 ? '지난 주' : '다음 주';
+    }
+    document.getElementById('statWatchlist').textContent = myWatchlist.length;
+    document.getElementById('statRating').textContent = validRatings ? (totalRating/validRatings).toFixed(1) : "0.0";
+}
+
+// Watchlist toggle
+function toggleStar(id, e) {
+    if(e) e.stopPropagation();
+    if(myWatchlist.includes(id)) {
+        myWatchlist = myWatchlist.filter(vid => vid !== id);
+    } else {
+        myWatchlist.push(id);
+    }
+    localStorage.setItem('kdrama_watchlist', JSON.stringify(myWatchlist));
+    renderGrid();
+    
+    // Update modal button if open
+    const modalBtn = document.getElementById('modalToggleStar');
+    if(modalBtn && document.getElementById('detailsModal').classList.contains('show')) {
+        modalBtn.textContent = myWatchlist.includes(id) ? '⭐ 내 리스트에서 제거' : '☆ 내 리스트에 추가';
+    }
+}
+
+// Modal Logic
+function openModal(id) {
+    const drama = DRAMA_DATA.find(d => d.id === id);
+    if(!drama) return;
+
+    document.getElementById('modalTitle').textContent = drama.title;
+    document.getElementById('modalEngTitle').textContent = drama.engTitle;
+    document.getElementById('modalEpisodes').textContent = drama.episodes;
+    document.getElementById('modalRating').textContent = drama.rating;
+    document.getElementById('modalCast').textContent = drama.cast;
+    document.getElementById('modalSynopsis').textContent = drama.synopsis;
+    document.getElementById('modalImg').src = drama.poster;
+
+    // Platforms
+    const pContainer = document.getElementById('modalPlatforms');
+    pContainer.innerHTML = '<strong>시청 바로가기:</strong><br>';
+    drama.platforms.forEach(p => {
+        const a = document.createElement('a');
+        a.href = p.url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = `▶ ${p.label} 시청하기`;
+        a.style.display = 'inline-block';
+        a.style.margin = '4px 6px 0 0';
+        a.style.padding = '5px 10px';
+        a.style.backgroundColor = '#dc3545';
+        a.style.color = '#ffffff';
+        a.style.textDecoration = 'none';
+        a.style.borderRadius = '4px';
+        a.style.fontWeight = 'bold';
+        a.style.border = '1px solid var(--border-color)';
+        pContainer.appendChild(a);
+    });
+
+    // Star button
+    const isStarred = myWatchlist.includes(drama.id);
+    const starBtn = document.getElementById('modalToggleStar');
+    starBtn.textContent = isStarred ? '⭐ 내 리스트에서 제거' : '☆ 내 리스트에 추가';
+    starBtn.onclick = () => toggleStar(drama.id);
+
+    document.getElementById('detailsModal').classList.add('show');
+}
+
+function closeModal() {
+    document.getElementById('detailsModal').classList.remove('show');
+    document.getElementById('rouletteModal').classList.remove('show');
+}
+
+// Roulette Logic
+let rouletteInterval;
+function openRoulette() {
+    const modal = document.getElementById('rouletteModal');
+    modal.classList.add('show');
+    document.getElementById('roulettePoster').style.display = 'none';
+    document.getElementById('rouletteLinks').style.display = 'none';
+    document.getElementById('slotContent').textContent = '버튼을 눌러주세요!';
+}
+
+function spinRoulette() {
+    const btn = document.getElementById('btnSpin');
+    btn.disabled = true;
+    const slot = document.getElementById('slotContent');
+    const posterDiv = document.getElementById('roulettePoster');
+    const posterImg = document.getElementById('rouletteImg');
+    const linksDiv = document.getElementById('rouletteLinks');
+    
+    posterDiv.style.display = 'none';
+    linksDiv.style.display = 'none';
+    
+    let pool = DRAMA_DATA;
+    let ticks = 0;
+    const maxTicks = 18;
+    clearInterval(rouletteInterval);
+    
+    rouletteInterval = setInterval(() => {
+        const randomDrama = pool[Math.floor(Math.random() * pool.length)];
+        slot.textContent = randomDrama.title;
+        ticks++;
+        if(ticks >= maxTicks) {
+            clearInterval(rouletteInterval);
+            const finalDrama = pool[Math.floor(Math.random() * pool.length)];
+            slot.textContent = `🎉 ${finalDrama.title}`;
+            posterImg.src = finalDrama.poster;
+            posterDiv.style.display = 'block';
+            
+            // Render quick links
+            linksDiv.innerHTML = finalDrama.platforms.map(p => `
+                <a href="${p.url}" target="_blank" rel="noopener" style="display:inline-block; margin:2px 4px; padding:4px 8px; background:#dc3545; color:#fff; text-decoration:none; border-radius:3px; font-weight:bold; font-size:0.85rem;">
+                    ▶ ${p.label}
+                </a>
+            `).join('');
+            linksDiv.style.display = 'block';
+            
+            btn.disabled = false;
+        }
+    }, 75);
+}
+
+// Event Listeners
+function setupListeners() {
+    searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase();
+        renderGrid();
+    });
+
+    btnWatchlist.addEventListener('click', () => {
+        showOnlyWatchlist = !showOnlyWatchlist;
+        btnWatchlist.classList.toggle('active');
+        renderGrid();
+    });
+
+    document.getElementById('btnWeekLast').addEventListener('click', () => {
+        currentWeekOffset = -1;
+        renderWeek();
+    });
+    document.getElementById('btnWeekThis').addEventListener('click', () => {
+        currentWeekOffset = 0;
+        renderWeek();
+    });
+    document.getElementById('btnWeekNext').addEventListener('click', () => {
+        currentWeekOffset = 1;
+        renderWeek();
+    });
+
+    document.getElementById('btnThemePaper').addEventListener('click', () => setTheme('paper'));
+    document.getElementById('btnThemeCRT').addEventListener('click', () => setTheme('crt'));
+    document.getElementById('btnThemeModern').addEventListener('click', () => setTheme('modern'));
+
+    document.getElementById('closeModal').addEventListener('click', closeModal);
+    document.getElementById('closeRoulette').addEventListener('click', closeModal);
+    document.getElementById('btnRoulette').addEventListener('click', openRoulette);
+    document.getElementById('btnSpin').addEventListener('click', spinRoulette);
+
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+        overlay.addEventListener('click', (e) => {
+            if(e.target === overlay) closeModal();
+        });
+    });
+
+    // Keyboard Shortcuts
+    document.addEventListener('keydown', (e) => {
+        if(e.key === 'Escape') closeModal();
+        if(e.key === '/' && document.activeElement !== searchInput) {
+            e.preventDefault();
+            searchInput.focus();
+        }
+        if(document.activeElement !== searchInput) {
+            if(e.key === '1') setTheme('paper');
+            if(e.key === '2') setTheme('crt');
+            if(e.key === '3') setTheme('modern');
+        }
+    });
+}
+
+// Start
+init();
+</script>
+</body>
+</html>
