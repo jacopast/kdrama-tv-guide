@@ -137,9 +137,11 @@
             margin-bottom: 20px;
         }
 
+        /* 선을 긋는 대신 셀 사이 여백(회색 배경이 비치는 틈)만으로 구분한다 — 박스(흰 칸) 자체가 경계가 된다 */
         table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 3px;
             min-width: 1260px;
             table-layout: fixed;
         }
@@ -150,13 +152,13 @@
             vertical-align: top;
         }
 
-        tbody td {
-            border-top: 1px solid var(--border-color);
+        /* 요일/전편공개 칸은 항상 흰 박스로 꽉 채운다 (내용이 없어도 동일) */
+        td:not(:first-child) {
+            background-color: var(--cell-bg);
         }
 
         th {
-            background-color: var(--header-bg);
-            border-bottom: 1.5px solid var(--border-strong);
+            background-color: transparent;
             position: sticky;
             top: 0;
             z-index: 10;
@@ -170,30 +172,24 @@
             width: 150px;
             left: 0;
             z-index: 20;
-            background-color: var(--sticky-bg);
+            background-color: var(--bg-color);
             text-align: left;
         }
 
         th.batch-th {
             width: 180px;
             font-style: italic;
-            border-left: 1px solid var(--border-color);
-        }
-
-        td.batch-cell {
-            border-left: 1px solid var(--border-color);
         }
 
         /* Sticky First Column for Channels */
         td:first-child {
             position: sticky;
             left: 0;
-            background-color: var(--sticky-bg);
+            background-color: var(--bg-color);
             z-index: 5;
             font-family: var(--font-mono);
             font-weight: bold;
             text-align: left;
-            border-right: 1px solid var(--border-strong);
             vertical-align: middle;
             padding: 10px 8px;
         }
@@ -211,9 +207,9 @@
             border: none;
         }
 
-        /* Today Highlight */
-        .today-col {
-            background-color: var(--today-bg) !important;
+        /* Today Highlight — 데이터 칸은 항상 흰 박스로 통일하고, 헤더에만 살짝 표시한다 */
+        th.today-col {
+            background-color: var(--today-bg);
         }
 
         .today-badge {
@@ -236,12 +232,13 @@
         }
 
         /* Drama Card inside grid cell — 박스 없이 여백과 굵기 대비로만 구획한다 */
+        /* td 자체가 흰 박스이므로 카드는 배경 없이 내용만 담는다. 한 칸에 여러 작품이 있으면 여백으로만 구분한다. */
         .drama-card {
-            background-color: var(--cell-bg);
+            background-color: transparent;
             border: none;
             border-radius: 0;
-            padding: 7px 8px;
-            margin-bottom: 6px;
+            padding: 0;
+            margin-bottom: 10px;
             display: flex;
             flex-direction: column;
             gap: 4px;
@@ -854,7 +851,6 @@ function renderGrid() {
         COLUMNS.forEach(day => {
             const td = document.createElement('td');
             const dateInfo = weekDates.find(w => w.key === day); // undefined for 'Batch'
-            if(dateInfo && dateInfo.isToday) td.classList.add('today-col');
 
             // Find dramas for this channel and this exact calendar date (or the Batch column).
             // 전편 공개작은 공개된 그 날짜의 요일 칸에 표시하고, 그 이후 주부터는 Batch 열로 옮겨 계속 보여준다(중복 방지).
