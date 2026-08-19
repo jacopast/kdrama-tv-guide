@@ -21,10 +21,10 @@ WEEK_OFFSETS = [-1, 0, 1]  # 지난 주, 이번 주, 다음 주. 범위를 늘�
 
 CHANNELS = [
   {"id": "Netflix", "badge": "`CH 01 NETFLIX`", "name": "Netflix", "num": "CH 01", "cssClass": "ch-num-netflix"},
-  {"id": "Viki", "badge": "`CH 02 RAKUTEN VIKI`", "name": "Rakuten Viki", "num": "CH 02", "cssClass": "ch-num-viki"},
-  {"id": "Hulu", "badge": "`CH 03 HULU / D+`", "name": "Hulu / Disney+", "num": "CH 03", "cssClass": "ch-num-hulu"},
-  {"id": "Prime Video", "badge": "`CH 04 PRIME VIDEO`", "name": "Prime Video", "num": "CH 04", "cssClass": "ch-num-prime"},
-  {"id": "Apple TV+", "badge": "`CH 05 APPLE TV+`", "name": "Apple TV+", "num": "CH 05", "cssClass": "ch-num-apple"},
+  {"id": "Hulu", "badge": "`CH 02 HULU / D+`", "name": "Hulu / Disney+", "num": "CH 02", "cssClass": "ch-num-hulu"},
+  {"id": "Prime Video", "badge": "`CH 03 PRIME VIDEO`", "name": "Prime Video", "num": "CH 03", "cssClass": "ch-num-prime"},
+  {"id": "Apple TV+", "badge": "`CH 04 APPLE TV+`", "name": "Apple TV+", "num": "CH 04", "cssClass": "ch-num-apple"},
+  {"id": "Viki", "badge": "`CH 05 RAKUTEN VIKI`", "name": "Rakuten Viki", "num": "CH 05", "cssClass": "ch-num-viki"},
   {"id": "Kocowa", "badge": "`CH 06 KOCOWA+`", "name": "KOCOWA+", "num": "CH 06", "cssClass": "ch-num-kocowa"}
 ]
 
@@ -121,6 +121,8 @@ def generate_markdown(dramas, weeks):
         md.append("| " + " | ".join(header_cols) + " |")
         md.append("| " + " | ".join([":---"] + [":---"] * 8) + " |")
 
+        week_monday = week["days"][0][1]
+
         for ch in CHANNELS:
             row_cells = [f"**{ch['badge']}**"]
 
@@ -130,23 +132,23 @@ def generate_markdown(dramas, weeks):
                     d for d in dramas
                     if drama_platform_for(d, ch["id"]) and date_str in d.get("schedule", {})
                 ]
-                if day_dramas:
-                    cell_text = "<br>".join(
-                        format_cell(d, ep_label=d["schedule"][date_str]) for d in day_dramas
-                    )
-                else:
-                    cell_text = "-"
-                row_cells.append(cell_text)
+                # 전편 공개작은 공개된 그 날짜의 요일 칸에도 표시한다 (예: 들쥐는 8/28 금요일 칸에).
+                batch_today = [
+                    d for d in dramas
+                    if drama_platform_for(d, ch["id"]) and d.get("isBatch") and d.get("releaseDate") == date_str
+                ]
+                cells = [format_cell(d, ep_label=d["schedule"][date_str]) for d in day_dramas]
+                cells += [format_cell(d, is_batch=True) for d in batch_today]
+                row_cells.append("<br>".join(cells) if cells else "-")
 
-            # Batch column: 공개일부터 (회차/2)주 동안 노출 — 예: 12부작이면 6주.
-            # 주 2회 편성이었다면 걸렸을 기간만큼만 "지금 볼만한 신작"으로 보여주고, 그 이후엔 자연히 빠진다.
-            week_monday = week["days"][0][1]
+            # 전편 공개(Batch) 열: 공개된 주가 지난 뒤부터 (회차/2)주 동안 "계속 볼 수 있는 작품"으로 노출.
+            # 공개된 바로 그 주는 위에서 실제 공개 날짜 칸에 표시했으므로 이 열에서는 제외해 중복을 막는다.
             batch_dramas = []
             for d in dramas:
                 if not (drama_platform_for(d, ch["id"]) and d.get("isBatch", False) and d.get("releaseDate")):
                     continue
                 release, window_end = batch_window(d)
-                if release <= week["sunday"] and week_monday < window_end:
+                if release < week_monday and week_monday < window_end:
                     batch_dramas.append(d)
             if batch_dramas:
                 batch_cell = "<br>".join(format_cell(d, is_batch=True) for d in batch_dramas)

@@ -275,19 +275,24 @@
             margin-bottom: 10px;
             display: flex;
             flex-direction: column;
-            gap: 2px;
+            gap: 4px;
         }
 
         .drama-card:last-child {
             margin-bottom: 0;
         }
 
+        /* 한 칸에 여러 작품이 겹칠 때(예: 코코와 수요일) 서로 구분되도록 가는 구분선을 위에 하나 긋는다 */
+        .drama-card + .drama-card {
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+        }
+
         .drama-card-footer {
             display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 4px;
-            margin-top: 2px;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
         }
 
         .drama-title-link {
@@ -297,18 +302,25 @@
             color: var(--link-color);
             text-decoration: none;
             cursor: pointer;
-            line-height: 1.2;
+            line-height: 1.3;
             word-break: keep-all;
+            display: inline-block;
         }
 
-        .drama-title-link:hover {
+        .drama-title-link:hover,
+        .drama-title-link:focus-visible {
             text-decoration: underline;
             text-underline-offset: 3px;
         }
 
+        .drama-title-link:focus-visible {
+            outline: 1px solid var(--border-strong);
+            outline-offset: 2px;
+        }
+
         .card-actions {
             display: flex;
-            gap: 2px;
+            gap: 8px;
             align-items: center;
             flex-shrink: 0;
         }
@@ -317,31 +329,24 @@
             background: none;
             border: none;
             cursor: pointer;
-            padding: 1px 2px;
-            font-size: 0.8rem;
-            color: var(--text-color);
-            opacity: 0.6;
-        }
-
-        .btn-info {
+            padding: 0;
+            font-size: 0.72rem;
             font-family: var(--font-mono);
-            font-size: 0.65rem;
-            letter-spacing: 0.02em;
+            color: var(--text-soft);
+            opacity: 1;
+            line-height: 1;
         }
 
         .btn-icon:hover {
-            opacity: 1;
+            color: var(--text-color);
         }
 
         .btn-star {
-            color: var(--text-color) !important;
-            opacity: 1 !important;
-            font-size: 0.9rem;
+            font-size: 0.8rem !important;
         }
 
         .btn-star.empty {
-            color: var(--text-color) !important;
-            opacity: 0.35 !important;
+            opacity: 0.4;
         }
 
         .ep-tag {
@@ -353,7 +358,7 @@
             border: none;
             padding: 0;
             color: var(--text-soft);
-            align-self: flex-start;
+            white-space: nowrap;
         }
 
         /* Modals */
@@ -602,6 +607,8 @@ const DRAMA_DATA = [
     "title": "최애의 사원",
     "engTitle": "My Bias, My Boss",
     "schedule": {
+      "2026-08-03": "EP 01 (첫방)",
+      "2026-08-04": "EP 02",
       "2026-08-10": "EP 03",
       "2026-08-11": "EP 04",
       "2026-08-17": "EP 05",
@@ -654,6 +661,8 @@ const DRAMA_DATA = [
     "title": "재벌X형사 시즌 2",
     "engTitle": "Flex x Cop Season 2",
     "schedule": {
+      "2026-08-07": "EP 01 (첫방)",
+      "2026-08-08": "EP 02",
       "2026-08-14": "EP 03",
       "2026-08-15": "EP 04",
       "2026-08-21": "EP 05",
@@ -761,10 +770,10 @@ const DRAMA_DATA = [
 // CHANNELS
 const CHANNELS = [
   { id: "Netflix", num: "CH 01", name: "NETFLIX", cssClass: "ch-num-netflix" },
-  { id: "Viki", num: "CH 02", name: "RAKUTEN VIKI", cssClass: "ch-num-viki" },
-  { id: "Hulu", num: "CH 03", name: "HULU / D+", cssClass: "ch-num-hulu" },
-  { id: "Prime Video", num: "CH 04", name: "PRIME VIDEO", cssClass: "ch-num-prime" },
-  { id: "Apple TV+", num: "CH 05", name: "APPLE TV+", cssClass: "ch-num-apple" },
+  { id: "Hulu", num: "CH 02", name: "HULU / D+", cssClass: "ch-num-hulu" },
+  { id: "Prime Video", num: "CH 03", name: "PRIME VIDEO", cssClass: "ch-num-prime" },
+  { id: "Apple TV+", num: "CH 04", name: "APPLE TV+", cssClass: "ch-num-apple" },
+  { id: "Viki", num: "CH 05", name: "RAKUTEN VIKI", cssClass: "ch-num-viki" },
   { id: "Kocowa", num: "CH 06", name: "KOCOWA+", cssClass: "ch-num-kocowa" }
 ];
 
@@ -957,16 +966,18 @@ function renderGrid() {
             const dateInfo = weekDates.find(w => w.key === day); // undefined for 'Batch'
             if(dateInfo && dateInfo.isToday) td.classList.add('today-col');
 
-            // Find dramas for this channel and this exact calendar date (or the Batch column)
+            // Find dramas for this channel and this exact calendar date (or the Batch column).
+            // 전편 공개작은 공개된 그 날짜의 요일 칸에 표시하고, 그 이후 주부터는 Batch 열로 옮겨 계속 보여준다(중복 방지).
             const cellDramas = filteredData.filter(d => {
                 const isOnCh = d.platforms.some(p => p.name.includes(ch.id));
                 if(!isOnCh) return false;
                 if(day === 'Batch') {
                     if(!d.isBatch || !d.releaseDate) return false;
                     const { releaseISO, endISO } = getBatchWindow(d);
-                    return releaseISO <= weekSundayISO && weekDates[0].dateISO < endISO;
+                    return releaseISO < weekDates[0].dateISO && weekDates[0].dateISO < endISO;
                 }
-                return !d.isBatch && d.schedule && Object.prototype.hasOwnProperty.call(d.schedule, dateInfo.dateISO);
+                if(d.isBatch) return d.releaseDate === dateInfo.dateISO;
+                return d.schedule && Object.prototype.hasOwnProperty.call(d.schedule, dateInfo.dateISO);
             });
 
             if(cellDramas.length === 0) {
@@ -976,23 +987,23 @@ function renderGrid() {
                 cellDramas.forEach(drama => {
                     const isStarred = myWatchlist.includes(drama.id);
                     let epText = "";
-                    if(day === 'Batch') epText = drama.batchEp || '전편 공개';
+                    if(drama.isBatch) epText = drama.batchEp || '전편 공개';
                     else epText = drama.schedule[dateInfo.dateISO];
 
                     const platObj = drama.platforms.find(p => p.name.includes(ch.id)) || drama.platforms[0];
 
-                    // 제목을 최대한 넓게 보여주기 위해 별표/정보는 제목 아래 줄로 내린다.
+                    // 제목을 누르면 상세 정보(모달)가 뜨고, 실제 시청 링크는 모달 안에 둔다.
+                    // 제목을 최대한 넓게 보여주기 위해 별표는 제목 아래 줄로 내린다.
                     const card = document.createElement('div');
                     card.className = 'drama-card';
                     card.innerHTML = `
-                        <a href="${platObj.url}" target="_blank" rel="noopener" class="drama-title-link" title="${drama.title} 바로 시청 (새 창)">
+                        <span class="drama-title-link" role="button" tabindex="0" onclick="openModal('${drama.id}')" onkeydown="if(event.key==='Enter')openModal('${drama.id}')" title="${drama.title} 상세 정보">
                             ${drama.title}
-                        </a>
+                        </span>
                         <div class="drama-card-footer">
                             <span class="ep-tag">${epText}</span>
                             <div class="card-actions">
                                 <button class="btn-icon btn-star ${isStarred ? '' : 'empty'}" onclick="toggleStar('${drama.id}', event)" title="내 리스트">${isStarred ? '★' : '☆'}</button>
-                                <button class="btn-icon btn-info" onclick="openModal('${drama.id}')" title="상세 정보">정보</button>
                             </div>
                         </div>
                     `;
