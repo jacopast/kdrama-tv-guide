@@ -51,3 +51,21 @@
 
 - **2026-08-19 [Claude/Cowork]**: 안티그래비티가 채운 `dramas.json`에 이미 종영했거나 존재하지 않는 편성(예: 옛날 시즌 정보, 가짜 URL)이 섞여 있던 문제를 웹 검색으로 실제 소스(Soompi, ScreenRant, 나무위키, 위키백과, 각 플랫폼 공식 페이지, 닐슨코리아 시청률)를 확인해 5개 항목으로 재작성. `fetch_kdrama_schedule.py`의 요일/주차 계산을 하드코딩 날짜에서 실행 시점 자동 계산으로 변경(`build_week()`), `kdrama_tv_guide.html`도 로드 시 헤더 날짜를 자동 계산하도록 수정(`updateDateHeaders()`). 평점(⭐) 필드를 실제 닐슨코리아 시청률(%)로 교체. 7일 이상 미갱신 시 경고 배너 추가, 정기 최신화 절차는 [REFRESH_GUIDE.md](file:///Users/sunghwanyoon/Library/Mobile%20Documents/iCloud~md~obsidian/Documents/Obsvault/플레이그라운드/드라마/REFRESH_GUIDE.md) 참고.
 - **2026-08-19 [Claude/Cowork] (2차)**: "이번 주만 보임" 요청에 따라 이번 주 + 다음 주 2주치를 함께 보여주도록 확장. `dramas.json`의 `airDays`/`dayEpisodes`를 날짜 기반 `schedule` 맵(`"2026-08-24": "EP 07"`)으로 스키마 변경해 몇 주가 됐든 확장 가능하게 만듦. `kdrama_tv_guide.html`에 "📅 이번 주 / ▶ 다음 주" 탭 추가. Netflix 8/28 공개 예정 『들쥐(Mousetrap)』을 다음 주 편성에 추가로 확인해 반영. 『신병4: 사보타주』, 『포핸즈』는 미국 스트리밍 플랫폼이 아직 확인되지 않아 편성표에서 제외(REFRESH_GUIDE.md 참고). `add_drama.py`도 새 스키마에 맞게 수정.
+
+---
+
+## 🌐 GitHub Pages (친구/SNS 공유용)
+
+**https://jacopast.github.io/kdrama-tv-guide/kdrama_tv_guide.html**
+
+로그인 없이 누구나 바로 열립니다. 저장소: https://github.com/jacopast/kdrama-tv-guide (공개)
+
+업데이트하려면:
+```bash
+git add -A
+git commit -m "드라마 편성 업데이트"
+git push
+```
+푸시하면 1분 정도 뒤 GitHub Pages에 자동 반영됩니다.
+
+- **2026-08-19 [Claude/Cowork] (3차)**: Kocowa+를 채널 목록 맨 아래(CH 06)로 이동. "이런 엿같은 사랑"이 매주 전편 공개 칸에 계속 뜨던 버그 수정 — 이제 배치(전편 공개) 작품은 실제 공개된 그 주에만 표시됨. "◀ 지난 주" 탭 추가로 지난 주/이번 주/다음 주 3주치를 볼 수 있게 확장(`WEEK_OFFSETS = [-1, 0, 1]`). GitHub 저장소(jacopast/kdrama-tv-guide)를 만들고 GitHub Pages로 배포해 로그인 없이 볼 수 있는 공개 링크 추가.
