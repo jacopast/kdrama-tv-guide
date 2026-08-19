@@ -49,26 +49,35 @@
             margin: 0 auto;
         }
 
+        /* 제목/날짜뱃지/시계는 폭이 줄어들면 브레이크포인트 하나에 툭 걸리는 대신,
+           각자 gap만큼 여유가 없어지는 순간 자연스럽게 자기 줄로 내려가도록 flex-wrap을 쓴다. */
         h1 {
             font-family: var(--font-heading);
             font-weight: 700;
             margin-top: 0;
             margin-bottom: 18px;
-            font-size: 1.55rem;
+            font-size: clamp(1.05rem, 3vw, 1.55rem);
             letter-spacing: 0.03em;
             display: flex;
             align-items: baseline;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 4px 10px;
+        }
+
+        h1 > div {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 2px 8px;
+            min-width: 0;
         }
 
         .week-badge-text {
-            font-size: 0.85rem;
+            font-size: clamp(0.7rem, 1.6vw, 0.85rem);
             color: var(--text-soft);
             font-family: var(--font-mono);
             font-weight: normal;
-            margin-left: 8px;
         }
 
         .live-clock-badge {
@@ -147,17 +156,18 @@
         }
 
         /* 선을 긋는 대신 셀 사이 여백(회색 배경이 비치는 틈)만으로 구분한다 — 박스(흰 칸) 자체가 경계가 된다 */
+        /* 데스크톱 폭 안에서도 창을 좁히면 칸 사이 간격/여백이 하드 브레이크포인트 없이 같이 줄어들도록 clamp()를 쓴다. */
         table {
             width: 100%;
             border-collapse: separate;
-            border-spacing: 3px;
-            min-width: 1200px;
+            border-spacing: clamp(1px, 0.4vw, 3px);
+            min-width: 700px;
             table-layout: fixed;
         }
 
         th, td {
             border: none;
-            padding: 10px 8px;
+            padding: clamp(5px, 1.2vw, 10px) clamp(4px, 1vw, 8px);
             vertical-align: top;
         }
 
@@ -175,7 +185,7 @@
         }
 
         th.channel-th {
-            width: 92px;
+            width: clamp(64px, 8vw, 92px);
             left: 0;
             z-index: 20;
             background-color: var(--bg-color);
@@ -183,7 +193,7 @@
         }
 
         th.batch-th {
-            width: 180px;
+            width: clamp(110px, 14vw, 180px);
             font-style: italic;
         }
 
@@ -980,8 +990,14 @@ function switchView(view) {
     document.getElementById('weekToggle').style.display = view === 'week' ? '' : 'none';
     document.getElementById('monthView').style.display = view === 'month' ? '' : 'none';
     document.getElementById('monthToggle').style.display = view === 'month' ? '' : 'none';
-    if (view === 'month') renderMonth();
-    else renderWeek();
+    const notice = document.getElementById('weekEmptyNotice');
+    if (view === 'month') {
+        if (notice) notice.style.display = 'none';
+        renderMonth();
+    } else {
+        if (notice) notice.style.display = '';
+        renderWeek();
+    }
 }
 
 // Highlight today's column (다음 주를 보고 있을 땐 오늘이 그 주에 없으므로 하이라이트 없음)
@@ -1036,6 +1052,7 @@ function renderGrid() {
     const filteredData = getFilteredDramas();
     const weekDates = getWeekDates(currentWeekOffset); // [{key, dateISO, label, isToday}, ...] Mon~Sun
     const weekSundayISO = getWeekSundayISO(currentWeekOffset);
+    let weekHasAnyContent = false;
 
     CHANNELS.forEach(ch => {
         const tr = document.createElement('tr');
@@ -1082,8 +1099,20 @@ function renderGrid() {
             tr.appendChild(td);
         });
         if (!hasAnyContent) tr.classList.add('row-empty');
+        if (hasAnyContent) weekHasAnyContent = true;
         guideBody.appendChild(tr);
     });
+
+    // 리서치된 데이터가 아직 그 주까지 닿지 않아서 통째로 비어 있는 경우, 버그처럼 보이지 않도록 안내한다.
+    const existingNotice = document.getElementById('weekEmptyNotice');
+    if (existingNotice) existingNotice.remove();
+    if (!weekHasAnyContent) {
+        const notice = document.createElement('div');
+        notice.id = 'weekEmptyNotice';
+        notice.className = 'month-empty-state';
+        notice.textContent = '이 주는 확인된 편성 데이터가 없습니다 (아직 리서치되지 않았거나, 방영 중인 작품이 없는 기간).';
+        document.getElementById('weekView').insertAdjacentElement('afterend', notice);
+    }
 }
 
 // Watchlist toggle
