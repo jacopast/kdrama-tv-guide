@@ -156,11 +156,26 @@
 
         /* TV Guide Grid */
         .grid-container {
+            position: relative;
             overflow-x: auto;
             border: none;
             background-color: var(--bg-color);
             border-radius: 0;
             margin-bottom: 20px;
+        }
+
+        /* 오늘 칸: 헤더-첫 행 사이는 원래 간격을 두고, 그 아래 채널 행 사이 간격은 이 칠(fill)이
+           표 뒤에 깔려서 끊기지 않고 하나로 이어져 보이게 한다. */
+        #todayColFill {
+            position: absolute;
+            background-color: var(--today-bg);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        #guideTable {
+            position: relative;
+            z-index: 1;
         }
 
         /* 선을 긋는 대신 셀 사이 여백(회색 배경이 비치는 틈)만으로 구분한다 — 박스(흰 칸) 자체가 경계가 된다 */
@@ -1152,6 +1167,7 @@ function renderWeek() {
     updateDateHeaders(currentWeekOffset);
     highlightToday();
     renderGrid();
+    paintTodayColumnFill();
 
     // 주 라벨: 이번 주/지난 주/다음 주는 말로, 그 이상은 "N주 전/후"로 + 실제 날짜 범위를 항상 같이 보여준다.
     const weekDates = getWeekDates(currentWeekOffset);
@@ -1300,6 +1316,34 @@ function highlightToday() {
     }
 }
 
+// 오늘 칸의 채널 행들 사이 간격까지 같은 색으로 메워서 컬럼이 끊기지 않고 이어져 보이게 한다.
+// (헤더와 첫 채널 행 사이의 간격은 그대로 남겨둔다 — 요청대로 그 부분만 여백 유지)
+function paintTodayColumnFill() {
+    const existing = document.getElementById('todayColFill');
+    if (existing) existing.remove();
+
+    // 표가 세로 목록으로 바뀌는 모바일 레이아웃에서는 "컬럼" 개념이 없으므로 칠하지 않는다.
+    if (window.innerWidth <= 768) return;
+
+    const bodyTds = document.querySelectorAll('#guideBody td.today-col');
+    if (bodyTds.length < 2) return; // 채널 행이 1개 이하면 이어붙일 간격도 없다
+
+    const container = document.getElementById('weekView');
+    const containerRect = container.getBoundingClientRect();
+    const firstTd = bodyTds[0];
+    const lastTd = bodyTds[bodyTds.length - 1];
+    const firstRect = firstTd.getBoundingClientRect();
+    const lastRect = lastTd.getBoundingClientRect();
+
+    const fill = document.createElement('div');
+    fill.id = 'todayColFill';
+    fill.style.left = (firstRect.left - containerRect.left + container.scrollLeft) + 'px';
+    fill.style.top = (firstRect.top - containerRect.top + container.scrollTop) + 'px';
+    fill.style.width = firstRect.width + 'px';
+    fill.style.height = (lastRect.bottom - firstRect.top) + 'px';
+    container.appendChild(fill);
+}
+
 // 주간 표(칸 안)와 월간 목록에서 공통으로 쓰는 드라마 카드 DOM을 만든다.
 // opts.channelLabel이 있으면(월간 보기처럼 요일 열이 없을 때) 회차 옆에 채널명을 같이 적어준다.
 function makeDramaCard(drama, epText, opts = {}) {
@@ -1409,8 +1453,13 @@ function toggleStar(id, e) {
         myWatchlist.push(id);
     }
     localStorage.setItem('kdrama_watchlist', JSON.stringify(myWatchlist));
-    renderGrid();
-    
+    if (currentView === 'month') {
+        renderMonth();
+    } else {
+        renderGrid();
+        paintTodayColumnFill();
+    }
+
     // Update modal button if open
     const modalBtn = document.getElementById('modalToggleStar');
     if(modalBtn && document.getElementById('detailsModal').classList.contains('show')) {
@@ -1471,7 +1520,12 @@ function setupListeners() {
     btnWatchlist.addEventListener('click', () => {
         showOnlyWatchlist = !showOnlyWatchlist;
         btnWatchlist.classList.toggle('active');
-        if (currentView === 'month') renderMonth(); else renderGrid();
+        if (currentView === 'month') {
+            renderMonth();
+        } else {
+            renderGrid();
+            paintTodayColumnFill(); // 리스트 필터로 행 수가 바뀌면 채널 행 높이도 바뀌므로 다시 계산
+        }
     });
 
     document.getElementById('btnViewWeek').addEventListener('click', () => switchView('week'));
@@ -1517,6 +1571,21 @@ function setupListeners() {
         if(e.key === 'ArrowLeft') document.getElementById(currentView === 'month' ? 'btnMonthPrev' : 'btnWeekPrev').click();
         if(e.key === 'ArrowRight') document.getElementById(currentView === 'month' ? 'btnMonthNext' : 'btnWeekNext').click();
     });
+}
+
+// 창 폭이 바뀌면(칸 너비가 clamp()로 유동적이라) 오늘 칸 칠도 다시 계산한다.
+// window의 'resize' 이벤트뿐 아니라 실제 레이아웃(표 크기) 변화를 직접 감지하는 ResizeObserver도 같이 써서
+// 프로그램적으로 뷰포트가 바뀌는 경우(예: 자동화 테스트, 일부 브라우저 확대/축소)도 놓치지 않게 한다.
+let resizeTimer;
+function scheduleFillRepaint() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        if (currentView === 'week') paintTodayColumnFill();
+    }, 120);
+}
+window.addEventListener('resize', scheduleFillRepaint);
+if (window.ResizeObserver) {
+    new ResizeObserver(scheduleFillRepaint).observe(document.getElementById('weekView'));
 }
 
 // Start
