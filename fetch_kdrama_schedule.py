@@ -7,6 +7,8 @@ maps "YYYY-MM-DD" -> episode label), so the same data naturally supports any num
 """
 
 import json
+import math
+import re
 from pathlib import Path
 from datetime import datetime, timedelta
 
@@ -80,6 +82,16 @@ def drama_platform_for(d, channel_id):
     return next((p for p in d.get("platforms", []) if channel_id in p["name"]), None)
 
 
+def batch_window(d):
+    """전편 공개(batch) 작품이 편성표에 노출되는 [시작일, 종료일) 구간을 계산한다.
+    12부작이면 6주, 즉 '주 2회 편성이었다면 걸렸을 기간'만큼 공개일로부터 계속 보여준다 (회차 / 2 = 주 수)."""
+    release = datetime.fromisoformat(d["releaseDate"]).date()
+    m = re.search(r"\d+", d.get("episodes", ""))
+    ep_count = int(m.group()) if m else 2
+    visible_weeks = max(1, math.ceil(ep_count / 2))
+    return release, release + timedelta(weeks=visible_weeks)
+
+
 def generate_markdown(dramas, weeks):
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M EST")
     current_week = next((w for w in weeks if w["offset"] == 0), weeks[0])
@@ -126,15 +138,16 @@ def generate_markdown(dramas, weeks):
                     cell_text = "-"
                 row_cells.append(cell_text)
 
-            # Batch column: "그 주에 공개된" 작품만 표시 (공개일이 그 주의 월~일 사이인 경우).
-            # 지난주에 이미 나온 작품을 매주 계속 보여주면 "이번 주 신작"처럼 오해되므로, 공개된 그 주에만 노출한다.
+            # Batch column: 공개일부터 (회차/2)주 동안 노출 — 예: 12부작이면 6주.
+            # 주 2회 편성이었다면 걸렸을 기간만큼만 "지금 볼만한 신작"으로 보여주고, 그 이후엔 자연히 빠진다.
             week_monday = week["days"][0][1]
-            batch_dramas = [
-                d for d in dramas
-                if drama_platform_for(d, ch["id"]) and d.get("isBatch", False)
-                and d.get("releaseDate")
-                and week_monday <= datetime.fromisoformat(d["releaseDate"]).date() <= week["sunday"]
-            ]
+            batch_dramas = []
+            for d in dramas:
+                if not (drama_platform_for(d, ch["id"]) and d.get("isBatch", False) and d.get("releaseDate")):
+                    continue
+                release, window_end = batch_window(d)
+                if release <= week["sunday"] and week_monday < window_end:
+                    batch_dramas.append(d)
             if batch_dramas:
                 batch_cell = "<br>".join(format_cell(d, is_batch=True) for d in batch_dramas)
             else:

@@ -5,67 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📺 K-Drama US Streaming TV Guide | 미국 K-드라마 주간 편성표</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Do+Hyeon&family=IBM+Plex+Mono:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;600;800&family=VT323&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Courier+Prime:wght@400;700&display=swap');
 
+        /* 종이에 타이핑된 듯한 미니멀 모노크롬 — 버튼/카드의 입체 효과와 브랜드 컬러를 걷어내고
+           단일 잉크색(ink) + 종이색(paper)만으로 구성한다. 3개 테마 모두 이 규칙을 공유한다. */
         :root {
-            --bg-color: #fdf5e6;
-            --text-color: #2b2b2b;
-            --border-color: #8b4513;
-            --cell-bg: #fff8dc;
-            --header-bg: #deb887;
-            --sticky-bg: #f5deb3;
-            --btn-bg: #d2b48c;
-            --btn-text: #000;
-            --link-color: #8b0000;
-            --today-glow: 0 0 12px rgba(218, 165, 32, 0.9);
-            --today-bg: #fff9d2;
-            --today-border: #daa520;
-            --font-main: 'Noto Sans KR', sans-serif;
-            --font-heading: 'Do Hyeon', sans-serif;
-            --font-mono: 'IBM Plex Mono', monospace;
-            --shadow: 4px 4px 0px #8b4513;
-            --transition: all 0.25s ease;
-            --empty-pattern: radial-gradient(#d2b48c 1px, transparent 1px);
+            --bg-color: #f7f5ef;
+            --text-color: #1c1c1a;
+            --text-soft: rgba(28, 28, 26, 0.55);
+            --border-color: rgba(28, 28, 26, 0.4);
+            --border-strong: #1c1c1a;
+            --cell-bg: #f7f5ef;
+            --header-bg: transparent;
+            --sticky-bg: #f7f5ef;
+            --btn-bg: transparent;
+            --btn-text: #1c1c1a;
+            --link-color: #1c1c1a;
+            --today-glow: none;
+            --today-bg: rgba(28, 28, 26, 0.05);
+            --today-border: #1c1c1a;
+            --font-main: 'Nanum Gothic Coding', 'Courier Prime', monospace;
+            --font-heading: 'Nanum Gothic Coding', 'Courier Prime', monospace;
+            --font-mono: 'Courier Prime', 'Nanum Gothic Coding', monospace;
+            --shadow: none;
+            --transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+            --empty-pattern: none;
         }
 
         [data-theme="crt"] {
-            --bg-color: #000;
-            --text-color: #33ff33;
-            --border-color: #33ff33;
-            --cell-bg: #001100;
-            --header-bg: #002200;
-            --sticky-bg: #001a00;
-            --btn-bg: #003300;
-            --btn-text: #33ff33;
-            --link-color: #33ff33;
-            --today-glow: 0 0 15px #33ff33;
-            --today-bg: #003300;
-            --today-border: #33ff33;
-            --font-main: 'VT323', monospace;
-            --font-heading: 'VT323', monospace;
-            --font-mono: 'VT323', monospace;
-            --shadow: none;
-            --empty-pattern: radial-gradient(#003300 1px, transparent 1px);
+            --bg-color: #0a0a0a;
+            --text-color: #cfcfcf;
+            --text-soft: rgba(207, 207, 207, 0.55);
+            --border-color: rgba(207, 207, 207, 0.35);
+            --border-strong: #cfcfcf;
+            --cell-bg: #0a0a0a;
+            --sticky-bg: #0a0a0a;
+            --btn-text: #cfcfcf;
+            --link-color: #cfcfcf;
+            --today-bg: rgba(207, 207, 207, 0.08);
+            --today-border: #cfcfcf;
         }
 
         [data-theme="modern"] {
-            --bg-color: #0f172a;
-            --text-color: #e2e8f0;
-            --border-color: #334155;
-            --cell-bg: #1e293b;
-            --header-bg: #0f172a;
-            --sticky-bg: #1e293b;
-            --btn-bg: #3b82f6;
-            --btn-text: #ffffff;
-            --link-color: #38bdf8;
-            --today-glow: 0 0 15px rgba(59, 130, 246, 0.5);
-            --today-bg: #1e3a8a;
-            --today-border: #60a5fa;
-            --font-main: 'Noto Sans KR', sans-serif;
-            --font-heading: 'Noto Sans KR', sans-serif;
-            --font-mono: 'IBM Plex Mono', monospace;
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --empty-pattern: radial-gradient(#334155 1px, transparent 1px);
+            --bg-color: #16181d;
+            --text-color: #e8e8e6;
+            --text-soft: rgba(232, 232, 230, 0.55);
+            --border-color: rgba(232, 232, 230, 0.35);
+            --border-strong: #e8e8e6;
+            --cell-bg: #16181d;
+            --sticky-bg: #16181d;
+            --btn-text: #e8e8e6;
+            --link-color: #e8e8e6;
+            --today-bg: rgba(232, 232, 230, 0.08);
+            --today-border: #e8e8e6;
         }
 
         * {
@@ -82,18 +74,6 @@
             font-size: 14px;
         }
 
-        /* CRT Scanline Effect */
-        [data-theme="crt"]::before {
-            content: " ";
-            display: block;
-            position: fixed;
-            top: 0; left: 0; bottom: 0; right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            z-index: 9999;
-            background-size: 100% 3px, 6px 100%;
-            pointer-events: none;
-        }
-
         .container {
             max-width: 100%;
             margin: 0 auto;
@@ -101,24 +81,25 @@
 
         h1 {
             font-family: var(--font-heading);
+            font-weight: 700;
             margin-top: 0;
             margin-bottom: 12px;
-            font-size: 2.2rem;
+            font-size: 1.7rem;
+            letter-spacing: 0.02em;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 10px;
+            border-bottom: 2px solid var(--border-strong);
+            padding-bottom: 10px;
         }
 
         .live-clock-badge {
             font-family: var(--font-mono);
             font-size: 0.85rem;
             font-weight: normal;
-            background: var(--cell-bg);
-            padding: 4px 10px;
-            border: 1.5px solid var(--border-color);
-            border-radius: 4px;
+            color: var(--text-soft);
         }
 
         /* Toolbar */
@@ -132,80 +113,79 @@
         }
 
         .search-box input {
-            padding: 8px 12px;
-            border: 2px solid var(--border-color);
-            background-color: var(--cell-bg);
+            padding: 7px 10px;
+            border: none;
+            border-bottom: 1px solid var(--border-color);
+            background-color: transparent;
             color: var(--text-color);
             font-family: var(--font-main);
-            border-radius: 4px;
+            border-radius: 0;
             width: 320px;
             outline: none;
             font-size: 0.9rem;
         }
 
         .search-box input:focus {
-            box-shadow: var(--today-glow);
+            border-bottom-color: var(--border-strong);
         }
 
         .controls {
             display: flex;
-            gap: 6px;
+            gap: 4px;
             flex-wrap: wrap;
         }
 
         .controls button {
             background-color: var(--btn-bg);
             color: var(--btn-text);
-            border: 2px solid var(--border-color);
-            padding: 7px 12px;
+            border: 1px solid var(--border-color);
+            padding: 6px 11px;
             cursor: pointer;
             font-family: var(--font-heading);
-            font-size: 0.95rem;
-            border-radius: 4px;
-            box-shadow: 2px 2px 0px var(--border-color);
+            font-size: 0.85rem;
+            border-radius: 0;
         }
 
         .controls button:hover {
-            transform: translate(-1px, -1px);
-            box-shadow: 3px 3px 0px var(--border-color);
+            border-color: var(--border-strong);
         }
 
         .controls button.active {
-            filter: brightness(1.2);
-            border-width: 2px;
             background: var(--text-color);
             color: var(--bg-color);
+            border-color: var(--text-color);
         }
 
         /* Stats Bar */
         .stats-bar {
             display: flex;
-            gap: 12px;
+            gap: 0;
             margin-bottom: 14px;
-            padding: 8px 12px;
-            background-color: var(--cell-bg);
-            border: 2px solid var(--border-color);
-            border-radius: 6px;
+            padding: 8px 0;
+            background-color: transparent;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
             font-family: var(--font-mono);
             font-size: 0.85rem;
             flex-wrap: wrap;
-            box-shadow: var(--shadow);
         }
 
         .stat-item {
-            background-color: var(--bg-color);
-            padding: 4px 10px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
+            background-color: transparent;
+            padding: 4px 14px;
+            border-right: 1px solid var(--border-color);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
         }
 
         /* TV Guide Grid */
         .grid-container {
             overflow-x: auto;
-            border: 3px solid var(--border-color);
-            box-shadow: var(--shadow);
+            border: 1px solid var(--border-strong);
             background-color: var(--bg-color);
-            border-radius: 6px;
+            border-radius: 0;
             margin-bottom: 20px;
         }
 
@@ -224,11 +204,13 @@
 
         th {
             background-color: var(--header-bg);
+            border-bottom: 2px solid var(--border-strong);
             position: sticky;
             top: 0;
             z-index: 10;
             font-family: var(--font-heading);
-            font-size: 1.1rem;
+            font-weight: 700;
+            font-size: 0.95rem;
             text-align: center;
         }
 
@@ -241,12 +223,7 @@
 
         th.batch-th {
             width: 180px;
-            background-color: rgba(220, 53, 69, 0.15);
-            color: #dc3545;
-        }
-
-        [data-theme="crt"] th.batch-th {
-            color: #ffff00;
+            font-style: italic;
         }
 
         /* Sticky First Column for Channels */
@@ -258,53 +235,45 @@
             font-family: var(--font-mono);
             font-weight: bold;
             text-align: center;
-            border-right: 2px solid var(--border-color);
+            border-right: 2px solid var(--border-strong);
             vertical-align: middle;
             padding: 10px 6px;
         }
 
         .ch-logo {
             display: inline-block;
-            padding: 2px 6px;
-            border-radius: 4px;
-            color: white;
-            font-size: 0.78rem;
+            padding: 1px 5px;
+            border-radius: 0;
+            color: var(--text-color);
+            background: transparent;
+            font-size: 0.75rem;
             margin-top: 4px;
-            font-weight: 800;
+            font-weight: 700;
+            letter-spacing: 0.03em;
             border: 1px solid var(--border-color);
         }
-        .ch-num-netflix { background-color: #e50914; }
-        .ch-num-viki { background-color: #0096c7; }
-        .ch-num-kocowa { background-color: #1d4ed8; }
-        .ch-num-hulu { background-color: #10b981; color: #000; }
-        .ch-num-prime { background-color: #0284c7; }
-        .ch-num-apple { background-color: #4b5563; }
 
         /* Today Highlight */
         .today-col {
             background-color: var(--today-bg) !important;
-            box-shadow: inset 0 0 8px rgba(218, 165, 32, 0.3);
-            border-left: 2px solid var(--today-border) !important;
-            border-right: 2px solid var(--today-border) !important;
+            border-left: 1px solid var(--today-border) !important;
+            border-right: 1px solid var(--today-border) !important;
         }
 
         .today-badge {
             display: inline-block;
-            font-size: 0.7rem;
-            background: #dc3545;
-            color: #fff;
-            padding: 1px 5px;
-            border-radius: 3px;
+            font-size: 0.68rem;
+            background: transparent;
+            color: var(--text-color);
+            padding: 0;
             margin-left: 4px;
             vertical-align: middle;
         }
 
-        /* Empty Cell Pattern */
+        /* Empty Cell */
         .empty-cell {
-            background-image: var(--empty-pattern);
-            background-size: 8px 8px;
             text-align: center;
-            color: rgba(128,128,128,0.4);
+            color: var(--text-soft);
             font-family: var(--font-mono);
             font-size: 0.75rem;
             padding-top: 15px;
@@ -314,10 +283,9 @@
         .drama-card {
             background-color: var(--cell-bg);
             border: 1px solid var(--border-color);
-            border-radius: 4px;
+            border-radius: 0;
             padding: 6px;
             margin-bottom: 6px;
-            box-shadow: 1.5px 1.5px 0px var(--border-color);
             display: flex;
             flex-direction: column;
             gap: 3px;
@@ -328,8 +296,7 @@
         }
 
         .drama-card:hover {
-            transform: translate(-1px, -1px);
-            box-shadow: 2.5px 2.5px 0px var(--border-color);
+            background-color: var(--today-bg);
         }
 
         .drama-card-header {
@@ -341,17 +308,18 @@
 
         .drama-title-link {
             font-family: var(--font-heading);
-            font-size: 1.05rem;
+            font-size: 0.95rem;
+            font-weight: 700;
             color: var(--link-color);
-            text-decoration: none;
+            text-decoration: underline;
+            text-underline-offset: 2px;
             cursor: pointer;
             line-height: 1.15;
             word-break: keep-all;
         }
 
         .drama-title-link:hover {
-            text-decoration: underline;
-            color: #dc3545;
+            text-decoration-thickness: 2px;
         }
 
         .card-actions {
@@ -368,23 +336,22 @@
             padding: 1px 2px;
             font-size: 0.8rem;
             color: var(--text-color);
-            opacity: 0.7;
+            opacity: 0.6;
         }
 
         .btn-icon:hover {
             opacity: 1;
-            transform: scale(1.15);
         }
 
         .btn-star {
-            color: #f59f00 !important;
+            color: var(--text-color) !important;
             opacity: 1 !important;
             font-size: 0.9rem;
         }
 
         .btn-star.empty {
             color: var(--text-color) !important;
-            opacity: 0.4 !important;
+            opacity: 0.35 !important;
         }
 
         .ep-tag {
@@ -392,28 +359,23 @@
             font-size: 0.72rem;
             font-weight: bold;
             font-family: var(--font-mono);
-            background: var(--bg-color);
+            background: transparent;
             border: 1px solid var(--border-color);
             padding: 1px 4px;
-            border-radius: 2px;
-            color: #c92a2a;
+            border-radius: 0;
+            color: var(--text-soft);
             align-self: flex-start;
-        }
-
-        [data-theme="crt"] .ep-tag {
-            color: #ffff00;
         }
 
         /* Modals */
         .modal-overlay {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.65);
+            background: rgba(0, 0, 0, 0.5);
             display: none;
             justify-content: center;
             align-items: center;
             z-index: 10000;
-            backdrop-filter: blur(2px);
         }
 
         .modal-overlay.show {
@@ -421,10 +383,9 @@
         }
 
         .modal-content {
-            background-color: var(--cell-bg);
-            border: 3px solid var(--border-color);
-            box-shadow: 8px 8px 0px var(--border-color);
-            border-radius: 8px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-strong);
+            border-radius: 0;
             max-width: 580px;
             width: 90%;
             max-height: 85vh;
@@ -439,17 +400,21 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            background: #dc3545;
-            color: #fff;
-            border: 2px solid var(--border-color);
-            font-size: 1.1rem;
+            background: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            font-size: 1rem;
             cursor: pointer;
-            width: 28px;
-            height: 28px;
+            width: 26px;
+            height: 26px;
             line-height: 22px;
             text-align: center;
-            font-weight: bold;
-            border-radius: 4px;
+            font-weight: normal;
+            border-radius: 0;
+        }
+
+        .modal-close:hover {
+            border-color: var(--border-strong);
         }
 
         .modal-poster {
@@ -459,9 +424,10 @@
 
         .modal-poster img {
             width: 100%;
-            border-radius: 4px;
-            border: 2px solid var(--border-color);
+            border-radius: 0;
+            border: 1px solid var(--border-color);
             object-fit: cover;
+            filter: grayscale(1) contrast(1.05);
         }
 
         .modal-info {
@@ -472,7 +438,7 @@
 
         .modal-info h2 {
             font-family: var(--font-heading);
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             margin-top: 0;
             margin-bottom: 2px;
         }
@@ -480,14 +446,18 @@
         .modal-star-btn {
             background-color: var(--btn-bg);
             color: var(--btn-text);
-            border: 2px solid var(--border-color);
+            border: 1px solid var(--border-color);
             padding: 6px 12px;
-            border-radius: 4px;
+            border-radius: 0;
             cursor: pointer;
             margin-top: 12px;
             font-family: var(--font-heading);
             font-weight: bold;
             font-size: 0.9rem;
+        }
+
+        .modal-star-btn:hover {
+            border-color: var(--border-strong);
         }
 
         /* Roulette Modal */
@@ -498,21 +468,18 @@
         }
 
         .slot-machine {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             height: 54px;
             overflow: hidden;
-            border: 2px solid var(--border-color);
+            border: 1px solid var(--border-strong);
             background-color: var(--bg-color);
             margin: 16px 0;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: var(--font-heading);
-            color: #dc3545;
-        }
-
-        [data-theme="crt"] .slot-machine {
-            color: #33ff33;
+            font-weight: 700;
+            color: var(--text-color);
         }
 
         .slot-poster {
@@ -523,8 +490,9 @@
 
         .slot-poster img {
             width: 100%;
-            border-radius: 6px;
-            border: 2px solid var(--border-color);
+            border-radius: 0;
+            border: 1px solid var(--border-color);
+            filter: grayscale(1) contrast(1.05);
         }
 
         @media print {
@@ -550,7 +518,7 @@
     <h1>
         <div>
             <span>📺 K-DRAMA US STREAMING TV GUIDE</span>
-            <span style="font-size: 0.95rem; color: #c92a2a; font-family: var(--font-mono); font-weight: normal; margin-left: 8px;">[📅 2026년 8월 3주차: 8/17 ~ 8/23 주간 본방]</span>
+            <span style="font-size: 0.85rem; color: var(--text-soft); font-family: var(--font-mono); font-weight: normal; margin-left: 8px;" id="weekBadge">[기준 주차 계산 중...]</span>
         </div>
         <span class="live-clock-badge" id="liveClock">US EST --:--:--</span>
     </h1>
@@ -566,10 +534,10 @@
         </div>
         <div class="controls">
             <button id="btnWatchlist">⭐ 내 리스트만 보기</button>
-            <button id="btnRoulette" style="background:#f59f00; color:#000;">🎲 오늘 뭐 보지?</button>
-            <button id="btnThemePaper" title="단축키: 1">📰 90s 신문</button>
-            <button id="btnThemeCRT" title="단축키: 2">📺 CRT</button>
-            <button id="btnThemeModern" title="단축키: 3">✨ 모던 OTT</button>
+            <button id="btnRoulette">🎲 오늘 뭐 보지?</button>
+            <button id="btnThemePaper" title="단축키: 1">종이</button>
+            <button id="btnThemeCRT" title="단축키: 2">다크</button>
+            <button id="btnThemeModern" title="단축키: 3">네이비</button>
         </div>
     </div>
 
@@ -611,10 +579,10 @@
         </div>
         <div class="modal-info">
             <h2 id="modalTitle"></h2>
-            <p id="modalEngTitle" style="color: gray; margin-top: -2px; font-family: var(--font-mono); font-size: 0.85rem;"></p>
+            <p id="modalEngTitle" style="color: var(--text-soft); margin-top: -2px; font-family: var(--font-mono); font-size: 0.85rem;"></p>
             <p style="margin: 8px 0;"><strong>방영 회차:</strong> <span id="modalEpisodes"></span> | <strong>시청률:</strong> 📊 <span id="modalRating"></span></p>
             <p style="margin: 6px 0;"><strong>출연진:</strong> <span id="modalCast"></span></p>
-            <p style="margin: 8px 0; background: var(--bg-color); padding: 8px; border: 1px solid var(--border-color); border-radius: 4px;">
+            <p style="margin: 8px 0; background: transparent; padding: 8px 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); border-radius: 0;">
                 <strong>줄거리:</strong> <span id="modalSynopsis"></span>
             </p>
             <div id="modalPlatforms" style="margin-top: 12px;"></div>
@@ -636,7 +604,7 @@
                 <div class="slot-content" id="slotContent">준비 완료!</div>
             </div>
             <div id="rouletteLinks" style="margin-bottom: 12px; display: none;"></div>
-            <button id="btnSpin" style="background:#f59f00; color:#000; padding:10px 24px; border:2px solid var(--border-color); border-radius:4px; font-family:var(--font-heading); cursor:pointer; font-size:1.15rem; font-weight:bold;">
+            <button id="btnSpin" style="background:transparent; color:var(--text-color); padding:10px 24px; border:1px solid var(--border-strong); border-radius:0; font-family:var(--font-heading); cursor:pointer; font-size:1rem; font-weight:bold;">
                 채널 돌리기 (SPIN!) 🔄
             </button>
         </div>
@@ -871,6 +839,18 @@ function getWeekSundayISO(offset) {
     return dates[dates.length - 1].dateISO;
 }
 
+// 전편 공개(batch) 작품이 편성표에 노출되는 [공개일, 종료일) 구간을 ISO 날짜 문자열로 계산한다.
+// 12부작이면 6주(회차/2), 즉 주 2회 편성이었다면 걸렸을 기간만큼만 "지금 볼만한 신작"으로 보여준다.
+function getBatchWindow(drama) {
+    const epMatch = (drama.episodes || "").match(/\d+/);
+    const epCount = epMatch ? parseInt(epMatch[0], 10) : 2;
+    const visibleWeeks = Math.max(1, Math.ceil(epCount / 2));
+    const release = new Date(`${drama.releaseDate}T12:00:00`);
+    const end = new Date(release);
+    end.setDate(end.getDate() + visibleWeeks * 7);
+    return { releaseISO: drama.releaseDate, endISO: toISODate(end) };
+}
+
 function updateDateHeaders(offset) {
     const weekDates = getWeekDates(offset);
     weekDates.forEach(({ key, label }) => {
@@ -895,10 +875,23 @@ const btnWatchlist = document.getElementById('btnWatchlist');
 // Init
 function init() {
     setTheme(currentTheme);
+    updateWeekBadge();
     renderWeek();
     setupListeners();
     updateLiveClock();
     setInterval(updateLiveClock, 1000);
+}
+
+// 헤더의 "[n월 n주차: m/d ~ m/d 주간 본방]" 배지 — 하드코딩 대신 오늘 날짜 기준(이번 주)으로 항상 계산한다.
+function updateWeekBadge() {
+    const el = document.getElementById('weekBadge');
+    if (!el) return;
+    const thisWeek = getWeekDates(0);
+    const monday = thisWeek[0], sunday = thisWeek[6];
+    const [my, mm, md] = monday.dateISO.split('-').map(Number);
+    const weekOfMonth = Math.ceil(md / 7);
+    const [, sm, sd] = sunday.dateISO.split('-').map(Number);
+    el.textContent = `[📅 ${my}년 ${mm}월 ${weekOfMonth}주차: ${mm}/${md} ~ ${sm}/${sd} 주간 본방]`;
 }
 
 // 이번 주 / 다음 주 전환 시 헤더 날짜·오늘 하이라이트·그리드를 한 번에 다시 그린다.
@@ -982,7 +975,11 @@ function renderGrid() {
             const cellDramas = filteredData.filter(d => {
                 const isOnCh = d.platforms.some(p => p.name.includes(ch.id));
                 if(!isOnCh) return false;
-                if(day === 'Batch') return d.isBatch && d.releaseDate && d.releaseDate >= weekDates[0].dateISO && d.releaseDate <= weekSundayISO;
+                if(day === 'Batch') {
+                    if(!d.isBatch || !d.releaseDate) return false;
+                    const { releaseISO, endISO } = getBatchWindow(d);
+                    return releaseISO <= weekSundayISO && weekDates[0].dateISO < endISO;
+                }
                 return !d.isBatch && d.schedule && Object.prototype.hasOwnProperty.call(d.schedule, dateInfo.dateISO);
             });
 
@@ -1083,10 +1080,10 @@ function openModal(id) {
         a.style.display = 'inline-block';
         a.style.margin = '4px 6px 0 0';
         a.style.padding = '5px 10px';
-        a.style.backgroundColor = '#dc3545';
-        a.style.color = '#ffffff';
-        a.style.textDecoration = 'none';
-        a.style.borderRadius = '4px';
+        a.style.backgroundColor = 'transparent';
+        a.style.color = 'var(--text-color)';
+        a.style.textDecoration = 'underline';
+        a.style.borderRadius = '0';
         a.style.fontWeight = 'bold';
         a.style.border = '1px solid var(--border-color)';
         pContainer.appendChild(a);
@@ -1145,7 +1142,7 @@ function spinRoulette() {
             
             // Render quick links
             linksDiv.innerHTML = finalDrama.platforms.map(p => `
-                <a href="${p.url}" target="_blank" rel="noopener" style="display:inline-block; margin:2px 4px; padding:4px 8px; background:#dc3545; color:#fff; text-decoration:none; border-radius:3px; font-weight:bold; font-size:0.85rem;">
+                <a href="${p.url}" target="_blank" rel="noopener" style="display:inline-block; margin:2px 4px; padding:4px 8px; background:transparent; color:var(--text-color); text-decoration:underline; border:1px solid var(--border-color); border-radius:0; font-weight:bold; font-size:0.85rem;">
                     ▶ ${p.label}
                 </a>
             `).join('');

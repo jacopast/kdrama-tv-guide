@@ -7,7 +7,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 📺 미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **📅 기준 주차**: `2026년 8월 3주차 (8/17 ~ 8/23)` | **기준 시간**: `2026-08-19 00:36 EST`
+> **📅 기준 주차**: `2026년 8월 3주차 (8/17 ~ 8/23)` | **기준 시간**: `2026-08-19 00:49 EST`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 90년대 신문 주간 편성표 및 CRT 텔레텍스트 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
@@ -18,7 +18,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 
 | 채널 / OTT | 월 (8/10) | 화 (8/11) | 수 (8/12) | 목 (8/13) | 금 (8/14) | 토 (8/15) | 일 (8/16) | ⚡ 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **🔴 `CH 01 NETFLIX`** | - | - | - | - | - | - | - | - |
+| **🔴 `CH 01 NETFLIX`** | - | - | - | - | - | - | - | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)` |
 | **🔷 `CH 02 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 03` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 04` | - | - | - | - | - | - |
 | **🟢 `CH 03 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 03` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 04` | - | - |
 | **🔹 `CH 04 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
@@ -30,7 +30,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 
 | 채널 / OTT | 월 (8/17) | 화 (8/18) | 수 (8/19) 📍오늘 | 목 (8/20) | 금 (8/21) | 토 (8/22) | 일 (8/23) | ⚡ 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **🔴 `CH 01 NETFLIX`** | - | - | - | - | - | - | - | - |
+| **🔴 `CH 01 NETFLIX`** | - | - | - | - | - | - | - | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)` |
 | **🔷 `CH 02 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 05` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 06` | - | - | - | - | - | - |
 | **🟢 `CH 03 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 05` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 06` | - | - |
 | **🔹 `CH 04 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
@@ -42,7 +42,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 
 | 채널 / OTT | 월 (8/24) | 화 (8/25) | 수 (8/26) | 목 (8/27) | 금 (8/28) | 토 (8/29) | 일 (8/30) | ⚡ 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **🔴 `CH 01 NETFLIX`** | - | - | - | - | - | - | - | [들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)` |
+| **🔴 `CH 01 NETFLIX`** | - | - | - | - | - | - | - | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)` |
 | **🔷 `CH 02 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 07` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 08` | - | - | - | - | - | - |
 | **🟢 `CH 03 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 07` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 08` | - | - |
 | **🔹 `CH 04 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
