@@ -21,7 +21,7 @@
             --btn-bg: transparent;
             --btn-text: #1c1c1a;
             --link-color: #1c1c1a;
-            --today-bg: rgba(28, 28, 26, 0.06);
+            --today-bg: rgba(28, 28, 26, 0.14);
             --today-border: #1c1c1a;
             --font-main: 'Nanum Gothic Coding', 'Courier Prime', monospace;
             --font-heading: 'Nanum Gothic Coding', 'Courier Prime', monospace;
@@ -71,6 +71,14 @@
             align-items: baseline;
             gap: 2px 8px;
             min-width: 0;
+        }
+
+        .site-title {
+            cursor: pointer;
+        }
+        .site-title:hover {
+            text-decoration: underline;
+            text-underline-offset: 4px;
         }
 
         .week-badge-text {
@@ -223,8 +231,10 @@
             border: none;
         }
 
-        /* Today Highlight — 데이터 칸은 항상 흰 박스로 통일하고, 헤더에만 살짝 표시한다 */
-        th.today-col {
+        /* Today Highlight — 헤더뿐 아니라 그 요일 칸 전체(위아래)를 진하게 물들인다.
+           카드 자체의 흰색/옅은 회색 박스 색은 그대로 유지되고, 칸의 여백(gutter) 부분만 진해진다. */
+        th.today-col,
+        td.today-col {
             background-color: var(--today-bg);
         }
 
@@ -238,10 +248,11 @@
             vertical-align: middle;
         }
 
-        /* Month View — 날짜별로 세로 나열, 빈 날짜는 아예 목록에서 빠진다 */
+        /* Month View — 좁은 화면(기본)은 빈 날짜를 건너뛰는 세로 목록, 넓은 화면은 아래 달력 격자로 전환 */
         #monthList {
             max-width: 480px;
         }
+        .month-calendar { display: none; }
 
         .month-day-group {
             margin-bottom: 16px;
@@ -260,6 +271,54 @@
             font-family: var(--font-mono);
             font-size: 0.85rem;
             padding: 20px 0;
+        }
+
+        /* 넓은 화면: 전통적인 달력 격자로 한 달을 한눈에 */
+        @media (min-width: 900px) {
+            #monthList { display: none; }
+            .month-calendar {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                gap: 4px;
+            }
+            .cal-weekday {
+                font-family: var(--font-mono);
+                font-weight: 700;
+                font-size: 0.75rem;
+                color: var(--text-soft);
+                text-align: center;
+                padding: 4px 0;
+            }
+            .cal-cell {
+                min-height: 100px;
+                padding: 5px 6px;
+                background-color: transparent;
+            }
+            .cal-cell.cal-blank { background: none; }
+            .cal-cell.cal-today { background-color: var(--today-bg); }
+            .cal-daynum {
+                font-family: var(--font-mono);
+                font-size: 0.75rem;
+                color: var(--text-soft);
+                margin-bottom: 3px;
+            }
+            .cal-cell.cal-today .cal-daynum {
+                color: var(--text-color);
+                font-weight: 700;
+            }
+            .cal-entries .drama-card {
+                padding: 3px 4px;
+                margin-bottom: 3px;
+                gap: 0;
+            }
+            .cal-entries .drama-title-link {
+                font-size: 0.68rem;
+                line-height: 1.2;
+            }
+            .cal-entries .ep-tag {
+                font-size: 0.6rem;
+            }
+            .cal-entries .card-actions { display: none; }
         }
 
         /* Empty Cell */
@@ -521,7 +580,7 @@
 <div class="container">
     <h1>
         <div>
-            <span class="site-title">K-DRAMA US STREAMING TV GUIDE</span>
+            <span class="site-title" role="button" tabindex="0" onclick="goHome()" onkeydown="if(event.key==='Enter')goHome()" title="이번 주로 돌아가기">K-DRAMA US STREAMING TV GUIDE</span>
             <span class="week-badge-text" id="weekBadge">[기준 주차 계산 중...]</span>
         </div>
         <span class="live-clock-badge" id="liveClock">US EST --:--:--</span>
@@ -570,8 +629,9 @@
         </table>
     </div>
 
-    <!-- 월간 보기: 그 달에 실제로 방영/공개되는 날짜만 세로로 나열하는 효율적인 목록 (빈 날짜는 건너뜀) -->
+    <!-- 월간 보기: 넓은 화면은 달력 격자로, 좁은 화면(모바일)은 빈 날짜를 건너뛰는 세로 목록으로 — CSS가 폭에 따라 알아서 골라 보여준다 -->
     <div id="monthView" style="display:none;">
+        <div id="monthCalendar" class="month-calendar"></div>
         <div id="monthList"></div>
     </div>
 </div>
@@ -611,7 +671,11 @@ const DRAMA_DATA = [
       "2026-08-17": "EP 05",
       "2026-08-18": "EP 06",
       "2026-08-24": "EP 07",
-      "2026-08-25": "EP 08"
+      "2026-08-25": "EP 08",
+      "2026-08-31": "EP 09",
+      "2026-09-01": "EP 10",
+      "2026-09-07": "EP 11",
+      "2026-09-08": "EP 12 (최종화)"
     },
     "isBatch": false,
     "episodes": "12부작",
@@ -636,7 +700,15 @@ const DRAMA_DATA = [
       "2026-08-19": "EP 01 (첫방)",
       "2026-08-20": "EP 02",
       "2026-08-26": "EP 03",
-      "2026-08-27": "EP 04"
+      "2026-08-27": "EP 04",
+      "2026-09-02": "EP 05",
+      "2026-09-03": "EP 06",
+      "2026-09-09": "EP 07",
+      "2026-09-10": "EP 08",
+      "2026-09-16": "EP 09",
+      "2026-09-17": "EP 10",
+      "2026-09-23": "EP 11",
+      "2026-09-24": "EP 12 (최종화)"
     },
     "isBatch": false,
     "episodes": "12부작",
@@ -665,7 +737,13 @@ const DRAMA_DATA = [
       "2026-08-21": "EP 05",
       "2026-08-22": "EP 06",
       "2026-08-28": "EP 07",
-      "2026-08-29": "EP 08"
+      "2026-08-29": "EP 08",
+      "2026-09-04": "EP 09",
+      "2026-09-05": "EP 10",
+      "2026-09-11": "EP 11",
+      "2026-09-12": "EP 12",
+      "2026-09-18": "EP 13",
+      "2026-09-19": "EP 14 (최종화)"
     },
     "isBatch": false,
     "episodes": "14부작",
@@ -701,7 +779,30 @@ const DRAMA_DATA = [
       "2026-08-25": "EP 12",
       "2026-08-26": "EP 13",
       "2026-08-27": "EP 14",
-      "2026-08-28": "EP 15"
+      "2026-08-28": "EP 15",
+      "2026-08-31": "EP 16",
+      "2026-09-01": "EP 17",
+      "2026-09-02": "EP 18",
+      "2026-09-03": "EP 19",
+      "2026-09-04": "EP 20",
+      "2026-09-07": "EP 21",
+      "2026-09-08": "EP 22",
+      "2026-09-09": "EP 23",
+      "2026-09-10": "EP 24",
+      "2026-09-11": "EP 25",
+      "2026-09-14": "EP 26",
+      "2026-09-15": "EP 27",
+      "2026-09-16": "EP 28",
+      "2026-09-17": "EP 29",
+      "2026-09-18": "EP 30",
+      "2026-09-21": "EP 31",
+      "2026-09-22": "EP 32",
+      "2026-09-23": "EP 33",
+      "2026-09-24": "EP 34",
+      "2026-09-25": "EP 35",
+      "2026-09-28": "EP 36",
+      "2026-09-29": "EP 37",
+      "2026-09-30": "EP 38"
     },
     "isBatch": false,
     "episodes": "106부작 (KBS2 일일드라마)",
@@ -757,6 +858,147 @@ const DRAMA_DATA = [
         "name": "Netflix",
         "label": "Netflix US",
         "url": "https://www.netflix.com/title/81991749"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "the-husband",
+    "title": "결혼의 완성 (더 허즈번드)",
+    "engTitle": "The Husband",
+    "schedule": {
+      "2026-07-04": "EP 01 (첫방)",
+      "2026-07-05": "EP 02",
+      "2026-07-11": "EP 03",
+      "2026-07-12": "EP 04",
+      "2026-07-18": "EP 05",
+      "2026-07-19": "EP 06",
+      "2026-07-25": "EP 07",
+      "2026-07-26": "EP 08",
+      "2026-08-01": "EP 09",
+      "2026-08-02": "EP 10",
+      "2026-08-08": "EP 11",
+      "2026-08-09": "EP 12 (최종화)"
+    },
+    "isBatch": false,
+    "episodes": "12부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "남궁민, 이설, 김대명, 이상희",
+    "synopsis": "이혼을 논의하던 신경외과 병원장 강태주 앞에서 다음 날 아내 고세윤이 납치당하며 극한의 위기에 빠지는 이야기. KBS2, 2026년 7월 4일 첫방(매주 토·일).",
+    "platforms": [
+      {
+        "name": "Hulu",
+        "label": "Hulu / Disney+",
+        "url": "https://www.hulu.com"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "spooky-in-love",
+    "title": "기막힌 사랑",
+    "engTitle": "Spooky in Love",
+    "schedule": {
+      "2026-07-18": "EP 01 (첫방)",
+      "2026-07-19": "EP 02",
+      "2026-07-25": "EP 03",
+      "2026-07-26": "EP 04",
+      "2026-08-01": "EP 05",
+      "2026-08-02": "EP 06",
+      "2026-08-08": "EP 07",
+      "2026-08-09": "EP 08",
+      "2026-08-15": "EP 09",
+      "2026-08-16": "EP 10",
+      "2026-08-22": "EP 11",
+      "2026-08-23": "EP 12 (최종화)"
+    },
+    "isBatch": false,
+    "episodes": "12부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "박은빈, 양세종, 옹성우",
+    "synopsis": "귀신을 보는 재벌가 상속녀와 귀신이 세상에서 제일 무서운 검사가 얽히는 오컬트 로맨스. 영화 '오싹한 연애' 원작. tvN, 2026년 7월 18일 첫방(매주 토·일), 넷플릭스 동시 공개.",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "the-east-palace",
+    "title": "동궁",
+    "engTitle": "The East Palace",
+    "schedule": {},
+    "isBatch": true,
+    "releaseDate": "2026-07-17",
+    "batchEp": "8부작 전편 공개 (7/17~)",
+    "episodes": "8부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "남주혁, 노윤서, 조승우",
+    "synopsis": "다크 판타지·미스터리 사극. 궁을 배경으로 벌어지는 기이한 사건을 쫓는 이야기. Netflix, 2026년 7월 17일 전편 공개.",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "four-hands-two-sonatas",
+    "title": "포핸즈",
+    "engTitle": "Four Hands, Two Sonatas",
+    "schedule": {
+      "2026-08-29": "EP 01 (첫방)",
+      "2026-08-30": "EP 02",
+      "2026-09-05": "EP 03",
+      "2026-09-06": "EP 04",
+      "2026-09-12": "EP 05",
+      "2026-09-13": "EP 06",
+      "2026-09-19": "EP 07",
+      "2026-09-20": "EP 08",
+      "2026-09-26": "EP 09",
+      "2026-09-27": "EP 10"
+    },
+    "isBatch": false,
+    "episodes": "12부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "송강, 이준영, 장규리",
+    "synopsis": "음악 천재들만 모인 예술고등학교에서 만난 청춘들의 우정과 사랑, 경쟁, 성장을 그리는 드라마. tvN, 2026년 8월 29일 첫방(매주 토·일), 넷플릭스 동시 공개.",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "the-scandal",
+    "title": "스캔들",
+    "engTitle": "The Scandal",
+    "schedule": {},
+    "isBatch": true,
+    "releaseDate": "2026-09-18",
+    "batchEp": "8부작 전편 공개 예정 (9/18~, 주간 공개 가능성도 있음 - 미확정)",
+    "episodes": "8부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "손예진, 지창욱, 나나",
+    "synopsis": "2003년 영화 '스캔들 - 조선남녀상열지사' 원작. 조선 후기를 배경으로 한 위험한 관계와 유혹의 이야기. Netflix, 2026년 9월 18일(추석 연휴) 공개 예정.",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com"
       }
     ],
     "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
@@ -928,6 +1170,7 @@ function renderWeek() {
 }
 
 const WEEKDAY_KR = ['일', '월', '화', '수', '목', '금', '토'];
+const WEEKDAY_KR_MON_FIRST = ['월', '화', '수', '목', '금', '토', '일'];
 
 // 월간 보기: 그 달에 실제로 방영/공개되는 날짜만 세로 목록으로 — 빈 날짜는 아예 목록에 안 나오는 게
 // 한 달 전체를 훑어보기에 가장 효율적이라고 판단해 달력 격자 대신 "일정표" 형태로 만든다.
@@ -975,6 +1218,41 @@ function renderMonth() {
         monthList.appendChild(group);
     });
 
+    // 넓은 화면용 달력 격자 (CSS가 폭에 따라 이거 아니면 위의 monthList 중 하나만 보여준다)
+    const monthCalendar = document.getElementById('monthCalendar');
+    monthCalendar.innerHTML = '';
+    WEEKDAY_KR_MON_FIRST.forEach(kr => {
+        const el = document.createElement('div');
+        el.className = 'cal-weekday';
+        el.textContent = kr;
+        monthCalendar.appendChild(el);
+    });
+    const firstDate = new Date(info.year, info.month - 1, 1, 12);
+    const leadingBlanks = (firstDate.getDay() + 6) % 7; // 월요일 시작 기준 앞쪽 빈 칸 수
+    const totalCells = Math.ceil((leadingBlanks + info.daysInMonth) / 7) * 7;
+    for (let i = 0; i < totalCells; i++) {
+        const dayNum = i - leadingBlanks + 1;
+        const cell = document.createElement('div');
+        if (dayNum < 1 || dayNum > info.daysInMonth) {
+            cell.className = 'cal-cell cal-blank';
+            monthCalendar.appendChild(cell);
+            continue;
+        }
+        const dateISO = `${info.year}-${String(info.month).padStart(2, '0')}-${String(dayNum).padStart(2, '0')}`;
+        cell.className = 'cal-cell' + (dateISO === todayISO ? ' cal-today' : '');
+        const num = document.createElement('div');
+        num.className = 'cal-daynum';
+        num.textContent = dayNum;
+        cell.appendChild(num);
+        const entriesWrap = document.createElement('div');
+        entriesWrap.className = 'cal-entries';
+        (byDate[dateISO] || []).forEach(({ drama, epText }) => {
+            entriesWrap.appendChild(makeDramaCard(drama, epText));
+        });
+        cell.appendChild(entriesWrap);
+        monthCalendar.appendChild(cell);
+    }
+
     document.getElementById('monthLabel').textContent = info.label;
     document.getElementById('btnMonthPrev').disabled = currentMonthOffset <= MONTH_OFFSET_MIN;
     document.getElementById('btnMonthNext').disabled = currentMonthOffset >= MONTH_OFFSET_MAX;
@@ -998,6 +1276,12 @@ function switchView(view) {
         if (notice) notice.style.display = '';
         renderWeek();
     }
+}
+
+// 제목을 누르면 언제나 "이번 주" 첫 화면으로 돌아간다
+function goHome() {
+    currentWeekOffset = 0;
+    switchView('week');
 }
 
 // Highlight today's column (다음 주를 보고 있을 땐 오늘이 그 주에 없으므로 하이라이트 없음)
@@ -1067,6 +1351,7 @@ function renderGrid() {
         COLUMNS.forEach(day => {
             const td = document.createElement('td');
             const dateInfo = weekDates.find(w => w.key === day); // undefined for 'Batch'
+            if (dateInfo && dateInfo.isToday) td.classList.add('today-col');
             // 모바일에서는 표가 세로 목록으로 바뀌는데, 이때 각 칸 앞에 붙일 요일 라벨.
             td.dataset.label = dateInfo ? dateInfo.label.replace(' 오늘', '') : '전편 공개';
 
