@@ -7,57 +7,26 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Courier+Prime:wght@400;700&display=swap');
 
-        /* 종이에 타이핑된 듯한 미니멀 모노크롬 — 버튼/카드의 입체 효과와 브랜드 컬러를 걷어내고
-           단일 잉크색(ink) + 종이색(paper)만으로 구성한다. 3개 테마 모두 이 규칙을 공유한다. */
+        /* 타이핑된 듯한 미니멀 모노크롬. 페이지는 살짝 회색, 에피소드 박스(카드)는 흰색으로 대비를 준다. */
         :root {
-            --bg-color: #f7f5ef;
+            --bg-color: #e8e7e2;
             --text-color: #1c1c1a;
             --text-soft: rgba(28, 28, 26, 0.55);
-            --border-color: rgba(28, 28, 26, 0.4);
+            --border-color: rgba(28, 28, 26, 0.35);
             --border-strong: #1c1c1a;
-            --cell-bg: #f7f5ef;
+            --cell-bg: #ffffff;
             --header-bg: transparent;
-            --sticky-bg: #f7f5ef;
+            --sticky-bg: transparent;
             --btn-bg: transparent;
             --btn-text: #1c1c1a;
             --link-color: #1c1c1a;
-            --today-glow: none;
-            --today-bg: rgba(28, 28, 26, 0.05);
+            --today-bg: rgba(28, 28, 26, 0.06);
             --today-border: #1c1c1a;
             --font-main: 'Nanum Gothic Coding', 'Courier Prime', monospace;
             --font-heading: 'Nanum Gothic Coding', 'Courier Prime', monospace;
             --font-mono: 'Courier Prime', 'Nanum Gothic Coding', monospace;
             --shadow: none;
             --transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-            --empty-pattern: none;
-        }
-
-        [data-theme="crt"] {
-            --bg-color: #0a0a0a;
-            --text-color: #cfcfcf;
-            --text-soft: rgba(207, 207, 207, 0.55);
-            --border-color: rgba(207, 207, 207, 0.35);
-            --border-strong: #cfcfcf;
-            --cell-bg: #0a0a0a;
-            --sticky-bg: #0a0a0a;
-            --btn-text: #cfcfcf;
-            --link-color: #cfcfcf;
-            --today-bg: rgba(207, 207, 207, 0.08);
-            --today-border: #cfcfcf;
-        }
-
-        [data-theme="modern"] {
-            --bg-color: #16181d;
-            --text-color: #e8e8e6;
-            --text-soft: rgba(232, 232, 230, 0.55);
-            --border-color: rgba(232, 232, 230, 0.35);
-            --border-strong: #e8e8e6;
-            --cell-bg: #16181d;
-            --sticky-bg: #16181d;
-            --btn-text: #e8e8e6;
-            --link-color: #e8e8e6;
-            --today-bg: rgba(232, 232, 230, 0.08);
-            --today-border: #e8e8e6;
         }
 
         * {
@@ -268,11 +237,11 @@
 
         /* Drama Card inside grid cell — 박스 없이 여백과 굵기 대비로만 구획한다 */
         .drama-card {
-            background-color: transparent;
+            background-color: var(--cell-bg);
             border: none;
             border-radius: 0;
-            padding: 0;
-            margin-bottom: 10px;
+            padding: 7px 8px;
+            margin-bottom: 6px;
             display: flex;
             flex-direction: column;
             gap: 4px;
@@ -280,12 +249,6 @@
 
         .drama-card:last-child {
             margin-bottom: 0;
-        }
-
-        /* 한 칸에 여러 작품이 겹칠 때(예: 코코와 수요일) 서로 구분되도록 가는 구분선을 위에 하나 긋는다 */
-        .drama-card + .drama-card {
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
         }
 
         .drama-card-footer {
@@ -459,41 +422,6 @@
             opacity: 0.7;
         }
 
-        /* Roulette Modal */
-        .roulette-container {
-            text-align: center;
-            padding: 16px;
-            width: 100%;
-        }
-
-        .slot-machine {
-            font-size: 1.6rem;
-            height: 54px;
-            overflow: hidden;
-            border: 1px solid var(--border-strong);
-            background-color: var(--bg-color);
-            margin: 16px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-heading);
-            font-weight: 700;
-            color: var(--text-color);
-        }
-
-        .slot-poster {
-            width: 160px;
-            margin: 0 auto 12px;
-            display: none;
-        }
-
-        .slot-poster img {
-            width: 100%;
-            border-radius: 0;
-            border: 1px solid var(--border-color);
-            filter: grayscale(1) contrast(1.05);
-        }
-
         @media print {
             .toolbar, .modal-overlay { display: none !important; }
             body { background: white; color: black; }
@@ -510,7 +438,7 @@
         }
     </style>
 </head>
-<body data-theme="paper">
+<body>
 
 <div class="container">
     <h1>
@@ -530,10 +458,6 @@
         </div>
         <div class="controls">
             <button id="btnWatchlist">내 리스트만 보기</button>
-            <button id="btnRoulette">오늘 뭐 보지?</button>
-            <button id="btnThemePaper" title="단축키: 1">종이</button>
-            <button id="btnThemeCRT" title="단축키: 2">다크</button>
-            <button id="btnThemeModern" title="단축키: 3">네이비</button>
         </div>
     </div>
 
@@ -576,26 +500,6 @@
             </p>
             <div id="modalPlatforms" style="margin-top: 12px;"></div>
             <button class="modal-star-btn" id="modalToggleStar">내 리스트에 추가</button>
-        </div>
-    </div>
-</div>
-
-<!-- Roulette Modal -->
-<div class="modal-overlay" id="rouletteModal">
-    <div class="modal-content" style="max-width: 420px; display: block;">
-        <button class="modal-close" id="closeRoulette">&times;</button>
-        <div class="roulette-container">
-            <h2 style="font-family: var(--font-heading); margin-top: 0;">오늘의 K-드라마 채널 서핑</h2>
-            <div class="slot-poster" id="roulettePoster">
-                <img id="rouletteImg" src="" alt="Drama Poster" onerror="this.src='https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80'">
-            </div>
-            <div class="slot-machine">
-                <div class="slot-content" id="slotContent">준비 완료!</div>
-            </div>
-            <div id="rouletteLinks" style="margin-bottom: 12px; display: none;"></div>
-            <button id="btnSpin" style="background:transparent; color:var(--text-color); padding:8px 0; border:none; border-bottom:1px solid var(--border-strong); border-radius:0; font-family:var(--font-heading); cursor:pointer; font-size:1rem; font-weight:bold;">
-                채널 돌리기
-            </button>
         </div>
     </div>
 </div>
@@ -783,7 +687,6 @@ const COLUMNS = [...DAY_ORDER, "Batch"];
 
 // State
 let myWatchlist = JSON.parse(localStorage.getItem('kdrama_watchlist')) || [];
-let currentTheme = localStorage.getItem('kdrama_theme') || 'paper';
 let showOnlyWatchlist = false;
 let currentWeekOffset = 0; // 0 = 이번 주. 음수 = 지난 주들, 양수 = 다음 주들.
 const WEEK_OFFSET_MIN = -4; // 최대 한 달 전
@@ -867,7 +770,6 @@ const btnWatchlist = document.getElementById('btnWatchlist');
 
 // Init
 function init() {
-    setTheme(currentTheme);
     updateWeekBadge();
     renderWeek();
     setupListeners();
@@ -923,18 +825,6 @@ function highlightToday() {
         headerToday.classList.add('today-col');
         headerToday.innerHTML += ' <span class="today-badge">오늘</span>';
     }
-}
-
-// Theme management
-function setTheme(theme) {
-    currentTheme = theme;
-    document.body.setAttribute('data-theme', theme);
-    localStorage.setItem('kdrama_theme', theme);
-
-    document.querySelectorAll('.controls button[id^="btnTheme"]').forEach(btn => btn.classList.remove('active'));
-    if (theme === 'paper') document.getElementById('btnThemePaper').classList.add('active');
-    if (theme === 'crt') document.getElementById('btnThemeCRT').classList.add('active');
-    if (theme === 'modern') document.getElementById('btnThemeModern').classList.add('active');
 }
 
 // Render the grid for the currently selected week (currentWeekOffset)
@@ -1080,57 +970,6 @@ function openModal(id) {
 
 function closeModal() {
     document.getElementById('detailsModal').classList.remove('show');
-    document.getElementById('rouletteModal').classList.remove('show');
-}
-
-// Roulette Logic
-let rouletteInterval;
-function openRoulette() {
-    const modal = document.getElementById('rouletteModal');
-    modal.classList.add('show');
-    document.getElementById('roulettePoster').style.display = 'none';
-    document.getElementById('rouletteLinks').style.display = 'none';
-    document.getElementById('slotContent').textContent = '버튼을 눌러주세요!';
-}
-
-function spinRoulette() {
-    const btn = document.getElementById('btnSpin');
-    btn.disabled = true;
-    const slot = document.getElementById('slotContent');
-    const posterDiv = document.getElementById('roulettePoster');
-    const posterImg = document.getElementById('rouletteImg');
-    const linksDiv = document.getElementById('rouletteLinks');
-    
-    posterDiv.style.display = 'none';
-    linksDiv.style.display = 'none';
-    
-    let pool = DRAMA_DATA;
-    let ticks = 0;
-    const maxTicks = 18;
-    clearInterval(rouletteInterval);
-    
-    rouletteInterval = setInterval(() => {
-        const randomDrama = pool[Math.floor(Math.random() * pool.length)];
-        slot.textContent = randomDrama.title;
-        ticks++;
-        if(ticks >= maxTicks) {
-            clearInterval(rouletteInterval);
-            const finalDrama = pool[Math.floor(Math.random() * pool.length)];
-            slot.textContent = finalDrama.title;
-            posterImg.src = finalDrama.poster;
-            posterDiv.style.display = 'block';
-            
-            // Render quick links
-            linksDiv.innerHTML = finalDrama.platforms.map(p => `
-                <a href="${p.url}" target="_blank" rel="noopener" style="display:inline-block; margin:2px 10px 2px 0; padding:0; background:transparent; color:var(--text-color); text-decoration:underline; text-underline-offset:3px; border:none; border-radius:0; font-weight:bold; font-size:0.85rem;">
-                    ${p.label}
-                </a>
-            `).join('');
-            linksDiv.style.display = 'block';
-            
-            btn.disabled = false;
-        }
-    }, 75);
 }
 
 // Event Listeners
@@ -1154,14 +993,7 @@ function setupListeners() {
         renderWeek();
     });
 
-    document.getElementById('btnThemePaper').addEventListener('click', () => setTheme('paper'));
-    document.getElementById('btnThemeCRT').addEventListener('click', () => setTheme('crt'));
-    document.getElementById('btnThemeModern').addEventListener('click', () => setTheme('modern'));
-
     document.getElementById('closeModal').addEventListener('click', closeModal);
-    document.getElementById('closeRoulette').addEventListener('click', closeModal);
-    document.getElementById('btnRoulette').addEventListener('click', openRoulette);
-    document.getElementById('btnSpin').addEventListener('click', spinRoulette);
 
     document.querySelectorAll('.modal-overlay').forEach(overlay => {
         overlay.addEventListener('click', (e) => {
@@ -1172,9 +1004,6 @@ function setupListeners() {
     // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
         if(e.key === 'Escape') closeModal();
-        if(e.key === '1') setTheme('paper');
-        if(e.key === '2') setTheme('crt');
-        if(e.key === '3') setTheme('modern');
         if(e.key === 'ArrowLeft') document.getElementById('btnWeekPrev').click();
         if(e.key === 'ArrowRight') document.getElementById('btnWeekNext').click();
     });
