@@ -538,7 +538,31 @@
             opacity: 0.7;
         }
 
+        .site-footer {
+            margin-top: 32px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border-color);
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-soft);
+        }
+
+        .site-footer a {
+            color: var(--text-soft);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .site-footer a:hover {
+            color: var(--text-color);
+        }
+
+        .site-footer-sep {
+            margin: 0 8px;
+        }
+
         @media print {
+            .site-footer { display: none !important; }
             .toolbar, .modal-overlay { display: none !important; }
             body { background: white; color: black; }
             .grid-container { box-shadow: none; border: none; }
@@ -649,6 +673,12 @@
         <div id="monthCalendar" class="month-calendar"></div>
         <div id="monthList"></div>
     </div>
+
+    <footer class="site-footer">
+        <a href="https://www.threads.net/@sunghwan.yoon" target="_blank" rel="noopener">Threads @sunghwan.yoon</a>
+        <span class="site-footer-sep">·</span>
+        <a href="https://bsky.app/profile/jacopast.com" target="_blank" rel="noopener">Bluesky @jacopast.com</a>
+    </footer>
 </div>
 
 <!-- Details Modal -->
