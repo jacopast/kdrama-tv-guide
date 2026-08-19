@@ -20,12 +20,12 @@ HTML_PATH = BASE_DIR / "kdrama_tv_guide.html"
 WEEK_OFFSETS = [-1, 0, 1]  # 지난 주, 이번 주, 다음 주. 범위를 늘리고 싶으면 이 리스트만 바꾸면 됨 (예: [-1, 0, 1, 2]).
 
 CHANNELS = [
-  {"id": "Netflix", "badge": "🔴 `CH 01 NETFLIX`", "name": "Netflix", "num": "CH 01", "cssClass": "ch-num-netflix"},
-  {"id": "Viki", "badge": "🔷 `CH 02 RAKUTEN VIKI`", "name": "Rakuten Viki", "num": "CH 02", "cssClass": "ch-num-viki"},
-  {"id": "Hulu", "badge": "🟢 `CH 03 HULU / D+`", "name": "Hulu / Disney+", "num": "CH 03", "cssClass": "ch-num-hulu"},
-  {"id": "Prime Video", "badge": "🔹 `CH 04 PRIME VIDEO`", "name": "Prime Video", "num": "CH 04", "cssClass": "ch-num-prime"},
-  {"id": "Apple TV+", "badge": "⚪ `CH 05 APPLE TV+`", "name": "Apple TV+", "num": "CH 05", "cssClass": "ch-num-apple"},
-  {"id": "Kocowa", "badge": "🟦 `CH 06 KOCOWA+`", "name": "KOCOWA+", "num": "CH 06", "cssClass": "ch-num-kocowa"}
+  {"id": "Netflix", "badge": "`CH 01 NETFLIX`", "name": "Netflix", "num": "CH 01", "cssClass": "ch-num-netflix"},
+  {"id": "Viki", "badge": "`CH 02 RAKUTEN VIKI`", "name": "Rakuten Viki", "num": "CH 02", "cssClass": "ch-num-viki"},
+  {"id": "Hulu", "badge": "`CH 03 HULU / D+`", "name": "Hulu / Disney+", "num": "CH 03", "cssClass": "ch-num-hulu"},
+  {"id": "Prime Video", "badge": "`CH 04 PRIME VIDEO`", "name": "Prime Video", "num": "CH 04", "cssClass": "ch-num-prime"},
+  {"id": "Apple TV+", "badge": "`CH 05 APPLE TV+`", "name": "Apple TV+", "num": "CH 05", "cssClass": "ch-num-apple"},
+  {"id": "Kocowa", "badge": "`CH 06 KOCOWA+`", "name": "KOCOWA+", "num": "CH 06", "cssClass": "ch-num-kocowa"}
 ]
 
 _KR_DAY_NAMES = [("Mon", "월"), ("Tue", "화"), ("Wed", "수"), ("Thu", "목"), ("Fri", "금"), ("Sat", "토"), ("Sun", "일")]
@@ -45,7 +45,7 @@ def build_week(offset=0, today=None):
         d = monday + timedelta(days=i)
         label = f"{kr} ({d.month}/{d.day})"
         if d.date() == today.date():
-            label += " 📍오늘"
+            label += " (오늘)"
         days.append((key, d.date(), label))
 
     iso_year, iso_week, _ = monday.isocalendar()
@@ -105,19 +105,19 @@ def generate_markdown(dramas, weeks):
     md.append("tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]")
     md.append("---\n")
 
-    md.append("# 📺 미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)")
-    md.append(f"> **📅 기준 주차**: `{current_week['title']}` | **기준 시간**: `{now_str}`\n")
+    md.append("# 미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)")
+    md.append(f"> **기준 주차**: `{current_week['title']}` | **기준 시간**: `{now_str}`\n")
 
     md.append("> [!TIP] **레트로 웹 대시보드 바로가기**")
-    md.append("> 브라우저에서 90년대 신문 주간 편성표 및 CRT 텔레텍스트 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:")
-    md.append("> 👉 **[kdrama_tv_guide.html](file:///" + str(HTML_PATH) + ")** 파일을 더블 클릭하여 열어보세요!\n")
+    md.append("> 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:")
+    md.append("> **[kdrama_tv_guide.html](file:///" + str(HTML_PATH) + ")** 파일을 더블 클릭하여 열어보세요!\n")
 
     # 1. Authentic Clean TV Guide Matrix Table — one per week
     for week in weeks:
-        md.append(f"## 📰 {week['label']} 편성표 ({week['title']})")
+        md.append(f"## {week['label']} 편성표 ({week['title']})")
         md.append("각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.\n")
 
-        header_cols = ["채널 / OTT"] + [label for _, _, label in week["days"]] + ["⚡ 전편 공개 (Batch)"]
+        header_cols = ["채널 / OTT"] + [label for _, _, label in week["days"]] + ["전편 공개 (Batch)"]
         md.append("| " + " | ".join(header_cols) + " |")
         md.append("| " + " | ".join([":---"] + [":---"] * 8) + " |")
 
@@ -161,7 +161,7 @@ def generate_markdown(dramas, weeks):
     md.append("---\n")
 
     # 2. Detailed Program Directory (모든 주 통합 — 채널별 현재/예정 프로그램 한눈에 보기)
-    md.append("## 🏢 채널별 프로그램 상세 (Live + Upcoming)")
+    md.append("## 채널별 프로그램 상세 (Live + Upcoming)")
     for ch in CHANNELS:
         ch_dramas = [d for d in dramas if drama_platform_for(d, ch["id"])]
         md.append(f"### {ch['badge']}")
@@ -172,7 +172,7 @@ def generate_markdown(dramas, weeks):
         for d in ch_dramas:
             plat_url = drama_platform_for(d, ch["id"])["url"]
             if d.get("isBatch"):
-                badge = f" `[⚡전편 공개: {d.get('releaseDate', '?')}~]`"
+                badge = f" `[전편 공개: {d.get('releaseDate', '?')}~]`"
             else:
                 air_dates = sorted(d.get("schedule", {}).keys())
                 badge = f" `[방영일: {', '.join(air_dates)}]`" if air_dates else ""

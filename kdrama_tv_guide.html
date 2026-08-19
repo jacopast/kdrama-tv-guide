@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📺 K-Drama US Streaming TV Guide | 미국 K-드라마 주간 편성표</title>
+    <title>K-Drama US Streaming TV Guide | 미국 K-드라마 주간 편성표</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Courier+Prime:wght@400;700&display=swap');
 
@@ -83,21 +83,19 @@
             font-family: var(--font-heading);
             font-weight: 700;
             margin-top: 0;
-            margin-bottom: 12px;
-            font-size: 1.7rem;
-            letter-spacing: 0.02em;
+            margin-bottom: 18px;
+            font-size: 1.55rem;
+            letter-spacing: 0.03em;
             display: flex;
-            align-items: center;
+            align-items: baseline;
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 10px;
-            border-bottom: 2px solid var(--border-strong);
-            padding-bottom: 10px;
         }
 
         .live-clock-badge {
             font-family: var(--font-mono);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: normal;
             color: var(--text-soft);
         }
@@ -107,83 +105,83 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 12px;
-            gap: 10px;
+            margin-bottom: 16px;
+            gap: 16px;
             flex-wrap: wrap;
         }
 
         .search-box input {
-            padding: 7px 10px;
+            padding: 4px 0;
             border: none;
-            border-bottom: 1px solid var(--border-color);
             background-color: transparent;
             color: var(--text-color);
             font-family: var(--font-main);
             border-radius: 0;
-            width: 320px;
+            width: 300px;
             outline: none;
             font-size: 0.9rem;
         }
 
-        .search-box input:focus {
-            border-bottom-color: var(--border-strong);
+        .search-box input::placeholder {
+            color: var(--text-soft);
         }
 
         .controls {
             display: flex;
-            gap: 4px;
+            gap: 18px;
             flex-wrap: wrap;
         }
 
         .controls button {
-            background-color: var(--btn-bg);
-            color: var(--btn-text);
-            border: 1px solid var(--border-color);
-            padding: 6px 11px;
+            background: none;
+            color: var(--text-soft);
+            border: none;
+            padding: 2px 0;
             cursor: pointer;
             font-family: var(--font-heading);
             font-size: 0.85rem;
-            border-radius: 0;
+            letter-spacing: 0.02em;
         }
 
         .controls button:hover {
-            border-color: var(--border-strong);
+            color: var(--text-color);
         }
 
         .controls button.active {
-            background: var(--text-color);
-            color: var(--bg-color);
-            border-color: var(--text-color);
+            color: var(--text-color);
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 4px;
         }
 
         /* Stats Bar */
         .stats-bar {
             display: flex;
-            gap: 0;
-            margin-bottom: 14px;
-            padding: 8px 0;
+            gap: 28px;
+            margin-bottom: 20px;
+            padding: 0;
             background-color: transparent;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
             font-family: var(--font-mono);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             flex-wrap: wrap;
         }
 
         .stat-item {
             background-color: transparent;
-            padding: 4px 14px;
-            border-right: 1px solid var(--border-color);
+            padding: 0;
+            color: var(--text-soft);
         }
 
-        .stat-item:last-child {
-            border-right: none;
+        .stat-item span {
+            color: var(--text-color);
+            font-weight: 700;
+            font-size: 0.95rem;
         }
 
         /* TV Guide Grid */
         .grid-container {
             overflow-x: auto;
-            border: 1px solid var(--border-strong);
+            border: none;
             background-color: var(--bg-color);
             border-radius: 0;
             margin-bottom: 20px;
@@ -197,33 +195,43 @@
         }
 
         th, td {
-            border: 1px solid var(--border-color);
-            padding: 8px 6px;
+            border: none;
+            padding: 10px 8px;
             vertical-align: top;
+        }
+
+        tbody td {
+            border-top: 1px solid var(--border-color);
         }
 
         th {
             background-color: var(--header-bg);
-            border-bottom: 2px solid var(--border-strong);
+            border-bottom: 1.5px solid var(--border-strong);
             position: sticky;
             top: 0;
             z-index: 10;
             font-family: var(--font-heading);
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             text-align: center;
         }
 
         th.channel-th {
-            width: 160px;
+            width: 150px;
             left: 0;
             z-index: 20;
             background-color: var(--sticky-bg);
+            text-align: left;
         }
 
         th.batch-th {
             width: 180px;
             font-style: italic;
+            border-left: 1px solid var(--border-color);
+        }
+
+        td.batch-cell {
+            border-left: 1px solid var(--border-color);
         }
 
         /* Sticky First Column for Channels */
@@ -234,30 +242,28 @@
             z-index: 5;
             font-family: var(--font-mono);
             font-weight: bold;
-            text-align: center;
-            border-right: 2px solid var(--border-strong);
+            text-align: left;
+            border-right: 1px solid var(--border-strong);
             vertical-align: middle;
-            padding: 10px 6px;
+            padding: 10px 8px;
         }
 
         .ch-logo {
-            display: inline-block;
-            padding: 1px 5px;
+            display: block;
+            padding: 0;
             border-radius: 0;
-            color: var(--text-color);
+            color: var(--text-soft);
             background: transparent;
-            font-size: 0.75rem;
-            margin-top: 4px;
-            font-weight: 700;
+            font-size: 0.72rem;
+            margin-top: 2px;
+            font-weight: 400;
             letter-spacing: 0.03em;
-            border: 1px solid var(--border-color);
+            border: none;
         }
 
         /* Today Highlight */
         .today-col {
             background-color: var(--today-bg) !important;
-            border-left: 1px solid var(--today-border) !important;
-            border-right: 1px solid var(--today-border) !important;
         }
 
         .today-badge {
@@ -279,47 +285,43 @@
             padding-top: 15px;
         }
 
-        /* Drama Card inside grid cell */
+        /* Drama Card inside grid cell — 박스 없이 여백과 굵기 대비로만 구획한다 */
         .drama-card {
-            background-color: var(--cell-bg);
-            border: 1px solid var(--border-color);
+            background-color: transparent;
+            border: none;
             border-radius: 0;
-            padding: 6px;
-            margin-bottom: 6px;
+            padding: 0;
+            margin-bottom: 10px;
             display: flex;
             flex-direction: column;
-            gap: 3px;
+            gap: 2px;
         }
 
         .drama-card:last-child {
             margin-bottom: 0;
         }
 
-        .drama-card:hover {
-            background-color: var(--today-bg);
-        }
-
         .drama-card-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: baseline;
             gap: 4px;
         }
 
         .drama-title-link {
             font-family: var(--font-heading);
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: 700;
             color: var(--link-color);
-            text-decoration: underline;
-            text-underline-offset: 2px;
+            text-decoration: none;
             cursor: pointer;
-            line-height: 1.15;
+            line-height: 1.2;
             word-break: keep-all;
         }
 
         .drama-title-link:hover {
-            text-decoration-thickness: 2px;
+            text-decoration: underline;
+            text-underline-offset: 3px;
         }
 
         .card-actions {
@@ -337,6 +339,12 @@
             font-size: 0.8rem;
             color: var(--text-color);
             opacity: 0.6;
+        }
+
+        .btn-info {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            letter-spacing: 0.02em;
         }
 
         .btn-icon:hover {
@@ -357,12 +365,11 @@
         .ep-tag {
             display: inline-block;
             font-size: 0.72rem;
-            font-weight: bold;
+            font-weight: normal;
             font-family: var(--font-mono);
             background: transparent;
-            border: 1px solid var(--border-color);
-            padding: 1px 4px;
-            border-radius: 0;
+            border: none;
+            padding: 0;
             color: var(--text-soft);
             align-self: flex-start;
         }
@@ -399,18 +406,21 @@
         .modal-close {
             position: absolute;
             top: 10px;
-            right: 10px;
+            right: 14px;
             background: transparent;
-            color: var(--text-color);
-            border: 1px solid var(--border-color);
-            font-size: 1rem;
+            color: var(--text-soft);
+            border: none;
+            font-size: 1.3rem;
             cursor: pointer;
-            width: 26px;
-            height: 26px;
-            line-height: 22px;
+            width: auto;
+            height: auto;
+            line-height: 1;
             text-align: center;
             font-weight: normal;
-            border-radius: 0;
+        }
+
+        .modal-close:hover {
+            color: var(--text-color);
         }
 
         .modal-close:hover {
@@ -444,20 +454,22 @@
         }
 
         .modal-star-btn {
-            background-color: var(--btn-bg);
+            background-color: transparent;
             color: var(--btn-text);
-            border: 1px solid var(--border-color);
-            padding: 6px 12px;
+            border: none;
+            padding: 0;
             border-radius: 0;
             cursor: pointer;
-            margin-top: 12px;
+            margin-top: 14px;
             font-family: var(--font-heading);
             font-weight: bold;
             font-size: 0.9rem;
+            text-decoration: underline;
+            text-underline-offset: 3px;
         }
 
         .modal-star-btn:hover {
-            border-color: var(--border-strong);
+            opacity: 0.7;
         }
 
         /* Roulette Modal */
@@ -517,7 +529,7 @@
 <div class="container">
     <h1>
         <div>
-            <span>📺 K-DRAMA US STREAMING TV GUIDE</span>
+            <span>K-DRAMA US STREAMING TV GUIDE</span>
             <span style="font-size: 0.85rem; color: var(--text-soft); font-family: var(--font-mono); font-weight: normal; margin-left: 8px;" id="weekBadge">[기준 주차 계산 중...]</span>
         </div>
         <span class="live-clock-badge" id="liveClock">US EST --:--:--</span>
@@ -529,12 +541,12 @@
         </div>
         <div class="controls" id="weekToggle">
             <button id="btnWeekLast">◀ 지난 주</button>
-            <button id="btnWeekThis" class="active">📅 이번 주</button>
+            <button id="btnWeekThis" class="active">이번 주</button>
             <button id="btnWeekNext">▶ 다음 주</button>
         </div>
         <div class="controls">
-            <button id="btnWatchlist">⭐ 내 리스트만 보기</button>
-            <button id="btnRoulette">🎲 오늘 뭐 보지?</button>
+            <button id="btnWatchlist">내 리스트만 보기</button>
+            <button id="btnRoulette">오늘 뭐 보지?</button>
             <button id="btnThemePaper" title="단축키: 1">종이</button>
             <button id="btnThemeCRT" title="단축키: 2">다크</button>
             <button id="btnThemeModern" title="단축키: 3">네이비</button>
@@ -542,10 +554,10 @@
     </div>
 
     <div class="stats-bar" id="statsBar">
-        <div class="stat-item">📊 이 주 방영작: <span id="statTotal">0</span>편</div>
-        <div class="stat-item">📅 오늘(<span id="statTodayKr"></span>) 방영: <span id="statToday">0</span>편</div>
-        <div class="stat-item">⭐ 내 찜 목록: <span id="statWatchlist">0</span>편</div>
-        <div class="stat-item">📊 평균 시청률: <span id="statRating">0.0</span>%</div>
+        <div class="stat-item">이 주 방영작 <span id="statTotal">0</span>편</div>
+        <div class="stat-item">오늘(<span id="statTodayKr"></span>) 방영 <span id="statToday">0</span>편</div>
+        <div class="stat-item">내 찜 목록 <span id="statWatchlist">0</span>편</div>
+        <div class="stat-item">평균 시청률 <span id="statRating">0.0</span>%</div>
     </div>
 
     <div class="grid-container">
@@ -560,7 +572,7 @@
                     <th data-day="Fri">금 (8/21)</th>
                     <th data-day="Sat">토 (8/22)</th>
                     <th data-day="Sun">일 (8/23)</th>
-                    <th class="batch-th" data-day="Batch">⚡ 전편 공개 (BATCH)</th>
+                    <th class="batch-th" data-day="Batch">전편 공개</th>
                 </tr>
             </thead>
             <tbody id="guideBody">
@@ -580,13 +592,13 @@
         <div class="modal-info">
             <h2 id="modalTitle"></h2>
             <p id="modalEngTitle" style="color: var(--text-soft); margin-top: -2px; font-family: var(--font-mono); font-size: 0.85rem;"></p>
-            <p style="margin: 8px 0;"><strong>방영 회차:</strong> <span id="modalEpisodes"></span> | <strong>시청률:</strong> 📊 <span id="modalRating"></span></p>
+            <p style="margin: 8px 0;"><strong>방영 회차:</strong> <span id="modalEpisodes"></span> | <strong>시청률:</strong> <span id="modalRating"></span></p>
             <p style="margin: 6px 0;"><strong>출연진:</strong> <span id="modalCast"></span></p>
             <p style="margin: 8px 0; background: transparent; padding: 8px 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); border-radius: 0;">
                 <strong>줄거리:</strong> <span id="modalSynopsis"></span>
             </p>
             <div id="modalPlatforms" style="margin-top: 12px;"></div>
-            <button class="modal-star-btn" id="modalToggleStar">⭐ 내 리스트에 추가</button>
+            <button class="modal-star-btn" id="modalToggleStar">내 리스트에 추가</button>
         </div>
     </div>
 </div>
@@ -596,7 +608,7 @@
     <div class="modal-content" style="max-width: 420px; display: block;">
         <button class="modal-close" id="closeRoulette">&times;</button>
         <div class="roulette-container">
-            <h2 style="font-family: var(--font-heading); margin-top: 0;">🎲 오늘의 K-드라마 채널 서핑</h2>
+            <h2 style="font-family: var(--font-heading); margin-top: 0;">오늘의 K-드라마 채널 서핑</h2>
             <div class="slot-poster" id="roulettePoster">
                 <img id="rouletteImg" src="" alt="Drama Poster" onerror="this.src='https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80'">
             </div>
@@ -604,8 +616,8 @@
                 <div class="slot-content" id="slotContent">준비 완료!</div>
             </div>
             <div id="rouletteLinks" style="margin-bottom: 12px; display: none;"></div>
-            <button id="btnSpin" style="background:transparent; color:var(--text-color); padding:10px 24px; border:1px solid var(--border-strong); border-radius:0; font-family:var(--font-heading); cursor:pointer; font-size:1rem; font-weight:bold;">
-                채널 돌리기 (SPIN!) 🔄
+            <button id="btnSpin" style="background:transparent; color:var(--text-color); padding:8px 0; border:none; border-bottom:1px solid var(--border-strong); border-radius:0; font-family:var(--font-heading); cursor:pointer; font-size:1rem; font-weight:bold;">
+                채널 돌리기
             </button>
         </div>
     </div>
@@ -891,7 +903,7 @@ function updateWeekBadge() {
     const [my, mm, md] = monday.dateISO.split('-').map(Number);
     const weekOfMonth = Math.ceil(md / 7);
     const [, sm, sd] = sunday.dateISO.split('-').map(Number);
-    el.textContent = `[📅 ${my}년 ${mm}월 ${weekOfMonth}주차: ${mm}/${md} ~ ${sm}/${sd} 주간 본방]`;
+    el.textContent = `[${my}년 ${mm}월 ${weekOfMonth}주차: ${mm}/${md} ~ ${sm}/${sd} 주간 본방]`;
 }
 
 // 이번 주 / 다음 주 전환 시 헤더 날짜·오늘 하이라이트·그리드를 한 번에 다시 그린다.
@@ -916,7 +928,7 @@ function highlightToday() {
     const headerToday = document.querySelector(`th[data-day="${todayStr}"]`);
     if (headerToday) {
         headerToday.classList.add('today-col');
-        headerToday.innerHTML += ' <span class="today-badge">📍 오늘</span>';
+        headerToday.innerHTML += ' <span class="today-badge">오늘</span>';
     }
 }
 
@@ -1001,11 +1013,11 @@ function renderGrid() {
                     card.innerHTML = `
                         <div class="drama-card-header">
                             <a href="${platObj.url}" target="_blank" rel="noopener" class="drama-title-link" title="${drama.title} 바로 시청 (새 창)">
-                                ▶ ${drama.title}
+                                ${drama.title}
                             </a>
                             <div class="card-actions">
                                 <button class="btn-icon btn-star ${isStarred ? '' : 'empty'}" onclick="toggleStar('${drama.id}', event)" title="내 리스트">${isStarred ? '★' : '☆'}</button>
-                                <button class="btn-icon" onclick="openModal('${drama.id}')" title="상세 정보">ℹ️</button>
+                                <button class="btn-icon btn-info" onclick="openModal('${drama.id}')" title="상세 정보">정보</button>
                             </div>
                         </div>
                         <div class="ep-tag">${epText}</div>
@@ -1076,16 +1088,17 @@ function openModal(id) {
         a.href = p.url;
         a.target = '_blank';
         a.rel = 'noopener';
-        a.textContent = `▶ ${p.label} 시청하기`;
-        a.style.display = 'inline-block';
-        a.style.margin = '4px 6px 0 0';
-        a.style.padding = '5px 10px';
+        a.textContent = `${p.label} 시청하기`;
+        a.style.display = 'block';
+        a.style.margin = '4px 0';
+        a.style.padding = '0';
         a.style.backgroundColor = 'transparent';
         a.style.color = 'var(--text-color)';
         a.style.textDecoration = 'underline';
+        a.style.textUnderlineOffset = '3px';
         a.style.borderRadius = '0';
         a.style.fontWeight = 'bold';
-        a.style.border = '1px solid var(--border-color)';
+        a.style.border = 'none';
         pContainer.appendChild(a);
     });
 
@@ -1136,14 +1149,14 @@ function spinRoulette() {
         if(ticks >= maxTicks) {
             clearInterval(rouletteInterval);
             const finalDrama = pool[Math.floor(Math.random() * pool.length)];
-            slot.textContent = `🎉 ${finalDrama.title}`;
+            slot.textContent = finalDrama.title;
             posterImg.src = finalDrama.poster;
             posterDiv.style.display = 'block';
             
             // Render quick links
             linksDiv.innerHTML = finalDrama.platforms.map(p => `
-                <a href="${p.url}" target="_blank" rel="noopener" style="display:inline-block; margin:2px 4px; padding:4px 8px; background:transparent; color:var(--text-color); text-decoration:underline; border:1px solid var(--border-color); border-radius:0; font-weight:bold; font-size:0.85rem;">
-                    ▶ ${p.label}
+                <a href="${p.url}" target="_blank" rel="noopener" style="display:inline-block; margin:2px 10px 2px 0; padding:0; background:transparent; color:var(--text-color); text-decoration:underline; text-underline-offset:3px; border:none; border-radius:0; font-weight:bold; font-size:0.85rem;">
+                    ${p.label}
                 </a>
             `).join('');
             linksDiv.style.display = 'block';
