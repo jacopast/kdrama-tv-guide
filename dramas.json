@@ -387,5 +387,27 @@
     ],
     "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
     "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "the-auditors",
+    "title": "감사합니다",
+    "engTitle": "The Auditors",
+    "schedule": {},
+    "isBatch": true,
+    "releaseDate": "2026-08-11",
+    "batchEp": "12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)",
+    "episodes": "12부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "신하균, 이정하, 진구, 조아람",
+    "synopsis": "건설 대기업의 비리·횡령을 파헤치는 감사팀 이야기. 2024년 tvN에서 방영 완결된 작품으로 신작은 아니지만, 2026년 8월 11일 넷플릭스 미국에 새로 라이브러리 추가됨.",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com/title/81914864"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
   }
 ]

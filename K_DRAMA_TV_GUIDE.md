@@ -7,7 +7,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 8월 3주차 (8/17 ~ 8/23)` | **기준 시간**: `2026-08-20 18:34 EST`
+> **기준 주차**: `2026년 8월 3주차 (8/17 ~ 8/23)` | **기준 시간**: `2026-08-20 18:36 EST`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
@@ -18,7 +18,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 
 | 채널 / OTT | 월 (8/10) | 화 (8/11) | 수 (8/12) | 목 (8/13) | 금 (8/14) | 토 (8/15) | 일 (8/16) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`CH 01 NETFLIX`** | - | - | - | - | - | [오싹한 연애](https://www.netflix.com) `EP 09` | [오싹한 연애](https://www.netflix.com) `EP 10` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[동궁](https://www.netflix.com) `8부작 전편 공개 (7/17~)` |
+| **`CH 01 NETFLIX`** | - | [감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` | - | - | - | [오싹한 연애](https://www.netflix.com) `EP 09` | [오싹한 연애](https://www.netflix.com) `EP 10` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[동궁](https://www.netflix.com) `8부작 전편 공개 (7/17~)` |
 | **`CH 02 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 03` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 04` | - | - |
 | **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
 | **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
@@ -30,7 +30,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 
 | 채널 / OTT | 월 (8/17) | 화 (8/18) | 수 (8/19) | 목 (8/20) (오늘) | 금 (8/21) | 토 (8/22) | 일 (8/23) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`CH 01 NETFLIX`** | - | - | - | - | - | [오싹한 연애](https://www.netflix.com) `EP 11` | [오싹한 연애](https://www.netflix.com) `EP 12 (최종화)` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)` |
+| **`CH 01 NETFLIX`** | - | - | - | - | - | [오싹한 연애](https://www.netflix.com) `EP 11` | [오싹한 연애](https://www.netflix.com) `EP 12 (최종화)` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
 | **`CH 02 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 05` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 06` | - | - |
 | **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
 | **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
@@ -42,7 +42,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 
 | 채널 / OTT | 월 (8/24) | 화 (8/25) | 수 (8/26) | 목 (8/27) | 금 (8/28) | 토 (8/29) | 일 (8/30) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`CH 01 NETFLIX`** | - | - | - | - | [들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)` | [포핸즈](https://www.netflix.com) `EP 01 (첫방)` | [포핸즈](https://www.netflix.com) `EP 02` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)` |
+| **`CH 01 NETFLIX`** | - | - | - | - | [들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)` | [포핸즈](https://www.netflix.com) `EP 01 (첫방)` | [포핸즈](https://www.netflix.com) `EP 02` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
 | **`CH 02 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 07` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 08` | - | - |
 | **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
 | **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
@@ -69,6 +69,8 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 은퇴 후 평범한 삶을 살던 전직 특수요원 강무가 도난당한 국보를 되찾아달라는 대통령의 부탁을 받으며 아내 미선과 함께 가장 위험한 임무에 휘말리는 액션 코미디. 전작 '미션 크로스' 속편. 넷플릭스, 2026년 3분기(7~9월) 공개 확정이나 정확한 날짜는 아직 미발표 — 발표되는 대로 9/1 자리를 실제 날짜로 교체 예정.
 - **[가능한 사랑 (원제 미정) (Possible Love)](https://www.netflix.com)** `[전편 공개: 2026-11-01~]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 영화 | 전도연, 설경구, 소지섭, 조여정
   > 이창동 감독('버닝')의 넷플릭스 데뷔작. 극장에서 먼저 개봉(9/23)한 뒤 넷플릭스 스트리밍은 11월경으로 알려졌으나 정확한 날짜는 미발표 — 발표되는 대로 11/1 자리를 실제 날짜로 교체 예정.
+- **[감사합니다 (The Auditors)](https://www.netflix.com/title/81914864)** `[전편 공개: 2026-08-11~]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 신하균, 이정하, 진구, 조아람
+  > 건설 대기업의 비리·횡령을 파헤치는 감사팀 이야기. 2024년 tvN에서 방영 완결된 작품으로 신작은 아니지만, 2026년 8월 11일 넷플릭스 미국에 새로 라이브러리 추가됨.
 
 ### `CH 02 HULU / D+`
 - **[재벌X형사 시즌 2 (Flex x Cop Season 2)](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a)** `[방영일: 2026-08-07, 2026-08-08, 2026-08-14, 2026-08-15, 2026-08-21, 2026-08-22, 2026-08-28, 2026-08-29, 2026-09-04, 2026-09-05, 2026-09-11, 2026-09-12, 2026-09-18, 2026-09-19]` `(확인: 2026-08-19)` — 📊 시청률 5.8% (2회, 닐슨코리아 전국가구) | 14부작 | 안보현, 정은채, 강상준, 김신비
