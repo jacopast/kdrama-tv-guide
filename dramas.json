@@ -346,7 +346,7 @@
   },
   {
     "id": "mission-cross-2",
-    "title": "크로스 2 (미션 크로스 2)",
+    "title": "크로스 2",
     "engTitle": "Mission: Cross 2",
     "schedule": {},
     "isBatch": true,
@@ -445,7 +445,7 @@
   },
   {
     "id": "a-shop-for-killers-s2",
-    "title": "청부살인자의 가게 시즌 2",
+    "title": "킬러들의 쇼핑몰 시즌2",
     "engTitle": "A Shop for Killers: Season 2",
     "schedule": {
       "2026-07-22": "EP 01-02 (첫방)",
