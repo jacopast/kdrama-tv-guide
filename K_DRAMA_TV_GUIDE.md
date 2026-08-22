@@ -7,7 +7,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 8월 3주차 (8/17 ~ 8/23)` | **기준 시간**: `2026-08-22 14:00 EST`
+> **기준 주차**: `2026년 8월 3주차 (8/17 ~ 8/23)` | **기준 시간**: `2026-08-22 14:06 EST`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
@@ -19,7 +19,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | 채널 / OTT | 월 (8/10) | 화 (8/11) | 수 (8/12) | 목 (8/13) | 금 (8/14) | 토 (8/15) | 일 (8/16) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | [감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` | - | - | - | [오싹한 연애](https://www.netflix.com) `EP 09`<br>[아파트](https://www.netflix.com) `EP 11` | [오싹한 연애](https://www.netflix.com) `EP 10`<br>[아파트](https://www.netflix.com) `EP 12 (최종화)` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[동궁](https://www.netflix.com) `8부작 전편 공개 (7/17~)` |
-| **`CH 02 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 03` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 04` | - | - |
+| **`CH 02 HULU / D+`** | - | - | [청부살인자의 가게 시즌 2](https://www.hulu.com) `EP 07-08 (최종화)` | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 03` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 04` | - | - |
 | **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
 | **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
 | **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 03` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 04` | - | - | - | - | - | - |
@@ -79,6 +79,8 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 재벌 3세 낙하산 형사 진이수가 새 파트너와 함께 더 거대한 재벌가 부패 카르텔을 쫓는 통쾌한 수사극. SBS, 2026년 8월 7일 첫방(매주 금·토), 시즌1 뛰어넘는 화제성으로 출발.
 - **[결혼의 완성 (더 허즈번드) (The Husband)](https://www.hulu.com)** `[방영일: 2026-07-04, 2026-07-05, 2026-07-11, 2026-07-12, 2026-07-18, 2026-07-19, 2026-07-25, 2026-07-26, 2026-08-01, 2026-08-02, 2026-08-08, 2026-08-09]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 남궁민, 이설, 김대명, 이상희
   > 이혼을 논의하던 신경외과 병원장 강태주 앞에서 다음 날 아내 고세윤이 납치당하며 극한의 위기에 빠지는 이야기. KBS2, 2026년 7월 4일 첫방(매주 토·일).
+- **[청부살인자의 가게 시즌 2 (A Shop for Killers: Season 2)](https://www.hulu.com)** `[방영일: 2026-07-22, 2026-07-29, 2026-08-05, 2026-08-12]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 8부작 | 이동욱, 김혜준, 현리, 오카다 마사키
+  > 무기상점을 물려받은 지안과 죽음에서 돌아온 진만이, 자존심을 구긴 바빌론이 해외 용병까지 끌어들여 복수에 나서면서 다시 맞서 싸우는 액션 스릴러. Disney+ 글로벌/Hulu 미국, 2026년 7월 22일 첫방(매주 수요일 2회차씩 공개).
 
 ### `CH 03 PRIME VIDEO`
 *편성 없음*

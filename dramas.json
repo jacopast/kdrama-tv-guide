@@ -442,5 +442,30 @@
     ],
     "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
     "verifiedAt": "2026-08-19"
+  },
+  {
+    "id": "a-shop-for-killers-s2",
+    "title": "청부살인자의 가게 시즌 2",
+    "engTitle": "A Shop for Killers: Season 2",
+    "schedule": {
+      "2026-07-22": "EP 01-02 (첫방)",
+      "2026-07-29": "EP 03-04",
+      "2026-08-05": "EP 05-06",
+      "2026-08-12": "EP 07-08 (최종화)"
+    },
+    "isBatch": false,
+    "episodes": "8부작",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "cast": "이동욱, 김혜준, 현리, 오카다 마사키",
+    "synopsis": "무기상점을 물려받은 지안과 죽음에서 돌아온 진만이, 자존심을 구긴 바빌론이 해외 용병까지 끌어들여 복수에 나서면서 다시 맞서 싸우는 액션 스릴러. Disney+ 글로벌/Hulu 미국, 2026년 7월 22일 첫방(매주 수요일 2회차씩 공개).",
+    "platforms": [
+      {
+        "name": "Hulu",
+        "label": "Hulu / Disney+",
+        "url": "https://www.hulu.com"
+      }
+    ],
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "verifiedAt": "2026-08-19"
   }
 ]
