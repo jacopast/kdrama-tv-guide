@@ -345,28 +345,6 @@
     "verifiedAt": "2026-08-19"
   },
   {
-    "id": "mission-cross-2",
-    "title": "크로스 2",
-    "engTitle": "Mission: Cross 2",
-    "schedule": {},
-    "isBatch": true,
-    "releaseDate": "2026-09-01",
-    "batchEp": "영화 스트리밍 공개 (미정)",
-    "episodes": "영화",
-    "rating": "TBD (다음 확인 시 업데이트)",
-    "cast": "황정민, 염정아, 정만식, 이호철",
-    "synopsis": "은퇴 후 평범한 삶을 살던 전직 특수요원 강무가 도난당한 국보를 되찾아달라는 대통령의 부탁을 받으며 아내 미선과 함께 가장 위험한 임무에 휘말리는 액션 코미디. 전작 '미션 크로스' 속편. 넷플릭스, 2026년 3분기(7~9월) 공개 확정이나 정확한 날짜는 아직 미발표 — 발표되는 대로 9/1 자리를 실제 날짜로 교체 예정.",
-    "platforms": [
-      {
-        "name": "Netflix",
-        "label": "Netflix US",
-        "url": "https://www.netflix.com"
-      }
-    ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
-    "verifiedAt": "2026-08-19"
-  },
-  {
     "id": "possible-love",
     "title": "가능한 사랑 (원제 미정)",
     "engTitle": "Possible Love",

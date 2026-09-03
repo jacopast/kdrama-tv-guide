@@ -2,42 +2,18 @@
 project: Playground
 type: guide
 status: active_weekly
-week: 2026-W34 (08/17 ~ 08/23)
+week: 2026-W36 (08/31 ~ 09/06)
 tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 8월 3주차 (8/17 ~ 8/23)` | **기준 시간**: `2026-08-22 14:14 EST`
+> **기준 주차**: `2026년 8월 5주차 (8/31 ~ 9/6)` | **기준 시간**: `2026-09-02 23:35 EST`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
-> **[kdrama_tv_guide.html](file:////Users/sunghwanyoon/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsvault/플레이그라운드/드라마/kdrama_tv_guide.html)** 파일을 더블 클릭하여 열어보세요!
+> **[kdrama_tv_guide.html](file:////Users/sunghwanyoon/AG/git/kdrama-tv-guide/kdrama_tv_guide.html)** 파일을 더블 클릭하여 열어보세요!
 
-## 지난 주 편성표 (2026년 8월 2주차 (8/10 ~ 8/16))
-각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
-
-| 채널 / OTT | 월 (8/10) | 화 (8/11) | 수 (8/12) | 목 (8/13) | 금 (8/14) | 토 (8/15) | 일 (8/16) | 전편 공개 (Batch) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`CH 01 NETFLIX`** | - | [감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` | - | - | - | [오싹한 연애](https://www.netflix.com) `EP 09`<br>[아파트](https://www.netflix.com) `EP 11` | [오싹한 연애](https://www.netflix.com) `EP 10`<br>[아파트](https://www.netflix.com) `EP 12 (최종화)` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[동궁](https://www.netflix.com) `8부작 전편 공개 (7/17~)` |
-| **`CH 02 HULU / D+`** | - | - | [킬러들의 쇼핑몰 시즌2](https://www.hulu.com) `EP 07-08 (최종화)` | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 03` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 04` | - | - |
-| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
-| **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
-| **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 03` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 04` | - | - | - | - | - | - |
-| **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 01` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 02` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 03` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 04` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 05` | - | - | - |
-
-## 이번 주 편성표 (2026년 8월 3주차 (8/17 ~ 8/23))
-각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
-
-| 채널 / OTT | 월 (8/17) | 화 (8/18) | 수 (8/19) | 목 (8/20) | 금 (8/21) | 토 (8/22) (오늘) | 일 (8/23) | 전편 공개 (Batch) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`CH 01 NETFLIX`** | - | - | - | - | - | [오싹한 연애](https://www.netflix.com) `EP 11` | [오싹한 연애](https://www.netflix.com) `EP 12 (최종화)` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
-| **`CH 02 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 05` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 06` | - | - |
-| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
-| **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
-| **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 05` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 06` | - | - | - | - | - | - |
-| **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 06` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 07` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 01 (첫방)`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 08` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 02`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 09` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 10` | - | - | - |
-
-## 다음 주 편성표 (2026년 8월 4주차 (8/24 ~ 8/30))
+## 지난 주 편성표 (2026년 8월 4주차 (8/24 ~ 8/30))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
 | 채널 / OTT | 월 (8/24) | 화 (8/25) | 수 (8/26) | 목 (8/27) | 금 (8/28) | 토 (8/29) | 일 (8/30) | 전편 공개 (Batch) |
@@ -48,6 +24,30 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
 | **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 07` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 08` | - | - | - | - | - | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 11` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 12` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 03`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 13` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 04`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 14` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 15` | - | - | - |
+
+## 이번 주 편성표 (2026년 8월 5주차 (8/31 ~ 9/6))
+각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
+
+| 채널 / OTT | 월 (8/31) | 화 (9/1) | 수 (9/2) (오늘) | 목 (9/3) | 금 (9/4) | 토 (9/5) | 일 (9/6) | 전편 공개 (Batch) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **`CH 01 NETFLIX`** | - | - | - | - | - | [포핸즈](https://www.netflix.com) `EP 03` | [포핸즈](https://www.netflix.com) `EP 04` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
+| **`CH 02 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 09` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 10` | - | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
+| **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
+| **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 09` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 10` | - | - | - | - | - | - |
+| **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 16` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 17` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 05`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 18` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 06`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 19` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 20` | - | - | - |
+
+## 다음 주 편성표 (2026년 9월 1주차 (9/7 ~ 9/13))
+각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
+
+| 채널 / OTT | 월 (9/7) | 화 (9/8) | 수 (9/9) | 목 (9/10) | 금 (9/11) | 토 (9/12) | 일 (9/13) | 전편 공개 (Batch) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **`CH 01 NETFLIX`** | - | - | - | - | - | [포핸즈](https://www.netflix.com) `EP 05` | [포핸즈](https://www.netflix.com) `EP 06` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
+| **`CH 02 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 11` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 12` | - | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
+| **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
+| **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 11` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 12 (최종화)` | - | - | - | - | - | - |
+| **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 21` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 22` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 07`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 23` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 08`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 24` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 25` | - | - | - |
 
 ---
 
@@ -65,8 +65,6 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 음악 천재들만 모인 예술고등학교에서 만난 청춘들의 우정과 사랑, 경쟁, 성장을 그리는 드라마. tvN, 2026년 8월 29일 첫방(매주 토·일), 넷플릭스 동시 공개.
 - **[스캔들 (The Scandal)](https://www.netflix.com)** `[전편 공개: 2026-09-18~]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 8부작 | 손예진, 지창욱, 나나
   > 2003년 영화 '스캔들 - 조선남녀상열지사' 원작. 조선 후기를 배경으로 한 위험한 관계와 유혹의 이야기. Netflix, 2026년 9월 18일(추석 연휴) 공개 예정. 전편 동시 공개인지 주간 공개인지는 아직 넷플릭스가 공식 발표하지 않음(미확정).
-- **[크로스 2 (Mission: Cross 2)](https://www.netflix.com)** `[전편 공개: 2026-09-01~]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 영화 | 황정민, 염정아, 정만식, 이호철
-  > 은퇴 후 평범한 삶을 살던 전직 특수요원 강무가 도난당한 국보를 되찾아달라는 대통령의 부탁을 받으며 아내 미선과 함께 가장 위험한 임무에 휘말리는 액션 코미디. 전작 '미션 크로스' 속편. 넷플릭스, 2026년 3분기(7~9월) 공개 확정이나 정확한 날짜는 아직 미발표 — 발표되는 대로 9/1 자리를 실제 날짜로 교체 예정.
 - **[가능한 사랑 (원제 미정) (Possible Love)](https://www.netflix.com)** `[전편 공개: 2026-11-01~]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 영화 | 전도연, 설경구, 소지섭, 조여정
   > 이창동 감독('버닝')의 넷플릭스 데뷔작. 극장에서 먼저 개봉(9/23)한 뒤 넷플릭스 스트리밍은 11월경으로 알려졌으나 정확한 날짜는 미발표 — 발표되는 대로 11/1 자리를 실제 날짜로 교체 예정.
 - **[감사합니다 (The Auditors)](https://www.netflix.com/title/81914864)** `[전편 공개: 2026-08-11~]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 신하균, 이정하, 진구, 조아람
