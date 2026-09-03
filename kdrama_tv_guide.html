@@ -334,6 +334,7 @@
                 font-size: 0.6rem;
             }
             .cal-entries .card-actions { display: none; }
+            .cal-entries .drama-thumb { display: none; }
         }
 
         /* Empty Cell */
@@ -365,6 +366,52 @@
 
         .drama-card:last-child {
             margin-bottom: 0;
+        }
+
+        .drama-card-main {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            min-width: 0;
+        }
+
+        .drama-thumb {
+            width: 42px;
+            height: 58px;
+            flex: 0 0 42px;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            border-radius: 0;
+            background: var(--cell-bg-starred);
+            cursor: pointer;
+        }
+
+        .drama-thumb img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(0.22) contrast(1.05);
+        }
+
+        .drama-thumb:hover img,
+        .drama-thumb:focus-visible img {
+            filter: grayscale(0) contrast(1.05);
+        }
+
+        .drama-thumb:focus-visible {
+            outline: 1px solid var(--border-strong);
+            outline-offset: 2px;
+        }
+
+        .drama-thumb.is-missing {
+            display: none;
+        }
+
+        .drama-card-content {
+            min-width: 0;
+            flex: 1;
         }
 
         .drama-card-footer {
@@ -1484,13 +1531,20 @@ function makeDramaCard(drama, epText, opts = {}) {
     const card = document.createElement('div');
     card.className = 'drama-card' + (isStarred ? ' starred' : '');
     card.innerHTML = `
-        <span class="drama-title-link" role="button" tabindex="0" onclick="openModal('${drama.id}')" onkeydown="if(event.key==='Enter')openModal('${drama.id}')" title="${drama.title} 상세 정보">
-            ${drama.title}
-        </span>
-        <div class="drama-card-footer">
-            <span class="ep-tag">${metaText}</span>
-            <div class="card-actions">
-                <button class="btn-icon btn-star ${isStarred ? '' : 'empty'}" onclick="toggleStar('${drama.id}', event)" title="내 리스트">${isStarred ? '★' : '☆'}</button>
+        <div class="drama-card-main">
+            <button class="drama-thumb" type="button" onclick="openModal('${drama.id}')" title="${drama.title} 상세 정보">
+                <img src="${drama.poster}" alt="${drama.title} 포스터" loading="lazy" onerror="this.closest('.drama-thumb').classList.add('is-missing')">
+            </button>
+            <div class="drama-card-content">
+                <span class="drama-title-link" role="button" tabindex="0" onclick="openModal('${drama.id}')" onkeydown="if(event.key==='Enter')openModal('${drama.id}')" title="${drama.title} 상세 정보">
+                    ${drama.title}
+                </span>
+                <div class="drama-card-footer">
+                    <span class="ep-tag">${metaText}</span>
+                    <div class="card-actions">
+                        <button class="btn-icon btn-star ${isStarred ? '' : 'empty'}" onclick="toggleStar('${drama.id}', event)" title="내 리스트">${isStarred ? '★' : '☆'}</button>
+                    </div>
+                </div>
             </div>
         </div>
     `;
