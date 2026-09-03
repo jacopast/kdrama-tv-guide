@@ -334,7 +334,6 @@
                 font-size: 0.6rem;
             }
             .cal-entries .card-actions { display: none; }
-            .cal-entries .drama-thumb { display: none; }
         }
 
         /* Empty Cell */
@@ -366,52 +365,6 @@
 
         .drama-card:last-child {
             margin-bottom: 0;
-        }
-
-        .drama-card-main {
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-            min-width: 0;
-        }
-
-        .drama-thumb {
-            width: 42px;
-            height: 58px;
-            flex: 0 0 42px;
-            padding: 0;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-            border-radius: 0;
-            background: var(--cell-bg-starred);
-            cursor: pointer;
-        }
-
-        .drama-thumb img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(0.22) contrast(1.05);
-        }
-
-        .drama-thumb:hover img,
-        .drama-thumb:focus-visible img {
-            filter: grayscale(0) contrast(1.05);
-        }
-
-        .drama-thumb:focus-visible {
-            outline: 1px solid var(--border-strong);
-            outline-offset: 2px;
-        }
-
-        .drama-thumb.is-missing {
-            display: none;
-        }
-
-        .drama-card-content {
-            min-width: 0;
-            flex: 1;
         }
 
         .drama-card-footer {
@@ -551,6 +504,10 @@
             border: 1px solid var(--border-color);
             object-fit: cover;
             filter: grayscale(1) contrast(1.05);
+        }
+
+        .modal-poster.is-missing {
+            display: none;
         }
 
         .modal-info {
@@ -733,7 +690,7 @@
     <div class="modal-content">
         <button class="modal-close" id="closeModal">&times;</button>
         <div class="modal-poster">
-            <img id="modalImg" src="" alt="Poster" onerror="this.src='https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80'">
+            <img id="modalImg" src="" alt="">
         </div>
         <div class="modal-info">
             <h2 id="modalTitle"></h2>
@@ -781,7 +738,7 @@ const DRAMA_DATA = [
         "url": "https://www.viki.com/tv/41633c-my-bias-my-boss"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://asianwiki.com/images/1/1e/My_Bias_My_Boss-p01.jpg",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -814,7 +771,7 @@ const DRAMA_DATA = [
         "url": "https://www.kocowa.com/en_us/main"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://assets.pikiran-rakyat.com/crop/0x0%3A0x0/1200x675/photo/2026/08/20/2155862668.jpeg",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -849,7 +806,7 @@ const DRAMA_DATA = [
         "url": "https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://img.sbs.co.kr/newsnet/etv/upload/2026/07/22/30001075934_1280.jpg",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -908,7 +865,7 @@ const DRAMA_DATA = [
         "url": "https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -930,7 +887,7 @@ const DRAMA_DATA = [
         "url": "https://www.netflix.com/title/82048302"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://etbilarabi.com/sites/default/files/inline-images/2026/mslsl-our-sticky-love-hb-khlwy-altwfy.jpeg",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -952,7 +909,7 @@ const DRAMA_DATA = [
         "url": "https://www.netflix.com/title/81991749"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://www.allkpop.com/upload/2026/08/content/141322/1786728168-image.png",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -985,7 +942,7 @@ const DRAMA_DATA = [
         "url": "https://www.hulu.com"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://images.plex.tv/photo?scale=2&size=large-480&url=https%3A%2F%2Fmetadata-static.plex.tv%2F5%2Fgracenote%2F5bcc58470f758e33c4e83ff9511b8888.jpg",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -1018,7 +975,7 @@ const DRAMA_DATA = [
         "url": "https://www.netflix.com"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://image.tmdb.org/t/p/w780/yBNT4FtxHyUjrnQmmZ3kkXMov4u.jpg",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -1040,7 +997,7 @@ const DRAMA_DATA = [
         "url": "https://www.netflix.com"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://images.ctfassets.net/4cd45et68cgf/fEf9iQCQByZzy3GLxfEzd/c13e6585c6bfc891b2beac6ec6f1863b/be15fc87-133c-4416-a1e9-3083dd04457c.jpg?w=2000",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -1071,7 +1028,7 @@ const DRAMA_DATA = [
         "url": "https://www.netflix.com"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://cineplay-cms.s3.amazonaws.com/article-images/2026-07-03/78d97186-ad41-452b-aeb0-1b42c1f51a01.jpg?v=2",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -1093,7 +1050,7 @@ const DRAMA_DATA = [
         "url": "https://www.netflix.com"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -1115,7 +1072,7 @@ const DRAMA_DATA = [
         "url": "https://www.netflix.com"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -1137,7 +1094,7 @@ const DRAMA_DATA = [
         "url": "https://www.netflix.com/title/81914864"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -1170,7 +1127,7 @@ const DRAMA_DATA = [
         "url": "https://www.netflix.com"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "",
     "verifiedAt": "2026-08-19"
   },
   {
@@ -1195,7 +1152,7 @@ const DRAMA_DATA = [
         "url": "https://www.hulu.com"
       }
     ],
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+    "poster": "https://static.promediateknologi.id/crop/0x0%3A0x0/1200x0/webp/photo/p3/75/2026/05/26/popline-9-1464594548.jpg",
     "verifiedAt": "2026-08-19"
   }
 ];
@@ -1531,20 +1488,13 @@ function makeDramaCard(drama, epText, opts = {}) {
     const card = document.createElement('div');
     card.className = 'drama-card' + (isStarred ? ' starred' : '');
     card.innerHTML = `
-        <div class="drama-card-main">
-            <button class="drama-thumb" type="button" onclick="openModal('${drama.id}')" title="${drama.title} 상세 정보">
-                <img src="${drama.poster}" alt="${drama.title} 포스터" loading="lazy" onerror="this.closest('.drama-thumb').classList.add('is-missing')">
-            </button>
-            <div class="drama-card-content">
-                <span class="drama-title-link" role="button" tabindex="0" onclick="openModal('${drama.id}')" onkeydown="if(event.key==='Enter')openModal('${drama.id}')" title="${drama.title} 상세 정보">
-                    ${drama.title}
-                </span>
-                <div class="drama-card-footer">
-                    <span class="ep-tag">${metaText}</span>
-                    <div class="card-actions">
-                        <button class="btn-icon btn-star ${isStarred ? '' : 'empty'}" onclick="toggleStar('${drama.id}', event)" title="내 리스트">${isStarred ? '★' : '☆'}</button>
-                    </div>
-                </div>
+        <span class="drama-title-link" role="button" tabindex="0" onclick="openModal('${drama.id}')" onkeydown="if(event.key==='Enter')openModal('${drama.id}')" title="${drama.title} 상세 정보">
+            ${drama.title}
+        </span>
+        <div class="drama-card-footer">
+            <span class="ep-tag">${metaText}</span>
+            <div class="card-actions">
+                <button class="btn-icon btn-star ${isStarred ? '' : 'empty'}" onclick="toggleStar('${drama.id}', event)" title="내 리스트">${isStarred ? '★' : '☆'}</button>
             </div>
         </div>
     `;
@@ -1664,7 +1614,12 @@ function openModal(id) {
     document.getElementById('modalRating').textContent = drama.rating;
     document.getElementById('modalCast').textContent = drama.cast;
     document.getElementById('modalSynopsis').textContent = drama.synopsis;
-    document.getElementById('modalImg').src = drama.poster;
+    const modalPoster = document.querySelector('.modal-poster');
+    const modalImg = document.getElementById('modalImg');
+    modalPoster.classList.toggle('is-missing', !drama.poster);
+    modalImg.alt = drama.poster ? `${drama.title} 포스터` : '';
+    modalImg.onerror = () => modalPoster.classList.add('is-missing');
+    modalImg.src = drama.poster || '';
 
     // Platforms
     const pContainer = document.getElementById('modalPlatforms');
