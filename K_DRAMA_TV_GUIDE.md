@@ -7,11 +7,11 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 9월 1주차 (9/7 ~ 9/13)` | **기준 시간**: `2026-09-07 07:04 EST`
+> **기준 주차**: `2026년 9월 1주차 (9/7 ~ 9/13)` | **기준 시간**: `2026-09-11 05:32 EST`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
-> **[kdrama_tv_guide.html](file:////Users/sunghwanyoon/AG/git/kdrama-tv-guide/kdrama_tv_guide.html)** 파일을 더블 클릭하여 열어보세요!
+> **[kdrama_tv_guide.html](file:////home/user/kdrama-tv-guide/kdrama_tv_guide.html)** 파일을 더블 클릭하여 열어보세요!
 
 ## 지난 주 편성표 (2026년 8월 5주차 (8/31 ~ 9/6))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
@@ -28,10 +28,10 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ## 이번 주 편성표 (2026년 9월 1주차 (9/7 ~ 9/13))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
-| 채널 / OTT | 월 (9/7) (오늘) | 화 (9/8) | 수 (9/9) | 목 (9/10) | 금 (9/11) | 토 (9/12) | 일 (9/13) | 전편 공개 (Batch) |
+| 채널 / OTT | 월 (9/7) | 화 (9/8) | 수 (9/9) | 목 (9/10) | 금 (9/11) (오늘) | 토 (9/12) | 일 (9/13) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | - | [포핸즈](https://www.netflix.com) `EP 05` | [포핸즈](https://www.netflix.com) `EP 06` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
-| **`CH 02 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 11` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 12` | - | - |
+| **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 01-02 (첫방)` | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 11` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 12` | - | - |
 | **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
 | **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
 | **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 11` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 12 (최종화)` | - | - | - | - | - | - |
@@ -43,7 +43,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | 채널 / OTT | 월 (9/14) | 화 (9/15) | 수 (9/16) | 목 (9/17) | 금 (9/18) | 토 (9/19) | 일 (9/20) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | [스캔들](https://www.netflix.com) `8부작 전편 공개` | [포핸즈](https://www.netflix.com) `EP 07` | [포핸즈](https://www.netflix.com) `EP 08` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
-| **`CH 02 HULU / D+`** | - | - | - | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 13` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 14 (최종화)` | - | - |
+| **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 03-04` | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 13` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 14 (최종화)` | - | - |
 | **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
 | **`CH 04 APPLE TV+`** | - | - | - | - | - | - | - | - |
 | **`CH 05 RAKUTEN VIKI`** | - | - | - | - | - | - | - | - |
@@ -79,6 +79,8 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 이혼을 논의하던 신경외과 병원장 강태주 앞에서 다음 날 아내 고세윤이 납치당하며 극한의 위기에 빠지는 이야기. KBS2, 2026년 7월 4일 첫방(매주 토·일).
 - **[킬러들의 쇼핑몰 시즌2 (A Shop for Killers: Season 2)](https://www.hulu.com)** `[방영일: 2026-07-22, 2026-07-29, 2026-08-05, 2026-08-12]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 8부작 | 이동욱, 김혜준, 현리, 오카다 마사키
   > 무기상점을 물려받은 지안과 죽음에서 돌아온 진만이, 자존심을 구긴 바빌론이 해외 용병까지 끌어들여 복수에 나서면서 다시 맞서 싸우는 액션 스릴러. Disney+ 글로벌/Hulu 미국, 2026년 7월 22일 첫방(매주 수요일 2회차씩 공개).
+- **[메이드 인 코리아 시즌 2 (Made in Korea Season 2)](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8)** `[방영일: 2026-09-09, 2026-09-16, 2026-09-23]` `(확인: 2026-09-11)` — 📊 시청률 TBD (스트리밍 오리지널, 닐슨코리아 시청률 미집계) | 6부작 (최종 시즌) | 현빈, 정우성, 우도환
+  > 9년 뒤 KCIA 부국장 자리까지 오른 백기태(현빈)와, 그를 무너뜨리기 위해 돌아온 검사 장건영(정우성)의 마지막 대결. Disney+·Hulu 오리지널, 2026년 9월 9일 공개(매주 수요일 2화씩), 시즌1(2025년 12월 24일 공개)에 이은 최종 시즌.
 
 ### `CH 03 PRIME VIDEO`
 *편성 없음*
