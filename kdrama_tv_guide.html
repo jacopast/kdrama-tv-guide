@@ -674,7 +674,7 @@
             <button id="btnMonthToday" class="week-today-link" style="display:none;">오늘로</button>
         </div>
         <div class="controls">
-            <button id="btnWatchlist">내 리스트만 보기</button>
+            <button id="btnWatchlist" aria-pressed="false">내 리스트만 보기</button>
         </div>
     </div>
 
@@ -1887,6 +1887,20 @@ function updateLiveClock() {
 const guideBody = document.getElementById('guideBody');
 const btnWatchlist = document.getElementById('btnWatchlist');
 
+function setWatchlistFilter(enabled) {
+    showOnlyWatchlist = enabled;
+    btnWatchlist.classList.toggle('active', enabled);
+    btnWatchlist.textContent = enabled ? '전체 보기' : '내 리스트만 보기';
+    btnWatchlist.setAttribute('aria-pressed', String(enabled));
+
+    if (currentView === 'month') {
+        renderMonth();
+    } else {
+        renderGrid();
+        paintTodayColumnFill();
+    }
+}
+
 // Init
 function init() {
     updateWeekBadge();
@@ -2347,14 +2361,7 @@ function closeModal() {
 // Event Listeners
 function setupListeners() {
     btnWatchlist.addEventListener('click', () => {
-        showOnlyWatchlist = !showOnlyWatchlist;
-        btnWatchlist.classList.toggle('active');
-        if (currentView === 'month') {
-            renderMonth();
-        } else {
-            renderGrid();
-            paintTodayColumnFill(); // 리스트 필터로 행 수가 바뀌면 채널 행 높이도 바뀌므로 다시 계산
-        }
+        setWatchlistFilter(!showOnlyWatchlist);
     });
 
     document.getElementById('btnViewWeek').addEventListener('click', () => switchView('week'));
