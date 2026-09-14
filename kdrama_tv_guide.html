@@ -345,6 +345,12 @@
             padding-top: 15px;
         }
 
+        /* 채널은 (isChannelActive로) 전체적으로는 활성이어도, 하필 지금 보는 그 주엔 걸린 게 하나도
+           없을 수 있다(예: 이 주엔 미국·한국 겸용 채널이 먼저 채가서 이 채널 칸이 전부 비는 경우).
+           그런 주엔 그 채널 행 자체를 접는다 — 예전엔 모바일 폭에서만 이렇게 접혔는데, 데스크탑에서도
+           똑같이 다 "-"인 행이 계속 남아있던 걸 이제 다 같이 접는다. */
+        tr.row-empty { display: none; }
+
         /* Drama Card inside grid cell — 박스 없이 여백과 굵기 대비로만 구획한다 */
         /* td 자체가 흰 박스이므로 카드는 배경 없이 내용만 담는다. 한 칸에 여러 작품이 있으면 여백으로만 구분한다. */
         /* 카드 자체가 박스: 평소엔 옅은 회색, 내가 찜한 작품만 흰색으로 도드라진다 */
@@ -623,7 +629,6 @@
                 margin-bottom: 2px;
             }
             td:not(:first-child).empty-cell { display: none; }
-            tr.row-empty { display: none; }
             td:not(:first-child)::before {
                 content: attr(data-label);
                 display: block;
