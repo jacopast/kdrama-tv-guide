@@ -20,12 +20,20 @@ HTML_PATH = BASE_DIR / "kdrama_tv_guide.html"
 WEEK_OFFSETS = [-1, 0, 1]  # 지난 주, 이번 주, 다음 주. 범위를 늘리고 싶으면 이 리스트만 바꾸면 됨 (예: [-1, 0, 1, 2]).
 
 CHANNELS = [
-  {"id": "Netflix", "badge": "`CH 01 NETFLIX`", "name": "Netflix", "num": "CH 01", "cssClass": "ch-num-netflix"},
-  {"id": "Hulu", "badge": "`CH 02 HULU / D+`", "name": "Hulu / Disney+", "num": "CH 02", "cssClass": "ch-num-hulu"},
-  {"id": "Prime Video", "badge": "`CH 03 PRIME VIDEO`", "name": "Prime Video", "num": "CH 03", "cssClass": "ch-num-prime"},
-  {"id": "Apple TV+", "badge": "`CH 04 APPLE TV+`", "name": "Apple TV+", "num": "CH 04", "cssClass": "ch-num-apple"},
-  {"id": "Viki", "badge": "`CH 05 RAKUTEN VIKI`", "name": "Rakuten Viki", "num": "CH 05", "cssClass": "ch-num-viki"},
-  {"id": "Kocowa", "badge": "`CH 06 KOCOWA+`", "name": "KOCOWA+", "num": "CH 06", "cssClass": "ch-num-kocowa"}
+  {"id": "Netflix", "badge": "`CH 01 NETFLIX`", "name": "Netflix", "num": "CH 01", "cssClass": "ch-num-netflix", "region": "US"},
+  {"id": "Hulu", "badge": "`CH 02 HULU / D+`", "name": "Hulu / Disney+", "num": "CH 02", "cssClass": "ch-num-hulu", "region": "US"},
+  {"id": "Prime Video", "badge": "`CH 03 PRIME VIDEO`", "name": "Prime Video", "num": "CH 03", "cssClass": "ch-num-prime", "region": "US"},
+  {"id": "Apple TV+", "badge": "`CH 04 APPLE TV+`", "name": "Apple TV+", "num": "CH 04", "cssClass": "ch-num-apple", "region": "US"},
+  {"id": "Viki", "badge": "`CH 05 RAKUTEN VIKI`", "name": "Rakuten Viki", "num": "CH 05", "cssClass": "ch-num-viki", "region": "US"},
+  {"id": "Kocowa", "badge": "`CH 06 KOCOWA+`", "name": "KOCOWA+", "num": "CH 06", "cssClass": "ch-num-kocowa", "region": "US"},
+  # 한국 방영 채널 (지상파/케이블) — 미국 플랫폼과 무관하게 한국 본방 편성을 보여준다.
+  {"id": "SBS", "badge": "`KR 01 SBS`", "name": "SBS", "num": "KR 01", "cssClass": "ch-num-sbs", "region": "KR"},
+  {"id": "MBC", "badge": "`KR 02 MBC`", "name": "MBC", "num": "KR 02", "cssClass": "ch-num-mbc", "region": "KR"},
+  {"id": "KBS2", "badge": "`KR 03 KBS2`", "name": "KBS2", "num": "KR 03", "cssClass": "ch-num-kbs2", "region": "KR"},
+  {"id": "KBS Joy", "badge": "`KR 04 KBS JOY`", "name": "KBS Joy", "num": "KR 04", "cssClass": "ch-num-kbsjoy", "region": "KR"},
+  {"id": "tvN", "badge": "`KR 05 tvN`", "name": "tvN", "num": "KR 05", "cssClass": "ch-num-tvn", "region": "KR"},
+  {"id": "JTBC", "badge": "`KR 06 JTBC`", "name": "JTBC", "num": "KR 06", "cssClass": "ch-num-jtbc", "region": "KR"},
+  {"id": "ENA", "badge": "`KR 07 ENA`", "name": "ENA", "num": "KR 07", "cssClass": "ch-num-ena", "region": "KR"}
 ]
 
 _KR_DAY_NAMES = [("Mon", "월"), ("Tue", "화"), ("Wed", "수"), ("Thu", "목"), ("Fri", "금"), ("Sat", "토"), ("Sun", "일")]
@@ -70,8 +78,8 @@ def load_dramas():
         return json.load(f)
 
 
-def format_cell(d, is_batch=False, ep_label=""):
-    plat_obj = d.get("platforms", [{}])[0]
+def format_cell(d, channel_id, is_batch=False, ep_label=""):
+    plat_obj = drama_platform_for(d, channel_id) or d.get("platforms", [{}])[0]
     url = plat_obj.get("url", "#")
     if is_batch:
         ep_label = d.get("batchEp", "전편")
@@ -105,7 +113,7 @@ def generate_markdown(dramas, weeks):
     md.append("tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]")
     md.append("---\n")
 
-    md.append("# 미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)")
+    md.append("# 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)")
     md.append(f"> **기준 주차**: `{current_week['title']}` | **기준 시간**: `{now_str}`\n")
 
     md.append("> [!TIP] **레트로 웹 대시보드 바로가기**")
@@ -137,8 +145,8 @@ def generate_markdown(dramas, weeks):
                     d for d in dramas
                     if drama_platform_for(d, ch["id"]) and d.get("isBatch") and d.get("releaseDate") == date_str
                 ]
-                cells = [format_cell(d, ep_label=d["schedule"][date_str]) for d in day_dramas]
-                cells += [format_cell(d, is_batch=True) for d in batch_today]
+                cells = [format_cell(d, ch["id"], ep_label=d["schedule"][date_str]) for d in day_dramas]
+                cells += [format_cell(d, ch["id"], is_batch=True) for d in batch_today]
                 row_cells.append("<br>".join(cells) if cells else "-")
 
             # 전편 공개(Batch) 열: 공개된 주가 지난 뒤부터 (회차/2)주 동안 "계속 볼 수 있는 작품"으로 노출.
@@ -151,7 +159,7 @@ def generate_markdown(dramas, weeks):
                 if release < week_monday and week_monday < window_end:
                     batch_dramas.append(d)
             if batch_dramas:
-                batch_cell = "<br>".join(format_cell(d, is_batch=True) for d in batch_dramas)
+                batch_cell = "<br>".join(format_cell(d, ch["id"], is_batch=True) for d in batch_dramas)
             else:
                 batch_cell = "-"
             row_cells.append(batch_cell)

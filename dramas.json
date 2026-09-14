@@ -27,6 +27,11 @@
         "name": "Viki",
         "label": "Rakuten Viki",
         "url": "https://www.viki.com/tv/41633c-my-bias-my-boss"
+      },
+      {
+        "name": "tvN",
+        "label": "tvN",
+        "url": "https://tvn.cjenm.com/ko/mybiasmyboss/"
       }
     ],
     "poster": "https://asianwiki.com/images/1/1e/My_Bias_My_Boss-p01.jpg",
@@ -60,6 +65,11 @@
         "name": "Kocowa",
         "label": "KOCOWA+",
         "url": "https://www.kocowa.com/en_us/main"
+      },
+      {
+        "name": "KBS Joy",
+        "label": "KBS Joy",
+        "url": "https://www.kbsn.co.kr"
       }
     ],
     "poster": "https://assets.pikiran-rakyat.com/crop/0x0%3A0x0/1200x675/photo/2026/08/20/2155862668.jpeg",
@@ -95,6 +105,11 @@
         "name": "Hulu",
         "label": "Hulu / Disney+",
         "url": "https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a"
+      },
+      {
+        "name": "SBS",
+        "label": "SBS",
+        "url": "https://programs.sbs.co.kr/drama/flexxcop2"
       }
     ],
     "poster": "https://img.sbs.co.kr/newsnet/etv/upload/2026/07/22/30001075934_1280.jpg",
@@ -154,6 +169,11 @@
         "name": "Kocowa",
         "label": "KOCOWA+",
         "url": "https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire"
+      },
+      {
+        "name": "KBS2",
+        "label": "KBS2",
+        "url": "https://vod.kbs.co.kr"
       }
     ],
     "poster": "",
@@ -231,6 +251,11 @@
         "name": "Hulu",
         "label": "Hulu / Disney+",
         "url": "https://www.hulu.com"
+      },
+      {
+        "name": "KBS2",
+        "label": "KBS2",
+        "url": "https://vod.kbs.co.kr"
       }
     ],
     "poster": "https://images.plex.tv/photo?scale=2&size=large-480&url=https%3A%2F%2Fmetadata-static.plex.tv%2F5%2Fgracenote%2F5bcc58470f758e33c4e83ff9511b8888.jpg",
@@ -264,6 +289,11 @@
         "name": "Netflix",
         "label": "Netflix US",
         "url": "https://www.netflix.com"
+      },
+      {
+        "name": "tvN",
+        "label": "tvN",
+        "url": "https://tvn.cjenm.com"
       }
     ],
     "poster": "https://image.tmdb.org/t/p/w780/yBNT4FtxHyUjrnQmmZ3kkXMov4u.jpg",
@@ -319,6 +349,11 @@
         "name": "Netflix",
         "label": "Netflix US",
         "url": "https://www.netflix.com"
+      },
+      {
+        "name": "tvN",
+        "label": "tvN",
+        "url": "https://tvn.cjenm.com"
       }
     ],
     "poster": "https://cineplay-cms.s3.amazonaws.com/article-images/2026-07-03/78d97186-ad41-452b-aeb0-1b42c1f51a01.jpg?v=2",
@@ -418,6 +453,11 @@
         "name": "Netflix",
         "label": "Netflix US",
         "url": "https://www.netflix.com"
+      },
+      {
+        "name": "JTBC",
+        "label": "JTBC",
+        "url": "https://jtbc.co.kr"
       }
     ],
     "poster": "",
@@ -471,5 +511,38 @@
     "synopsis": "9년 뒤 KCIA 부국장 자리까지 오른 백기태(현빈)와, 그를 무너뜨리기 위해 돌아온 검사 장건영(정우성)의 마지막 대결. Disney+·Hulu 오리지널, 2026년 9월 9일 공개(매주 수요일 2화씩), 시즌1(2025년 12월 24일 공개)에 이은 최종 시즌.",
     "poster": "",
     "verifiedAt": "2026-09-11"
+  },
+  {
+    "id": "new-recruit-4-sabotage",
+    "title": "신병4: 사보타주",
+    "engTitle": "New Recruit 4: Sabotage",
+    "platforms": [
+      {
+        "name": "ENA",
+        "label": "ENA",
+        "url": "https://ktena.co.kr"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-08-24": "EP 01 (첫방)",
+      "2026-08-25": "EP 02",
+      "2026-08-31": "EP 03",
+      "2026-09-01": "EP 04",
+      "2026-09-07": "EP 05",
+      "2026-09-08": "EP 06",
+      "2026-09-14": "EP 07",
+      "2026-09-15": "EP 08",
+      "2026-09-21": "EP 09",
+      "2026-09-22": "EP 10",
+      "2026-09-28": "EP 11",
+      "2026-09-29": "EP 12 (최종화)"
+    },
+    "episodes": "12부작",
+    "cast": "박민석, 김현욱, 변혁진",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "유튜브 애니메이션 원작 군대 코미디 시리즈의 네 번째 시즌. 어느덧 상병이 된 박민석 앞에 미스터리한 신병 김현욱과 엘리트 대대장 변혁진이 새로 합류. ENA, 2026년 8월 24일 첫방(매주 월·화 밤 10시), 국내 OTT는 티빙·지니TV — 미국 스트리밍 플랫폼은 아직 미확인.",
+    "poster": "",
+    "verifiedAt": "2026-09-14"
   }
 ]
