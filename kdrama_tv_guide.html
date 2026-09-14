@@ -631,7 +631,7 @@
             <span class="site-title" role="button" tabindex="0" onclick="goHome()" onkeydown="if(event.key==='Enter')goHome()" title="이번 주로 돌아가기">K-DRAMA US STREAMING TV GUIDE</span>
             <span class="week-badge-text" id="weekBadge">[기준 주차 계산 중...]</span>
         </div>
-        <span class="live-clock-badge" id="liveClock">US EST --:--:--</span>
+        <span class="live-clock-badge" id="liveClock">KST --:--:--</span>
     </h1>
 
     <div class="toolbar">
@@ -1394,17 +1394,20 @@ let currentMonthOffset = 0; // 0 = 이번 달
 const MONTH_OFFSET_MIN = -3;
 const MONTH_OFFSET_MAX = 3;
 
-// Today detection (US Eastern Time)
+// '오늘'/'이번 주' 기준 시간대. 이 가이드에 저장된 날짜는 거의 다 "한국 방영 요일"이 기준(REFRESH_GUIDE 리서치
+// 원칙 자체가 그렇게 채우도록 함)이라, 미국 동부시간(America/New_York)을 기준으로 삼으면 한국은 이미 다음 날인데도
+// 하루 늦게 "이번 주"가 바뀌는 어긋남이 생긴다(예: 한국 월요일 오전인데 미국 동부는 아직 일요일 밤). 그래서 한국
+// 시간(Asia/Seoul)을 기준으로 통일한다 — 함수 이름은 이전 이름을 그대로 남겨 호출부를 덜 건드림.
 function getUSEasternDay() {
-    const options = { timeZone: "America/New_York", weekday: 'short' };
+    const options = { timeZone: "Asia/Seoul", weekday: 'short' };
     const dayName = new Intl.DateTimeFormat('en-US', options).format(new Date());
     return dayName; // "Mon", "Tue", etc.
 }
 const todayStr = getUSEasternDay();
 
-// Compute "today" and week Mondays in US Eastern time so the header never goes stale like a hardcoded date would.
+// 한국 시간 기준으로 '오늘'과 이번 주 월요일들을 계산해서, 헤더가 하드코딩된 날짜처럼 낡지 않게 한다.
 function getUSEasternDate() {
-    const parts = new Intl.DateTimeFormat('en-US', { timeZone: "America/New_York", year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+    const parts = new Intl.DateTimeFormat('en-US', { timeZone: "Asia/Seoul", year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
     const map = {};
     parts.forEach(p => map[p.type] = p.value);
     return new Date(`${map.year}-${map.month}-${map.day}T12:00:00`); // noon avoids DST edge issues
@@ -1478,10 +1481,10 @@ function updateDateHeaders(offset) {
 
 // Live Clock
 function updateLiveClock() {
-    const options = { timeZone: "America/New_York", hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+    const options = { timeZone: "Asia/Seoul", hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
     const timeStr = new Intl.DateTimeFormat('en-US', options).format(new Date());
     const el = document.getElementById('liveClock');
-    if (el) el.textContent = `US EST ${timeStr}`;
+    if (el) el.textContent = `KST ${timeStr}`;
 }
 
 // DOM Elements
