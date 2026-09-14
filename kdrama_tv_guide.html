@@ -372,6 +372,7 @@
             justify-content: flex-start;
             align-items: center;
             gap: 8px;
+            flex-wrap: wrap;
         }
 
         .drama-title-link {
@@ -437,7 +438,11 @@
             border: none;
             padding: 0;
             color: var(--text-soft);
-            white-space: nowrap;
+            /* 채널 여러 개가 겹쳐 붙는 함께 모드에서는 라벨이 길어지므로, 한 줄 고정 대신 줄바꿈해서
+               카드 밖으로 삐져나가거나 옆 칸과 겹치지 않게 한다. */
+            white-space: normal;
+            overflow-wrap: anywhere;
+            min-width: 0;
         }
 
         /* Modals */
