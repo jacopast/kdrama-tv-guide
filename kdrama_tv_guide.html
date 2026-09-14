@@ -1258,6 +1258,41 @@ const DRAMA_DATA = [
     "synopsis": "유튜브 애니메이션 원작 군대 코미디 시리즈의 네 번째 시즌. 어느덧 상병이 된 박민석 앞에 미스터리한 신병 김현욱과 엘리트 대대장 변혁진이 새로 합류. ENA, 2026년 8월 24일 첫방(매주 월·화 밤 10시), 국내 OTT는 티빙·지니TV — 미국 스트리밍 플랫폼은 아직 미확인.",
     "poster": "",
     "verifiedAt": "2026-09-14"
+  },
+  {
+    "id": "glorious-day",
+    "title": "기쁜 우리 좋은 날",
+    "engTitle": "Glorious Day",
+    "platforms": [
+      {
+        "name": "KBS1",
+        "label": "KBS1",
+        "url": "https://vod.kbs.co.kr"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-09-01": "EP 110",
+      "2026-09-02": "EP 111",
+      "2026-09-03": "EP 112",
+      "2026-09-04": "EP 113",
+      "2026-09-07": "EP 114",
+      "2026-09-08": "EP 115",
+      "2026-09-09": "EP 116",
+      "2026-09-10": "EP 117",
+      "2026-09-11": "EP 118",
+      "2026-09-14": "EP 119",
+      "2026-09-15": "EP 120",
+      "2026-09-16": "EP 121",
+      "2026-09-17": "EP 122",
+      "2026-09-18": "EP 123 (최종화 추정)"
+    },
+    "episodes": "122부작(연장분 포함, 방영 중 5/20·6/3 스포츠/개표방송으로 결방)",
+    "cast": "윤종훈, 엄현경, 김혜옥, 윤다훈, 문희경",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "건축사 고결과 스타트업 개발자 조은애가 얽히며 벌어지는 홈드라마. KBS1, 2026년 3월 30일 첫방(매주 월~금 20:30), 총 122부작으로 2026년 9월 중 종영 예정. 방영 중 결방(스포츠 중계·개표방송)이 있어 회차 번호는 확인된 결방일(5/20, 6/3) 기준으로 계산했고 최대 ±1화 오차 가능 — 다음 확인 때 실제 회차로 보정 필요.",
+    "poster": "",
+    "verifiedAt": "2026-09-14"
   }
 ];
 
@@ -1645,9 +1680,29 @@ function getFilteredDramas() {
     });
 }
 
-// 현재 지역 모드에서 실제로 보여줄 채널 행만 추린다 ('ALL'이면 전부).
+// 최근 2주 넘게 새로 뜬 게 없는 채널인지 판별한다.
+// - 정규 편성: schedule 날짜 중 하나라도 (오늘-14일) 이후(=최근 방영했거나 앞으로 방영 예정)면 활성.
+// - 전편 공개/라이브러리 추가: 공개일 자체가 최근 14일 이내이거나, 아직 배치 노출 기간(회차/2주, getBatchWindow) 안이면 활성.
+//   해외 스트리밍이 오래전에 방영된 국내 드라마를 뒤늦게 라이브러리에 새로 들여온 경우도, 그 노출 기간 동안은
+//   계속 활성으로 잡힌다 — "신작"인지가 아니라 "그 채널에서 지금 볼 수 있는 게 있는지"가 기준.
+function isChannelActive(ch) {
+    const cutoff = new Date(`${todayISO}T12:00:00`);
+    cutoff.setDate(cutoff.getDate() - 14);
+    const cutoffISO = toISODate(cutoff);
+    return DRAMA_DATA.some(d => {
+        if (!d.platforms.some(p => p.name.includes(ch.id))) return false;
+        if (d.isBatch) {
+            if (!d.releaseDate) return false;
+            const { endISO } = getBatchWindow(d);
+            return d.releaseDate >= cutoffISO || todayISO < endISO;
+        }
+        return d.schedule && Object.keys(d.schedule).some(dateISO => dateISO >= cutoffISO);
+    });
+}
+
+// 현재 지역 모드에서 실제로 보여줄 채널 행만 추린다 ('ALL'이면 전부) + 2주 넘게 잠잠한 채널은 아예 제외.
 function visibleChannels() {
-    return CHANNELS.filter(ch => regionMode === 'ALL' || ch.region === regionMode);
+    return CHANNELS.filter(ch => (regionMode === 'ALL' || ch.region === regionMode) && isChannelActive(ch));
 }
 
 function setRegion(mode) {

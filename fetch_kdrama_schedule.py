@@ -108,9 +108,31 @@ def batch_window(d):
     return release, release + timedelta(weeks=visible_weeks)
 
 
+def channel_active(dramas, ch, today):
+    """최근 2주 넘게 새로 뜬 게 없는 채널(행)은 접어서(마크다운에서는 아예 생략) 보여준다.
+    정규 편성은 schedule 날짜 중 (오늘-14일) 이후가 하나라도 있으면, 전편 공개/라이브러리 추가는
+    공개일 자체가 최근 14일 이내이거나 아직 배치 노출 기간(batch_window) 안이면 활성으로 본다 —
+    해외 플랫폼이 오래된 국내 드라마를 뒤늦게 라이브러리에 새로 들여온 경우도 그 노출 기간 동안은 활성."""
+    cutoff = today - timedelta(days=14)
+    for d in dramas:
+        if not drama_platform_for(d, ch["id"]):
+            continue
+        if d.get("isBatch"):
+            if not d.get("releaseDate"):
+                continue
+            release, window_end = batch_window(d)
+            if release >= cutoff or today < window_end:
+                return True
+        else:
+            if any(datetime.fromisoformat(ds).date() >= cutoff for ds in d.get("schedule", {})):
+                return True
+    return False
+
+
 def generate_markdown(dramas, weeks):
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M EST")
     current_week = next((w for w in weeks if w["offset"] == 0), weeks[0])
+    active_channels = [ch for ch in CHANNELS if channel_active(dramas, ch, datetime.now().date())]
 
     md = []
     md.append("---")
@@ -139,7 +161,7 @@ def generate_markdown(dramas, weeks):
 
         week_monday = week["days"][0][1]
 
-        for ch in CHANNELS:
+        for ch in active_channels:
             row_cells = [f"**{ch['badge']}**"]
 
             for day_key, day_date, _ in week["days"]:
@@ -180,7 +202,8 @@ def generate_markdown(dramas, weeks):
 
     # 2. Detailed Program Directory (모든 주 통합 — 채널별 현재/예정 프로그램 한눈에 보기)
     md.append("## 채널별 프로그램 상세 (Live + Upcoming)")
-    for ch in CHANNELS:
+    md.append("> 최근 2주 넘게 새로 뜬 게 없는 채널은 목록에서 접혀 있습니다 (해외 스트리밍의 뒤늦은 라이브러리 추가는 그 노출 기간 동안 계속 활성으로 집니다).\n")
+    for ch in active_channels:
         ch_dramas = [d for d in dramas if drama_platform_for(d, ch["id"])]
         md.append(f"### {ch['badge']}")
         if not ch_dramas:
