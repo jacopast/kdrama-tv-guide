@@ -7,7 +7,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 9월 2주차 (9/14 ~ 9/20)` | **기준 시간**: `2026-09-14 07:03 EST`
+> **기준 주차**: `2026년 9월 2주차 (9/14 ~ 9/20)` | **기준 시간**: `2026-09-14 07:39 EST`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
@@ -20,15 +20,18 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | - | [포핸즈](https://www.netflix.com) `EP 05` | [포핸즈](https://www.netflix.com) `EP 06` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
 | **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 01-02 (첫방)` | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 11` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 12` | - | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.primevideo.com) `EP 01 (첫방)` | [너 말고 다른 연애](https://www.primevideo.com) `EP 02` | - |
 | **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 11` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 12 (최종화)` | - | - | - | - | - | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 21` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 22` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 07`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 23` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 08`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 24` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 25` | - | - | - |
 | **`KR 01 SBS`** | - | - | - | - | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 11` | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 12` | - | - |
 | **`KR 02 MBC`** | - | - | - | - | - | - | - | - |
-| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 21` | [욕망의 덫](https://vod.kbs.co.kr) `EP 22` | [욕망의 덫](https://vod.kbs.co.kr) `EP 23` | [욕망의 덫](https://vod.kbs.co.kr) `EP 24` | [욕망의 덫](https://vod.kbs.co.kr) `EP 25` | - | - | - |
+| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 21` | [욕망의 덫](https://vod.kbs.co.kr) `EP 22` | [욕망의 덫](https://vod.kbs.co.kr) `EP 23` | [욕망의 덫](https://vod.kbs.co.kr) `EP 24` | [욕망의 덫](https://vod.kbs.co.kr) `EP 25` | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 01 (첫방)` | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 02` | - |
 | **`KR 04 KBS JOY`** | - | - | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 07` | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 08` | - | - | - | - |
 | **`KR 05 tvN`** | [최애의 사원](https://tvn.cjenm.com/ko/mybiasmyboss/) `EP 11` | [최애의 사원](https://tvn.cjenm.com/ko/mybiasmyboss/) `EP 12 (최종화)` | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 05` | [포핸즈](https://tvn.cjenm.com) `EP 06` | - |
+| **`KR 06 JTBC`** | - | - | - | - | - | - | - | - |
 | **`KR 07 ENA`** | [신병4: 사보타주](https://ktena.co.kr) `EP 05` | [신병4: 사보타주](https://ktena.co.kr) `EP 06` | - | - | - | - | - | - |
 | **`KR 08 KBS1`** | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 114` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 115` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 116` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 117` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 118` | - | - | - |
+| **`KR 10 CHANNEL A`** | - | - | - | - | - | - | - | - |
 | **`KR 13 TVING`** | - | - | - | [로또 1등도 출근합니다](https://www.tving.com/contents/P001790587) `EP 01-02 (TVING 선공개)` | - | - | - | - |
 
 ## 이번 주 편성표 (2026년 9월 2주차 (9/14 ~ 9/20))
@@ -38,15 +41,18 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | [스캔들](https://www.netflix.com) `8부작 전편 공개` | [포핸즈](https://www.netflix.com) `EP 07` | [포핸즈](https://www.netflix.com) `EP 08` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
 | **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 03-04` | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 13` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 14 (최종화)` | - | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.primevideo.com) `EP 03` | [너 말고 다른 연애](https://www.primevideo.com) `EP 04` | - |
 | **`CH 05 RAKUTEN VIKI`** | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 01 (첫방)` | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 02` | - | - | - | - | - | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 26` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 27` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 09`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 28` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 10`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 29` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 30` | - | - | - |
 | **`KR 01 SBS`** | - | - | - | - | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 13` | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 14 (최종화)` | - | - |
 | **`KR 02 MBC`** | - | - | - | - | - | - | - | - |
-| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 26` | [욕망의 덫](https://vod.kbs.co.kr) `EP 27` | [욕망의 덫](https://vod.kbs.co.kr) `EP 28` | [욕망의 덫](https://vod.kbs.co.kr) `EP 29` | [욕망의 덫](https://vod.kbs.co.kr) `EP 30` | - | - | - |
+| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 26` | [욕망의 덫](https://vod.kbs.co.kr) `EP 27` | [욕망의 덫](https://vod.kbs.co.kr) `EP 28` | [욕망의 덫](https://vod.kbs.co.kr) `EP 29` | [욕망의 덫](https://vod.kbs.co.kr) `EP 30` | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 03` | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 04` | - |
 | **`KR 04 KBS JOY`** | - | - | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 09` | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 10` | - | - | - | - |
 | **`KR 05 tvN`** | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 01 (첫방)` | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 02` | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 07` | [포핸즈](https://tvn.cjenm.com) `EP 08` | - |
+| **`KR 06 JTBC`** | - | - | - | - | - | [날아올라라 나비](https://tv.jtbc.co.kr/salondenabi) `EP 01 (첫방)` | [날아올라라 나비](https://tv.jtbc.co.kr/salondenabi) `EP 02` | - |
 | **`KR 07 ENA`** | [신병4: 사보타주](https://ktena.co.kr) `EP 07` | [신병4: 사보타주](https://ktena.co.kr) `EP 08` | - | - | - | - | - | - |
 | **`KR 08 KBS1`** | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 119` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 120` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 121` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 122` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 123 (최종화 추정)` | - | - | - |
+| **`KR 10 CHANNEL A`** | - | - | - | - | - | - | - | - |
 | **`KR 13 TVING`** | - | - | - | [로또 1등도 출근합니다](https://www.tving.com/contents/P001790587) `EP 03-04 (TVING 선공개)` | - | - | - | - |
 
 ## 다음 주 편성표 (2026년 9월 3주차 (9/21 ~ 9/27))
@@ -55,16 +61,19 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | 채널 / OTT | 월 (9/21) | 화 (9/22) | 수 (9/23) | 목 (9/24) | 금 (9/25) | 토 (9/26) | 일 (9/27) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | - | [포핸즈](https://www.netflix.com) `EP 09` | [포핸즈](https://www.netflix.com) `EP 10` | [들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[스캔들](https://www.netflix.com) `8부작 전편 공개`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
-| **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 05-06 (최종화)` | - | - | - | - | - |
-| **`CH 05 RAKUTEN VIKI`** | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 03` | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 04` | - | - | - | - | - | - |
+| **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 05-06 (최종화)` | - | - | [너에게 다이브](https://www.disneyplus.com) `EP 01 (첫방)` | [너에게 다이브](https://www.disneyplus.com) `EP 02` | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.primevideo.com) `EP 05` | [너 말고 다른 연애](https://www.primevideo.com) `EP 06` | - |
+| **`CH 05 RAKUTEN VIKI`** | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 03` | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 04` | - | - | - | [너에게 다이브](https://www.viki.com) `EP 01 (첫방)` | [너에게 다이브](https://www.viki.com) `EP 02` | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 31` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 32` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 11`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 33` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 12 (최종화)`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 34` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 35` | - | - | - |
 | **`KR 01 SBS`** | - | - | - | - | - | - | - | - |
 | **`KR 02 MBC`** | - | - | - | - | - | - | - | - |
-| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 31` | [욕망의 덫](https://vod.kbs.co.kr) `EP 32` | [욕망의 덫](https://vod.kbs.co.kr) `EP 33` | [욕망의 덫](https://vod.kbs.co.kr) `EP 34` | [욕망의 덫](https://vod.kbs.co.kr) `EP 35` | - | - | - |
+| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 31` | [욕망의 덫](https://vod.kbs.co.kr) `EP 32` | [욕망의 덫](https://vod.kbs.co.kr) `EP 33` | [욕망의 덫](https://vod.kbs.co.kr) `EP 34` | [욕망의 덫](https://vod.kbs.co.kr) `EP 35` | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 05` | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 06` | - |
 | **`KR 04 KBS JOY`** | - | - | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 11` | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 12 (최종화)` | - | - | - | - |
 | **`KR 05 tvN`** | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 03` | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 04` | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 09` | [포핸즈](https://tvn.cjenm.com) `EP 10` | - |
+| **`KR 06 JTBC`** | - | - | - | - | - | [날아올라라 나비](https://tv.jtbc.co.kr/salondenabi) `EP 03` | [날아올라라 나비](https://tv.jtbc.co.kr/salondenabi) `EP 04` | - |
 | **`KR 07 ENA`** | [신병4: 사보타주](https://ktena.co.kr) `EP 09` | [신병4: 사보타주](https://ktena.co.kr) `EP 10` | - | - | - | - | - | - |
 | **`KR 08 KBS1`** | - | - | - | - | - | - | - | - |
+| **`KR 10 CHANNEL A`** | - | - | - | - | - | [너에게 다이브](https://www.ichannela.com) `EP 01 (첫방)` | [너에게 다이브](https://www.ichannela.com) `EP 02` | - |
 | **`KR 13 TVING`** | - | - | - | [로또 1등도 출근합니다](https://www.tving.com/contents/P001790587) `EP 05-06 (TVING 선공개)` | - | - | - | - |
 
 ---
@@ -107,12 +116,22 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 무기상점을 물려받은 지안과 죽음에서 돌아온 진만이, 자존심을 구긴 바빌론이 해외 용병까지 끌어들여 복수에 나서면서 다시 맞서 싸우는 액션 스릴러. Disney+ 글로벌/Hulu 미국, 2026년 7월 22일 첫방(매주 수요일 2회차씩 공개).
 - **[메이드 인 코리아 시즌 2 (Made in Korea Season 2)](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8)** `[방영일: 2026-09-09, 2026-09-16, 2026-09-23]` `(확인: 2026-09-11)` — 📊 시청률 TBD (스트리밍 오리지널, 닐슨코리아 시청률 미집계) | 6부작 (최종 시즌) | 현빈, 정우성, 우도환
   > 9년 뒤 KCIA 부국장 자리까지 오른 백기태(현빈)와, 그를 무너뜨리기 위해 돌아온 검사 장건영(정우성)의 마지막 대결. Disney+·Hulu 오리지널, 2026년 9월 9일 공개(매주 수요일 2화씩), 시즌1(2025년 12월 24일 공개)에 이은 최종 시즌.
+- **[너에게 다이브 (Dive Into You)](https://www.disneyplus.com)** `[방영일: 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25, 2026-10-31, 2026-11-01]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 김지연, 박서함, 장세혁, 문승유
+  > 오래된 캠코더를 통해 과거로 돌아갈 수 있게 된 쌍둥이 남매가 첫사랑을 구하려는 판타지 로맨틱 코미디. Channel A·Disney+ 2026년 9월 26일 첫 공개, Rakuten Viki 글로벌 공개.
+- **[연애박사 (Love Doctor)](https://www.disneyplus.com)** `[방영일: 2026-10-05, 2026-10-06, 2026-10-12, 2026-10-13]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 추영우, 김소현
+  > 로봇 연구실에서 만난 박사과정생과 석사과정생의 청춘 로맨스. ENA·Disney+, 2026년 10월 5일 첫방(매주 월·화).
+
+### `CH 03 PRIME VIDEO`
+- **[너 말고 다른 연애 (Not Your Love)](https://www.primevideo.com)** `[방영일: 2026-09-12, 2026-09-13, 2026-09-19, 2026-09-20, 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 14부작 | 서강준, 안은진, 이주안, 조아람
+  > 10년 차 연인이 익숙했던 관계에서 낯선 감정과 마주하는 현실 공감 멜로. KBS2, 2026년 9월 12일 첫방(매주 토·일); Prime Video 동시 공개.
 
 ### `CH 05 RAKUTEN VIKI`
 - **[최애의 사원 (My Bias, My Boss)](https://www.viki.com/tv/41633c-my-bias-my-boss)** `[방영일: 2026-08-03, 2026-08-04, 2026-08-10, 2026-08-11, 2026-08-17, 2026-08-18, 2026-08-24, 2026-08-25, 2026-08-31, 2026-09-01, 2026-09-07, 2026-09-08]` `(확인: 2026-09-07)` — 📊 시청률 4.0% (5회, 닐슨코리아 전국가구) | 12부작 | 강훈, 김혜준, 차우민, 유나
   > 이름처럼 뭐든 남다른 신입사원 남다름이 회사에서 자신이 좋아하던 아이돌 겸 배우 강하기를 상사로 만나며 벌어지는 오피스 로맨틱 코미디. tvN, 2026년 8월 3일 첫방(매주 월·화).
 - **[로또 1등도 출근합니다 (The Ordinary Jackpot)](https://www.viki.com/tv/41650c-the-ordinary-jackpot)** `[방영일: 2026-09-14, 2026-09-15, 2026-09-21, 2026-09-22, 2026-09-28, 2026-09-29, 2026-10-05, 2026-10-06, 2026-10-12, 2026-10-13]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 10부작 | 이준혁, 서현우, 오대환, 옥자연
   > 위아래로 치이며 하루하루를 버티던 팀장 공은태가 로또 1등(13억)에 당첨된 후, 사직서 대신 당첨금을 품고 이전과는 다른 마음가짐으로 출근하는 K-직장인 오피스 드라마. tvN 월화드라마로 2026년 9월 14일 첫방(매주 월·화 21:00), 10부작. TVING에서는 tvN 본방보다 나흘 앞서 매주 목요일 18시에 2회씩 선공개(9/10부터) — 이제 TVING 채널 칸에는 그 선공개 날짜가 실제로 반영됨.
+- **[너에게 다이브 (Dive Into You)](https://www.viki.com)** `[방영일: 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25, 2026-10-31, 2026-11-01]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 김지연, 박서함, 장세혁, 문승유
+  > 오래된 캠코더를 통해 과거로 돌아갈 수 있게 된 쌍둥이 남매가 첫사랑을 구하려는 판타지 로맨틱 코미디. Channel A·Disney+ 2026년 9월 26일 첫 공개, Rakuten Viki 글로벌 공개.
 
 ### `CH 06 KOCOWA+`
 - **[그래, 이혼하자 (OK! Let's Get Divorced)](https://www.kocowa.com/en_us/main)** `[방영일: 2026-08-19, 2026-08-20, 2026-08-26, 2026-08-27, 2026-09-02, 2026-09-03, 2026-09-09, 2026-09-10, 2026-09-16, 2026-09-17, 2026-09-23, 2026-09-24]` `(확인: 2026-09-07)` — 📊 시청률 TBD (오늘 첫방, 다음 확인 시 업데이트) | 12부작 | 이민정, 김지석, 기은세
@@ -135,6 +154,8 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 살인 누명을 쓰고 삶을 송두리째 빼앗긴 여성이 거대한 욕망에 맞서 자신의 인생을 되찾아가는 운명 복원 리벤지극. KBS2, 2026년 8월 10일 첫방(매주 월~금).
 - **[결혼의 완성 (더 허즈번드) (The Husband)](https://vod.kbs.co.kr)** `[방영일: 2026-07-04, 2026-07-05, 2026-07-11, 2026-07-12, 2026-07-18, 2026-07-19, 2026-07-25, 2026-07-26, 2026-08-01, 2026-08-02, 2026-08-08, 2026-08-09]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 남궁민, 이설, 김대명, 이상희
   > 이혼을 논의하던 신경외과 병원장 강태주 앞에서 다음 날 아내 고세윤이 납치당하며 극한의 위기에 빠지는 이야기. KBS2, 2026년 7월 4일 첫방(매주 토·일).
+- **[너 말고 다른 연애 (Not Your Love)](https://www.kbs.co.kr)** `[방영일: 2026-09-12, 2026-09-13, 2026-09-19, 2026-09-20, 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 14부작 | 서강준, 안은진, 이주안, 조아람
+  > 10년 차 연인이 익숙했던 관계에서 낯선 감정과 마주하는 현실 공감 멜로. KBS2, 2026년 9월 12일 첫방(매주 토·일); Prime Video 동시 공개.
 
 ### `KR 04 KBS JOY`
 - **[그래, 이혼하자 (OK! Let's Get Divorced)](https://www.kbsn.co.kr)** `[방영일: 2026-08-19, 2026-08-20, 2026-08-26, 2026-08-27, 2026-09-02, 2026-09-03, 2026-09-09, 2026-09-10, 2026-09-16, 2026-09-17, 2026-09-23, 2026-09-24]` `(확인: 2026-09-07)` — 📊 시청률 TBD (오늘 첫방, 다음 확인 시 업데이트) | 12부작 | 이민정, 김지석, 기은세
@@ -151,14 +172,30 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 위아래로 치이며 하루하루를 버티던 팀장 공은태가 로또 1등(13억)에 당첨된 후, 사직서 대신 당첨금을 품고 이전과는 다른 마음가짐으로 출근하는 K-직장인 오피스 드라마. tvN 월화드라마로 2026년 9월 14일 첫방(매주 월·화 21:00), 10부작. TVING에서는 tvN 본방보다 나흘 앞서 매주 목요일 18시에 2회씩 선공개(9/10부터) — 이제 TVING 채널 칸에는 그 선공개 날짜가 실제로 반영됨.
 - **[100일의 거짓말 (100 Days of Deception)](https://tvn.cjenm.com/ko/100-Days-of-Deception/)** `[방영일: 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 16부작 | 김유정, 박진영, 김현주, 이무생, 진선규
   > 일제강점기 밀정이 된 경성 최고의 소매치기와 조선총독부 엘리트 통역관이 적의 심장부에서 마주하며 벌어지는 100일간의 첩보 로맨스. tvN, 2026년 10월 10일 첫방(매주 토·일 21:10), 본방 후 Netflix에서 다시보기 독점 공개.
+- **[나의 유죄인간 (My Guilty Human)](https://tvn.cjenm.com/ko/Love-in-Disguise/)** `[방영일: 2026-10-19]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 임시완, 설인아
+  > tvN 드라마. 2026년 10월 19일 첫방 확정; 상세 편성과 회차 수는 공식 편성표 확인 후 보강 예정.
+
+### `KR 06 JTBC`
+- **[아파트 (The Apartment)](https://jtbc.co.kr)** `[방영일: 2026-07-11, 2026-07-12, 2026-07-18, 2026-07-19, 2026-07-25, 2026-07-26, 2026-08-01, 2026-08-02, 2026-08-08, 2026-08-09, 2026-08-15, 2026-08-16]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 지성, 하윤경, 박병은, 문소리
+  > 거금이 간절한 전직 조직 보스가 변호사 지망생과 함께 대단지 아파트에 숨겨진 돈을 노리고 입주자대표 선거에 뛰어들지만, 아파트에 숨겨진 뿌리 깊은 비리를 파헤치게 되는 범죄 코미디. JTBC, 2026년 7월 11일 첫방(매주 토·일), 넷플릭스 독점 스트리밍.
+- **[날아올라라 나비 (Fly High, Butterfly)](https://tv.jtbc.co.kr/salondenabi)** `[방영일: 2026-09-19, 2026-09-20, 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 10부작 | 김향기, 최다니엘, 오윤아, 심은우, 박정우
+  > 미용실을 배경으로, 손님과 미용사들이 서로의 내밀한 이야기를 나누며 성장하는 드라마. JTBC, 2026년 9월 19일 첫방(매주 토·일).
 
 ### `KR 07 ENA`
 - **[신병4: 사보타주 (New Recruit 4: Sabotage)](https://ktena.co.kr)** `[방영일: 2026-08-24, 2026-08-25, 2026-08-31, 2026-09-01, 2026-09-07, 2026-09-08, 2026-09-14, 2026-09-15, 2026-09-21, 2026-09-22, 2026-09-28, 2026-09-29]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 박민석, 김현욱, 변혁진
   > 유튜브 애니메이션 원작 군대 코미디 시리즈의 네 번째 시즌. 어느덧 상병이 된 박민석 앞에 미스터리한 신병 김현욱과 엘리트 대대장 변혁진이 새로 합류. ENA, 2026년 8월 24일 첫방(매주 월·화 밤 10시), 국내 OTT는 티빙·지니TV — 미국 스트리밍 플랫폼은 아직 미확인.
+- **[연애박사 (Love Doctor)](https://ktena.co.kr)** `[방영일: 2026-10-05, 2026-10-06, 2026-10-12, 2026-10-13]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 추영우, 김소현
+  > 로봇 연구실에서 만난 박사과정생과 석사과정생의 청춘 로맨스. ENA·Disney+, 2026년 10월 5일 첫방(매주 월·화).
 
 ### `KR 08 KBS1`
 - **[기쁜 우리 좋은 날 (Glorious Day)](https://vod.kbs.co.kr)** `[방영일: 2026-09-01, 2026-09-02, 2026-09-03, 2026-09-04, 2026-09-07, 2026-09-08, 2026-09-09, 2026-09-10, 2026-09-11, 2026-09-14, 2026-09-15, 2026-09-16, 2026-09-17, 2026-09-18]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 122부작(연장분 포함, 방영 중 5/20·6/3 스포츠/개표방송으로 결방) | 윤종훈, 엄현경, 김혜옥, 윤다훈, 문희경
   > 건축사 고결과 스타트업 개발자 조은애가 얽히며 벌어지는 홈드라마. KBS1, 2026년 3월 30일 첫방(매주 월~금 20:30), 총 122부작으로 2026년 9월 중 종영 예정. 방영 중 결방(스포츠 중계·개표방송)이 있어 회차 번호는 확인된 결방일(5/20, 6/3) 기준으로 계산했고 최대 ±1화 오차 가능 — 다음 확인 때 실제 회차로 보정 필요.
+- **[엄마가 미쳤어요 (Mom Has Gone Crazy)](https://www.kbs.co.kr)** `[방영일: 2026-09-28]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 출연진 확인 중
+  > 두 엄마와 자녀들이 얽히며 펼쳐지는 가족 성장 드라마. KBS1, 2026년 9월 28일 첫방.
+
+### `KR 10 CHANNEL A`
+- **[너에게 다이브 (Dive Into You)](https://www.ichannela.com)** `[방영일: 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25, 2026-10-31, 2026-11-01]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 김지연, 박서함, 장세혁, 문승유
+  > 오래된 캠코더를 통해 과거로 돌아갈 수 있게 된 쌍둥이 남매가 첫사랑을 구하려는 판타지 로맨틱 코미디. Channel A·Disney+ 2026년 9월 26일 첫 공개, Rakuten Viki 글로벌 공개.
 
 ### `KR 13 TVING`
 - **[로또 1등도 출근합니다 (The Ordinary Jackpot)](https://www.tving.com/contents/P001790587)** `[방영일: 2026-09-10, 2026-09-17, 2026-09-24, 2026-10-01, 2026-10-08]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 10부작 | 이준혁, 서현우, 오대환, 옥자연
