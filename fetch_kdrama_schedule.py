@@ -88,11 +88,9 @@ def load_dramas():
         return json.load(f)
 
 
-def format_cell(d, channel_id, is_batch=False, ep_label=""):
+def format_cell(d, channel_id, ep_label):
     plat_obj = drama_platform_for(d, channel_id) or d.get("platforms", [{}])[0]
     url = plat_obj.get("url", "#")
-    if is_batch:
-        ep_label = d.get("batchEp", "전편")
     return f"[{d['title']}]({url}) `{ep_label}`"
 
 
@@ -100,14 +98,30 @@ def drama_platform_for(d, channel_id):
     return next((p for p in d.get("platforms", []) if channel_id in p["name"]), None)
 
 
-def batch_window(d):
+def batch_window_for(release_date_str, episodes_str):
     """전편 공개(batch) 작품이 편성표에 노출되는 [시작일, 종료일) 구간을 계산한다.
     12부작이면 6주, 즉 '주 2회 편성이었다면 걸렸을 기간'만큼 공개일로부터 계속 보여준다 (회차 / 2 = 주 수)."""
-    release = datetime.fromisoformat(d["releaseDate"]).date()
-    m = re.search(r"\d+", d.get("episodes", ""))
+    release = datetime.fromisoformat(release_date_str).date()
+    m = re.search(r"\d+", episodes_str or "")
     ep_count = int(m.group()) if m else 2
     visible_weeks = max(1, math.ceil(ep_count / 2))
     return release, release + timedelta(weeks=visible_weeks)
+
+
+def batch_window(d):
+    return batch_window_for(d["releaseDate"], d.get("episodes", ""))
+
+
+def effective_for_channel(d, platform):
+    """플랫폼마다 스케줄이 다를 수 있으므로(예: TVING이 tvN 본방보다 나흘 먼저 선공개), 플랫폼 객체에
+    자체 schedule/releaseDate/batchEp/isBatch가 있으면 그걸 우선 쓰고, 없으면 작품 전체의 기본값
+    (대부분의 사이멀캐스트 작품이 공유하는 값)을 쓴다."""
+    return {
+        "isBatch": platform.get("isBatch", d.get("isBatch", False)),
+        "releaseDate": platform.get("releaseDate") or d.get("releaseDate"),
+        "batchEp": platform.get("batchEp") or d.get("batchEp"),
+        "schedule": platform.get("schedule") or d.get("schedule", {}),
+    }
 
 
 def channel_active(dramas, ch, today):
@@ -117,16 +131,18 @@ def channel_active(dramas, ch, today):
     해외 플랫폼이 오래된 국내 드라마를 뒤늦게 라이브러리에 새로 들여온 경우도 그 노출 기간 동안은 활성."""
     cutoff = today - timedelta(days=14)
     for d in dramas:
-        if not drama_platform_for(d, ch["id"]):
+        platform = drama_platform_for(d, ch["id"])
+        if not platform:
             continue
-        if d.get("isBatch"):
-            if not d.get("releaseDate"):
+        eff = effective_for_channel(d, platform)
+        if eff["isBatch"]:
+            if not eff["releaseDate"]:
                 continue
-            release, window_end = batch_window(d)
+            release, window_end = batch_window_for(eff["releaseDate"], d.get("episodes", ""))
             if release >= cutoff or today < window_end:
                 return True
         else:
-            if any(datetime.fromisoformat(ds).date() >= cutoff for ds in d.get("schedule", {})):
+            if any(datetime.fromisoformat(ds).date() >= cutoff for ds in eff["schedule"]):
                 return True
     return False
 
@@ -168,33 +184,37 @@ def generate_markdown(dramas, weeks):
 
             for day_key, day_date, _ in week["days"]:
                 date_str = day_date.isoformat()
-                day_dramas = [
-                    d for d in dramas
-                    if drama_platform_for(d, ch["id"]) and date_str in d.get("schedule", {})
-                ]
-                # 전편 공개작은 공개된 그 날짜의 요일 칸에도 표시한다 (예: 들쥐는 8/28 금요일 칸에).
-                batch_today = [
-                    d for d in dramas
-                    if drama_platform_for(d, ch["id"]) and d.get("isBatch") and d.get("releaseDate") == date_str
-                ]
-                cells = [format_cell(d, ch["id"], ep_label=d["schedule"][date_str]) for d in day_dramas]
-                cells += [format_cell(d, ch["id"], is_batch=True) for d in batch_today]
+                cells = []
+                for d in dramas:
+                    platform = drama_platform_for(d, ch["id"])
+                    if not platform:
+                        continue
+                    eff = effective_for_channel(d, platform)
+                    if eff["isBatch"]:
+                        if eff["releaseDate"] != date_str:
+                            continue
+                        ep_label = eff["batchEp"] or "전편"
+                    else:
+                        if date_str not in eff["schedule"]:
+                            continue
+                        ep_label = eff["schedule"][date_str]
+                    cells.append(format_cell(d, ch["id"], ep_label))
                 row_cells.append("<br>".join(cells) if cells else "-")
 
             # 전편 공개(Batch) 열: 공개된 주가 지난 뒤부터 (회차/2)주 동안 "계속 볼 수 있는 작품"으로 노출.
             # 공개된 바로 그 주는 위에서 실제 공개 날짜 칸에 표시했으므로 이 열에서는 제외해 중복을 막는다.
-            batch_dramas = []
+            batch_cells = []
             for d in dramas:
-                if not (drama_platform_for(d, ch["id"]) and d.get("isBatch", False) and d.get("releaseDate")):
+                platform = drama_platform_for(d, ch["id"])
+                if not platform:
                     continue
-                release, window_end = batch_window(d)
-                if release < week_monday and week_monday < window_end:
-                    batch_dramas.append(d)
-            if batch_dramas:
-                batch_cell = "<br>".join(format_cell(d, ch["id"], is_batch=True) for d in batch_dramas)
-            else:
-                batch_cell = "-"
-            row_cells.append(batch_cell)
+                eff = effective_for_channel(d, platform)
+                if not (eff["isBatch"] and eff["releaseDate"]):
+                    continue
+                release, window_end = batch_window_for(eff["releaseDate"], d.get("episodes", ""))
+                if release < week_monday < window_end:
+                    batch_cells.append(format_cell(d, ch["id"], eff["batchEp"] or "전편"))
+            row_cells.append("<br>".join(batch_cells) if batch_cells else "-")
 
             md.append("| " + " | ".join(row_cells) + " |")
 
@@ -213,11 +233,13 @@ def generate_markdown(dramas, weeks):
             continue
 
         for d in ch_dramas:
-            plat_url = drama_platform_for(d, ch["id"])["url"]
-            if d.get("isBatch"):
-                badge = f" `[전편 공개: {d.get('releaseDate', '?')}~]`"
+            platform = drama_platform_for(d, ch["id"])
+            plat_url = platform["url"]
+            eff = effective_for_channel(d, platform)
+            if eff["isBatch"]:
+                badge = f" `[전편 공개: {eff['releaseDate'] or '?'}~]`"
             else:
-                air_dates = sorted(d.get("schedule", {}).keys())
+                air_dates = sorted(eff["schedule"].keys())
                 badge = f" `[방영일: {', '.join(air_dates)}]`" if air_dates else ""
             verified = d.get("verifiedAt")
             verified_tag = f" `(확인: {verified})`" if verified else ""

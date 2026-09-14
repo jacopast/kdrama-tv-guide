@@ -1329,7 +1329,14 @@ const DRAMA_DATA = [
       {
         "name": "TVING",
         "label": "TVING",
-        "url": "https://www.tving.com/contents/P001790587"
+        "url": "https://www.tving.com/contents/P001790587",
+        "schedule": {
+          "2026-09-10": "EP 01-02 (TVING 선공개)",
+          "2026-09-17": "EP 03-04 (TVING 선공개)",
+          "2026-09-24": "EP 05-06 (TVING 선공개)",
+          "2026-10-01": "EP 07-08 (TVING 선공개)",
+          "2026-10-08": "EP 09-10 (최종화, TVING 선공개)"
+        }
       }
     ],
     "isBatch": false,
@@ -1348,7 +1355,7 @@ const DRAMA_DATA = [
     "episodes": "10부작",
     "cast": "이준혁, 서현우, 오대환, 옥자연",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "위아래로 치이며 하루하루를 버티던 팀장 공은태가 로또 1등(13억)에 당첨된 후, 사직서 대신 당첨금을 품고 이전과는 다른 마음가짐으로 출근하는 K-직장인 오피스 드라마. tvN 월화드라마로 2026년 9월 14일 첫방(매주 월·화 21:00), 10부작. TVING에서는 tvN 본방보다 나흘 앞서 매주 목요일 18시에 2회씩 선공개(9/10부터) — 위 날짜는 tvN 본방/Viki 기준이며 TVING에서는 실제로 더 일찍 볼 수 있음.",
+    "synopsis": "위아래로 치이며 하루하루를 버티던 팀장 공은태가 로또 1등(13억)에 당첨된 후, 사직서 대신 당첨금을 품고 이전과는 다른 마음가짐으로 출근하는 K-직장인 오피스 드라마. tvN 월화드라마로 2026년 9월 14일 첫방(매주 월·화 21:00), 10부작. TVING에서는 tvN 본방보다 나흘 앞서 매주 목요일 18시에 2회씩 선공개(9/10부터) — 이제 TVING 채널 칸에는 그 선공개 날짜가 실제로 반영됨.",
     "poster": "",
     "verifiedAt": "2026-09-14"
   },
@@ -1587,6 +1594,33 @@ function getBatchWindow(drama) {
     return { releaseISO: drama.releaseDate, endISO: toISODate(end) };
 }
 
+// 한 작품이 플랫폼마다 다른 날짜에 풀리는 경우(예: TVING이 tvN 본방보다 나흘 먼저 선공개)를 위해,
+// 특정 플랫폼 객체가 자체 schedule/releaseDate/batchEp/isBatch를 갖고 있으면 그걸 우선 쓰고,
+// 없으면 작품 전체의 기본값(대부분의 사이멀캐스트 작품이 공유하는 값)을 쓴다.
+function effectiveForChannel(drama, platform) {
+    return {
+        isBatch: platform.isBatch !== undefined ? platform.isBatch : drama.isBatch,
+        releaseDate: platform.releaseDate || drama.releaseDate,
+        batchEp: platform.batchEp || drama.batchEp,
+        schedule: platform.schedule || drama.schedule
+    };
+}
+
+// 이 작품이 주어진 날짜(요일 칸 dateISO, 또는 'Batch' 열이면 null)에 실제로 걸리는 플랫폼들을 찾는다.
+// day==='Batch'일 땐 weekMondayISO 기준으로 배치 노출 기간 안에 있는 플랫폼을 찾는다.
+function platformsActiveOn(drama, day, dateISO, weekMondayISO) {
+    return drama.platforms.filter(p => {
+        const eff = effectiveForChannel(drama, p);
+        if (day === 'Batch') {
+            if (!eff.isBatch || !eff.releaseDate) return false;
+            const { releaseISO, endISO } = getBatchWindow({ ...drama, releaseDate: eff.releaseDate });
+            return releaseISO < weekMondayISO && weekMondayISO < endISO;
+        }
+        if (eff.isBatch) return eff.releaseDate === dateISO;
+        return eff.schedule && Object.prototype.hasOwnProperty.call(eff.schedule, dateISO);
+    });
+}
+
 // 선택된 달(offset)의 정보를 계산한다: 연/월, 1일~말일 ISO 날짜, 그리고 표시용 라벨.
 const MONTH_KR_LABEL = { '-1': '지난 달', '0': '이번 달', '1': '다음 달' };
 function getMonthInfo(offset) {
@@ -1684,17 +1718,30 @@ function renderMonth() {
 
     // 날짜(ISO) -> [{drama, epText}] 로 모은다
     const byDate = {};
-    const addEntry = (dateISO, drama, epText) => {
+    const addEntry = (dateISO, drama, epText, channelLabel) => {
         if (dateISO < info.firstISO || dateISO > info.lastISO) return;
         if (!byDate[dateISO]) byDate[dateISO] = [];
-        byDate[dateISO].push({ drama, epText });
+        byDate[dateISO].push({ drama, epText, channelLabel });
     };
     filteredData.forEach(drama => {
-        if (drama.isBatch) {
-            if (drama.releaseDate) addEntry(drama.releaseDate, drama, drama.batchEp || '전편 공개');
-        } else if (drama.schedule) {
-            Object.keys(drama.schedule).forEach(dateISO => addEntry(dateISO, drama, drama.schedule[dateISO]));
-        }
+        // 이 작품이 실제로 걸리는 모든 날짜를 모은다 — 작품 기본 스케줄뿐 아니라, TVING 선공개처럼
+        // 플랫폼마다 자체 schedule/releaseDate가 다르면 그 날짜들도 각각 별도로 잡아준다.
+        const byDateInfo = {}; // dateISO -> { epText, channels: Set }
+        const record = (dateISO, epText, channelLabel) => {
+            const entry = byDateInfo[dateISO] || (byDateInfo[dateISO] = { epText, channels: new Set() });
+            entry.channels.add(channelLabel);
+        };
+        drama.platforms.forEach(p => {
+            const eff = effectiveForChannel(drama, p);
+            if (eff.isBatch) {
+                if (eff.releaseDate) record(eff.releaseDate, eff.batchEp || '전편 공개', p.label);
+            } else if (eff.schedule) {
+                Object.entries(eff.schedule).forEach(([dateISO, epText]) => record(dateISO, epText, p.label));
+            }
+        });
+        Object.entries(byDateInfo).forEach(([dateISO, { epText, channels }]) => {
+            addEntry(dateISO, drama, epText, [...channels].join(' · '));
+        });
     });
 
     const monthList = document.getElementById('monthList');
@@ -1715,9 +1762,7 @@ function renderMonth() {
         label.className = 'month-day-label';
         label.textContent = `${parseInt(mm, 10)}월 ${parseInt(dd, 10)}일 (${WEEKDAY_KR[dateObj.getDay()]})` + (isToday ? ' · 오늘' : '');
         group.appendChild(label);
-        byDate[dateISO].forEach(({ drama, epText }) => {
-            // 플랫폼이 여러 개면(예: SBS+Hulu, 또는 Netflix처럼 미국·한국 겸용) 전부 합쳐서 보여준다.
-            const channelLabel = drama.platforms.map(p => p.label).join(' · ');
+        byDate[dateISO].forEach(({ drama, epText, channelLabel }) => {
             group.appendChild(makeDramaCard(drama, epText, { channelLabel }));
         });
         monthList.appendChild(group);
@@ -1931,18 +1976,26 @@ function renderGrid() {
 
             // Find dramas for this channel and this exact calendar date (or the Batch column).
             // 전편 공개작은 공개된 그 날짜의 요일 칸에 표시하고, 그 이후 주부터는 Batch 열로 옮겨 계속 보여준다(중복 방지).
+            const dateKey = dateInfo ? dateInfo.dateISO : null;
             const cellDramas = filteredData.filter(d => {
-                const isOnCh = d.platforms.some(p => p.name.includes(ch.id));
-                if(!isOnCh) return false;
+                const platform = d.platforms.find(p => p.name.includes(ch.id));
+                if(!platform) return false;
+                // 스케줄/배치일이 플랫폼마다 다를 수 있으므로, "이 채널의" 플랫폼이 이 칸에 실제로
+                // 걸리는지를 봐야 한다(다른 플랫폼이 이 칸에 걸린다고 이 채널 칸을 채우면 안 됨).
+                const eff = effectiveForChannel(d, platform);
+                let isOnThisCell;
                 if(day === 'Batch') {
-                    if(!d.isBatch || !d.releaseDate) return false;
-                    const { releaseISO, endISO } = getBatchWindow(d);
-                    if(!(releaseISO < weekDates[0].dateISO && weekDates[0].dateISO < endISO)) return false;
-                } else if(d.isBatch) {
-                    if(d.releaseDate !== dateInfo.dateISO) return false;
+                    if(!eff.isBatch || !eff.releaseDate) isOnThisCell = false;
+                    else {
+                        const { releaseISO, endISO } = getBatchWindow({ ...d, releaseDate: eff.releaseDate });
+                        isOnThisCell = releaseISO < weekDates[0].dateISO && weekDates[0].dateISO < endISO;
+                    }
+                } else if(eff.isBatch) {
+                    isOnThisCell = eff.releaseDate === dateKey;
                 } else {
-                    if(!(d.schedule && Object.prototype.hasOwnProperty.call(d.schedule, dateInfo.dateISO))) return false;
+                    isOnThisCell = !!(eff.schedule && Object.prototype.hasOwnProperty.call(eff.schedule, dateKey));
                 }
+                if(!isOnThisCell) return false;
                 // 이 (요일열, 작품) 조합을 먼저 순회된 다른 채널 행이 이미 표시했다면 여기선 건너뛴다.
                 if(claimedThisRender.has(`${day}::${d.id}`)) return false;
                 return true;
@@ -1954,14 +2007,15 @@ function renderGrid() {
             } else {
                 hasAnyContent = true;
                 cellDramas.forEach(drama => {
-                    let epText = "";
-                    if(drama.isBatch) epText = drama.batchEp || '전편 공개';
-                    else epText = drama.schedule[dateInfo.dateISO];
+                    const platform = drama.platforms.find(p => p.name.includes(ch.id));
+                    const eff = effectiveForChannel(drama, platform);
+                    const epText = eff.isBatch ? (eff.batchEp || '전편 공개') : eff.schedule[dateKey];
                     claimedThisRender.add(`${day}::${drama.id}`);
-                    // 여러 채널에 동시에 걸린 작품은, 지금 표시된 채널 행 하나뿐 아니라 실제로 걸려있는
-                    // 모든 채널 이름을 카드에 같이 적어준다(어느 한쪽 행만 봐도 놓치지 않게).
-                    const cardOpts = drama.platforms.length > 1
-                        ? { channelLabel: drama.platforms.map(p => p.label).join(' · ') }
+                    // 이 날짜에 실제로 걸리는 채널만 모아서 카드에 같이 적어준다 — 플랫폼마다 스케줄이
+                    // 다르면(예: TVING 선공개) 같은 날 안 걸리는 채널은 라벨에서 자연히 빠진다.
+                    const activePlatforms = platformsActiveOn(drama, day, dateKey, weekDates[0].dateISO);
+                    const cardOpts = activePlatforms.length > 1
+                        ? { channelLabel: activePlatforms.map(p => p.label).join(' · ') }
                         : {};
                     td.appendChild(makeDramaCard(drama, epText, cardOpts));
                 });
