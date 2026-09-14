@@ -20,28 +20,30 @@ HTML_PATH = BASE_DIR / "kdrama_tv_guide.html"
 WEEK_OFFSETS = [-1, 0, 1]  # 지난 주, 이번 주, 다음 주. 범위를 늘리고 싶으면 이 리스트만 바꾸면 됨 (예: [-1, 0, 1, 2]).
 
 CHANNELS = [
-  {"id": "Netflix", "badge": "`CH 01 NETFLIX`", "name": "Netflix", "num": "CH 01", "cssClass": "ch-num-netflix", "region": "US"},
-  {"id": "Hulu", "badge": "`CH 02 HULU / D+`", "name": "Hulu / Disney+", "num": "CH 02", "cssClass": "ch-num-hulu", "region": "US"},
-  {"id": "Prime Video", "badge": "`CH 03 PRIME VIDEO`", "name": "Prime Video", "num": "CH 03", "cssClass": "ch-num-prime", "region": "US"},
-  {"id": "Apple TV+", "badge": "`CH 04 APPLE TV+`", "name": "Apple TV+", "num": "CH 04", "cssClass": "ch-num-apple", "region": "US"},
-  {"id": "Viki", "badge": "`CH 05 RAKUTEN VIKI`", "name": "Rakuten Viki", "num": "CH 05", "cssClass": "ch-num-viki", "region": "US"},
-  {"id": "Kocowa", "badge": "`CH 06 KOCOWA+`", "name": "KOCOWA+", "num": "CH 06", "cssClass": "ch-num-kocowa", "region": "US"},
-  # 한국 방영 채널 (지상파/케이블) — 미국 플랫폼과 무관하게 한국 본방 편성을 보여준다.
-  {"id": "SBS", "badge": "`KR 01 SBS`", "name": "SBS", "num": "KR 01", "cssClass": "ch-num-sbs", "region": "KR"},
-  {"id": "MBC", "badge": "`KR 02 MBC`", "name": "MBC", "num": "KR 02", "cssClass": "ch-num-mbc", "region": "KR"},
-  {"id": "KBS2", "badge": "`KR 03 KBS2`", "name": "KBS2", "num": "KR 03", "cssClass": "ch-num-kbs2", "region": "KR"},
-  {"id": "KBS Joy", "badge": "`KR 04 KBS JOY`", "name": "KBS Joy", "num": "KR 04", "cssClass": "ch-num-kbsjoy", "region": "KR"},
-  {"id": "tvN", "badge": "`KR 05 tvN`", "name": "tvN", "num": "KR 05", "cssClass": "ch-num-tvn", "region": "KR"},
-  {"id": "JTBC", "badge": "`KR 06 JTBC`", "name": "JTBC", "num": "KR 06", "cssClass": "ch-num-jtbc", "region": "KR"},
-  {"id": "ENA", "badge": "`KR 07 ENA`", "name": "ENA", "num": "KR 07", "cssClass": "ch-num-ena", "region": "KR"},
-  {"id": "KBS1", "badge": "`KR 08 KBS1`", "name": "KBS1", "num": "KR 08", "cssClass": "ch-num-kbs1", "region": "KR"},
-  {"id": "OCN", "badge": "`KR 09 OCN`", "name": "OCN", "num": "KR 09", "cssClass": "ch-num-ocn", "region": "KR"},
-  {"id": "Channel A", "badge": "`KR 10 CHANNEL A`", "name": "Channel A", "num": "KR 10", "cssClass": "ch-num-chana", "region": "KR"},
-  {"id": "MBN", "badge": "`KR 11 MBN`", "name": "MBN", "num": "KR 11", "cssClass": "ch-num-mbn", "region": "KR"},
-  {"id": "TV Chosun", "badge": "`KR 12 TV CHOSUN`", "name": "TV Chosun", "num": "KR 12", "cssClass": "ch-num-tvchosun", "region": "KR"},
-  {"id": "TVING", "badge": "`KR 13 TVING`", "name": "TVING", "num": "KR 13", "cssClass": "ch-num-tving", "region": "KR"},
-  {"id": "Wavve", "badge": "`KR 14 WAVVE`", "name": "Wavve", "num": "KR 14", "cssClass": "ch-num-wavve", "region": "KR"},
-  {"id": "Coupang Play", "badge": "`KR 15 COUPANG PLAY`", "name": "Coupang Play", "num": "KR 15", "cssClass": "ch-num-coupang", "region": "KR"}
+  # Netflix/Disney+/Prime Video/Apple TV+는 한국에서도 그대로 서비스되는 글로벌 앱이라 두 지역 모두에 해당.
+  # Viki/Kocowa는 해외 시청자 대상 서비스라 한국 현지에서는 안 쓰여 US 전용으로 둔다.
+  {"id": "Netflix", "badge": "`CH 01 NETFLIX`", "name": "Netflix", "num": "CH 01", "cssClass": "ch-num-netflix", "regions": ["US", "KR"]},
+  {"id": "Hulu", "badge": "`CH 02 HULU / D+`", "name": "Hulu / Disney+", "num": "CH 02", "cssClass": "ch-num-hulu", "regions": ["US", "KR"]},
+  {"id": "Prime Video", "badge": "`CH 03 PRIME VIDEO`", "name": "Prime Video", "num": "CH 03", "cssClass": "ch-num-prime", "regions": ["US", "KR"]},
+  {"id": "Apple TV+", "badge": "`CH 04 APPLE TV+`", "name": "Apple TV+", "num": "CH 04", "cssClass": "ch-num-apple", "regions": ["US", "KR"]},
+  {"id": "Viki", "badge": "`CH 05 RAKUTEN VIKI`", "name": "Rakuten Viki", "num": "CH 05", "cssClass": "ch-num-viki", "regions": ["US"]},
+  {"id": "Kocowa", "badge": "`CH 06 KOCOWA+`", "name": "KOCOWA+", "num": "CH 06", "cssClass": "ch-num-kocowa", "regions": ["US"]},
+  # 한국 방영/서비스 전용 채널.
+  {"id": "SBS", "badge": "`KR 01 SBS`", "name": "SBS", "num": "KR 01", "cssClass": "ch-num-sbs", "regions": ["KR"]},
+  {"id": "MBC", "badge": "`KR 02 MBC`", "name": "MBC", "num": "KR 02", "cssClass": "ch-num-mbc", "regions": ["KR"]},
+  {"id": "KBS2", "badge": "`KR 03 KBS2`", "name": "KBS2", "num": "KR 03", "cssClass": "ch-num-kbs2", "regions": ["KR"]},
+  {"id": "KBS Joy", "badge": "`KR 04 KBS JOY`", "name": "KBS Joy", "num": "KR 04", "cssClass": "ch-num-kbsjoy", "regions": ["KR"]},
+  {"id": "tvN", "badge": "`KR 05 tvN`", "name": "tvN", "num": "KR 05", "cssClass": "ch-num-tvn", "regions": ["KR"]},
+  {"id": "JTBC", "badge": "`KR 06 JTBC`", "name": "JTBC", "num": "KR 06", "cssClass": "ch-num-jtbc", "regions": ["KR"]},
+  {"id": "ENA", "badge": "`KR 07 ENA`", "name": "ENA", "num": "KR 07", "cssClass": "ch-num-ena", "regions": ["KR"]},
+  {"id": "KBS1", "badge": "`KR 08 KBS1`", "name": "KBS1", "num": "KR 08", "cssClass": "ch-num-kbs1", "regions": ["KR"]},
+  {"id": "OCN", "badge": "`KR 09 OCN`", "name": "OCN", "num": "KR 09", "cssClass": "ch-num-ocn", "regions": ["KR"]},
+  {"id": "Channel A", "badge": "`KR 10 CHANNEL A`", "name": "Channel A", "num": "KR 10", "cssClass": "ch-num-chana", "regions": ["KR"]},
+  {"id": "MBN", "badge": "`KR 11 MBN`", "name": "MBN", "num": "KR 11", "cssClass": "ch-num-mbn", "regions": ["KR"]},
+  {"id": "TV Chosun", "badge": "`KR 12 TV CHOSUN`", "name": "TV Chosun", "num": "KR 12", "cssClass": "ch-num-tvchosun", "regions": ["KR"]},
+  {"id": "TVING", "badge": "`KR 13 TVING`", "name": "TVING", "num": "KR 13", "cssClass": "ch-num-tving", "regions": ["KR"]},
+  {"id": "Wavve", "badge": "`KR 14 WAVVE`", "name": "Wavve", "num": "KR 14", "cssClass": "ch-num-wavve", "regions": ["KR"]},
+  {"id": "Coupang Play", "badge": "`KR 15 COUPANG PLAY`", "name": "Coupang Play", "num": "KR 15", "cssClass": "ch-num-coupang", "regions": ["KR"]}
 ]
 
 _KR_DAY_NAMES = [("Mon", "월"), ("Tue", "화"), ("Wed", "수"), ("Thu", "목"), ("Fri", "금"), ("Sat", "토"), ("Sun", "일")]

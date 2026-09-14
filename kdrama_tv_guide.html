@@ -1293,39 +1293,82 @@ const DRAMA_DATA = [
     "synopsis": "건축사 고결과 스타트업 개발자 조은애가 얽히며 벌어지는 홈드라마. KBS1, 2026년 3월 30일 첫방(매주 월~금 20:30), 총 122부작으로 2026년 9월 중 종영 예정. 방영 중 결방(스포츠 중계·개표방송)이 있어 회차 번호는 확인된 결방일(5/20, 6/3) 기준으로 계산했고 최대 ±1화 오차 가능 — 다음 확인 때 실제 회차로 보정 필요.",
     "poster": "",
     "verifiedAt": "2026-09-14"
+  },
+  {
+    "id": "the-ordinary-jackpot",
+    "title": "로또 1등도 출근합니다",
+    "engTitle": "The Ordinary Jackpot",
+    "platforms": [
+      {
+        "name": "Viki",
+        "label": "Rakuten Viki",
+        "url": "https://www.viki.com/tv/41650c-the-ordinary-jackpot"
+      },
+      {
+        "name": "tvN",
+        "label": "tvN",
+        "url": "https://tvn.cjenm.com"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com/contents/P001790587"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-09-14": "EP 01 (첫방)",
+      "2026-09-15": "EP 02",
+      "2026-09-21": "EP 03",
+      "2026-09-22": "EP 04",
+      "2026-09-28": "EP 05",
+      "2026-09-29": "EP 06",
+      "2026-10-05": "EP 07",
+      "2026-10-06": "EP 08",
+      "2026-10-12": "EP 09",
+      "2026-10-13": "EP 10 (최종화)"
+    },
+    "episodes": "10부작",
+    "cast": "이준혁, 서현우, 오대환, 옥자연",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "위아래로 치이며 하루하루를 버티던 팀장 공은태가 로또 1등(13억)에 당첨된 후, 사직서 대신 당첨금을 품고 이전과는 다른 마음가짐으로 출근하는 K-직장인 오피스 드라마. tvN 월화드라마로 2026년 9월 14일 첫방(매주 월·화 21:00), 10부작. TVING에서는 tvN 본방보다 나흘 앞서 매주 목요일 18시에 2회씩 선공개(9/10부터) — 위 날짜는 tvN 본방/Viki 기준이며 TVING에서는 실제로 더 일찍 볼 수 있음.",
+    "poster": "",
+    "verifiedAt": "2026-09-14"
   }
 ];
 
 // CHANNELS
 const CHANNELS = [
-  { id: "Netflix", num: "CH 01", name: "NETFLIX", cssClass: "ch-num-netflix", region: "US" },
-  { id: "Hulu", num: "CH 02", name: "HULU / D+", cssClass: "ch-num-hulu", region: "US" },
-  { id: "Prime Video", num: "CH 03", name: "PRIME VIDEO", cssClass: "ch-num-prime", region: "US" },
-  { id: "Apple TV+", num: "CH 04", name: "APPLE TV+", cssClass: "ch-num-apple", region: "US" },
-  { id: "Viki", num: "CH 05", name: "RAKUTEN VIKI", cssClass: "ch-num-viki", region: "US" },
-  { id: "Kocowa", num: "CH 06", name: "KOCOWA+", cssClass: "ch-num-kocowa", region: "US" },
-  // 한국 방영 채널 — 미국 플랫폼 확인 여부와 무관하게 한국 본방 편성을 보여준다.
-  { id: "SBS", num: "KR 01", name: "SBS", cssClass: "ch-num-sbs", region: "KR" },
-  { id: "MBC", num: "KR 02", name: "MBC", cssClass: "ch-num-mbc", region: "KR" },
-  { id: "KBS2", num: "KR 03", name: "KBS2", cssClass: "ch-num-kbs2", region: "KR" },
-  { id: "KBS Joy", num: "KR 04", name: "KBS JOY", cssClass: "ch-num-kbsjoy", region: "KR" },
-  { id: "tvN", num: "KR 05", name: "tvN", cssClass: "ch-num-tvn", region: "KR" },
-  { id: "JTBC", num: "KR 06", name: "JTBC", cssClass: "ch-num-jtbc", region: "KR" },
-  { id: "ENA", num: "KR 07", name: "ENA", cssClass: "ch-num-ena", region: "KR" },
-  { id: "KBS1", num: "KR 08", name: "KBS1", cssClass: "ch-num-kbs1", region: "KR" },
-  { id: "OCN", num: "KR 09", name: "OCN", cssClass: "ch-num-ocn", region: "KR" },
-  { id: "Channel A", num: "KR 10", name: "CHANNEL A", cssClass: "ch-num-chana", region: "KR" },
-  { id: "MBN", num: "KR 11", name: "MBN", cssClass: "ch-num-mbn", region: "KR" },
-  { id: "TV Chosun", num: "KR 12", name: "TV CHOSUN", cssClass: "ch-num-tvchosun", region: "KR" },
-  { id: "TVING", num: "KR 13", name: "TVING", cssClass: "ch-num-tving", region: "KR" },
-  { id: "Wavve", num: "KR 14", name: "WAVVE", cssClass: "ch-num-wavve", region: "KR" },
-  { id: "Coupang Play", num: "KR 15", name: "COUPANG PLAY", cssClass: "ch-num-coupang", region: "KR" }
+  // Netflix/Disney+/Prime Video/Apple TV+는 한국에서도 그대로 서비스되는 글로벌 앱이라 두 지역 모두에 해당.
+  // Viki/Kocowa는 해외(주로 미국 등 재외동포·외국인) 시청자 대상 서비스라 한국 현지에서는 안 쓰여 US 전용으로 둠.
+  { id: "Netflix", num: "CH 01", name: "NETFLIX", cssClass: "ch-num-netflix", regions: ["US", "KR"] },
+  { id: "Hulu", num: "CH 02", name: "HULU / D+", cssClass: "ch-num-hulu", regions: ["US", "KR"] },
+  { id: "Prime Video", num: "CH 03", name: "PRIME VIDEO", cssClass: "ch-num-prime", regions: ["US", "KR"] },
+  { id: "Apple TV+", num: "CH 04", name: "APPLE TV+", cssClass: "ch-num-apple", regions: ["US", "KR"] },
+  { id: "Viki", num: "CH 05", name: "RAKUTEN VIKI", cssClass: "ch-num-viki", regions: ["US"] },
+  { id: "Kocowa", num: "CH 06", name: "KOCOWA+", cssClass: "ch-num-kocowa", regions: ["US"] },
+  // 한국 방영/서비스 전용 채널.
+  { id: "SBS", num: "KR 01", name: "SBS", cssClass: "ch-num-sbs", regions: ["KR"] },
+  { id: "MBC", num: "KR 02", name: "MBC", cssClass: "ch-num-mbc", regions: ["KR"] },
+  { id: "KBS2", num: "KR 03", name: "KBS2", cssClass: "ch-num-kbs2", regions: ["KR"] },
+  { id: "KBS Joy", num: "KR 04", name: "KBS JOY", cssClass: "ch-num-kbsjoy", regions: ["KR"] },
+  { id: "tvN", num: "KR 05", name: "tvN", cssClass: "ch-num-tvn", regions: ["KR"] },
+  { id: "JTBC", num: "KR 06", name: "JTBC", cssClass: "ch-num-jtbc", regions: ["KR"] },
+  { id: "ENA", num: "KR 07", name: "ENA", cssClass: "ch-num-ena", regions: ["KR"] },
+  { id: "KBS1", num: "KR 08", name: "KBS1", cssClass: "ch-num-kbs1", regions: ["KR"] },
+  { id: "OCN", num: "KR 09", name: "OCN", cssClass: "ch-num-ocn", regions: ["KR"] },
+  { id: "Channel A", num: "KR 10", name: "CHANNEL A", cssClass: "ch-num-chana", regions: ["KR"] },
+  { id: "MBN", num: "KR 11", name: "MBN", cssClass: "ch-num-mbn", regions: ["KR"] },
+  { id: "TV Chosun", num: "KR 12", name: "TV CHOSUN", cssClass: "ch-num-tvchosun", regions: ["KR"] },
+  { id: "TVING", num: "KR 13", name: "TVING", cssClass: "ch-num-tving", regions: ["KR"] },
+  { id: "Wavve", num: "KR 14", name: "WAVVE", cssClass: "ch-num-wavve", regions: ["KR"] },
+  { id: "Coupang Play", num: "KR 15", name: "COUPANG PLAY", cssClass: "ch-num-coupang", regions: ["KR"] }
 ];
 
-// 플랫폼 이름으로 해당 채널의 지역(KR/US)을 찾는다.
-function platformRegion(platformName) {
+// 플랫폼 이름으로 해당 채널이 걸쳐 있는 지역들을 찾는다(Netflix/Disney+처럼 미국·한국 둘 다인 경우 배열에 둘 다 들어있음).
+function platformRegions(platformName) {
     const ch = CHANNELS.find(c => platformName.includes(c.id));
-    return ch ? ch.region : null;
+    return ch ? ch.regions : [];
 }
 
 const DAY_ORDER = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -1531,10 +1574,8 @@ function renderMonth() {
         label.textContent = `${parseInt(mm, 10)}월 ${parseInt(dd, 10)}일 (${WEEKDAY_KR[dateObj.getDay()]})` + (isToday ? ' · 오늘' : '');
         group.appendChild(label);
         byDate[dateISO].forEach(({ drama, epText }) => {
-            // 함께 모드는 이 작품이 걸린 모든 채널(미국+한국)을 합쳐서 보여주고, 그 외엔 현재 지역에 맞는 채널 하나만.
-            const channelLabel = regionMode === 'ALL'
-                ? drama.platforms.map(p => p.label).join(' · ')
-                : (drama.platforms.find(p => platformRegion(p.name) === regionMode) || drama.platforms[0])?.label || '';
+            // 플랫폼이 여러 개면(예: SBS+Hulu, 또는 Netflix처럼 미국·한국 겸용) 전부 합쳐서 보여준다.
+            const channelLabel = drama.platforms.map(p => p.label).join(' · ');
             group.appendChild(makeDramaCard(drama, epText, { channelLabel }));
         });
         monthList.appendChild(group);
@@ -1675,7 +1716,7 @@ function makeDramaCard(drama, epText, opts = {}) {
 function getFilteredDramas() {
     return DRAMA_DATA.filter(drama => {
         if(showOnlyWatchlist && !myWatchlist.includes(drama.id)) return false;
-        if(regionMode !== 'ALL' && !drama.platforms.some(p => platformRegion(p.name) === regionMode)) return false;
+        if(regionMode !== 'ALL' && !drama.platforms.some(p => platformRegions(p.name).includes(regionMode))) return false;
         return true;
     });
 }
@@ -1702,7 +1743,7 @@ function isChannelActive(ch) {
 
 // 현재 지역 모드에서 실제로 보여줄 채널 행만 추린다 ('ALL'이면 전부) + 2주 넘게 잠잠한 채널은 아예 제외.
 function visibleChannels() {
-    return CHANNELS.filter(ch => (regionMode === 'ALL' || ch.region === regionMode) && isChannelActive(ch));
+    return CHANNELS.filter(ch => (regionMode === 'ALL' || ch.regions.includes(regionMode)) && isChannelActive(ch));
 }
 
 function setRegion(mode) {
@@ -1723,9 +1764,9 @@ function renderGrid() {
     const weekDates = getWeekDates(currentWeekOffset); // [{key, dateISO, label, isToday}, ...] Mon~Sun
     const weekSundayISO = getWeekSundayISO(currentWeekOffset);
     let weekHasAnyContent = false;
-    // '함께' 모드에서 같은 작품이 US 채널 행과 KR 채널 행에 중복으로 뜨지 않도록, 이번 렌더에서
-    // (열, 작품) 조합이 이미 어느 채널 행에 표시됐는지 기록한다 — 먼저 순회되는 채널(US가 KR보다 먼저)이 우선권을 가짐.
-    const claimedInAllMode = new Set();
+    // 같은 작품이 여러 채널 행(예: SBS+Hulu, 또는 Netflix처럼 미국·한국 겸용 채널)에 중복으로 뜨지 않도록,
+    // 이번 렌더에서 (열, 작품) 조합이 이미 어느 채널 행에 표시됐는지 기록한다 — 먼저 순회된 채널이 그 칸을 갖는다.
+    const claimedThisRender = new Set();
 
     visibleChannels().forEach(ch => {
         const tr = document.createElement('tr');
@@ -1758,8 +1799,8 @@ function renderGrid() {
                 } else {
                     if(!(d.schedule && Object.prototype.hasOwnProperty.call(d.schedule, dateInfo.dateISO))) return false;
                 }
-                // 함께 모드: 이 (요일열, 작품) 조합을 먼저 순회된 다른 채널 행이 이미 표시했다면 여기선 건너뛴다.
-                if(regionMode === 'ALL' && claimedInAllMode.has(`${day}::${d.id}`)) return false;
+                // 이 (요일열, 작품) 조합을 먼저 순회된 다른 채널 행이 이미 표시했다면 여기선 건너뛴다.
+                if(claimedThisRender.has(`${day}::${d.id}`)) return false;
                 return true;
             });
 
@@ -1772,10 +1813,10 @@ function renderGrid() {
                     let epText = "";
                     if(drama.isBatch) epText = drama.batchEp || '전편 공개';
                     else epText = drama.schedule[dateInfo.dateISO];
-                    if(regionMode === 'ALL') claimedInAllMode.add(`${day}::${drama.id}`);
-                    // 함께 모드에서 미국+한국에 동시에 있는 작품은, 지금 표시된 채널 행 하나뿐 아니라
-                    // 실제로 걸려있는 모든 채널 이름을 카드에 같이 적어준다(어느 한쪽 행만 봐도 놓치지 않게).
-                    const cardOpts = (regionMode === 'ALL' && drama.platforms.length > 1)
+                    claimedThisRender.add(`${day}::${drama.id}`);
+                    // 여러 채널에 동시에 걸린 작품은, 지금 표시된 채널 행 하나뿐 아니라 실제로 걸려있는
+                    // 모든 채널 이름을 카드에 같이 적어준다(어느 한쪽 행만 봐도 놓치지 않게).
+                    const cardOpts = drama.platforms.length > 1
                         ? { channelLabel: drama.platforms.map(p => p.label).join(' · ') }
                         : {};
                     td.appendChild(makeDramaCard(drama, epText, cardOpts));
