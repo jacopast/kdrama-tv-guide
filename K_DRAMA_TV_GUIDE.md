@@ -7,7 +7,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 9월 2주차 (9/14 ~ 9/20)` | **기준 시간**: `2026-09-14 03:54 EST`
+> **기준 주차**: `2026년 9월 2주차 (9/14 ~ 9/20)` | **기준 시간**: `2026-09-14 04:02 EST`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
@@ -23,6 +23,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 11` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 12 (최종화)` | - | - | - | - | - | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 21` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 22` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 07`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 23` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 08`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 24` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 25` | - | - | - |
 | **`KR 01 SBS`** | - | - | - | - | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 11` | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 12` | - | - |
+| **`KR 02 MBC`** | - | - | - | - | - | - | - | - |
 | **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 21` | [욕망의 덫](https://vod.kbs.co.kr) `EP 22` | [욕망의 덫](https://vod.kbs.co.kr) `EP 23` | [욕망의 덫](https://vod.kbs.co.kr) `EP 24` | [욕망의 덫](https://vod.kbs.co.kr) `EP 25` | - | - | - |
 | **`KR 04 KBS JOY`** | - | - | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 07` | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 08` | - | - | - | - |
 | **`KR 05 tvN`** | [최애의 사원](https://tvn.cjenm.com/ko/mybiasmyboss/) `EP 11` | [최애의 사원](https://tvn.cjenm.com/ko/mybiasmyboss/) `EP 12 (최종화)` | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 05` | [포핸즈](https://tvn.cjenm.com) `EP 06` | - |
@@ -40,6 +41,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`CH 05 RAKUTEN VIKI`** | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 01 (첫방)` | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 02` | - | - | - | - | - | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 26` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 27` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 09`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 28` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 10`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 29` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 30` | - | - | - |
 | **`KR 01 SBS`** | - | - | - | - | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 13` | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 14 (최종화)` | - | - |
+| **`KR 02 MBC`** | - | - | - | - | - | - | - | - |
 | **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 26` | [욕망의 덫](https://vod.kbs.co.kr) `EP 27` | [욕망의 덫](https://vod.kbs.co.kr) `EP 28` | [욕망의 덫](https://vod.kbs.co.kr) `EP 29` | [욕망의 덫](https://vod.kbs.co.kr) `EP 30` | - | - | - |
 | **`KR 04 KBS JOY`** | - | - | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 09` | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 10` | - | - | - | - |
 | **`KR 05 tvN`** | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 01 (첫방)` | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 02` | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 07` | [포핸즈](https://tvn.cjenm.com) `EP 08` | - |
@@ -57,6 +59,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`CH 05 RAKUTEN VIKI`** | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 03` | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 04` | - | - | - | - | - | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 31` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 32` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 11`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 33` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 12 (최종화)`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 34` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 35` | - | - | - |
 | **`KR 01 SBS`** | - | - | - | - | - | - | - | - |
+| **`KR 02 MBC`** | - | - | - | - | - | - | - | - |
 | **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 31` | [욕망의 덫](https://vod.kbs.co.kr) `EP 32` | [욕망의 덫](https://vod.kbs.co.kr) `EP 33` | [욕망의 덫](https://vod.kbs.co.kr) `EP 34` | [욕망의 덫](https://vod.kbs.co.kr) `EP 35` | - | - | - |
 | **`KR 04 KBS JOY`** | - | - | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 11` | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 12 (최종화)` | - | - | - | - |
 | **`KR 05 tvN`** | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 03` | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 04` | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 09` | [포핸즈](https://tvn.cjenm.com) `EP 10` | - |
@@ -120,6 +123,12 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ### `KR 01 SBS`
 - **[재벌X형사 시즌 2 (Flex x Cop Season 2)](https://programs.sbs.co.kr/drama/flexxcop2)** `[방영일: 2026-08-07, 2026-08-08, 2026-08-14, 2026-08-15, 2026-08-21, 2026-08-22, 2026-08-28, 2026-08-29, 2026-09-04, 2026-09-05, 2026-09-11, 2026-09-12, 2026-09-18, 2026-09-19]` `(확인: 2026-09-07)` — 📊 시청률 5.8% (2회, 닐슨코리아 전국가구) | 14부작 | 안보현, 정은채, 강상준, 김신비
   > 재벌 3세 낙하산 형사 진이수가 새 파트너와 함께 더 거대한 재벌가 부패 카르텔을 쫓는 통쾌한 수사극. SBS, 2026년 8월 7일 첫방(매주 금·토), 시즌1 뛰어넘는 화제성으로 출발.
+- **[닥터X: 하얀 마피아의 시대 (Doctor X: Age of the White Mafia)](https://programs.sbs.co.kr/drama/doctorx/main)** `[방영일: 2026-10-09, 2026-10-10, 2026-10-16, 2026-10-17, 2026-10-23, 2026-10-24]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 (출처마다 표기 상이) | 김지원, 이정은, 손현주, 김우석
+  > 일본 원작 '닥터 X'의 한국판. 천재 외과의사 계수정이 병원 안 부조리에 메스를 들이대는 의학 수사극. SBS 금토드라마, 2026년 10월 9일 첫방 확정.
+
+### `KR 02 MBC`
+- **[라이어 (Liar)](https://www.imbc.com)** `[전편 공개: 2026-10-30~]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 미정 (10월 말 편성 예정) | 유연석, 서현진
+  > 하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 말 편성 예정 — 정확한 첫방일이 아직 발표되지 않아 10/30에 임시 배치(확정되는 대로 갱신).
 
 ### `KR 03 KBS2`
 - **[욕망의 덫 (A Trap Called Desire)](https://vod.kbs.co.kr)** `[방영일: 2026-08-10, 2026-08-11, 2026-08-12, 2026-08-13, 2026-08-14, 2026-08-17, 2026-08-18, 2026-08-19, 2026-08-20, 2026-08-21, 2026-08-24, 2026-08-25, 2026-08-26, 2026-08-27, 2026-08-28, 2026-08-31, 2026-09-01, 2026-09-02, 2026-09-03, 2026-09-04, 2026-09-07, 2026-09-08, 2026-09-09, 2026-09-10, 2026-09-11, 2026-09-14, 2026-09-15, 2026-09-16, 2026-09-17, 2026-09-18, 2026-09-21, 2026-09-22, 2026-09-23, 2026-09-24, 2026-09-25, 2026-09-28, 2026-09-29, 2026-09-30]` `(확인: 2026-09-07)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 106부작 (KBS2 일일드라마) | 장서희, 전혜원, 주새벽, 설정환, 장세현, 유태웅, 윤해영

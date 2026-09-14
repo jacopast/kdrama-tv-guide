@@ -363,6 +363,18 @@
             background-color: var(--cell-bg-starred);
         }
 
+        /* 정확한 날짜가 아직 안 나온 "(미정)" 임시 배치 항목: 박스 배경을 페이지 배경과 똑같이 만들어
+           박스 자체가 없는 것처럼 흐리게 가라앉히고, 글자도 옅은 회색으로 톤 다운해서 확정된 편성과
+           한눈에 구분되게 한다. */
+        .drama-card.tentative {
+            background-color: var(--bg-color);
+        }
+
+        .drama-card.tentative .drama-title-link,
+        .drama-card.tentative .ep-tag {
+            color: var(--text-soft);
+        }
+
         .drama-card:last-child {
             margin-bottom: 0;
         }
@@ -1413,6 +1425,54 @@ const DRAMA_DATA = [
     "synopsis": "일제강점기 밀정이 된 경성 최고의 소매치기와 조선총독부 엘리트 통역관이 적의 심장부에서 마주하며 벌어지는 100일간의 첩보 로맨스. tvN, 2026년 10월 10일 첫방(매주 토·일 21:10), 본방 후 Netflix에서 다시보기 독점 공개.",
     "poster": "",
     "verifiedAt": "2026-09-14"
+  },
+  {
+    "id": "doctor-x-white-mafia",
+    "title": "닥터X: 하얀 마피아의 시대",
+    "engTitle": "Doctor X: Age of the White Mafia",
+    "platforms": [
+      {
+        "name": "SBS",
+        "label": "SBS",
+        "url": "https://programs.sbs.co.kr/drama/doctorx/main"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-09": "EP 01 (첫방)",
+      "2026-10-10": "EP 02",
+      "2026-10-16": "EP 03",
+      "2026-10-17": "EP 04",
+      "2026-10-23": "EP 05",
+      "2026-10-24": "EP 06"
+    },
+    "episodes": "회차 수 확인 중 (출처마다 표기 상이)",
+    "cast": "김지원, 이정은, 손현주, 김우석",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "일본 원작 '닥터 X'의 한국판. 천재 외과의사 계수정이 병원 안 부조리에 메스를 들이대는 의학 수사극. SBS 금토드라마, 2026년 10월 9일 첫방 확정.",
+    "poster": "",
+    "verifiedAt": "2026-09-14"
+  },
+  {
+    "id": "liar",
+    "title": "라이어",
+    "engTitle": "Liar",
+    "platforms": [
+      {
+        "name": "MBC",
+        "label": "MBC",
+        "url": "https://www.imbc.com"
+      }
+    ],
+    "isBatch": true,
+    "releaseDate": "2026-10-30",
+    "batchEp": "금토드라마 첫방 예정 (미정)",
+    "episodes": "미정 (10월 말 편성 예정)",
+    "cast": "유연석, 서현진",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 말 편성 예정 — 정확한 첫방일이 아직 발표되지 않아 10/30에 임시 배치(확정되는 대로 갱신).",
+    "poster": "",
+    "verifiedAt": "2026-09-14"
   }
 ];
 
@@ -1778,8 +1838,10 @@ function paintTodayColumnFill() {
 function makeDramaCard(drama, epText, opts = {}) {
     const isStarred = myWatchlist.includes(drama.id);
     const metaText = opts.channelLabel ? `${opts.channelLabel} · ${epText}` : epText;
+    // 정확한 날짜가 아직 안 나와 "(미정)"으로 임시 배치된 항목은 카드를 흐리게 가라앉힌다.
+    const isTentative = /\(미정\)/.test(epText);
     const card = document.createElement('div');
-    card.className = 'drama-card' + (isStarred ? ' starred' : '');
+    card.className = 'drama-card' + (isStarred ? ' starred' : '') + (isTentative ? ' tentative' : '');
     card.innerHTML = `
         <span class="drama-title-link" role="button" tabindex="0" onclick="openModal('${drama.id}')" onkeydown="if(event.key==='Enter')openModal('${drama.id}')" title="${drama.title} 상세 정보">
             ${drama.title}
