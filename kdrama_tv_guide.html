@@ -648,7 +648,7 @@
             <span class="site-title" role="button" tabindex="0" onclick="goHome()" onkeydown="if(event.key==='Enter')goHome()" title="이번 주로 돌아가기">K-DRAMA US STREAMING TV GUIDE</span>
             <span class="week-badge-text" id="weekBadge">[기준 주차 계산 중...]</span>
         </div>
-        <span class="live-clock-badge" id="liveClock">KST --:--:--</span>
+        <span class="live-clock-badge" id="liveClock">KST --:--:-- · ET --:--:--</span>
     </h1>
 
     <div class="toolbar">
@@ -1862,12 +1862,25 @@ function updateDateHeaders(offset) {
     });
 }
 
-// Live Clock
+// Live Clock — 편성 날짜는 한국 방송일(KST)을 유지하되, 현재 시각은 두 지역을 함께 보여준다.
+function formatZonedTime(timeZone) {
+    return new Intl.DateTimeFormat('en-US', {
+        timeZone,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    }).format(new Date());
+}
+
 function updateLiveClock() {
-    const options = { timeZone: "Asia/Seoul", hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
-    const timeStr = new Intl.DateTimeFormat('en-US', options).format(new Date());
+    const kst = formatZonedTime("Asia/Seoul");
+    const et = formatZonedTime("America/New_York");
     const el = document.getElementById('liveClock');
-    if (el) el.textContent = `KST ${timeStr}`;
+    if (!el) return;
+    const primary = regionMode === 'US' ? `ET ${et} · KST ${kst}` : `KST ${kst} · ET ${et}`;
+    el.textContent = primary;
+    el.title = '편성 날짜는 한국 방송일(KST)을 기준으로 표시합니다.';
 }
 
 // DOM Elements
@@ -2156,6 +2169,7 @@ function setRegion(mode) {
     document.getElementById('btnRegionUS').classList.toggle('active', mode === 'US');
     document.getElementById('btnRegionKR').classList.toggle('active', mode === 'KR');
     document.getElementById('btnRegionAll').classList.toggle('active', mode === 'ALL');
+    updateLiveClock();
     if (currentView === 'month') renderMonth();
     else { renderGrid(); paintTodayColumnFill(); }
 }
