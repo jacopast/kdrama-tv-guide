@@ -7,11 +7,11 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 9월 2주차 (9/14 ~ 9/20)` | **기준 시간**: `2026-09-14 04:21 EST`
+> **기준 주차**: `2026년 9월 2주차 (9/14 ~ 9/20)` | **기준 시간**: `2026-09-14 07:03 EST`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
-> **[kdrama_tv_guide.html](file:////home/user/kdrama-tv-guide/kdrama_tv_guide.html)** 파일을 더블 클릭하여 열어보세요!
+> **[kdrama_tv_guide.html](file:////Users/sunghwanyoon/AG/git/kdrama-tv-guide/kdrama_tv_guide.html)** 파일을 더블 클릭하여 열어보세요!
 
 ## 지난 주 편성표 (2026년 9월 1주차 (9/7 ~ 9/13))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
