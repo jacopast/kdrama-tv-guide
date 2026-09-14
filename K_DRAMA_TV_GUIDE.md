@@ -7,7 +7,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 9월 2주차 (9/14 ~ 9/20)` | **기준 시간**: `2026-09-14 01:44 EST`
+> **기준 주차**: `2026년 9월 2주차 (9/14 ~ 9/20)` | **기준 시간**: `2026-09-14 03:17 EST`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
@@ -31,6 +31,14 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 05 tvN`** | [최애의 사원](https://tvn.cjenm.com/ko/mybiasmyboss/) `EP 11` | [최애의 사원](https://tvn.cjenm.com/ko/mybiasmyboss/) `EP 12 (최종화)` | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 05` | [포핸즈](https://tvn.cjenm.com) `EP 06` | - |
 | **`KR 06 JTBC`** | - | - | - | - | - | - | - | - |
 | **`KR 07 ENA`** | [신병4: 사보타주](https://ktena.co.kr) `EP 05` | [신병4: 사보타주](https://ktena.co.kr) `EP 06` | - | - | - | - | - | - |
+| **`KR 08 KBS1`** | - | - | - | - | - | - | - | - |
+| **`KR 09 OCN`** | - | - | - | - | - | - | - | - |
+| **`KR 10 CHANNEL A`** | - | - | - | - | - | - | - | - |
+| **`KR 11 MBN`** | - | - | - | - | - | - | - | - |
+| **`KR 12 TV CHOSUN`** | - | - | - | - | - | - | - | - |
+| **`KR 13 TVING`** | - | - | - | - | - | - | - | - |
+| **`KR 14 WAVVE`** | - | - | - | - | - | - | - | - |
+| **`KR 15 COUPANG PLAY`** | - | - | - | - | - | - | - | - |
 
 ## 이번 주 편성표 (2026년 9월 2주차 (9/14 ~ 9/20))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
@@ -50,6 +58,14 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 05 tvN`** | - | - | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 07` | [포핸즈](https://tvn.cjenm.com) `EP 08` | - |
 | **`KR 06 JTBC`** | - | - | - | - | - | - | - | - |
 | **`KR 07 ENA`** | [신병4: 사보타주](https://ktena.co.kr) `EP 07` | [신병4: 사보타주](https://ktena.co.kr) `EP 08` | - | - | - | - | - | - |
+| **`KR 08 KBS1`** | - | - | - | - | - | - | - | - |
+| **`KR 09 OCN`** | - | - | - | - | - | - | - | - |
+| **`KR 10 CHANNEL A`** | - | - | - | - | - | - | - | - |
+| **`KR 11 MBN`** | - | - | - | - | - | - | - | - |
+| **`KR 12 TV CHOSUN`** | - | - | - | - | - | - | - | - |
+| **`KR 13 TVING`** | - | - | - | - | - | - | - | - |
+| **`KR 14 WAVVE`** | - | - | - | - | - | - | - | - |
+| **`KR 15 COUPANG PLAY`** | - | - | - | - | - | - | - | - |
 
 ## 다음 주 편성표 (2026년 9월 3주차 (9/21 ~ 9/27))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
@@ -69,6 +85,14 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 05 tvN`** | - | - | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 09` | [포핸즈](https://tvn.cjenm.com) `EP 10` | - |
 | **`KR 06 JTBC`** | - | - | - | - | - | - | - | - |
 | **`KR 07 ENA`** | [신병4: 사보타주](https://ktena.co.kr) `EP 09` | [신병4: 사보타주](https://ktena.co.kr) `EP 10` | - | - | - | - | - | - |
+| **`KR 08 KBS1`** | - | - | - | - | - | - | - | - |
+| **`KR 09 OCN`** | - | - | - | - | - | - | - | - |
+| **`KR 10 CHANNEL A`** | - | - | - | - | - | - | - | - |
+| **`KR 11 MBN`** | - | - | - | - | - | - | - | - |
+| **`KR 12 TV CHOSUN`** | - | - | - | - | - | - | - | - |
+| **`KR 13 TVING`** | - | - | - | - | - | - | - | - |
+| **`KR 14 WAVVE`** | - | - | - | - | - | - | - | - |
+| **`KR 15 COUPANG PLAY`** | - | - | - | - | - | - | - | - |
 
 ---
 
@@ -152,6 +176,30 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 - **[신병4: 사보타주 (New Recruit 4: Sabotage)](https://ktena.co.kr)** `[방영일: 2026-08-24, 2026-08-25, 2026-08-31, 2026-09-01, 2026-09-07, 2026-09-08, 2026-09-14, 2026-09-15, 2026-09-21, 2026-09-22, 2026-09-28, 2026-09-29]` `(확인: 2026-09-14)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 박민석, 김현욱, 변혁진
   > 유튜브 애니메이션 원작 군대 코미디 시리즈의 네 번째 시즌. 어느덧 상병이 된 박민석 앞에 미스터리한 신병 김현욱과 엘리트 대대장 변혁진이 새로 합류. ENA, 2026년 8월 24일 첫방(매주 월·화 밤 10시), 국내 OTT는 티빙·지니TV — 미국 스트리밍 플랫폼은 아직 미확인.
 
+### `KR 08 KBS1`
+*편성 없음*
+
+### `KR 09 OCN`
+*편성 없음*
+
+### `KR 10 CHANNEL A`
+*편성 없음*
+
+### `KR 11 MBN`
+*편성 없음*
+
+### `KR 12 TV CHOSUN`
+*편성 없음*
+
+### `KR 13 TVING`
+*편성 없음*
+
+### `KR 14 WAVVE`
+*편성 없음*
+
+### `KR 15 COUPANG PLAY`
+*편성 없음*
+
 ---
 
-> [!NOTE] 데이터 최종 확인: `0.0일 전`. 신선한 상태입니다. (기준: 7일 초과 시 재확인 권장)
+> [!NOTE] 데이터 최종 확인: `0.1일 전`. 신선한 상태입니다. (기준: 7일 초과 시 재확인 권장)

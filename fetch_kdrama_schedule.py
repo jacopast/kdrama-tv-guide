@@ -33,7 +33,15 @@ CHANNELS = [
   {"id": "KBS Joy", "badge": "`KR 04 KBS JOY`", "name": "KBS Joy", "num": "KR 04", "cssClass": "ch-num-kbsjoy", "region": "KR"},
   {"id": "tvN", "badge": "`KR 05 tvN`", "name": "tvN", "num": "KR 05", "cssClass": "ch-num-tvn", "region": "KR"},
   {"id": "JTBC", "badge": "`KR 06 JTBC`", "name": "JTBC", "num": "KR 06", "cssClass": "ch-num-jtbc", "region": "KR"},
-  {"id": "ENA", "badge": "`KR 07 ENA`", "name": "ENA", "num": "KR 07", "cssClass": "ch-num-ena", "region": "KR"}
+  {"id": "ENA", "badge": "`KR 07 ENA`", "name": "ENA", "num": "KR 07", "cssClass": "ch-num-ena", "region": "KR"},
+  {"id": "KBS1", "badge": "`KR 08 KBS1`", "name": "KBS1", "num": "KR 08", "cssClass": "ch-num-kbs1", "region": "KR"},
+  {"id": "OCN", "badge": "`KR 09 OCN`", "name": "OCN", "num": "KR 09", "cssClass": "ch-num-ocn", "region": "KR"},
+  {"id": "Channel A", "badge": "`KR 10 CHANNEL A`", "name": "Channel A", "num": "KR 10", "cssClass": "ch-num-chana", "region": "KR"},
+  {"id": "MBN", "badge": "`KR 11 MBN`", "name": "MBN", "num": "KR 11", "cssClass": "ch-num-mbn", "region": "KR"},
+  {"id": "TV Chosun", "badge": "`KR 12 TV CHOSUN`", "name": "TV Chosun", "num": "KR 12", "cssClass": "ch-num-tvchosun", "region": "KR"},
+  {"id": "TVING", "badge": "`KR 13 TVING`", "name": "TVING", "num": "KR 13", "cssClass": "ch-num-tving", "region": "KR"},
+  {"id": "Wavve", "badge": "`KR 14 WAVVE`", "name": "Wavve", "num": "KR 14", "cssClass": "ch-num-wavve", "region": "KR"},
+  {"id": "Coupang Play", "badge": "`KR 15 COUPANG PLAY`", "name": "Coupang Play", "num": "KR 15", "cssClass": "ch-num-coupang", "region": "KR"}
 ]
 
 _KR_DAY_NAMES = [("Mon", "월"), ("Tue", "화"), ("Wed", "수"), ("Thu", "목"), ("Fri", "금"), ("Sat", "토"), ("Sun", "일")]
