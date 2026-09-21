@@ -2,42 +2,21 @@
 project: Playground
 type: guide
 status: active_weekly
-week: 2026-W38 (09/14 ~ 09/20)
+week: 2026-W39 (09/21 ~ 09/27)
 tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 9월 2주차 (9/14 ~ 9/20)` | **기준 시간**: `KST 2026-09-14 20:42 · ET 2026-09-14 07:42`
+> **기준 주차**: `2026년 9월 3주차 (9/21 ~ 9/27)` | **기준 시간**: `KST 2026-09-21 20:04 · ET 2026-09-21 07:04`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
 > **[kdrama_tv_guide.html](file:////Users/sunghwanyoon/AG/git/kdrama-tv-guide/kdrama_tv_guide.html)** 파일을 더블 클릭하여 열어보세요!
 
-## 지난 주 편성표 (2026년 9월 1주차 (9/7 ~ 9/13))
+## 지난 주 편성표 (2026년 9월 2주차 (9/14 ~ 9/20))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
-| 채널 / OTT | 월 (9/7) | 화 (9/8) | 수 (9/9) | 목 (9/10) | 금 (9/11) | 토 (9/12) | 일 (9/13) | 전편 공개 (Batch) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`CH 01 NETFLIX`** | - | - | - | - | - | [포핸즈](https://www.netflix.com) `EP 05` | [포핸즈](https://www.netflix.com) `EP 06` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
-| **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 01-02 (첫방)` | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 11` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 12` | - | - |
-| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.primevideo.com) `EP 01 (첫방)` | [너 말고 다른 연애](https://www.primevideo.com) `EP 02` | - |
-| **`CH 05 RAKUTEN VIKI`** | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 11` | [최애의 사원](https://www.viki.com/tv/41633c-my-bias-my-boss) `EP 12 (최종화)` | - | - | - | - | - | - |
-| **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 21` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 22` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 07`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 23` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 08`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 24` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 25` | - | - | - |
-| **`KR 01 SBS`** | - | - | - | - | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 11` | [재벌X형사 시즌 2](https://programs.sbs.co.kr/drama/flexxcop2) `EP 12` | - | - |
-| **`KR 02 MBC`** | - | - | - | - | - | - | - | - |
-| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 21` | [욕망의 덫](https://vod.kbs.co.kr) `EP 22` | [욕망의 덫](https://vod.kbs.co.kr) `EP 23` | [욕망의 덫](https://vod.kbs.co.kr) `EP 24` | [욕망의 덫](https://vod.kbs.co.kr) `EP 25` | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 01 (첫방)` | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 02` | - |
-| **`KR 04 KBS JOY`** | - | - | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 07` | [그래, 이혼하자](https://www.kbsn.co.kr) `EP 08` | - | - | - | - |
-| **`KR 05 tvN`** | [최애의 사원](https://tvn.cjenm.com/ko/mybiasmyboss/) `EP 11` | [최애의 사원](https://tvn.cjenm.com/ko/mybiasmyboss/) `EP 12 (최종화)` | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 05` | [포핸즈](https://tvn.cjenm.com) `EP 06` | - |
-| **`KR 06 JTBC`** | - | - | - | - | - | - | - | - |
-| **`KR 07 ENA`** | [신병4: 사보타주](https://ktena.co.kr) `EP 05` | [신병4: 사보타주](https://ktena.co.kr) `EP 06` | - | - | - | - | - | - |
-| **`KR 08 KBS1`** | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 114` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 115` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 116` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 117` | [기쁜 우리 좋은 날](https://vod.kbs.co.kr) `EP 118` | - | - | - |
-| **`KR 10 CHANNEL A`** | - | - | - | - | - | - | - | - |
-| **`KR 13 TVING`** | - | - | - | [로또 1등도 출근합니다](https://www.tving.com/contents/P001790587) `EP 01-02 (TVING 선공개)` | - | - | - | - |
-
-## 이번 주 편성표 (2026년 9월 2주차 (9/14 ~ 9/20))
-각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
-
-| 채널 / OTT | 월 (9/14) (오늘) | 화 (9/15) | 수 (9/16) | 목 (9/17) | 금 (9/18) | 토 (9/19) | 일 (9/20) | 전편 공개 (Batch) |
+| 채널 / OTT | 월 (9/14) | 화 (9/15) | 수 (9/16) | 목 (9/17) | 금 (9/18) | 토 (9/19) | 일 (9/20) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | [스캔들](https://www.netflix.com) `8부작 전편 공개` | [포핸즈](https://www.netflix.com) `EP 07` | [포핸즈](https://www.netflix.com) `EP 08` | [이런 엿같은 사랑](https://www.netflix.com/title/82048302) `12부작 전편 공개 (8/7~)`<br>[들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
 | **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 03-04` | - | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 13` | [재벌X형사 시즌 2](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a) `EP 14 (최종화)` | - | - |
@@ -55,10 +34,10 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 10 CHANNEL A`** | - | - | - | - | - | - | - | - |
 | **`KR 13 TVING`** | - | - | - | [로또 1등도 출근합니다](https://www.tving.com/contents/P001790587) `EP 03-04 (TVING 선공개)` | - | - | - | - |
 
-## 다음 주 편성표 (2026년 9월 3주차 (9/21 ~ 9/27))
+## 이번 주 편성표 (2026년 9월 3주차 (9/21 ~ 9/27))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
-| 채널 / OTT | 월 (9/21) | 화 (9/22) | 수 (9/23) | 목 (9/24) | 금 (9/25) | 토 (9/26) | 일 (9/27) | 전편 공개 (Batch) |
+| 채널 / OTT | 월 (9/21) (오늘) | 화 (9/22) | 수 (9/23) | 목 (9/24) | 금 (9/25) | 토 (9/26) | 일 (9/27) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | - | [포핸즈](https://www.netflix.com) `EP 09` | [포핸즈](https://www.netflix.com) `EP 10` | [들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[스캔들](https://www.netflix.com) `8부작 전편 공개`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
 | **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 05-06 (최종화)` | - | - | [너에게 다이브](https://www.disneyplus.com) `EP 01 (첫방)` | [너에게 다이브](https://www.disneyplus.com) `EP 02` | - |
@@ -75,6 +54,27 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 08 KBS1`** | - | - | - | - | - | - | - | - |
 | **`KR 10 CHANNEL A`** | - | - | - | - | - | [너에게 다이브](https://www.ichannela.com) `EP 01 (첫방)` | [너에게 다이브](https://www.ichannela.com) `EP 02` | - |
 | **`KR 13 TVING`** | - | - | - | [로또 1등도 출근합니다](https://www.tving.com/contents/P001790587) `EP 05-06 (TVING 선공개)` | - | - | - | - |
+
+## 다음 주 편성표 (2026년 9월 4주차 (9/28 ~ 10/4))
+각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
+
+| 채널 / OTT | 월 (9/28) | 화 (9/29) | 수 (9/30) | 목 (10/1) | 금 (10/2) | 토 (10/3) | 일 (10/4) | 전편 공개 (Batch) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **`CH 01 NETFLIX`** | - | - | - | [개인적인 택시](https://www.netflix.com) `8부작 전편 공개` | - | [포핸즈](https://www.netflix.com) `EP 11` | [포핸즈](https://www.netflix.com) `EP 12 (최종화)` | [들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[스캔들](https://www.netflix.com) `8부작 전편 공개` |
+| **`CH 02 HULU / D+`** | - | - | - | - | - | [너에게 다이브](https://www.disneyplus.com) `EP 03` | [너에게 다이브](https://www.disneyplus.com) `EP 04` | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.primevideo.com) `EP 07` | [너 말고 다른 연애](https://www.primevideo.com) `EP 08` | - |
+| **`CH 05 RAKUTEN VIKI`** | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 05` | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 06` | - | - | - | [너에게 다이브](https://www.viki.com) `EP 03` | [너에게 다이브](https://www.viki.com) `EP 04` | - |
+| **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 36` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 37` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 38` | - | - | - | - | - |
+| **`KR 01 SBS`** | - | - | - | - | - | - | - | - |
+| **`KR 02 MBC`** | - | - | - | - | - | - | - | - |
+| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 36` | [욕망의 덫](https://vod.kbs.co.kr) `EP 37` | [욕망의 덫](https://vod.kbs.co.kr) `EP 38` | - | - | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 07` | [너 말고 다른 연애](https://www.kbs.co.kr) `EP 08` | - |
+| **`KR 04 KBS JOY`** | - | - | - | - | - | - | - | - |
+| **`KR 05 tvN`** | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 05` | [로또 1등도 출근합니다](https://tvn.cjenm.com) `EP 06` | - | - | - | [포핸즈](https://tvn.cjenm.com) `EP 11` | [포핸즈](https://tvn.cjenm.com) `EP 12 (최종화)` | - |
+| **`KR 06 JTBC`** | - | - | - | - | - | [날아올라라 나비](https://tv.jtbc.co.kr/salondenabi) `EP 05` | [날아올라라 나비](https://tv.jtbc.co.kr/salondenabi) `EP 06` | - |
+| **`KR 07 ENA`** | [신병4: 사보타주](https://ktena.co.kr) `EP 11` | [신병4: 사보타주](https://ktena.co.kr) `EP 12 (최종화)` | - | - | - | - | - | - |
+| **`KR 08 KBS1`** | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 01 (첫방)` | - | - | - | - | - | - | - |
+| **`KR 10 CHANNEL A`** | - | - | - | [키드냅 게임](https://ichannela.com/news/detail/amp/000000530444.do) `첫방 예정 (10월, 미정)` | - | [너에게 다이브](https://www.ichannela.com) `EP 03` | [너에게 다이브](https://www.ichannela.com) `EP 04` | - |
+| **`KR 13 TVING`** | - | - | - | [로또 1등도 출근합니다](https://www.tving.com/contents/P001790587) `EP 07-08 (TVING 선공개)` | - | - | - | - |
 
 ---
 
@@ -205,4 +205,4 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 
 ---
 
-> [!NOTE] 데이터 최종 확인: `0.0일 전`. 신선한 상태입니다. (기준: 7일 초과 시 재확인 권장)
+> [!NOTE] 데이터 최종 확인: `7.0일 전`. 신선한 상태입니다. (기준: 7일 초과 시 재확인 권장)
