@@ -217,6 +217,11 @@
         "name": "KBS2",
         "label": "KBS2",
         "url": "https://vod.kbs.co.kr"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
       }
     ],
     "poster": "",
@@ -397,6 +402,11 @@
         "name": "tvN",
         "label": "tvN",
         "url": "https://tvn.cjenm.com"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
       }
     ],
     "poster": "https://cineplay-cms.s3.amazonaws.com/article-images/2026-07-03/78d97186-ad41-452b-aeb0-1b42c1f51a01.jpg?v=2",
@@ -564,6 +574,11 @@
         "name": "ENA",
         "label": "ENA",
         "url": "https://ktena.co.kr"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
       }
     ],
     "isBatch": false,
@@ -695,11 +710,11 @@
   {
     "id": "personal-taxi",
     "title": "개인적인 택시",
-    "engTitle": "Personal Taxi",
+    "engTitle": "Your Personal Taxi",
     "platforms": [
       {
         "name": "Netflix",
-        "label": "Netflix US",
+        "label": "Netflix (KR 전용)",
         "url": "https://www.netflix.com"
       }
     ],
@@ -709,9 +724,9 @@
     "episodes": "8부작",
     "cast": "차태현, 이재인, 임세미, 현봉식, 이연희",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "동명 웹툰 원작. 택시 기사가 매회 다른 손님들의 사연을 만나는 음악과 함께하는 옴니버스 미드폼 드라마. Netflix, 2026년 10월 1일 전편 공개.",
+    "synopsis": "동명 웹툰 원작. 택시 기사가 매회 다른 손님들의 사연을 만나는 음악과 함께하는 옴니버스 미드폼 드라마. Netflix (한국 등 일부 지역 공개, 미국 넷플릭스 미제공), 2026년 10월 1일 전편 공개.",
     "poster": "",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-10-02"
   },
   {
     "id": "100-days-of-deception",
@@ -727,6 +742,11 @@
         "name": "Netflix",
         "label": "Netflix US",
         "url": "https://www.netflix.com"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
       }
     ],
     "isBatch": false,
@@ -769,6 +789,11 @@
         "name": "Kocowa",
         "label": "KOCOWA+",
         "url": "https://www.kocowa.com/en_us/main"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
       }
     ],
     "isBatch": false,
@@ -802,6 +827,11 @@
         "name": "MBC",
         "label": "MBC",
         "url": "https://www.imbc.com"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
       }
     ],
     "isBatch": false,
@@ -838,6 +868,16 @@
         "name": "Prime Video",
         "label": "Prime Video",
         "url": "https://www.amazon.com/dp/B0DG6YJ5L1"
+      },
+      {
+        "name": "Coupang Play",
+        "label": "Coupang Play",
+        "url": "https://www.coupangplay.com"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
       }
     ],
     "isBatch": false,
@@ -873,6 +913,11 @@
         "name": "JTBC",
         "label": "JTBC",
         "url": "https://tv.jtbc.co.kr/salondenabi"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
       }
     ],
     "isBatch": false,
@@ -957,6 +1002,11 @@
         "name": "Viki",
         "label": "Rakuten Viki",
         "url": "https://www.viki.com"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
       }
     ],
     "isBatch": false,
@@ -1067,6 +1117,11 @@
         "name": "Prime Video",
         "label": "Prime Video",
         "url": "https://www.primevideo.com"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
       }
     ],
     "isBatch": false,
@@ -1139,6 +1194,11 @@
         "name": "Prime Video",
         "label": "Prime Video",
         "url": "https://www.primevideo.com"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
       }
     ],
     "isBatch": false,
@@ -1224,6 +1284,11 @@
         "name": "KBS2",
         "label": "KBS2",
         "url": "https://www.kbs.co.kr"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
       }
     ],
     "isBatch": false,
@@ -1282,6 +1347,11 @@
         "name": "SBS",
         "label": "SBS",
         "url": "https://programs.sbs.co.kr"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
       }
     ],
     "isBatch": false,
