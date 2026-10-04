@@ -2746,6 +2746,73 @@ function toggleStar(id, e) {
     }
 }
 
+// Smart App Launcher (iPad / Mobile Deep Link)
+function isMobileOrTabletDevice() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+           (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
+           /Android/i.test(navigator.userAgent);
+}
+
+function getAppDeepLink(url, platformName) {
+    if (!url) return null;
+    const name = platformName || '';
+    
+    // 1. Prime Video
+    if (name === 'Prime Video' || /amazon\.com|primevideo\.com/i.test(url)) {
+        const asinMatch = url.match(/(?:detail\/|dp\/|asin=)([A-Z0-9]{10})/i);
+        if (asinMatch) {
+            return `aiv://aiv/play?asin=${asinMatch[1]}`;
+        }
+        return 'primevideo://';
+    }
+    // 2. Netflix
+    if (name.includes('Netflix') || /netflix\.com/i.test(url)) {
+        const titleMatch = url.match(/title\/([0-9]+)/);
+        if (titleMatch) {
+            return `nflx://www.netflix.com/title/${titleMatch[1]}`;
+        }
+        return 'nflx://';
+    }
+    // 3. Rakuten Viki
+    if (name.includes('Viki') || /viki\.com/i.test(url)) {
+        return url.replace(/^https?:\/\/(www\.)?viki\.com/, 'viki://');
+    }
+    // 4. Disney+
+    if (name.includes('Disney') || /disneyplus\.com/i.test(url)) {
+        return 'disneyplus://';
+    }
+    // 5. Wavve
+    if (name.includes('Wavve') || /wavve\.com/i.test(url)) {
+        return 'wavve://';
+    }
+    // 6. TVING
+    if (name.includes('TVING') || /tving\.com/i.test(url)) {
+        return 'tving://';
+    }
+    // 7. Coupang Play
+    if (name.includes('Coupang') || /coupangplay\.com/i.test(url)) {
+        return 'coupangplay://';
+    }
+    return null;
+}
+
+function launchPlatform(url, platformName, e) {
+    const isMobile = isMobileOrTabletDevice();
+    const appDeepLink = getAppDeepLink(url, platformName);
+    
+    if (isMobile && appDeepLink) {
+        if (e) e.preventDefault();
+        // 가이드 탭은 100% 보존하면서 앱을 전면으로 호출!
+        window.location.href = appDeepLink;
+        return;
+    }
+    
+    // 데스크톱(Mac/PC)이거나 일반 웹 링크: 새 탭에서 열기
+    if (e && e.defaultPrevented) {
+        window.open(url, '_blank', 'noopener');
+    }
+}
+
 // Modal Logic
 function openModal(id) {
     const drama = DRAMA_DATA.find(d => d.id === id);
@@ -2767,12 +2834,22 @@ function openModal(id) {
     // Platforms
     const pContainer = document.getElementById('modalPlatforms');
     pContainer.innerHTML = '<strong>시청 바로가기:</strong><br>';
+    const isMobile = isMobileOrTabletDevice();
     drama.platforms.forEach(p => {
         const a = document.createElement('a');
         a.href = p.url;
         a.target = '_blank';
         a.rel = 'noopener';
-        a.textContent = `${p.label} 시청하기`;
+        
+        const deepLink = getAppDeepLink(p.url, p.name);
+        if (isMobile && deepLink) {
+            a.textContent = `📱 ${p.label} 앱으로 바로 열기`;
+        } else {
+            a.textContent = `${p.label} 시청하기`;
+        }
+        
+        a.onclick = (e) => launchPlatform(p.url, p.name, e);
+        
         a.style.display = 'block';
         a.style.margin = '4px 0';
         a.style.padding = '0';
