@@ -7,7 +7,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 9월 4주차 (9/28 ~ 10/4)` | **기준 시간**: `ET 2026-10-03 11:44 · KST 2026-10-04 00:44`
+> **기준 주차**: `2026년 9월 4주차 (9/28 ~ 10/4)` | **기준 시간**: `ET 2026-10-04 06:29 · KST 2026-10-04 19:29`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
@@ -20,7 +20,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | - | [포핸즈](https://www.netflix.com) `EP 09` | [포핸즈](https://www.netflix.com) `EP 10` | [들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[스캔들](https://www.netflix.com) `8부작 전편 공개`<br>[감사합니다](https://www.netflix.com/title/81914864) `12부작 넷플릭스 신규 추가 (8/11~, 신작 아님)` |
 | **`CH 02 HULU / D+`** | - | - | [메이드 인 코리아 시즌 2](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8) `EP 05-06 (최종화)` | - | - | - | - | - |
-| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.amazon.com/dp/B0DG6YJ5L1) `EP 05` | [너 말고 다른 연애](https://www.amazon.com/dp/B0DG6YJ5L1) `EP 06` | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.primevideo.com/detail/0JVRCMM5QX6UT6H68UDP3DKOEP) `EP 05` | [너 말고 다른 연애](https://www.primevideo.com/detail/0JVRCMM5QX6UT6H68UDP3DKOEP) `EP 06` | - |
 | **`CH 05 RAKUTEN VIKI`** | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 03` | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 04` | - | - | - | [너에게 다이브](https://www.viki.com) `EP 01 (첫방)` | [너에게 다이브](https://www.viki.com) `EP 02` | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 31` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 32` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 11`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 33` | [그래, 이혼하자](https://www.kocowa.com/en_us/main) `EP 12 (최종화)`<br>[욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 34` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 35` | - | - | - |
 | **`KR 01 SBS`** | - | - | - | - | - | - | - | - |
@@ -39,11 +39,11 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ## 이번 주 편성표 (2026년 9월 4주차 (9/28 ~ 10/4))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
-| 채널 / OTT | 월 (9/28) | 화 (9/29) | 수 (9/30) | 목 (10/1) | 금 (10/2) | 토 (10/3) (오늘) | 일 (10/4) | 전편 공개 (Batch) |
+| 채널 / OTT | 월 (9/28) | 화 (9/29) | 수 (9/30) | 목 (10/1) | 금 (10/2) | 토 (10/3) | 일 (10/4) (오늘) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | [개인적인 택시](https://www.netflix.com) `8부작 전편 공개` | - | [포핸즈](https://www.netflix.com) `EP 11` | [포핸즈](https://www.netflix.com) `EP 12 (최종화)` | [들쥐](https://www.netflix.com/title/81991749) `10부작 전편 공개 (8/28~)`<br>[스캔들](https://www.netflix.com) `8부작 전편 공개` |
 | **`CH 02 HULU / D+`** | - | - | - | - | - | - | - | - |
-| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.amazon.com/dp/B0DG6YJ5L1) `EP 07` | [너 말고 다른 연애](https://www.amazon.com/dp/B0DG6YJ5L1) `EP 08` | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.primevideo.com/detail/0JVRCMM5QX6UT6H68UDP3DKOEP) `EP 07` | [너 말고 다른 연애](https://www.primevideo.com/detail/0JVRCMM5QX6UT6H68UDP3DKOEP) `EP 08` | - |
 | **`CH 05 RAKUTEN VIKI`** | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 05`<br>[엄마가 미쳤어요](https://www.viki.com) `EP 01 (첫방)` | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 06`<br>[엄마가 미쳤어요](https://www.viki.com) `EP 02` | [엄마가 미쳤어요](https://www.viki.com) `EP 03` | [엄마가 미쳤어요](https://www.viki.com) `EP 04` | [엄마가 미쳤어요](https://www.viki.com) `EP 05` | [너에게 다이브](https://www.viki.com) `EP 03` | [너에게 다이브](https://www.viki.com) `EP 04` | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 36`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 01 (첫방)` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 37`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 02` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 38`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 03` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 39`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 04` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 40`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 05` | - | - | - |
 | **`KR 01 SBS`** | - | - | - | - | - | - | - | - |
@@ -66,7 +66,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | [나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개` | [100일의 거짓말](https://www.netflix.com) `EP 01 (첫방)` | [100일의 거짓말](https://www.netflix.com) `EP 02` | [스캔들](https://www.netflix.com) `8부작 전편 공개`<br>[개인적인 택시](https://www.netflix.com) `8부작 전편 공개` |
 | **`CH 02 HULU / D+`** | [연애박사](https://www.disneyplus.com) `EP 01 (첫방)` | [연애박사](https://www.disneyplus.com) `EP 02`<br>[키드냅 게임](https://www.disneyplus.com) `EP 01 (첫방)` | - | - | - | - | - | - |
-| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.amazon.com/dp/B0DG6YJ5L1) `EP 09` | [너 말고 다른 연애](https://www.amazon.com/dp/B0DG6YJ5L1) `EP 10` | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | [너 말고 다른 연애](https://www.primevideo.com/detail/0JVRCMM5QX6UT6H68UDP3DKOEP) `EP 09` | [너 말고 다른 연애](https://www.primevideo.com/detail/0JVRCMM5QX6UT6H68UDP3DKOEP) `EP 10` | - |
 | **`CH 05 RAKUTEN VIKI`** | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 07`<br>[엄마가 미쳤어요](https://www.viki.com) `EP 06` | [로또 1등도 출근합니다](https://www.viki.com/tv/41650c-the-ordinary-jackpot) `EP 08`<br>[엄마가 미쳤어요](https://www.viki.com) `EP 07` | [엄마가 미쳤어요](https://www.viki.com) `EP 08` | [엄마가 미쳤어요](https://www.viki.com) `EP 09` | [엄마가 미쳤어요](https://www.viki.com) `EP 10` | [너에게 다이브](https://www.viki.com) `EP 05` | [너에게 다이브](https://www.viki.com) `EP 06` | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 41`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 06` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 42`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 07` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 43`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 08` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 44`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 09` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 45`<br>[닥터X: 하얀 마피아의 시대](https://www.kocowa.com/en_us/main) `EP 01 (첫방)`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 10` | [닥터X: 하얀 마피아의 시대](https://www.kocowa.com/en_us/main) `EP 02` | - | - |
 | **`KR 01 SBS`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 01 (첫방)` | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 02` | - | - |
@@ -134,7 +134,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 국가수사본부 광역수사대로 격상된 교통범죄수사팀(T.C.I)이 전국 단위 대형 교통 범죄를 소탕하는 활극. ENA 월화드라마 및 Disney+ 공개.
 
 ### `CH 03 PRIME VIDEO`
-- **[너 말고 다른 연애 (A Love Other Than Yours)](https://www.amazon.com/dp/B0DG6YJ5L1)** `[방영일: 2026-09-12, 2026-09-13, 2026-09-19, 2026-09-20, 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25]` `(확인: 2026-10-02)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 14부작 | 서강준, 안은진, 이주안, 조아람
+- **[너 말고 다른 연애 (A Love Other Than Yours)](https://www.primevideo.com/detail/0JVRCMM5QX6UT6H68UDP3DKOEP)** `[방영일: 2026-09-12, 2026-09-13, 2026-09-19, 2026-09-20, 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25]` `(확인: 2026-10-02)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 14부작 | 서강준, 안은진, 이주안, 조아람
   > 10년 차 연인이 익숙했던 관계에서 낯선 감정과 마주하는 현실 공감 멜로. KBS2, 2026년 9월 12일 첫방(매주 토·일); Prime Video 동시 공개.
 - **[나의 유죄인간 (Love in Disguise)](https://www.primevideo.com)** `[방영일: 2026-10-19, 2026-10-20, 2026-10-26, 2026-10-27, 2026-11-02, 2026-11-03, 2026-11-09, 2026-11-10, 2026-11-16, 2026-11-17, 2026-11-23, 2026-11-24]` `(확인: 2026-10-02)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 임시완, 설인아, 김정현, 연우
   > 예측 불허의 사건에 휘말린 남녀의 긴장감 넘치는 로맨틱 서스펜스. tvN, 2026년 10월 19일 첫방(매주 월·화); Prime Video 글로벌 독점.
