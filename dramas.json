@@ -1068,12 +1068,17 @@
       {
         "name": "ENA",
         "label": "ENA",
-        "url": "https://ktena.co.kr"
+        "url": "https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51"
       },
       {
         "name": "Hulu",
         "label": "Hulu / Disney+",
-        "url": "https://www.disneyplus.com"
+        "url": "https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154"
+      },
+      {
+        "name": "Disney+",
+        "label": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-994e7dec-fcbd-416e-ab2e-b4de8cc6d154"
       }
     ],
     "isBatch": false,
