@@ -628,7 +628,7 @@
             <span class="site-title" role="button" tabindex="0" onclick="goHome()" onkeydown="if(event.key==='Enter')goHome()" title="이번 주로 돌아가기">K-Drama TV Guide</span>
             <span class="week-badge-text" id="weekBadge">[기준 주차 계산 중...]</span>
         </div>
-        <span class="live-clock-badge" id="liveClock">KST --:--:--</span>
+        <span class="live-clock-badge" id="liveClock">KST --:--:-- · ET --:--:--</span>
     </h1>
 
     <div class="toolbar">
@@ -654,7 +654,7 @@
             <button id="btnMonthToday" class="week-today-link" style="display:none;">오늘로</button>
         </div>
         <div class="controls">
-            <button id="btnWatchlist">내 리스트만 보기</button>
+            <button id="btnWatchlist" aria-pressed="false">내 리스트만 보기</button>
         </div>
     </div>
 
@@ -873,7 +873,50 @@ const DRAMA_DATA = [
       "2026-09-25": "EP 35",
       "2026-09-28": "EP 36",
       "2026-09-29": "EP 37",
-      "2026-09-30": "EP 38"
+      "2026-09-30": "EP 38",
+      "2026-10-01": "EP 39",
+      "2026-10-02": "EP 40",
+      "2026-10-05": "EP 41",
+      "2026-10-06": "EP 42",
+      "2026-10-07": "EP 43",
+      "2026-10-08": "EP 44",
+      "2026-10-09": "EP 45",
+      "2026-10-12": "EP 46",
+      "2026-10-13": "EP 47",
+      "2026-10-14": "EP 48",
+      "2026-10-15": "EP 49",
+      "2026-10-16": "EP 50",
+      "2026-10-19": "EP 51",
+      "2026-10-20": "EP 52",
+      "2026-10-21": "EP 53",
+      "2026-10-22": "EP 54",
+      "2026-10-23": "EP 55",
+      "2026-10-26": "EP 56",
+      "2026-10-27": "EP 57",
+      "2026-10-28": "EP 58",
+      "2026-10-29": "EP 59",
+      "2026-10-30": "EP 60",
+      "2026-11-02": "EP 61",
+      "2026-11-03": "EP 62",
+      "2026-11-04": "EP 63",
+      "2026-11-05": "EP 64",
+      "2026-11-06": "EP 65",
+      "2026-11-09": "EP 66",
+      "2026-11-10": "EP 67",
+      "2026-11-11": "EP 68",
+      "2026-11-12": "EP 69",
+      "2026-11-13": "EP 70",
+      "2026-11-16": "EP 71",
+      "2026-11-17": "EP 72",
+      "2026-11-18": "EP 73",
+      "2026-11-19": "EP 74",
+      "2026-11-20": "EP 75",
+      "2026-11-23": "EP 76",
+      "2026-11-24": "EP 77",
+      "2026-11-25": "EP 78",
+      "2026-11-26": "EP 79",
+      "2026-11-27": "EP 80",
+      "2026-11-30": "EP 81"
     },
     "isBatch": false,
     "episodes": "106부작 (KBS2 일일드라마)",
@@ -890,10 +933,15 @@ const DRAMA_DATA = [
         "name": "KBS2",
         "label": "KBS2",
         "url": "https://vod.kbs.co.kr"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
       }
     ],
     "poster": "",
-    "verifiedAt": "2026-09-07"
+    "verifiedAt": "2026-10-02"
   },
   {
     "id": "our-sticky-love",
@@ -1057,7 +1105,7 @@ const DRAMA_DATA = [
     },
     "isBatch": false,
     "episodes": "12부작",
-    "rating": "TBD (다음 확인 시 업데이트)",
+    "rating": "9.4% (12회 최종회, 닐슨코리아 전국유료가구)",
     "cast": "송강, 이준영, 장규리",
     "synopsis": "음악 천재들만 모인 예술고등학교에서 만난 청춘들의 우정과 사랑, 경쟁, 성장을 그리는 드라마. tvN, 2026년 8월 29일 첫방(매주 토·일), 넷플릭스 동시 공개.",
     "platforms": [
@@ -1070,10 +1118,15 @@ const DRAMA_DATA = [
         "name": "tvN",
         "label": "tvN",
         "url": "https://tvn.cjenm.com"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
       }
     ],
     "poster": "https://cineplay-cms.s3.amazonaws.com/article-images/2026-07-03/78d97186-ad41-452b-aeb0-1b42c1f51a01.jpg?v=2",
-    "verifiedAt": "2026-09-07"
+    "verifiedAt": "2026-10-05"
   },
   {
     "id": "the-scandal",
@@ -1237,6 +1290,11 @@ const DRAMA_DATA = [
         "name": "ENA",
         "label": "ENA",
         "url": "https://ktena.co.kr"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
       }
     ],
     "isBatch": false,
@@ -1339,10 +1397,10 @@ const DRAMA_DATA = [
     },
     "episodes": "10부작",
     "cast": "이준혁, 서현우, 오대환, 옥자연",
-    "rating": "TBD (다음 확인 시 업데이트)",
+    "rating": "5.0% (6회, 닐슨코리아 전국가구)",
     "synopsis": "위아래로 치이며 하루하루를 버티던 팀장 공은태가 로또 1등(13억)에 당첨된 후, 사직서 대신 당첨금을 품고 이전과는 다른 마음가짐으로 출근하는 K-직장인 오피스 드라마. tvN 월화드라마로 2026년 9월 14일 첫방(매주 월·화 21:00), 10부작. TVING에서는 tvN 본방보다 나흘 앞서 매주 목요일 18시에 2회씩 선공개(9/10부터) — 이제 TVING 채널 칸에는 그 선공개 날짜가 실제로 반영됨.",
     "poster": "",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-10-05"
   },
   {
     "id": "take-charge-of-my-heart",
@@ -1363,16 +1421,16 @@ const DRAMA_DATA = [
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "인공 심장 배터리가 방전된 재벌 3세 백호랑과, 닿으면 충전시키는 특별한 능력을 지닌 드라마 작가 나보배가 만나며 벌어지는 로맨틱 코미디. 네이버 웹소설 원작. Netflix, 2026년 10월 9일 전편 공개.",
     "poster": "",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-10-05"
   },
   {
     "id": "personal-taxi",
     "title": "개인적인 택시",
-    "engTitle": "Personal Taxi",
+    "engTitle": "Your Personal Taxi",
     "platforms": [
       {
         "name": "Netflix",
-        "label": "Netflix US",
+        "label": "Netflix (KR 전용)",
         "url": "https://www.netflix.com"
       }
     ],
@@ -1382,9 +1440,9 @@ const DRAMA_DATA = [
     "episodes": "8부작",
     "cast": "차태현, 이재인, 임세미, 현봉식, 이연희",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "동명 웹툰 원작. 택시 기사가 매회 다른 손님들의 사연을 만나는 음악과 함께하는 옴니버스 미드폼 드라마. Netflix, 2026년 10월 1일 전편 공개.",
+    "synopsis": "동명 웹툰 원작. 택시 기사가 매회 다른 손님들의 사연을 만나는 음악과 함께하는 옴니버스 미드폼 드라마. Netflix (한국 등 일부 지역 공개, 미국 넷플릭스 미제공), 2026년 10월 1일 전편 공개.",
     "poster": "",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-10-02"
   },
   {
     "id": "100-days-of-deception",
@@ -1400,6 +1458,11 @@ const DRAMA_DATA = [
         "name": "Netflix",
         "label": "Netflix US",
         "url": "https://www.netflix.com"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
       }
     ],
     "isBatch": false,
@@ -1409,14 +1472,24 @@ const DRAMA_DATA = [
       "2026-10-17": "EP 03",
       "2026-10-18": "EP 04",
       "2026-10-24": "EP 05",
-      "2026-10-25": "EP 06"
+      "2026-10-25": "EP 06",
+      "2026-10-31": "EP 07",
+      "2026-11-01": "EP 08",
+      "2026-11-07": "EP 09",
+      "2026-11-08": "EP 10",
+      "2026-11-14": "EP 11",
+      "2026-11-15": "EP 12",
+      "2026-11-21": "EP 13",
+      "2026-11-22": "EP 14",
+      "2026-11-28": "EP 15",
+      "2026-11-29": "EP 16 (최종화)"
     },
     "episodes": "16부작",
     "cast": "김유정, 박진영, 김현주, 이무생, 진선규",
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "일제강점기 밀정이 된 경성 최고의 소매치기와 조선총독부 엘리트 통역관이 적의 심장부에서 마주하며 벌어지는 100일간의 첩보 로맨스. tvN, 2026년 10월 10일 첫방(매주 토·일 21:10), 본방 후 Netflix에서 다시보기 독점 공개.",
     "poster": "",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-10-05"
   },
   {
     "id": "doctor-x-white-mafia",
@@ -1427,6 +1500,16 @@ const DRAMA_DATA = [
         "name": "SBS",
         "label": "SBS",
         "url": "https://programs.sbs.co.kr/drama/doctorx/main"
+      },
+      {
+        "name": "Kocowa",
+        "label": "KOCOWA+",
+        "url": "https://www.kocowa.com/en_us/main"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
       }
     ],
     "isBatch": false,
@@ -1436,14 +1519,20 @@ const DRAMA_DATA = [
       "2026-10-16": "EP 03",
       "2026-10-17": "EP 04",
       "2026-10-23": "EP 05",
-      "2026-10-24": "EP 06"
+      "2026-10-24": "EP 06",
+      "2026-10-30": "EP 07",
+      "2026-10-31": "EP 08",
+      "2026-11-06": "EP 09",
+      "2026-11-07": "EP 10",
+      "2026-11-13": "EP 11",
+      "2026-11-14": "EP 12 (최종화)"
     },
-    "episodes": "회차 수 확인 중 (출처마다 표기 상이)",
+    "episodes": "12부작",
     "cast": "김지원, 이정은, 손현주, 김우석",
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "일본 원작 '닥터 X'의 한국판. 천재 외과의사 계수정이 병원 안 부조리에 메스를 들이대는 의학 수사극. SBS 금토드라마, 2026년 10월 9일 첫방 확정.",
     "poster": "",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-10-05"
   },
   {
     "id": "liar",
@@ -1454,17 +1543,621 @@ const DRAMA_DATA = [
         "name": "MBC",
         "label": "MBC",
         "url": "https://www.imbc.com"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-30": "EP 01 (첫방)",
+      "2026-10-31": "EP 02",
+      "2026-11-06": "EP 03",
+      "2026-11-07": "EP 04",
+      "2026-11-13": "EP 05",
+      "2026-11-14": "EP 06",
+      "2026-11-20": "EP 07",
+      "2026-11-21": "EP 08",
+      "2026-11-27": "EP 09",
+      "2026-11-28": "EP 10"
+    },
+    "episodes": "12부작",
+    "cast": "유연석, 서현진, 옥자연, 김지현, 이천희",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 30일 첫방.",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "not-your-love",
+    "title": "너 말고 다른 연애",
+    "engTitle": "A Love Other Than Yours",
+    "platforms": [
+      {
+        "name": "KBS2",
+        "label": "KBS2",
+        "url": "https://www.kbs.co.kr"
+      },
+      {
+        "name": "Prime Video",
+        "label": "Prime Video",
+        "url": "https://www.amazon.com/gp/video/detail/B0HG5QDDF5"
+      },
+      {
+        "name": "Coupang Play",
+        "label": "Coupang Play",
+        "url": "https://www.coupangplay.com"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-09-12": "EP 01 (첫방)",
+      "2026-09-13": "EP 02",
+      "2026-09-19": "EP 03",
+      "2026-09-20": "EP 04",
+      "2026-09-26": "EP 05",
+      "2026-09-27": "EP 06",
+      "2026-10-03": "EP 07",
+      "2026-10-04": "EP 08",
+      "2026-10-10": "EP 09",
+      "2026-10-11": "EP 10",
+      "2026-10-17": "EP 11",
+      "2026-10-18": "EP 12",
+      "2026-10-24": "EP 13",
+      "2026-10-25": "EP 14 (최종화)"
+    },
+    "episodes": "14부작",
+    "cast": "서강준, 안은진, 이주안, 조아람",
+    "rating": "2.3% (6회, 닐슨코리아 전국가구)",
+    "synopsis": "10년 차 연인이 익숙했던 관계에서 낯선 감정과 마주하는 현실 공감 멜로. KBS2, 2026년 9월 12일 첫방(매주 토·일); Prime Video 동시 공개.",
+    "poster": "",
+    "verifiedAt": "2026-10-05"
+  },
+  {
+    "id": "fly-high-butterfly",
+    "title": "날아올라라 나비",
+    "engTitle": "Fly High, Butterfly",
+    "platforms": [
+      {
+        "name": "JTBC",
+        "label": "JTBC",
+        "url": "https://tv.jtbc.co.kr/salondenabi"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-09-19": "EP 01 (첫방)",
+      "2026-09-20": "EP 02",
+      "2026-09-26": "EP 03",
+      "2026-09-27": "EP 04",
+      "2026-10-03": "EP 05",
+      "2026-10-04": "EP 06",
+      "2026-10-10": "EP 07",
+      "2026-10-11": "EP 08",
+      "2026-10-17": "EP 09",
+      "2026-10-18": "EP 10 (최종화)"
+    },
+    "episodes": "10부작",
+    "cast": "김향기, 최다니엘, 오윤아, 심은우, 박정우",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "미용실을 배경으로, 손님과 미용사들이 서로의 내밀한 이야기를 나누며 성장하는 드라마. JTBC, 2026년 9월 19일 첫방(매주 토·일).",
+    "poster": "",
+    "verifiedAt": "2026-09-14"
+  },
+  {
+    "id": "dive-into-you",
+    "title": "너에게 다이브",
+    "engTitle": "Dive Into You",
+    "platforms": [
+      {
+        "name": "Channel A",
+        "label": "Channel A",
+        "url": "https://www.ichannela.com"
+      },
+      {
+        "name": "Viki",
+        "label": "Rakuten Viki",
+        "url": "https://www.viki.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-09-26": "EP 01 (첫방)",
+      "2026-09-27": "EP 02",
+      "2026-10-03": "EP 03",
+      "2026-10-04": "EP 04",
+      "2026-10-10": "EP 05",
+      "2026-10-11": "EP 06",
+      "2026-10-17": "EP 07",
+      "2026-10-18": "EP 08",
+      "2026-10-24": "EP 09",
+      "2026-10-25": "EP 10",
+      "2026-10-31": "EP 11",
+      "2026-11-01": "EP 12 (최종화)"
+    },
+    "episodes": "12부작",
+    "cast": "김지연, 박서함, 장세혁, 문승유",
+    "rating": "0.6% (3회, 닐슨코리아 전국가구)",
+    "synopsis": "오래된 캠코더를 통해 과거로 돌아갈 수 있게 된 쌍둥이 남매가 첫사랑을 구하려는 판타지 로맨틱 코미디. Channel A·Disney+ 2026년 9월 26일 첫 공개, Rakuten Viki 글로벌 공개.",
+    "poster": "",
+    "verifiedAt": "2026-10-05"
+  },
+  {
+    "id": "mom-gone-crazy",
+    "title": "엄마가 미쳤어요",
+    "engTitle": "Mission: Mompossible",
+    "platforms": [
+      {
+        "name": "KBS1",
+        "label": "KBS1",
+        "url": "https://www.kbs.co.kr"
+      },
+      {
+        "name": "Kocowa",
+        "label": "KOCOWA+",
+        "url": "https://www.kocowa.com/en_us/main"
+      },
+      {
+        "name": "Viki",
+        "label": "Rakuten Viki",
+        "url": "https://www.viki.com"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-09-28": "EP 01 (첫방)",
+      "2026-09-29": "EP 02",
+      "2026-09-30": "EP 03",
+      "2026-10-01": "EP 04",
+      "2026-10-02": "EP 05",
+      "2026-10-05": "EP 06",
+      "2026-10-06": "EP 07",
+      "2026-10-07": "EP 08",
+      "2026-10-08": "EP 09",
+      "2026-10-09": "EP 10",
+      "2026-10-12": "EP 11",
+      "2026-10-13": "EP 12",
+      "2026-10-14": "EP 13",
+      "2026-10-15": "EP 14",
+      "2026-10-16": "EP 15",
+      "2026-10-19": "EP 16",
+      "2026-10-20": "EP 17",
+      "2026-10-21": "EP 18",
+      "2026-10-22": "EP 19",
+      "2026-10-23": "EP 20",
+      "2026-10-26": "EP 21",
+      "2026-10-27": "EP 22",
+      "2026-10-28": "EP 23",
+      "2026-10-29": "EP 24",
+      "2026-10-30": "EP 25",
+      "2026-11-02": "EP 26",
+      "2026-11-03": "EP 27",
+      "2026-11-04": "EP 28",
+      "2026-11-05": "EP 29",
+      "2026-11-06": "EP 30",
+      "2026-11-09": "EP 31",
+      "2026-11-10": "EP 32",
+      "2026-11-11": "EP 33",
+      "2026-11-12": "EP 34",
+      "2026-11-13": "EP 35",
+      "2026-11-16": "EP 36",
+      "2026-11-17": "EP 37",
+      "2026-11-18": "EP 38",
+      "2026-11-19": "EP 39",
+      "2026-11-20": "EP 40",
+      "2026-11-23": "EP 41",
+      "2026-11-24": "EP 42",
+      "2026-11-25": "EP 43",
+      "2026-11-26": "EP 44",
+      "2026-11-27": "EP 45",
+      "2026-11-30": "EP 46"
+    },
+    "episodes": "120부작",
+    "cast": "김희정, 강경헌, 김영옥, 양희경, 조미령, 정민아, 동하",
+    "rating": "10.7% (6회, 닐슨코리아 전국가구)",
+    "synopsis": "두 엄마와 자녀들이 얽히며 펼쳐지는 가족 성장 드라마. KBS1, 2026년 9월 28일 첫방.",
+    "poster": "",
+    "verifiedAt": "2026-10-05"
+  },
+  {
+    "id": "love-doctor",
+    "title": "연애박사",
+    "engTitle": "Between Steps",
+    "platforms": [
+      {
+        "name": "ENA",
+        "label": "ENA",
+        "url": "https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51"
+      },
+      {
+        "name": "Hulu",
+        "label": "Hulu / Disney+",
+        "url": "https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154"
+      },
+      {
+        "name": "Disney+",
+        "label": "Disney+",
+        "url": "https://www.disneyplus.com/browse/entity-994e7dec-fcbd-416e-ab2e-b4de8cc6d154"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-05": "EP 01 (첫방)",
+      "2026-10-06": "EP 02",
+      "2026-10-12": "EP 03",
+      "2026-10-13": "EP 04",
+      "2026-10-19": "EP 05",
+      "2026-10-20": "EP 06",
+      "2026-10-26": "EP 07",
+      "2026-10-27": "EP 08",
+      "2026-11-02": "EP 09",
+      "2026-11-03": "EP 10",
+      "2026-11-09": "EP 11",
+      "2026-11-10": "EP 12 (최종화)"
+    },
+    "episodes": "12부작",
+    "cast": "추영우, 김소현",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "로봇 연구실에서 만난 박사과정생과 석사과정생의 청춘 로맨스. 故 안판석 감독 유작. ENA·Disney+, 2026년 10월 5일 첫방(매주 월·화 22:00).",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "my-guilty-human",
+    "title": "나의 유죄인간",
+    "engTitle": "Love in Disguise",
+    "platforms": [
+      {
+        "name": "tvN",
+        "label": "tvN",
+        "url": "https://tvn.cjenm.com/ko/Love-in-Disguise/"
+      },
+      {
+        "name": "Prime Video",
+        "label": "Prime Video",
+        "url": "https://www.primevideo.com"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-19": "EP 01 (첫방)",
+      "2026-10-20": "EP 02",
+      "2026-10-26": "EP 03",
+      "2026-10-27": "EP 04",
+      "2026-11-02": "EP 05",
+      "2026-11-03": "EP 06",
+      "2026-11-09": "EP 07",
+      "2026-11-10": "EP 08",
+      "2026-11-16": "EP 09",
+      "2026-11-17": "EP 10",
+      "2026-11-23": "EP 11",
+      "2026-11-24": "EP 12 (최종화)"
+    },
+    "episodes": "12부작",
+    "cast": "임시완, 설인아, 김정현, 연우",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "예측 불허의 사건에 휘말린 남녀의 긴장감 넘치는 로맨틱 서스펜스. tvN, 2026년 10월 19일 첫방(매주 월·화); Prime Video 글로벌 독점.",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "kidnap-game",
+    "title": "키드냅 게임",
+    "engTitle": "kiDnap GAME",
+    "platforms": [
+      {
+        "name": "Channel A",
+        "label": "Channel A",
+        "url": "https://www.ichannela.com/program/template/program_refine.do?cateCode=0502&subCateCode=050228&pgmCode=PGM24124"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-06": "EP 01 (첫방)",
+      "2026-10-13": "EP 02",
+      "2026-10-20": "EP 03",
+      "2026-10-27": "EP 04",
+      "2026-11-03": "EP 05",
+      "2026-11-10": "EP 06",
+      "2026-11-17": "EP 07",
+      "2026-11-24": "EP 08"
+    },
+    "episodes": "회차 수 확인 중",
+    "cast": "이준기, 사카구치 켄타로, 가가연, 사쿠라이 유키",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "한국·일본·홍콩 제작진이 함께하는 글로벌 공동 제작 드라마. Channel A에서 2026년 10월 6일 첫방.",
+    "poster": "",
+    "verifiedAt": "2026-10-05"
+  },
+  {
+    "id": "final-table",
+    "title": "파이널 테이블",
+    "engTitle": "Final Table",
+    "platforms": [
+      {
+        "name": "JTBC",
+        "label": "JTBC",
+        "url": "https://tv.jtbc.co.kr"
+      },
+      {
+        "name": "Prime Video",
+        "label": "Prime Video",
+        "url": "https://www.primevideo.com"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-24": "EP 01 (첫방)",
+      "2026-10-25": "EP 02",
+      "2026-10-31": "EP 03",
+      "2026-11-01": "EP 04",
+      "2026-11-07": "EP 05",
+      "2026-11-08": "EP 06",
+      "2026-11-14": "EP 07",
+      "2026-11-15": "EP 08",
+      "2026-11-21": "EP 09",
+      "2026-11-22": "EP 10",
+      "2026-11-28": "EP 11",
+      "2026-11-29": "EP 12 (최종화)"
+    },
+    "episodes": "12부작",
+    "cast": "안효섭, 홍화연, 장률, 정유진",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "절대적 위기 속에서 마지막 한 판의 승부를 펼치는 인물들의 심리 스릴러. JTBC 토일드라마로 2026년 10월 24일 첫방(밤 10시 40분); Prime Video 글로벌 공개.",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "make-me-tremble",
+    "title": "내가 떨릴 수 있게",
+    "engTitle": "Make Me Tremble",
+    "platforms": [
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
+      },
+      {
+        "name": "Viki",
+        "label": "Rakuten Viki",
+        "url": "https://www.viki.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-15": "EP 01~04 (첫공개)",
+      "2026-10-22": "EP 05~06",
+      "2026-10-29": "EP 07~08",
+      "2026-11-05": "EP 09~10 (최종화)"
+    },
+    "episodes": "10부작",
+    "cast": "남지현, 김재영",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "사랑 없이는 안 하는 여자와 사랑 없이도 잘 하는 남자의 성(性)장 로맨틱 코미디. TVING 오리지널, Viki 글로벌 서비스.",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "the-remarried-empress",
+    "title": "재혼 황후",
+    "engTitle": "The Remarried Empress",
+    "platforms": [
+      {
+        "name": "Hulu",
+        "label": "Hulu / Disney+",
+        "url": "https://www.disneyplus.com"
+      }
+    ],
+    "isBatch": true,
+    "releaseDate": "2026-11-04",
+    "batchEp": "10부작 전편 공개 (11/4~)",
+    "schedule": {},
+    "episodes": "10부작",
+    "cast": "신민아, 주지훈, 이종석, 이세영",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "동대제국의 완벽한 황후 나비에가 이혼 후 서왕국 왕자 하인리와의 재혼을 선언하며 펼쳐지는 로맨스 판타지 대서사극. Disney+ 오리지널.",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "the-great-king-munmu",
+    "title": "문무",
+    "engTitle": "The Great King Munmu",
+    "platforms": [
+      {
+        "name": "KBS2",
+        "label": "KBS2",
+        "url": "https://www.kbs.co.kr"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-14": "EP 01 (첫방)",
+      "2026-11-15": "EP 02",
+      "2026-11-21": "EP 03",
+      "2026-11-22": "EP 04",
+      "2026-11-28": "EP 05",
+      "2026-11-29": "EP 06"
+    },
+    "episodes": "28부작",
+    "cast": "이현욱, 장혁, 김강우, 박성웅",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "삼국통일을 이뤄낸 신라 문무왕과 지도자들의 처절하고 고독한 대서사를 다룬 300억 대작 사극. KBS2 토일드라마로 2026년 11월 14일 첫방.",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "crash-season-2",
+    "title": "크래시2: 분노의 도로",
+    "engTitle": "Crash Season 2: Fury Road",
+    "platforms": [
+      {
+        "name": "ENA",
+        "label": "ENA",
+        "url": "https://ktena.co.kr"
+      },
+      {
+        "name": "Hulu",
+        "label": "Hulu / Disney+",
+        "url": "https://www.disneyplus.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-16": "EP 01 (첫방)",
+      "2026-11-17": "EP 02",
+      "2026-11-23": "EP 03",
+      "2026-11-24": "EP 04",
+      "2026-11-30": "EP 05"
+    },
+    "episodes": "12부작",
+    "cast": "이민기, 곽선영, 허성태, 이호철, 박지성",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "국가수사본부 광역수사대로 격상된 교통범죄수사팀(T.C.I)이 전국 단위 대형 교통 범죄를 소탕하는 활극. ENA 월화드라마 및 Disney+ 공개.",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "nine-to-six",
+    "title": "나인 투 식스",
+    "engTitle": "9 to 6",
+    "platforms": [
+      {
+        "name": "SBS",
+        "label": "SBS",
+        "url": "https://programs.sbs.co.kr"
+      },
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-18": "EP 01 (첫방)",
+      "2026-11-19": "EP 02",
+      "2026-11-25": "EP 03",
+      "2026-11-26": "EP 04"
+    },
+    "episodes": "16부작",
+    "cast": "박민영, 육성재, 고수",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "일에 몰두해 연애를 미뤄왔던 법무팀 차장과 다정한 연하남 인턴의 현실 공감 오피스 로맨스. SBS 수목드라마, 2026년 11월 18일 첫방.",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "blue-road",
+    "title": "푸른길",
+    "engTitle": "Blue Road",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com"
+      }
+    ],
+    "isBatch": true,
+    "releaseDate": "2026-11-20",
+    "batchEp": "8부작 전편 공개 (11/20~)",
+    "schedule": {},
+    "episodes": "8부작",
+    "cast": "손석구, 나가야마 에이타, 김신록, 최성은, 정재영",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "국경을 넘어 반복되는 의문의 연쇄 살인 사건을 쫓는 두 형사의 하드보일드 범죄 수사극. 한준희 감독 연출, 넷플릭스 오리지널.",
+    "poster": "",
+    "verifiedAt": "2026-10-02"
+  },
+  {
+    "id": "merry-berry-love",
+    "title": "메리 베리 러브",
+    "engTitle": "Merry Berry Love",
+    "platforms": [
+      {
+        "name": "Hulu",
+        "label": "Hulu / Disney+",
+        "url": "https://www.disneyplus.com"
+      },
+      {
+        "name": "Disney+",
+        "label": "Disney+",
+        "url": "https://www.disneyplus.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-07": "EP 01 (첫공개)",
+      "2026-10-14": "EP 02",
+      "2026-10-21": "EP 03",
+      "2026-10-28": "EP 04",
+      "2026-11-04": "EP 05",
+      "2026-11-11": "EP 06",
+      "2026-11-18": "EP 07",
+      "2026-11-25": "EP 08",
+      "2026-12-02": "EP 09",
+      "2026-12-09": "EP 10 (최종화)"
+    },
+    "episodes": "10부작",
+    "cast": "지창욱, 이마다 미오",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "한국의 공간 기획자 유빈과 일본의 딸기 농부 카린이 아름다운 섬에서 만나 펼치는 한일 합작 로맨틱 코미디. CJ ENM·닛폰TV 공동제작, Disney+·Hulu 2026년 10월 7일 첫공개(매주 수요일).",
+    "poster": "",
+    "verifiedAt": "2026-10-05"
+  },
+  {
+    "id": "dead-end-job",
+    "title": "꿀알바",
+    "engTitle": "Dead-End Job",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com"
       }
     ],
     "isBatch": true,
     "releaseDate": "2026-10-30",
-    "batchEp": "금토드라마 첫방 예정 (미정)",
-    "episodes": "미정 (10월 말 편성 예정)",
-    "cast": "유연석, 서현진",
+    "batchEp": "8부작 전편 공개 (10/30~)",
+    "schedule": {},
+    "episodes": "8부작",
+    "cast": "이재욱, 고민시, 김민하, 이희준",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 말 편성 예정 — 정확한 첫방일이 아직 발표되지 않아 10/30에 임시 배치(확정되는 대로 갱신).",
+    "synopsis": "시급 50배의 고액 아르바이트를 미끼로 하는 수상한 인력사무소를 배경으로, 빚에 쫓기던 청년 혁준이 악몽 같은 노동 현장에 투입되면서 벌어지는 생계형 호러 시리즈. Netflix, 2026년 10월 30일 전편 공개.",
     "poster": "",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-10-05"
   }
 ];
 
@@ -1520,28 +2213,51 @@ let currentMonthOffset = 0; // 0 = 이번 달
 const MONTH_OFFSET_MIN = -3;
 const MONTH_OFFSET_MAX = 3;
 
-// '오늘'/'이번 주' 기준 시간대. 이 가이드에 저장된 날짜는 거의 다 "한국 방영 요일"이 기준(REFRESH_GUIDE 리서치
-// 원칙 자체가 그렇게 채우도록 함)이라, 미국 동부시간(America/New_York)을 기준으로 삼으면 한국은 이미 다음 날인데도
-// 하루 늦게 "이번 주"가 바뀌는 어긋남이 생긴다(예: 한국 월요일 오전인데 미국 동부는 아직 일요일 밤). 그래서 한국
-// 시간(Asia/Seoul)을 기준으로 통일한다 — 함수 이름은 이전 이름을 그대로 남겨 호출부를 덜 건드림.
-function getUSEasternDay() {
-    const options = { timeZone: "Asia/Seoul", weekday: 'short' };
-    const dayName = new Intl.DateTimeFormat('en-US', options).format(new Date());
-    return dayName; // "Mon", "Tue", etc.
+// '오늘'/'이번 주' 기준 시간대.
+// 미국(US) 모드이거나 미국 위치에 있을 경우 미국 동부시간(America/New_York) 또는 현지 브라우저 미국 시간대를 기준으로,
+// 한국(KR) 모드일 경우 한국 표준시(Asia/Seoul)를 기준으로 '오늘'과 날짜를 계산한다.
+function getEffectiveTimeZone() {
+    if (regionMode === 'KR') {
+        return "Asia/Seoul";
+    }
+    const localTz = (Intl.DateTimeFormat().resolvedOptions().timeZone) || 'America/New_York';
+    if (localTz.startsWith('America/') || localTz.startsWith('US/')) {
+        return localTz;
+    }
+    return "America/New_York";
 }
-const todayStr = getUSEasternDay();
 
-// 한국 시간 기준으로 '오늘'과 이번 주 월요일들을 계산해서, 헤더가 하드코딩된 날짜처럼 낡지 않게 한다.
-function getUSEasternDate() {
-    const parts = new Intl.DateTimeFormat('en-US', { timeZone: "Asia/Seoul", year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+function getTodayDayName() {
+    const tz = getEffectiveTimeZone();
+    return new Intl.DateTimeFormat('en-US', { timeZone: tz, weekday: 'short' }).format(new Date());
+}
+
+function getTodayDate() {
+    const tz = getEffectiveTimeZone();
+    const parts = new Intl.DateTimeFormat('en-US', { timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
     const map = {};
     parts.forEach(p => map[p.type] = p.value);
     return new Date(`${map.year}-${map.month}-${map.day}T12:00:00`); // noon avoids DST edge issues
 }
+
 function toISODate(d) {
     return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
-const todayISO = toISODate(getUSEasternDate());
+
+function getTodayISO() {
+    return toISODate(getTodayDate());
+}
+
+let todayStr = getTodayDayName();
+let todayISO = getTodayISO();
+
+function syncTodayState() {
+    todayStr = getTodayDayName();
+    todayISO = getTodayISO();
+}
+
+function getUSEasternDay() { return getTodayDayName(); }
+function getUSEasternDate() { return getTodayDate(); }
 
 function getWeekMonday(offset) {
     const today = getUSEasternDate();
@@ -1554,6 +2270,7 @@ function getWeekMonday(offset) {
 // 선택된 주(offset)의 월~일 7일치 {key, dateISO, label} 배열을 계산한다.
 function getWeekDates(offset) {
     const monday = getWeekMonday(offset);
+    syncTodayState();
     return DAY_ORDER.map((key, i) => {
         const d = new Date(monday);
         d.setDate(monday.getDate() + i);
@@ -1632,17 +2349,46 @@ function updateDateHeaders(offset) {
     });
 }
 
-// Live Clock
+// Live Clock — 편성 날짜는 한국 방송일(KST)을 유지하되, 현재 시각은 두 지역을 함께 보여준다.
+function formatZonedTime(timeZone) {
+    return new Intl.DateTimeFormat('en-US', {
+        timeZone,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    }).format(new Date());
+}
+
 function updateLiveClock() {
-    const options = { timeZone: "Asia/Seoul", hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
-    const timeStr = new Intl.DateTimeFormat('en-US', options).format(new Date());
+    const kst = formatZonedTime("Asia/Seoul");
+    const et = formatZonedTime("America/New_York");
     const el = document.getElementById('liveClock');
-    if (el) el.textContent = `KST ${timeStr}`;
+    if (!el) return;
+    const primary = regionMode === 'US' ? `ET ${et} · KST ${kst}` : `KST ${kst} · ET ${et}`;
+    el.textContent = primary;
+    el.title = regionMode === 'KR'
+        ? '편성 날짜 및 오늘 기준: 한국 표준시(KST)'
+        : '편성 날짜 및 오늘 기준: 미국 동부시간(ET)';
 }
 
 // DOM Elements
 const guideBody = document.getElementById('guideBody');
 const btnWatchlist = document.getElementById('btnWatchlist');
+
+function setWatchlistFilter(enabled) {
+    showOnlyWatchlist = enabled;
+    btnWatchlist.classList.toggle('active', enabled);
+    btnWatchlist.textContent = enabled ? '전체 보기' : '내 리스트만 보기';
+    btnWatchlist.setAttribute('aria-pressed', String(enabled));
+
+    if (currentView === 'month') {
+        renderMonth();
+    } else {
+        renderGrid();
+        paintTodayColumnFill();
+    }
+}
 
 // Init
 function init() {
@@ -1821,6 +2567,7 @@ function goHome() {
 
 // Highlight today's column (다음 주를 보고 있을 땐 오늘이 그 주에 없으므로 하이라이트 없음)
 function highlightToday() {
+    syncTodayState();
     const headers = document.querySelectorAll('th[data-day]');
     headers.forEach((th) => {
         th.classList.remove('today-col');
@@ -1926,8 +2673,11 @@ function setRegion(mode) {
     document.getElementById('btnRegionUS').classList.toggle('active', mode === 'US');
     document.getElementById('btnRegionKR').classList.toggle('active', mode === 'KR');
     document.getElementById('btnRegionAll').classList.toggle('active', mode === 'ALL');
+    syncTodayState();
+    updateLiveClock();
+    updateWeekBadge();
     if (currentView === 'month') renderMonth();
-    else { renderGrid(); paintTodayColumnFill(); }
+    else { renderWeek(); }
 }
 
 // Render the grid for the currently selected week (currentWeekOffset)
@@ -1938,9 +2688,6 @@ function renderGrid() {
     const weekDates = getWeekDates(currentWeekOffset); // [{key, dateISO, label, isToday}, ...] Mon~Sun
     const weekSundayISO = getWeekSundayISO(currentWeekOffset);
     let weekHasAnyContent = false;
-    // 같은 작품이 여러 채널 행(예: SBS+Hulu, 또는 Netflix처럼 미국·한국 겸용 채널)에 중복으로 뜨지 않도록,
-    // 이번 렌더에서 (열, 작품) 조합이 이미 어느 채널 행에 표시됐는지 기록한다 — 먼저 순회된 채널이 그 칸을 갖는다.
-    const claimedThisRender = new Set();
 
     visibleChannels().forEach(ch => {
         const tr = document.createElement('tr');
@@ -1980,10 +2727,7 @@ function renderGrid() {
                 } else {
                     isOnThisCell = !!(eff.schedule && Object.prototype.hasOwnProperty.call(eff.schedule, dateKey));
                 }
-                if(!isOnThisCell) return false;
-                // 이 (요일열, 작품) 조합을 먼저 순회된 다른 채널 행이 이미 표시했다면 여기선 건너뛴다.
-                if(claimedThisRender.has(`${day}::${d.id}`)) return false;
-                return true;
+                return isOnThisCell;
             });
 
             if(cellDramas.length === 0) {
@@ -1995,14 +2739,7 @@ function renderGrid() {
                     const platform = drama.platforms.find(p => p.name.includes(ch.id));
                     const eff = effectiveForChannel(drama, platform);
                     const epText = eff.isBatch ? (eff.batchEp || '전편 공개') : eff.schedule[dateKey];
-                    claimedThisRender.add(`${day}::${drama.id}`);
-                    // 이 날짜에 실제로 걸리는 채널만 모아서 카드에 같이 적어준다 — 플랫폼마다 스케줄이
-                    // 다르면(예: TVING 선공개) 같은 날 안 걸리는 채널은 라벨에서 자연히 빠진다.
-                    const activePlatforms = platformsActiveOn(drama, day, dateKey, weekDates[0].dateISO);
-                    const cardOpts = activePlatforms.length > 1
-                        ? { channelLabel: activePlatforms.map(p => p.label).join(' · ') }
-                        : {};
-                    td.appendChild(makeDramaCard(drama, epText, cardOpts));
+                    td.appendChild(makeDramaCard(drama, epText));
                 });
             }
             tr.appendChild(td);
@@ -2047,6 +2784,77 @@ function toggleStar(id, e) {
     }
 }
 
+// Smart App Launcher (iPad / Mobile Deep Link)
+function isMobileOrTabletDevice() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+           (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
+           /Android/i.test(navigator.userAgent);
+}
+
+function getAppDeepLink(url, platformName) {
+    if (!url) return null;
+    const name = platformName || '';
+    
+    // 1. Prime Video
+    if (name === 'Prime Video' || /amazon\.com|primevideo\.com/i.test(url)) {
+        const asinMatch = url.match(/(?:detail\/|dp\/|asin=)([A-Z0-9]{10})/i);
+        if (asinMatch) {
+            return `aiv://aiv/play?asin=${asinMatch[1]}`;
+        }
+        return 'primevideo://';
+    }
+    // 2. Netflix
+    if (name.includes('Netflix') || /netflix\.com/i.test(url)) {
+        const titleMatch = url.match(/title\/([0-9]+)/);
+        if (titleMatch) {
+            return `nflx://www.netflix.com/title/${titleMatch[1]}`;
+        }
+        return 'nflx://';
+    }
+    // 3. Rakuten Viki
+    if (name.includes('Viki') || /viki\.com/i.test(url)) {
+        return url.replace(/^https?:\/\/(www\.)?viki\.com/, 'viki://');
+    }
+    // 4. Hulu
+    if (name.includes('Hulu') || /hulu\.com/i.test(url)) {
+        return url.replace(/^https?:\/\/(www\.)?hulu\.com/, 'hulu://');
+    }
+    // 5. Disney+
+    if (name.includes('Disney') || /disneyplus\.com/i.test(url)) {
+        return 'disneyplus://';
+    }
+    // 5. Wavve
+    if (name.includes('Wavve') || /wavve\.com/i.test(url)) {
+        return 'wavve://';
+    }
+    // 6. TVING
+    if (name.includes('TVING') || /tving\.com/i.test(url)) {
+        return 'tving://';
+    }
+    // 7. Coupang Play
+    if (name.includes('Coupang') || /coupangplay\.com/i.test(url)) {
+        return 'coupangplay://';
+    }
+    return null;
+}
+
+function launchPlatform(url, platformName, e) {
+    const isMobile = isMobileOrTabletDevice();
+    const appDeepLink = getAppDeepLink(url, platformName);
+    
+    if (isMobile && appDeepLink) {
+        if (e) e.preventDefault();
+        // 가이드 탭은 100% 보존하면서 앱을 전면으로 호출!
+        window.location.href = appDeepLink;
+        return;
+    }
+    
+    // 데스크톱(Mac/PC)이거나 일반 웹 링크: 새 탭에서 열기
+    if (e && e.defaultPrevented) {
+        window.open(url, '_blank', 'noopener');
+    }
+}
+
 // Modal Logic
 function openModal(id) {
     const drama = DRAMA_DATA.find(d => d.id === id);
@@ -2068,12 +2876,22 @@ function openModal(id) {
     // Platforms
     const pContainer = document.getElementById('modalPlatforms');
     pContainer.innerHTML = '<strong>시청 바로가기:</strong><br>';
+    const isMobile = isMobileOrTabletDevice();
     drama.platforms.forEach(p => {
         const a = document.createElement('a');
         a.href = p.url;
         a.target = '_blank';
         a.rel = 'noopener';
-        a.textContent = `${p.label} 시청하기`;
+        
+        const deepLink = getAppDeepLink(p.url, p.name);
+        if (isMobile && deepLink) {
+            a.textContent = `📱 ${p.label} 앱으로 바로 열기`;
+        } else {
+            a.textContent = `${p.label} 시청하기`;
+        }
+        
+        a.onclick = (e) => launchPlatform(p.url, p.name, e);
+        
         a.style.display = 'block';
         a.style.margin = '4px 0';
         a.style.padding = '0';
@@ -2103,14 +2921,7 @@ function closeModal() {
 // Event Listeners
 function setupListeners() {
     btnWatchlist.addEventListener('click', () => {
-        showOnlyWatchlist = !showOnlyWatchlist;
-        btnWatchlist.classList.toggle('active');
-        if (currentView === 'month') {
-            renderMonth();
-        } else {
-            renderGrid();
-            paintTodayColumnFill(); // 리스트 필터로 행 수가 바뀌면 채널 행 높이도 바뀌므로 다시 계산
-        }
+        setWatchlistFilter(!showOnlyWatchlist);
     });
 
     document.getElementById('btnViewWeek').addEventListener('click', () => switchView('week'));

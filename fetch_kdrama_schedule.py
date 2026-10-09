@@ -11,6 +11,7 @@ import math
 import re
 from pathlib import Path
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 BASE_DIR = Path(__file__).parent.resolve()
 JSON_PATH = BASE_DIR / "dramas.json"
@@ -53,7 +54,8 @@ _KR_WEEK_LABEL = {-1: "지난 주", 0: "이번 주", 1: "다음 주", 2: "다다
 def build_week(offset=0, today=None):
     """offset=0(이번 주)/1(다음 주)/... 기준으로 해당 주 월~일 날짜와 라벨을 자동 계산한다.
     더 이상 날짜를 하드코딩하지 않으므로 스크립트를 실행하는 시점이 언제든 항상 맞는 날짜가 나온다."""
-    today = today or datetime.now()
+    # 미국 사용자 환경 및 미국 스트리밍 가이드 특성에 맞춰 기본 기준 시간대를 미국 동부시간(America/New_York)으로 설정
+    today = today or datetime.now(ZoneInfo("America/New_York"))
     this_monday = today - timedelta(days=today.weekday())
     monday = this_monday + timedelta(weeks=offset)
     sunday = monday + timedelta(days=6)
@@ -148,9 +150,11 @@ def channel_active(dramas, ch, today):
 
 
 def generate_markdown(dramas, weeks):
-    now_str = datetime.now().strftime("%Y-%m-%d %H:%M EST")
+    now_et = datetime.now(ZoneInfo("America/New_York"))
+    now_kst = datetime.now(ZoneInfo("Asia/Seoul"))
+    now_str = f"ET {now_et:%Y-%m-%d %H:%M} · KST {now_kst:%Y-%m-%d %H:%M}"
     current_week = next((w for w in weeks if w["offset"] == 0), weeks[0])
-    active_channels = [ch for ch in CHANNELS if channel_active(dramas, ch, datetime.now().date())]
+    active_channels = [ch for ch in CHANNELS if channel_active(dramas, ch, now_et.date())]
 
     md = []
     md.append("---")
