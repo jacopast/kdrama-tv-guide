@@ -286,13 +286,23 @@
         }
 
         /* Month View — 좁은 화면(기본)은 빈 날짜를 건너뛰는 세로 목록, 넓은 화면은 아래 달력 격자로 전환 */
-        #monthList {
-            max-width: 480px;
-        }
         .month-calendar { display: none; }
 
+        /* 요일별 목록(모바일 주간·월간): 요일 이름은 한 줄 전체, 그 아래 카드는 폭에 맞춰 여러 칸으로
+           — 일반 폰은 2칸, 가로 모드·작은 태블릿은 3~4칸. 같은 줄 카드는 높이를 맞춘다. */
         .month-day-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 2px;
             margin-bottom: 10px;
+        }
+
+        .month-day-group > .month-day-label {
+            grid-column: 1 / -1;
+        }
+
+        .month-day-group > .drama-card {
+            margin-bottom: 0;
         }
 
         .month-day-label {
@@ -468,7 +478,7 @@
             /* 채널 여러 개가 겹쳐 붙는 함께 모드에서는 라벨이 길어지므로, 한 줄 고정 대신 줄바꿈해서
                카드 밖으로 삐져나가거나 옆 칸과 겹치지 않게 한다. */
             white-space: normal;
-            overflow-wrap: anywhere;
+            overflow-wrap: break-word;
             min-width: 0;
         }
 
@@ -609,7 +619,7 @@
             /* 모바일에서는 채널별 표 대신 요일별 목록(#weekList)을 보여준다 */
             .grid-container { overflow-x: visible; }
             #guideTable { display: none; }
-            #weekList { display: block; max-width: 480px; }
+            #weekList { display: block; }
         }
     </style>
 </head>
@@ -2632,7 +2642,9 @@ function paintTodayColumnFill() {
 // opts.channelLabel이 있으면(월간 보기처럼 요일 열이 없을 때) 회차 옆에 채널명을 같이 적어준다.
 function makeDramaCard(drama, epText, opts = {}) {
     const isStarred = myWatchlist.includes(drama.id);
-    const metaText = opts.channelLabel ? `${opts.channelLabel} · ${epText}` : epText;
+    // "EP 41"처럼 회차 표기는 좁은 칸에서도 "EP"와 숫자가 줄바꿈으로 갈라지지 않게 붙여 둔다.
+    const epDisplay = epText.replace(/\bEP /g, 'EP\u00a0');
+    const metaText = opts.channelLabel ? `${opts.channelLabel} · ${epDisplay}` : epDisplay;
     // 정확한 날짜가 아직 안 나와 "(미정)"으로 임시 배치된 항목은 카드를 흐리게 가라앉힌다.
     const isTentative = /\(미정\)/.test(epText);
     const card = document.createElement('div');
