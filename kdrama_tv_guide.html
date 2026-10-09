@@ -651,9 +651,9 @@
 
         @media (max-width: 768px) {
             body { padding: 12px; }
-            .modal-content { flex-direction: column; }
-            /* 포스터는 창 폭보다 살짝 좁게(높이도 같이 줄어듦) — 위쪽 여백도 좌우와 같게(퍼센트 여백은 폭 기준) */
-            .modal-poster { width: 84%; margin: 8% auto 0; }
+            /* 창 자체를 화면보다 넉넉히 좁게 하고 포스터는 창 위쪽을 여백 없이 채운다 — 폭이 줄면 높이도 같이 줄어든다 */
+            .modal-content { flex-direction: column; width: 78%; }
+            .modal-poster { width: 100%; }
             .modal-poster img { height: auto; }
             /* ×는 스크롤해도 창 오른쪽 위에 떠 있게 — 자리를 차지하지 않도록 아래 여백을 음수로 */
             .modal-close {
