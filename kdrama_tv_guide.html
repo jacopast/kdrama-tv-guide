@@ -23,6 +23,7 @@
             --cell-bg-starred: #fdfcfa;
             --link-color: #33322f;
             --today-bg: rgba(51, 50, 47, 0.05);
+            --cover-veil: rgba(244, 243, 239, 0.74);
             --overlay-bg: rgba(51, 50, 47, 0.35);
             --font-main: 'Gowun Batang', 'AppleMyungjo', serif;
             --font-heading: var(--font-main);
@@ -42,6 +43,7 @@
                 --cell-bg-starred: #3f4044;
                 --link-color: #d9d7d1;
                 --today-bg: rgba(217, 215, 209, 0.045);
+                --cover-veil: rgba(24, 24, 26, 0.7);
                 --overlay-bg: rgba(0, 0, 0, 0.5);
             }
         }
@@ -404,19 +406,18 @@
             background-color: var(--cell-bg-starred);
         }
 
-        /* 내 리스트 카드는 jacopast.com 글 카드처럼 포스터를 흑백·어둡게 깔고 흰 글씨를 올린다.
-           (블로그와 같은 값: grayscale(1) brightness(0.5) contrast(1.1) + 흰 막 25%) — 낮/밤 모드 공통 */
+        /* 내 리스트 카드는 jacopast.com 글 카드처럼 포스터를 흑백으로 깔고 막을 한 겹 씌운다.
+           낮에는 흰 막 + 진한 글씨, 밤에는 검은 막 + 밝은 글씨 — 글자색은 각 모드의 기본색 그대로. */
         .drama-card.has-cover {
             isolation: isolate;
             overflow: hidden;
-            background-color: #555;
         }
 
         .drama-card.has-cover::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: rgba(255, 255, 255, 0.25);
+            background: var(--cover-veil);
             z-index: -1;
         }
 
@@ -427,15 +428,14 @@
             height: 100%;
             object-fit: cover;
             object-position: center 25%;
-            filter: grayscale(1) brightness(0.5) contrast(1.1);
+            filter: grayscale(1) contrast(1.1);
             z-index: -2;
             pointer-events: none;
         }
 
-        .drama-card.has-cover .drama-title-link,
         .drama-card.has-cover .ep-tag,
         .drama-card.has-cover .btn-star {
-            color: #fff;
+            color: var(--text-color);
         }
 
         /* 정확한 날짜가 아직 안 나온 "(미정)" 임시 배치 항목: 박스 배경을 페이지 배경과 똑같이 만들어
