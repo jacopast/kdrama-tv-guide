@@ -88,7 +88,7 @@ def add_drama_cli():
         "cast": cast,
         "synopsis": synopsis,
         "platforms": platforms,
-        "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=300&q=80",
+        "poster": "",
         "verifiedAt": date.today().isoformat()
     }
     if is_batch:
