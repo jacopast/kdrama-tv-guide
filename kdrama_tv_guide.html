@@ -663,6 +663,7 @@
             <thead>
                 <tr>
                     <th class="channel-th">채널</th>
+                    <th class="batch-th" data-day="Batch">전편 공개</th>
                     <th data-day="Mon">월 (8/17)</th>
                     <th data-day="Tue">화 (8/18)</th>
                     <th data-day="Wed">수 (8/19)</th>
@@ -670,7 +671,6 @@
                     <th data-day="Fri">금 (8/21)</th>
                     <th data-day="Sat">토 (8/22)</th>
                     <th data-day="Sun">일 (8/23)</th>
-                    <th class="batch-th" data-day="Batch">전편 공개</th>
                 </tr>
             </thead>
             <tbody id="guideBody">
@@ -2199,7 +2199,9 @@ function platformRegions(platformName) {
 
 const DAY_ORDER = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 const DAY_KR = { Mon: "월", Tue: "화", Wed: "수", Thu: "목", Fri: "금", Sat: "토", Sun: "일" };
-const COLUMNS = [...DAY_ORDER, "Batch"];
+// "전편 공개"(지난주 이전에 통째로 풀린 작품) 묶음은 맨 앞 — 데스크탑에선 월요일 왼쪽 열, 모바일에선 목록 맨 위.
+// 공개된 그 주에는 이 열이 아니라 공개 요일 칸에 일반 에피소드처럼 나온다(getBatchWindow 참고).
+const COLUMNS = ["Batch", ...DAY_ORDER];
 
 // State
 let myWatchlist = JSON.parse(localStorage.getItem('kdrama_watchlist')) || [];
@@ -2773,7 +2775,7 @@ function renderGrid() {
 }
 
 // 모바일 주간 보기: 요일마다 그날 걸린 작품을 모아 보여준다. 여러 채널에 동시에 걸린 작품은
-// 카드 하나에 채널명을 같이 적어서 중복 없이 한 번만 나온다. 빈 요일은 건너뛰고, 전편 공개작은 맨 끝에.
+// 카드 하나에 채널명을 같이 적어서 중복 없이 한 번만 나온다. 빈 요일은 건너뛰고, 전편 공개작은 맨 위에.
 function renderWeekList(weekDates, byDay) {
     const list = document.getElementById('weekList');
     list.innerHTML = '';
