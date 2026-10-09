@@ -404,6 +404,40 @@
             background-color: var(--cell-bg-starred);
         }
 
+        /* 내 리스트 카드는 jacopast.com 글 카드처럼 포스터를 흑백·어둡게 깔고 흰 글씨를 올린다.
+           (블로그와 같은 값: grayscale(1) brightness(0.5) contrast(1.1) + 흰 막 25%) — 낮/밤 모드 공통 */
+        .drama-card.has-cover {
+            isolation: isolate;
+            overflow: hidden;
+            background-color: #555;
+        }
+
+        .drama-card.has-cover::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.25);
+            z-index: -1;
+        }
+
+        .card-cover {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 25%;
+            filter: grayscale(1) brightness(0.5) contrast(1.1);
+            z-index: -2;
+            pointer-events: none;
+        }
+
+        .drama-card.has-cover .drama-title-link,
+        .drama-card.has-cover .ep-tag,
+        .drama-card.has-cover .btn-star {
+            color: #fff;
+        }
+
         /* 정확한 날짜가 아직 안 나온 "(미정)" 임시 배치 항목: 박스 배경을 페이지 배경과 똑같이 만들어
            박스 자체가 없는 것처럼 흐리게 가라앉히고, 글자도 옅은 회색으로 톤 다운해서 확정된 편성과
            한눈에 구분되게 한다. */
@@ -2699,8 +2733,9 @@ function makeDramaCard(drama, epText, opts = {}) {
     // 정확한 날짜가 아직 안 나와 "(미정)"으로 임시 배치된 항목은 카드를 흐리게 가라앉힌다.
     const isTentative = /\(미정\)/.test(epText);
     const card = document.createElement('div');
-    card.className = 'drama-card' + (isStarred ? ' starred' : '') + (isTentative ? ' tentative' : '');
-    card.innerHTML = `
+    const hasCover = isStarred && !!drama.poster;
+    card.className = 'drama-card' + (isStarred ? ' starred' : '') + (hasCover ? ' has-cover' : '') + (isTentative ? ' tentative' : '');
+    card.innerHTML = `${hasCover ? `<img class="card-cover" src="${drama.poster}" alt="" loading="lazy" onerror="this.parentElement.classList.remove('has-cover'); this.remove()">` : ''}
         <span class="drama-title-link" role="button" tabindex="0" onclick="openModal('${drama.id}')" onkeydown="if(event.key==='Enter')openModal('${drama.id}')" title="${drama.title} 상세 정보">
             ${drama.title}
         </span>
