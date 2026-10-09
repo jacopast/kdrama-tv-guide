@@ -301,6 +301,13 @@
             margin-bottom: 3px;
         }
 
+        #weekList { display: none; }
+
+        .month-day-group.is-today .month-day-label {
+            color: var(--text-color);
+            font-weight: 700;
+        }
+
         .month-empty-state {
             color: var(--text-soft);
             font-size: 13px;
@@ -599,35 +606,10 @@
             h1 { flex-direction: column; align-items: flex-start; gap: 0; }
             h1 > div { flex-direction: column; gap: 0; }
 
-            /* 모바일에서는 가로로 넓은 표 대신, 채널별로 세로 목록이 되도록 표를 통째로 재배치한다.
-               내용 없는 요일 칸은 아예 숨겨서 그 채널이 실제로 방영하는 날짜만 보이게 한다. */
+            /* 모바일에서는 채널별 표 대신 요일별 목록(#weekList)을 보여준다 */
             .grid-container { overflow-x: visible; }
-            table { min-width: 0; border-spacing: 0; }
-            thead { display: none; }
-            tr { display: block; padding: 6px 0 4px; }
-            tr + tr { border-top: 1px solid var(--line); }
-            td { display: block; width: auto !important; position: static !important; }
-
-            td:first-child { padding: 0 0 2px; }
-            .ch-name, .ch-logo { display: inline; }
-            .ch-logo { margin-left: 6px; }
-
-            /* 요일 라벨은 카드 왼쪽에 붙여서, 날짜마다 줄 하나를 더 쓰지 않게 한다 */
-            td:not(:first-child) {
-                display: grid;
-                grid-template-columns: 64px 1fr;
-                column-gap: 6px;
-                padding: 2px 0;
-            }
-            td:not(:first-child).empty-cell { display: none; }
-            td:not(:first-child)::before {
-                content: attr(data-label);
-                grid-row: 1 / span 20;
-                font-size: 11.5px;
-                color: var(--text-soft);
-                padding-top: 4px;
-            }
-            td:not(:first-child) > .drama-card { grid-column: 2; }
+            #guideTable { display: none; }
+            #weekList { display: block; max-width: 480px; }
         }
     </style>
 </head>
@@ -695,6 +677,8 @@
                 <!-- Rows injected via JS -->
             </tbody>
         </table>
+        <!-- 모바일 전용: 같은 주를 채널별 표 대신 요일별 목록으로 (CSS가 폭에 따라 표/목록 중 하나만 보여준다) -->
+        <div id="weekList"></div>
     </div>
 
     <!-- 월간 보기: 넓은 화면은 달력 격자로, 좁은 화면(모바일)은 빈 날짜를 건너뛰는 세로 목록으로 — CSS가 폭에 따라 알아서 골라 보여준다 -->
@@ -2706,6 +2690,9 @@ function renderGrid() {
     const weekDates = getWeekDates(currentWeekOffset); // [{key, dateISO, label, isToday}, ...] Mon~Sun
     const weekSundayISO = getWeekSundayISO(currentWeekOffset);
     let weekHasAnyContent = false;
+    // 모바일 요일별 목록용: 요일(열) -> 같은 작품·같은 회차를 한 카드로 묶고, 걸린 채널들을 모은다.
+    const byDay = {};
+    COLUMNS.forEach(day => { byDay[day] = new Map(); });
 
     visibleChannels().forEach(ch => {
         const tr = document.createElement('tr');
@@ -2758,6 +2745,10 @@ function renderGrid() {
                     const eff = effectiveForChannel(drama, platform);
                     const epText = eff.isBatch ? (eff.batchEp || '전편 공개') : eff.schedule[dateKey];
                     td.appendChild(makeDramaCard(drama, epText));
+                    const key = `${drama.id}::${epText}`;
+                    const entry = byDay[day].get(key) || { drama, epText, channels: [] };
+                    if (!entry.channels.includes(platform.label)) entry.channels.push(platform.label);
+                    byDay[day].set(key, entry);
                 });
             }
             tr.appendChild(td);
@@ -2766,6 +2757,8 @@ function renderGrid() {
         if (hasAnyContent) weekHasAnyContent = true;
         guideBody.appendChild(tr);
     });
+
+    renderWeekList(weekDates, byDay);
 
     // 리서치된 데이터가 아직 그 주까지 닿지 않아서 통째로 비어 있는 경우, 버그처럼 보이지 않도록 안내한다.
     const existingNotice = document.getElementById('weekEmptyNotice');
@@ -2777,6 +2770,30 @@ function renderGrid() {
         notice.textContent = '이 주는 확인된 편성 데이터가 없습니다 (아직 리서치되지 않았거나, 방영 중인 작품이 없는 기간).';
         document.getElementById('weekView').insertAdjacentElement('afterend', notice);
     }
+}
+
+// 모바일 주간 보기: 요일마다 그날 걸린 작품을 모아 보여준다. 여러 채널에 동시에 걸린 작품은
+// 카드 하나에 채널명을 같이 적어서 중복 없이 한 번만 나온다. 빈 요일은 건너뛰고, 전편 공개작은 맨 끝에.
+function renderWeekList(weekDates, byDay) {
+    const list = document.getElementById('weekList');
+    list.innerHTML = '';
+    COLUMNS.forEach(day => {
+        const entries = [...byDay[day].values()];
+        if (entries.length === 0) return;
+        const dateInfo = weekDates.find(w => w.key === day);
+        const group = document.createElement('div');
+        group.className = 'month-day-group' + (dateInfo && dateInfo.isToday ? ' is-today' : '');
+        const label = document.createElement('div');
+        label.className = 'month-day-label';
+        label.textContent = dateInfo
+            ? dateInfo.label + (dateInfo.isToday ? ' · 오늘' : '')
+            : '전편 공개';
+        group.appendChild(label);
+        entries.forEach(({ drama, epText, channels }) => {
+            group.appendChild(makeDramaCard(drama, epText, { channelLabel: channels.join(' · ') }));
+        });
+        list.appendChild(group);
+    });
 }
 
 // Watchlist toggle
