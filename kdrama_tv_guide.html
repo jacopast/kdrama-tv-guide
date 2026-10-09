@@ -121,6 +121,17 @@
             border-bottom: 2px solid var(--line);
         }
 
+        .toolbar-settings {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 4px 10px;
+        }
+
+        .toolbar-sep {
+            color: var(--line);
+        }
+
         .controls {
             display: flex;
             align-items: baseline;
@@ -631,31 +642,38 @@
         <span class="live-clock-badge" id="liveClock">KST --:--:-- · ET --:--:--</span>
     </h1>
 
+    <!-- 첫째 줄(제목 왼쪽 · 시계 오른쪽)과 같은 구조: 설정은 왼쪽에 몰고, 주/달 이동은 시계 바로 아래 오른쪽 끝에 -->
     <div class="toolbar">
-        <div class="controls" id="regionToggle">
-            <button id="btnRegionUS" class="active">미국</button>
-            <button id="btnRegionKR">한국</button>
-            <button id="btnRegionAll">함께</button>
+        <div class="toolbar-settings">
+            <div class="controls" id="regionToggle">
+                <button id="btnRegionUS" class="active">미국</button>
+                <button id="btnRegionKR">한국</button>
+                <button id="btnRegionAll">함께</button>
+            </div>
+            <span class="toolbar-sep" aria-hidden="true">/</span>
+            <div class="controls" id="viewToggle">
+                <button id="btnViewWeek" class="active">주간</button>
+                <button id="btnViewMonth">월간</button>
+            </div>
+            <span class="toolbar-sep" aria-hidden="true">/</span>
+            <div class="controls">
+                <button id="btnWatchlist" aria-pressed="false">☆ 내 리스트</button>
+            </div>
         </div>
-        <div class="controls" id="viewToggle">
-            <button id="btnViewWeek" class="active">주간</button>
-            <button id="btnViewMonth">월간</button>
-        </div>
+        <!-- "오늘로"는 화살표 앞에 둬서, 나타나고 사라져도 ◀ ▶ 위치가 오른쪽 끝에 고정되게 한다 -->
         <div class="controls" id="weekToggle">
+            <button id="btnWeekToday" class="week-today-link" style="display:none;">오늘로</button>
             <button id="btnWeekPrev" title="이전 주">◀</button>
             <span class="week-label" id="weekLabel">이번 주</span>
             <button id="btnWeekNext" title="다음 주">▶</button>
-            <button id="btnWeekToday" class="week-today-link" style="display:none;">오늘로</button>
         </div>
         <div class="controls" id="monthToggle" style="display:none;">
+            <button id="btnMonthToday" class="week-today-link" style="display:none;">오늘로</button>
             <button id="btnMonthPrev" title="이전 달">◀</button>
             <span class="week-label" id="monthLabel">이번 달</span>
             <button id="btnMonthNext" title="다음 달">▶</button>
-            <button id="btnMonthToday" class="week-today-link" style="display:none;">오늘로</button>
         </div>
-        <div class="controls">
-            <button id="btnWatchlist" aria-pressed="false">내 리스트만 보기</button>
-        </div>
+    </div>
     </div>
 
     <div class="grid-container" id="weekView">
@@ -2379,7 +2397,7 @@ const btnWatchlist = document.getElementById('btnWatchlist');
 function setWatchlistFilter(enabled) {
     showOnlyWatchlist = enabled;
     btnWatchlist.classList.toggle('active', enabled);
-    btnWatchlist.textContent = enabled ? '전체 보기' : '내 리스트만 보기';
+    btnWatchlist.textContent = enabled ? '★ 전체 보기' : '☆ 내 리스트';
     btnWatchlist.setAttribute('aria-pressed', String(enabled));
 
     if (currentView === 'month') {
