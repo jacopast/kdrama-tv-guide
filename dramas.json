@@ -715,7 +715,10 @@
       {
         "name": "Netflix",
         "label": "Netflix (KR 전용)",
-        "url": "https://www.netflix.com"
+        "url": "https://www.netflix.com",
+        "regions": [
+          "KR"
+        ]
       }
     ],
     "isBatch": true,

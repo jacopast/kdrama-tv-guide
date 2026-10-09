@@ -1433,7 +1433,10 @@ const DRAMA_DATA = [
       {
         "name": "Netflix",
         "label": "Netflix (KR 전용)",
-        "url": "https://www.netflix.com"
+        "url": "https://www.netflix.com",
+        "regions": [
+          "KR"
+        ]
       }
     ],
     "isBatch": true,
@@ -2197,6 +2200,17 @@ function platformRegions(platformName) {
     return ch ? ch.regions : [];
 }
 
+// 작품 하나의 플랫폼 항목이 실제로 서비스되는 지역. 채널 자체는 미국·한국 겸용이어도(예: Netflix)
+// 그 작품만 한쪽 지역에서만 공개된 경우(예: 한국 넷플릭스 전용) 플랫폼 항목에 regions를 직접 적어 덮어쓴다.
+function platformEntryRegions(platform) {
+    return platform.regions || platformRegions(platform.name);
+}
+
+// 현재 지역 모드에서 이 플랫폼 항목을 보여줘도 되는지.
+function platformInRegion(platform) {
+    return regionMode === 'ALL' || platformEntryRegions(platform).includes(regionMode);
+}
+
 const DAY_ORDER = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 const DAY_KR = { Mon: "월", Tue: "화", Wed: "수", Thu: "목", Fri: "금", Sat: "토", Sun: "일" };
 // "전편 공개"(지난주 이전에 통째로 풀린 작품) 묶음은 맨 앞 — 데스크탑에선 월요일 왼쪽 열, 모바일에선 목록 맨 위.
@@ -2466,7 +2480,7 @@ function renderMonth() {
             const entry = byDateInfo[dateISO] || (byDateInfo[dateISO] = { epText, channels: new Set() });
             entry.channels.add(channelLabel);
         };
-        drama.platforms.forEach(p => {
+        drama.platforms.filter(platformInRegion).forEach(p => {
             const eff = effectiveForChannel(drama, p);
             if (eff.isBatch) {
                 if (eff.releaseDate) record(eff.releaseDate, eff.batchEp || '전편 공개', p.label);
@@ -2641,7 +2655,7 @@ function makeDramaCard(drama, epText, opts = {}) {
 function getFilteredDramas() {
     return DRAMA_DATA.filter(drama => {
         if(showOnlyWatchlist && !myWatchlist.includes(drama.id)) return false;
-        if(regionMode !== 'ALL' && !drama.platforms.some(p => platformRegions(p.name).includes(regionMode))) return false;
+        if(!drama.platforms.some(platformInRegion)) return false;
         return true;
     });
 }
@@ -2718,7 +2732,7 @@ function renderGrid() {
             const dateKey = dateInfo ? dateInfo.dateISO : null;
             const cellDramas = filteredData.filter(d => {
                 const platform = d.platforms.find(p => p.name.includes(ch.id));
-                if(!platform) return false;
+                if(!platform || !platformInRegion(platform)) return false;
                 // 스케줄/배치일이 플랫폼마다 다를 수 있으므로, "이 채널의" 플랫폼이 이 칸에 실제로
                 // 걸리는지를 봐야 한다(다른 플랫폼이 이 칸에 걸린다고 이 채널 칸을 채우면 안 됨).
                 const eff = effectiveForChannel(d, platform);
