@@ -454,7 +454,8 @@
       }
     ],
     "poster": "",
-    "verifiedAt": "2026-09-07"
+    "verifiedAt": "2026-09-07",
+    "type": "movie"
   },
   {
     "id": "the-auditors",
@@ -1445,5 +1446,31 @@
     "synopsis": "시급 50배의 고액 아르바이트를 미끼로 하는 수상한 인력사무소를 배경으로, 빚에 쫓기던 청년 혁준이 악몽 같은 노동 현장에 투입되면서 벌어지는 생계형 호러 시리즈. Netflix, 2026년 10월 30일 전편 공개.",
     "poster": "",
     "verifiedAt": "2026-10-05"
+  },
+  {
+    "id": "nundongja",
+    "type": "movie",
+    "title": "눈동자",
+    "engTitle": "",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix (KR)",
+        "url": "https://www.netflix.com",
+        "regions": [
+          "KR"
+        ]
+      }
+    ],
+    "isBatch": true,
+    "releaseDate": "2026-10-07",
+    "batchEp": "영화 스트리밍 공개",
+    "schedule": {},
+    "episodes": "영화",
+    "cast": "신민아, 김남희",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "염지호 감독의 서스펜스 스릴러. 유전병으로 시력을 잃어가는 사진작가 서진(신민아, 쌍둥이 1인 2역)이 쌍둥이 동생의 의문스러운 죽음을 파헤치다 거대한 실체와 마주한다. 스페인 영화 《줄리아의 눈》(2010) 리메이크. 2026년 6월 24일 극장 개봉, 8월 VOD 서비스를 거쳐 10월 7일 한국 넷플릭스 공개(미국 넷플릭스 제공 여부는 미확인).",
+    "poster": "",
+    "verifiedAt": "2026-10-09"
   }
 ]
