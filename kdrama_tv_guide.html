@@ -2735,7 +2735,7 @@ function makeDramaCard(drama, epText, opts = {}) {
     const card = document.createElement('div');
     const hasCover = isStarred && !!drama.poster;
     card.className = 'drama-card' + (isStarred ? ' starred' : '') + (hasCover ? ' has-cover' : '') + (isTentative ? ' tentative' : '');
-    card.innerHTML = `${hasCover ? `<img class="card-cover" src="${drama.poster}" alt="" loading="lazy" onerror="this.parentElement.classList.remove('has-cover'); this.remove()">` : ''}
+    card.innerHTML = `${hasCover ? `<img class="card-cover" src="${drama.poster}" alt="" onerror="this.parentElement.classList.remove('has-cover'); this.remove()">` : ''}
         <span class="drama-title-link" role="button" tabindex="0" onclick="openModal('${drama.id}')" onkeydown="if(event.key==='Enter')openModal('${drama.id}')" title="${drama.title} 상세 정보">
             ${drama.title}
         </span>
