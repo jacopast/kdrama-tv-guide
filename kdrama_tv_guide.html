@@ -500,21 +500,24 @@
         .modal-content {
             background-color: var(--bg-color);
             border: 1px solid var(--line);
-            max-width: 560px;
+            max-width: 720px;
             width: 90%;
             max-height: 85vh;
             overflow-y: auto;
-            padding: 18px;
+            padding: 0;
             position: relative;
             display: flex;
-            gap: 16px;
         }
 
         .modal-close {
             position: absolute;
             top: 8px;
             right: 12px;
-            background: transparent;
+            z-index: 1;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: var(--bg-color);
             color: var(--text-soft);
             border: none;
             font-size: 1.3rem;
@@ -526,15 +529,19 @@
             color: var(--text-color);
         }
 
+        /* 포스터는 여백 없이 창 왼쪽을 위아래 끝까지 채운다 */
         .modal-poster {
-            width: 130px;
+            width: 220px;
             flex-shrink: 0;
+            align-self: stretch;
         }
 
         .modal-poster img {
+            display: block;
             width: 100%;
-            border: 1px solid var(--line);
+            height: 100%;
             object-fit: cover;
+            object-position: center top;
         }
 
         .modal-poster.is-missing {
@@ -543,6 +550,7 @@
 
         .modal-info {
             flex-grow: 1;
+            padding: 18px;
             font-size: 13px;
             line-height: 1.5;
         }
@@ -605,7 +613,8 @@
         @media (max-width: 768px) {
             body { padding: 12px; }
             .modal-content { flex-direction: column; }
-            .modal-poster { width: 100px; margin: 0 auto; }
+            .modal-poster { width: 100%; }
+            .modal-poster img { height: auto; }
 
             /* 툴바는 좁은 화면에서 줄마다 하나씩 — 단, 버튼들이 한가운데로 퍼지지 않고 왼쪽에 붙어 있게 */
             .toolbar { flex-direction: column; align-items: flex-start; gap: 6px; }
