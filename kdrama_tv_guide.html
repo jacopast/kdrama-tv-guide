@@ -406,7 +406,7 @@
             background-color: var(--cell-bg-starred);
         }
 
-        /* 내 리스트 카드는 jacopast.com 글 카드처럼 포스터를 흑백으로 깔고 막을 한 겹 씌운다.
+        /* 내 리스트 카드는 jacopast.com 글 카드처럼 포스터를 (컬러 그대로, 어둡게) 깔고 막을 한 겹 씌운다.
            낮에는 흰 막 + 진한 글씨, 밤에는 검은 막 + 밝은 글씨 — 글자색은 각 모드의 기본색 그대로. */
         .drama-card.has-cover {
             isolation: isolate;
@@ -428,7 +428,7 @@
             height: 100%;
             object-fit: cover;
             object-position: center 25%;
-            filter: grayscale(1) contrast(1.1);
+            filter: brightness(0.6) contrast(1.1);
             z-index: -2;
             pointer-events: none;
         }
