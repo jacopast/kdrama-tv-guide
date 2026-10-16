@@ -2045,7 +2045,7 @@ const DRAMA_DATA = [
       {
         "name": "Hulu",
         "label": "Hulu / Disney+",
-        "url": "https://www.disneyplus.com"
+        "url": "https://www.hulu.com"
       }
     ],
     "isBatch": true,
@@ -2104,7 +2104,7 @@ const DRAMA_DATA = [
       {
         "name": "Hulu",
         "label": "Hulu / Disney+",
-        "url": "https://www.disneyplus.com"
+        "url": "https://www.hulu.com"
       }
     ],
     "isBatch": false,
@@ -2182,12 +2182,7 @@ const DRAMA_DATA = [
       {
         "name": "Hulu",
         "label": "Hulu / Disney+",
-        "url": "https://www.disneyplus.com"
-      },
-      {
-        "name": "Disney+",
-        "label": "Disney+",
-        "url": "https://www.disneyplus.com"
+        "url": "https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de"
       }
     ],
     "isBatch": false,
@@ -2971,14 +2966,20 @@ function getAppDeepLink(url, platformName) {
     }
     // 3. Rakuten Viki
     if (name.includes('Viki') || /viki\.com/i.test(url)) {
-        return url.replace(/^https?:\/\/(www\.)?viki\.com/, 'viki://');
+        if (/viki\.com/i.test(url)) {
+            return url.replace(/^https?:\/\/(www\.)?viki\.com\/?/, 'viki://');
+        }
+        return 'viki://';
     }
     // 4. Hulu
     if (name.includes('Hulu') || /hulu\.com/i.test(url)) {
-        return url.replace(/^https?:\/\/(www\.)?hulu\.com/, 'hulu://');
+        if (/hulu\.com/i.test(url)) {
+            return url.replace(/^https?:\/\/(www\.)?hulu\.com\/?/, 'hulu://');
+        }
+        return 'hulu://';
     }
     // 5. Disney+
-    if (name.includes('Disney') || /disneyplus\.com/i.test(url)) {
+    if ((name === 'Disney+' || !name.includes('Hulu')) && (name.includes('Disney') || /disneyplus\.com/i.test(url))) {
         return 'disneyplus://';
     }
     // 5. Wavve

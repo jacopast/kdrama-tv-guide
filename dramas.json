@@ -1260,7 +1260,7 @@
       {
         "name": "Hulu",
         "label": "Hulu / Disney+",
-        "url": "https://www.disneyplus.com"
+        "url": "https://www.hulu.com"
       }
     ],
     "isBatch": true,
@@ -1319,7 +1319,7 @@
       {
         "name": "Hulu",
         "label": "Hulu / Disney+",
-        "url": "https://www.disneyplus.com"
+        "url": "https://www.hulu.com"
       }
     ],
     "isBatch": false,
@@ -1397,12 +1397,7 @@
       {
         "name": "Hulu",
         "label": "Hulu / Disney+",
-        "url": "https://www.disneyplus.com"
-      },
-      {
-        "name": "Disney+",
-        "label": "Disney+",
-        "url": "https://www.disneyplus.com"
+        "url": "https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de"
       }
     ],
     "isBatch": false,
