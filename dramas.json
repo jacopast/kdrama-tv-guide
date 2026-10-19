@@ -97,7 +97,7 @@
     },
     "isBatch": false,
     "episodes": "14부작",
-    "rating": "5.8% (2회, 닐슨코리아 전국가구)",
+    "rating": "11.8% (14회 최종화, 닐슨코리아 전국가구)",
     "cast": "안보현, 정은채, 강상준, 김신비",
     "synopsis": "재벌 3세 낙하산 형사 진이수가 새 파트너와 함께 더 거대한 재벌가 부패 카르텔을 쫓는 통쾌한 수사극. SBS, 2026년 8월 7일 첫방(매주 금·토), 시즌1 뛰어넘는 화제성으로 출발.",
     "platforms": [
@@ -113,7 +113,7 @@
       }
     ],
     "poster": "posters/flex-x-cop-2.jpg",
-    "verifiedAt": "2026-09-07"
+    "verifiedAt": "2026-10-19"
   },
   {
     "id": "a-trap-called-desire",
@@ -599,10 +599,10 @@
     },
     "episodes": "12부작",
     "cast": "박민석, 김현욱, 변혁진",
-    "rating": "TBD (다음 확인 시 업데이트)",
+    "rating": "5.2% (12회 최종화, 닐슨코리아 전국유료가구)",
     "synopsis": "유튜브 애니메이션 원작 군대 코미디 시리즈의 네 번째 시즌. 어느덧 상병이 된 박민석 앞에 미스터리한 신병 김현욱과 엘리트 대대장 변혁진이 새로 합류. ENA, 2026년 8월 24일 첫방(매주 월·화 밤 10시), 국내 OTT는 티빙·지니TV — 미국 스트리밍 플랫폼은 아직 미확인.",
     "poster": "posters/new-recruit-4-sabotage.jpg",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-10-19"
   },
   {
     "id": "glorious-day",
@@ -682,10 +682,10 @@
     },
     "episodes": "10부작",
     "cast": "이준혁, 서현우, 오대환, 옥자연",
-    "rating": "5.0% (6회, 닐슨코리아 전국가구)",
+    "rating": "6.2% (10회 최종화, 닐슨코리아 전국유료가구)",
     "synopsis": "위아래로 치이며 하루하루를 버티던 팀장 공은태가 로또 1등(13억)에 당첨된 후, 사직서 대신 당첨금을 품고 이전과는 다른 마음가짐으로 출근하는 K-직장인 오피스 드라마. tvN 월화드라마로 2026년 9월 14일 첫방(매주 월·화 21:00), 10부작. TVING에서는 tvN 본방보다 나흘 앞서 매주 목요일 18시에 2회씩 선공개(9/10부터) — 이제 TVING 채널 칸에는 그 선공개 날짜가 실제로 반영됨.",
     "poster": "posters/the-ordinary-jackpot.jpg",
-    "verifiedAt": "2026-10-05"
+    "verifiedAt": "2026-10-19"
   },
   {
     "id": "take-charge-of-my-heart",
@@ -790,14 +790,17 @@
         "url": "https://programs.sbs.co.kr/drama/doctorx/main"
       },
       {
-        "name": "Kocowa",
-        "label": "KOCOWA+",
-        "url": "https://www.kocowa.com/en_us/main"
-      },
-      {
         "name": "Wavve",
         "label": "Wavve",
         "url": "https://www.wavve.com"
+      },
+      {
+        "name": "Netflix",
+        "label": "Netflix US",
+        "url": "https://www.netflix.com",
+        "regions": [
+          "US"
+        ]
       }
     ],
     "isBatch": false,
@@ -817,10 +820,10 @@
     },
     "episodes": "12부작",
     "cast": "김지원, 이정은, 손현주, 김우석",
-    "rating": "TBD (다음 확인 시 업데이트)",
+    "rating": "14.9% (2회, 닐슨코리아 전국가구)",
     "synopsis": "일본 원작 '닥터 X'의 한국판. 천재 외과의사 계수정이 병원 안 부조리에 메스를 들이대는 의학 수사극. SBS 금토드라마, 2026년 10월 9일 첫방 확정.",
     "poster": "posters/doctor-x-white-mafia.jpg",
-    "verifiedAt": "2026-10-05"
+    "verifiedAt": "2026-10-19"
   },
   {
     "id": "liar",
@@ -958,6 +961,11 @@
         "name": "Viki",
         "label": "Rakuten Viki",
         "url": "https://www.viki.com"
+      },
+      {
+        "name": "Disney+",
+        "label": "Disney+",
+        "url": "https://www.disneyplus.com"
       }
     ],
     "isBatch": false,
@@ -980,7 +988,7 @@
     "rating": "0.6% (3회, 닐슨코리아 전국가구)",
     "synopsis": "오래된 캠코더를 통해 과거로 돌아갈 수 있게 된 쌍둥이 남매가 첫사랑을 구하려는 판타지 로맨틱 코미디. Channel A·Disney+ 2026년 9월 26일 첫 공개, Rakuten Viki 글로벌 공개.",
     "poster": "posters/dive-into-you.jpg",
-    "verifiedAt": "2026-10-05"
+    "verifiedAt": "2026-10-19"
   },
   {
     "id": "mom-gone-crazy",
@@ -1059,10 +1067,10 @@
     },
     "episodes": "120부작",
     "cast": "김희정, 강경헌, 김영옥, 양희경, 조미령, 정민아, 동하",
-    "rating": "10.7% (6회, 닐슨코리아 전국가구)",
+    "rating": "10.2% (12회, 닐슨코리아 전국가구)",
     "synopsis": "두 엄마와 자녀들이 얽히며 펼쳐지는 가족 성장 드라마. KBS1, 2026년 9월 28일 첫방.",
     "poster": "posters/mom-gone-crazy.jpg",
-    "verifiedAt": "2026-10-05"
+    "verifiedAt": "2026-10-19"
   },
   {
     "id": "love-doctor",
@@ -1102,10 +1110,10 @@
     },
     "episodes": "12부작",
     "cast": "추영우, 김소현",
-    "rating": "TBD (다음 확인 시 업데이트)",
+    "rating": "2.3% (4회, 닐슨코리아 전국유료가구)",
     "synopsis": "로봇 연구실에서 만난 박사과정생과 석사과정생의 청춘 로맨스. 故 안판석 감독 유작. ENA·Disney+, 2026년 10월 5일 첫방(매주 월·화 22:00).",
     "poster": "posters/love-doctor.jpg",
-    "verifiedAt": "2026-10-02"
+    "verifiedAt": "2026-10-19"
   },
   {
     "id": "my-guilty-human",
@@ -1172,12 +1180,12 @@
       "2026-11-17": "EP 07",
       "2026-11-24": "EP 08"
     },
-    "episodes": "회차 수 확인 중",
+    "episodes": "11부작",
     "cast": "이준기, 사카구치 켄타로, 가가연, 사쿠라이 유키",
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "한국·일본·홍콩 제작진이 함께하는 글로벌 공동 제작 드라마. Channel A에서 2026년 10월 6일 첫방.",
     "poster": "posters/kidnap-game.jpg",
-    "verifiedAt": "2026-10-05"
+    "verifiedAt": "2026-10-19"
   },
   {
     "id": "final-table",
@@ -1467,5 +1475,49 @@
     "synopsis": "염지호 감독의 서스펜스 스릴러. 유전병으로 시력을 잃어가는 사진작가 서진(신민아, 쌍둥이 1인 2역)이 쌍둥이 동생의 의문스러운 죽음을 파헤치다 거대한 실체와 마주한다. 스페인 영화 《줄리아의 눈》(2010) 리메이크. 2026년 6월 24일 극장 개봉, 8월 VOD 서비스를 거쳐 10월 7일 한국 넷플릭스 공개(미국 넷플릭스 제공 여부는 미확인).",
     "poster": "posters/nundongja.jpg",
     "verifiedAt": "2026-10-09"
+  },
+  {
+    "id": "middo-kkeutdo-eobsi-neoda",
+    "title": "밑도 끝도 없이, 너다",
+    "engTitle": "",
+    "platforms": [
+      {
+        "name": "TVING",
+        "label": "TVING",
+        "url": "https://www.tving.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-24": "EP 01 (첫방)"
+    },
+    "episodes": "회차 수 확인 중",
+    "cast": "정용화, 홍승희",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "엄태봉(정용화)과 오해라(홍승희)가 얽히는 로맨틱 코미디. 라이프타임(한국 케이블 채널) 2026년 10월 24일 토요일 밤 10시 50분 첫방, 국내 TVING에서도 동시 제공, 해외는 Viu 등을 통해 공개(미국 스트리밍 플랫폼은 미확인).",
+    "poster": "",
+    "verifiedAt": "2026-10-19"
+  },
+  {
+    "id": "yeoreum-banghak",
+    "title": "여름방학",
+    "engTitle": "",
+    "platforms": [
+      {
+        "name": "Wavve",
+        "label": "Wavve",
+        "url": "https://www.wavve.com"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-10-26": "EP 01 (첫방)"
+    },
+    "episodes": "회차 수 확인 중",
+    "cast": "조이현, 진영",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "하이틴 청춘 로맨스. Wavve 온리(OTT 독점) 드라마로 2026년 10월 26일 밤 10시 50분 공개, 한국 케이블 라이프타임에서도 방송(미국 스트리밍 플랫폼은 미확인).",
+    "poster": "",
+    "verifiedAt": "2026-10-19"
   }
 ]
