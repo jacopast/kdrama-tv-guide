@@ -3005,11 +3005,13 @@ function getAppDeepLink(url, platformName) {
     
     // 1. Prime Video
     if (name === 'Prime Video' || /amazon\.com|primevideo\.com/i.test(url)) {
-        const asinMatch = url.match(/(?:detail\/|dp\/|asin=)([A-Z0-9]{10})/i);
+        const asinMatch = url.match(/(?:detail\/|dp\/|asin=)([A-Z0-9]{10})(?=[/?#&]|$)/i);
         if (asinMatch) {
             return `aiv://aiv/play?asin=${asinMatch[1]}`;
         }
-        return 'primevideo://';
+        // Prime Video also uses longer title IDs. Keep their HTTPS link intact;
+        // they are not ASINs and must not be truncated into an app playback URL.
+        return null;
     }
     // 2. Netflix
     if (name.includes('Netflix') || /netflix\.com/i.test(url)) {
