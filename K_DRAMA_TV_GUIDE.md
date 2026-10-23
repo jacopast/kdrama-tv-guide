@@ -7,7 +7,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 10월 3주차 (10/19 ~ 10/25)` | **기준 시간**: `ET 2026-10-19 13:03 · KST 2026-10-20 02:03`
+> **기준 주차**: `2026년 10월 3주차 (10/19 ~ 10/25)` | **기준 시간**: `ET 2026-10-23 01:20 · KST 2026-10-23 14:20`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
@@ -33,12 +33,12 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 10 CHANNEL A`** | - | [키드냅 게임](https://www.ichannela.com/program/template/program_refine.do?cateCode=0502&subCateCode=050228&pgmCode=PGM24124) `EP 02` | - | - | - | [너에게 다이브](https://www.ichannela.com) `EP 07` | [너에게 다이브](https://www.ichannela.com) `EP 08` | - |
 | **`KR 13 TVING`** | - | - | - | [내가 떨릴 수 있게](https://www.tving.com) `EP 01~04 (첫공개)` | - | [100일의 거짓말](https://www.tving.com) `EP 03`<br>[날아올라라 나비](https://www.tving.com) `EP 09` | [100일의 거짓말](https://www.tving.com) `EP 04`<br>[날아올라라 나비](https://www.tving.com) `EP 10 (최종화)` | - |
 | **`KR 14 WAVVE`** | [욕망의 덫](https://www.wavve.com) `EP 46`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 11` | [욕망의 덫](https://www.wavve.com) `EP 47`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 12` | [욕망의 덫](https://www.wavve.com) `EP 48`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 13` | [욕망의 덫](https://www.wavve.com) `EP 49`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 14` | [욕망의 덫](https://www.wavve.com) `EP 50`<br>[닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 03`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 15` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 04`<br>[너 말고 다른 연애](https://www.wavve.com) `EP 11` | [너 말고 다른 연애](https://www.wavve.com) `EP 12` | - |
-| **`KR 15 COUPANG PLAY`** | - | - | - | - | - | [너 말고 다른 연애](https://www.coupangplay.com) `EP 11` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 12` | - |
+| **`KR 15 COUPANG PLAY`** | - | - | - | - | [직장인들 시즌 3](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402) `EP 08 (KST 17:00)` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 11` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 12` | - |
 
 ## 이번 주 편성표 (2026년 10월 3주차 (10/19 ~ 10/25))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
-| 채널 / OTT | 월 (10/19) (오늘) | 화 (10/20) | 수 (10/21) | 목 (10/22) | 금 (10/23) | 토 (10/24) | 일 (10/25) | 전편 공개 (Batch) |
+| 채널 / OTT | 월 (10/19) | 화 (10/20) | 수 (10/21) | 목 (10/22) | 금 (10/23) (오늘) | 토 (10/24) | 일 (10/25) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 05` | [100일의 거짓말](https://www.netflix.com) `EP 05`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 06` | [100일의 거짓말](https://www.netflix.com) `EP 06` | [나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개`<br>[개인적인 택시](https://www.netflix.com) `8부작 전편 공개` |
 | **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 05` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 06` | [메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 03` | - | - | [너에게 다이브](https://www.disneyplus.com/ko-kr/browse/entity-7b77afd2-5d57-4b33-901f-8ccc69362e71) `EP 09` | [너에게 다이브](https://www.disneyplus.com/ko-kr/browse/entity-7b77afd2-5d57-4b33-901f-8ccc69362e71) `EP 10` | - |
@@ -55,7 +55,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 10 CHANNEL A`** | - | [키드냅 게임](https://www.ichannela.com/program/template/program_refine.do?cateCode=0502&subCateCode=050228&pgmCode=PGM24124) `EP 03` | - | - | - | [너에게 다이브](https://www.ichannela.com) `EP 09` | [너에게 다이브](https://www.ichannela.com) `EP 10` | - |
 | **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 01 (첫방)` | [나의 유죄인간](https://www.tving.com) `EP 02` | - | [내가 떨릴 수 있게](https://www.tving.com) `EP 05~06` | - | [100일의 거짓말](https://www.tving.com) `EP 05`<br>[파이널 테이블](https://www.tving.com) `EP 01 (첫방)`<br>[밑도 끝도 없이, 너다](https://www.tving.com) `EP 01 (첫방)` | [100일의 거짓말](https://www.tving.com) `EP 06`<br>[파이널 테이블](https://www.tving.com) `EP 02` | - |
 | **`KR 14 WAVVE`** | [욕망의 덫](https://www.wavve.com) `EP 51`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 16` | [욕망의 덫](https://www.wavve.com) `EP 52`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 17` | [욕망의 덫](https://www.wavve.com) `EP 53`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 18` | [욕망의 덫](https://www.wavve.com) `EP 54`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 19` | [욕망의 덫](https://www.wavve.com) `EP 55`<br>[닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 05`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 20` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 06`<br>[너 말고 다른 연애](https://www.wavve.com) `EP 13` | [너 말고 다른 연애](https://www.wavve.com) `EP 14 (최종화)` | - |
-| **`KR 15 COUPANG PLAY`** | - | - | - | - | - | [너 말고 다른 연애](https://www.coupangplay.com) `EP 13` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 14 (최종화)` | - |
+| **`KR 15 COUPANG PLAY`** | - | - | - | - | [직장인들 시즌 3](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402) `EP 09 (KST 17:00)` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 13` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 14 (최종화)` | - |
 
 ## 다음 주 편성표 (2026년 10월 4주차 (10/26 ~ 11/1))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
@@ -271,6 +271,8 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ### `KR 15 COUPANG PLAY`
 - **[너 말고 다른 연애 (A Love Other Than Yours)](https://www.coupangplay.com)** `[방영일: 2026-09-12, 2026-09-13, 2026-09-19, 2026-09-20, 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25]` `(확인: 2026-10-05)` — 📊 시청률 2.3% (6회, 닐슨코리아 전국가구) | 14부작 | 서강준, 안은진, 이주안, 조아람
   > 10년 차 연인이 익숙했던 관계에서 낯선 감정과 마주하는 현실 공감 멜로. KBS2, 2026년 9월 12일 첫방(매주 토·일); Prime Video 동시 공개.
+- **[직장인들 시즌 3 (The White Collars Season 3)](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402)** `[방영일: 2026-08-29, 2026-09-05, 2026-09-11, 2026-10-16, 2026-10-23]` `(확인: 2026-10-23)` — 📊 시청률 해당 없음 (OTT 예능) | 오피스 코미디 예능 · 총 회차 확인 중 | 신동엽, 김민교, 백현진, 이수지, 현봉식, 김원훈, 강지영, 차정원, 지예은, 심자윤
+  > 마케팅 회사 DY기획의 사원들과 스타 의뢰인들이 벌이는 직장 생활을 그린 오피스 코미디 예능. 시즌 3는 2026년 8월 29일 첫 공개됐으며, 3화부터 매주 금요일 오후 5시(KST) 쿠팡플레이에서 공개된다.
 
 ---
 

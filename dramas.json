@@ -1522,5 +1522,35 @@
     "synopsis": "하이틴 청춘 로맨스. Wavve 온리(OTT 독점) 드라마로 2026년 10월 26일 밤 10시 50분 공개, 한국 케이블 라이프타임에서도 방송(미국 스트리밍 플랫폼은 미확인).",
     "poster": "",
     "verifiedAt": "2026-10-19"
+  },
+  {
+    "id": "the-white-collars-season-3",
+    "title": "직장인들 시즌 3",
+    "engTitle": "The White Collars Season 3",
+    "type": "variety",
+    "platforms": [
+      {
+        "name": "Coupang Play",
+        "label": "쿠팡플레이",
+        "url": "https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402",
+        "regions": [
+          "KR"
+        ]
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-08-29": "EP 01 (첫 공개, KST 20:00)",
+      "2026-09-05": "EP 02 (KST 20:00)",
+      "2026-09-11": "EP 03 (금요일 KST 17:00로 변경)",
+      "2026-10-16": "EP 08 (KST 17:00)",
+      "2026-10-23": "EP 09 (KST 17:00)"
+    },
+    "episodes": "오피스 코미디 예능 · 총 회차 확인 중",
+    "rating": "해당 없음 (OTT 예능)",
+    "cast": "신동엽, 김민교, 백현진, 이수지, 현봉식, 김원훈, 강지영, 차정원, 지예은, 심자윤",
+    "synopsis": "마케팅 회사 DY기획의 사원들과 스타 의뢰인들이 벌이는 직장 생활을 그린 오피스 코미디 예능. 시즌 3는 2026년 8월 29일 첫 공개됐으며, 3화부터 매주 금요일 오후 5시(KST) 쿠팡플레이에서 공개된다.",
+    "poster": "",
+    "verifiedAt": "2026-10-23"
   }
 ]
