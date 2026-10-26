@@ -154,3 +154,15 @@ tags: [kdrama, refresh, workflow]
 - 1~2화의 토요일20시와 3화 이후 금요일17시(KST)를 구별한다. 공식 최신 공개 시간이 바뀌면 새 원문과 대조한다.
 - [공식 최신 보도](https://news.coupang.com/archives/67827/), [시간 변경 공식 안내](https://news.coupang.com/archives/66600/), [첫 공개·출연진 안내](https://news.coupang.com/archives/65964/), [공식 작품 페이지](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402)를 시작점으로 확인한다.
 - 10/23 9화는 [10/22 공개 기사](https://www.mdtoday.co.kr/news/articleView.html?idxno=620213)에서 날짜·회차를 교차 확인했다. 새 날짜/최종화는 요일 반복만으로 채우지 않는다. 미국 제공은 확인되지 않았으므로 KR로 둔다.
+
+## 2026-10-26 검증 근거와 다음 확인
+
+- 『너 말고 다른 연애』: [KBS 공식 프로그램](https://program.kbs.co.kr/2tv/drama/loveotherthanyours), [10/31 편성표](https://schedule.kbs.co.kr/?area_type=10&search_day=20261031), [11/1 편성표](https://schedule.kbs.co.kr/?area_type=10&search_day=20261101). 날짜별 10/3~25 원문도 대조해 5~12회 수정, 11/1 14회 최종회. [9/26~27 결방 공지 보도](https://v.daum.net/v/Z0SLsh4qdr)를 반영해 과거 날짜는 결방으로 보존. 반복 요일로 만든 옛 회차표를 그대로 신뢰하지 않는다.
+- 『재혼 황후』: [Disney+ 공식 회차 안내](https://www.disneyplus.com/en-sg/explore/articles/the-remarried-empress)와 [미국 11월 공식 라인업](https://press.disneyplus.com/news/next-on-disney-plus-november-2026) 대조. 11/4 4화 → 11/11·18·25 각 2화. 전편 일괄 공개가 아니다.
+- 『사랑이 온다』: [KBS 공식 프로그램](https://program.kbs.co.kr/2tv/drama/loveonthemenu) 및 위 날짜별 편성표. KR KBS2·하석진/안희연 캐스팅·26/27회 날짜 확인. 총 회차·미국 제공은 확정하지 않음.
+- 『여름방학』: [공식 Viki 작품](https://www.viki.com/tv/41747c)의 영제·조이현/진영 캐스팅과 미국에서 열리는 1화 확인. 10/26은 공개 확인일이며 과거 입점일을 추정한 것이 아니다. 미국 플랫폼 자체 schedule을 사용하고 KR 일정과 분리. 후속 회차는 절대 날짜 확인 전 추가하지 않음.
+- 『닥터X』: [CBS의 닐슨 수치 보도](https://www.nocutnews.co.kr/news/6596674)에서 10/24 방송 6회 전국가구19.5% 확인. 순간 최고 수치와 구분.
+- 『라이어』: [MBC 공식 프로그램](https://m.imbc.com/program/1006930100000100000)에서 10/30 21:50 확인. OTT 지역·후속 회차 전체를 재검증했다는 뜻은 아니다.
+- 『직장인들 시즌 3』: [쿠팡 공식 10월1주 추천](https://news.coupang.com/archives/67098/?print=print)에서 9/25 5화·10/2 6화 확인. [10월4주 추천](https://news.coupang.com/archives/67777/?print=print)에서 10/23 9화 재확인. 10/30 이후 일정·총 회차는 계속 확인.
+- 『응급남녀』(Emergency Couple, 2014)는 [Prime 공식 작품](https://www.primevideo.com/detail/0R92Z2PKAI8TFJF9DJMN84II3B)과 송지효/최진혁/이필모를 대조해 동명 작품 혼동을 해소했다. 미국 제공·신규 입점일은 아직 확정하지 않아 편성 날짜를 만들지 않는다.
+- 『신병4: 사보타주』는 [Viki 작품](https://www.viki.com/tv/41708c-new-recruit-4-sabotage)과 출연진을 대조했다. Viki 제공 자체와 최초 US 입점일은 별개이며, 확인일을 과거 공개일로 바꿔 쓰지 않는다.
