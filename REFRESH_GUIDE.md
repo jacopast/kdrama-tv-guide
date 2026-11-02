@@ -166,3 +166,9 @@ tags: [kdrama, refresh, workflow]
 - 『직장인들 시즌 3』: [쿠팡 공식 10월1주 추천](https://news.coupang.com/archives/67098/?print=print)에서 9/25 5화·10/2 6화 확인. [10월4주 추천](https://news.coupang.com/archives/67777/?print=print)에서 10/23 9화 재확인. 10/30 이후 일정·총 회차는 계속 확인.
 - 『응급남녀』(Emergency Couple, 2014)는 [Prime 공식 작품](https://www.primevideo.com/detail/0R92Z2PKAI8TFJF9DJMN84II3B)과 송지효/최진혁/이필모를 대조해 동명 작품 혼동을 해소했다. 미국 제공·신규 입점일은 아직 확정하지 않아 편성 날짜를 만들지 않는다.
 - 『신병4: 사보타주』는 [Viki 작품](https://www.viki.com/tv/41708c-new-recruit-4-sabotage)과 출연진을 대조했다. Viki 제공 자체와 최초 US 입점일은 별개이며, 확인일을 과거 공개일로 바꿔 쓰지 않는다.
+
+## 2026-11-02 검증 근거
+
+- 『직장인들 시즌 3』: [쿠팡 10/29 공식 추천](https://news.coupang.com/archives/67985/?print=print)의 10/30 최종화와 [11/2 종영 공식 보도](https://news.coupang.com/archives/68070/)의 본편1~10화·11/6 17시 미방분 특별편을 대조. 특별편을 11화로 만들지 않고 별도 표시. 본편 종영 후 금요일 반복 편성을 생성하지 않는다.
+- 『사랑이 온다』: [KBS 11/7 편성표](https://schedule.kbs.co.kr/?area_type=10&search_day=20261107)를 실제 렌더링해 본방20시28회 확인. 재방27회와 구분. 11/8 이후는 원문 확인 전 추가하지 않음.
+- 『심장소리』: [Netflix 한국 공식 발표](https://about.netflix.com/ko/news/heartbeat-arrives-netflix-november-2)와 [영문 발표](https://about.netflix.com/en/news/heartbeat-arrives-netflix-november-2)에서 정식 제목·이창동 감독·김건우/전도연/설경구(목소리)·11/2 글로벌 스트리밍일 확인. 영화제 선공개와 Netflix 입점을 구분하고 기존작 라이브러리 추가로 표시. 작품 직링크 미확보로 공식 홈에서 제목 검색 안내, 포스터는 빈 값.

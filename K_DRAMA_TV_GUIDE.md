@@ -2,43 +2,21 @@
 project: Playground
 type: guide
 status: active_weekly
-week: 2026-W44 (10/26 ~ 11/01)
+week: 2026-W45 (11/02 ~ 11/08)
 tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 10월 4주차 (10/26 ~ 11/1)` | **기준 시간**: `ET 2026-10-26 13:06 · KST 2026-10-27 02:06`
+> **기준 주차**: `2026년 11월 1주차 (11/2 ~ 11/8)` | **기준 시간**: `ET 2026-11-02 13:01 · KST 2026-11-03 03:01`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
 > **[kdrama_tv_guide.html](file:////Users/sunghwanyoon/AG/git/kdrama-tv-guide/kdrama_tv_guide.html)** 파일을 더블 클릭하여 열어보세요!
 
-## 지난 주 편성표 (2026년 10월 3주차 (10/19 ~ 10/25))
+## 지난 주 편성표 (2026년 10월 4주차 (10/26 ~ 11/1))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
-| 채널 / OTT | 월 (10/19) | 화 (10/20) | 수 (10/21) | 목 (10/22) | 금 (10/23) | 토 (10/24) | 일 (10/25) | 전편 공개 (Batch) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`CH 01 NETFLIX`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 05` | [100일의 거짓말](https://www.netflix.com) `EP 05`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 06` | [100일의 거짓말](https://www.netflix.com) `EP 06` | [나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개`<br>[개인적인 택시](https://www.netflix.com) `8부작 전편 공개` |
-| **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 05` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 06` | [메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 03` | - | - | [너에게 다이브](https://www.disneyplus.com/ko-kr/browse/entity-7b77afd2-5d57-4b33-901f-8ccc69362e71) `EP 09` | [너에게 다이브](https://www.disneyplus.com/ko-kr/browse/entity-7b77afd2-5d57-4b33-901f-8ccc69362e71) `EP 10` | - |
-| **`CH 03 PRIME VIDEO`** | [나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09) `EP 01 (첫방)` | [나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09) `EP 02` | - | - | - | [너 말고 다른 연애](https://www.amazon.com/gp/video/detail/B0HG5QDDF5) `EP 11`<br>[파이널 테이블](https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U) `EP 01 (첫방)` | [너 말고 다른 연애](https://www.amazon.com/gp/video/detail/B0HG5QDDF5) `EP 12`<br>[파이널 테이블](https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U) `EP 02` | - |
-| **`CH 05 RAKUTEN VIKI`** | [엄마가 미쳤어요](https://www.viki.com) `EP 16` | [엄마가 미쳤어요](https://www.viki.com) `EP 17` | [엄마가 미쳤어요](https://www.viki.com) `EP 18` | [엄마가 미쳤어요](https://www.viki.com) `EP 19`<br>[내가 떨릴 수 있게](https://www.viki.com) `EP 05~06` | [엄마가 미쳤어요](https://www.viki.com) `EP 20` | [너에게 다이브](https://www.viki.com) `EP 09` | [너에게 다이브](https://www.viki.com) `EP 10` | - |
-| **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 51`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 16` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 52`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 17` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 53`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 18` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 54`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 19` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 55`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 20` | - | - | - |
-| **`KR 01 SBS`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 05` | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 06` | - | - |
-| **`KR 02 MBC`** | - | - | - | - | - | - | - | - |
-| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 51` | [욕망의 덫](https://vod.kbs.co.kr) `EP 52` | [욕망의 덫](https://vod.kbs.co.kr) `EP 53` | [욕망의 덫](https://vod.kbs.co.kr) `EP 54` | [욕망의 덫](https://vod.kbs.co.kr) `EP 55` | [너 말고 다른 연애](https://program.kbs.co.kr/2tv/drama/loveotherthanyours) `EP 11`<br>[사랑이 온다](https://program.kbs.co.kr/2tv/drama/loveonthemenu) `EP 24` | [너 말고 다른 연애](https://program.kbs.co.kr/2tv/drama/loveotherthanyours) `EP 12`<br>[사랑이 온다](https://program.kbs.co.kr/2tv/drama/loveonthemenu) `EP 25` | - |
-| **`KR 05 tvN`** | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 01 (첫방)` | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 02` | - | - | - | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 05` | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 06` | - |
-| **`KR 06 JTBC`** | - | - | - | - | - | [파이널 테이블](https://tv.jtbc.co.kr) `EP 01 (첫방)` | [파이널 테이블](https://tv.jtbc.co.kr) `EP 02` | - |
-| **`KR 07 ENA`** | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 05` | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 06` | - | - | - | - | - | - |
-| **`KR 08 KBS1`** | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 16` | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 17` | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 18` | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 19` | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 20` | - | - | - |
-| **`KR 10 CHANNEL A`** | - | [키드냅 게임](https://www.ichannela.com/program/template/program_refine.do?cateCode=0502&subCateCode=050228&pgmCode=PGM24124) `EP 03` | - | - | - | [너에게 다이브](https://www.ichannela.com) `EP 09` | [너에게 다이브](https://www.ichannela.com) `EP 10` | - |
-| **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 01 (첫방)` | [나의 유죄인간](https://www.tving.com) `EP 02` | - | [내가 떨릴 수 있게](https://www.tving.com) `EP 05~06` | - | [100일의 거짓말](https://www.tving.com) `EP 05`<br>[파이널 테이블](https://www.tving.com) `EP 01 (첫방)`<br>[밑도 끝도 없이, 너다](https://www.tving.com) `EP 01 (첫방)` | [100일의 거짓말](https://www.tving.com) `EP 06`<br>[파이널 테이블](https://www.tving.com) `EP 02` | - |
-| **`KR 14 WAVVE`** | [욕망의 덫](https://www.wavve.com) `EP 51`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 16` | [욕망의 덫](https://www.wavve.com) `EP 52`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 17` | [욕망의 덫](https://www.wavve.com) `EP 53`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 18` | [욕망의 덫](https://www.wavve.com) `EP 54`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 19` | [욕망의 덫](https://www.wavve.com) `EP 55`<br>[닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 05`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 20` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 06`<br>[너 말고 다른 연애](https://www.wavve.com) `EP 11` | [너 말고 다른 연애](https://www.wavve.com) `EP 12` | - |
-| **`KR 15 COUPANG PLAY`** | - | - | - | - | [직장인들 시즌 3](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402) `EP 09 (KST 17:00)` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 11` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 12` | - |
-
-## 이번 주 편성표 (2026년 10월 4주차 (10/26 ~ 11/1))
-각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
-
-| 채널 / OTT | 월 (10/26) (오늘) | 화 (10/27) | 수 (10/28) | 목 (10/29) | 금 (10/30) | 토 (10/31) | 일 (11/1) | 전편 공개 (Batch) |
+| 채널 / OTT | 월 (10/26) | 화 (10/27) | 수 (10/28) | 목 (10/29) | 금 (10/30) | 토 (10/31) | 일 (11/1) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 07`<br>[꿀알바](https://www.netflix.com) `8부작 전편 공개 (10/30~)` | [100일의 거짓말](https://www.netflix.com) `EP 07`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 08` | [100일의 거짓말](https://www.netflix.com) `EP 08` | [나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개`<br>[개인적인 택시](https://www.netflix.com) `8부작 전편 공개` |
 | **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 07` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 08` | [메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 04` | - | - | [너에게 다이브](https://www.disneyplus.com/ko-kr/browse/entity-7b77afd2-5d57-4b33-901f-8ccc69362e71) `EP 11` | [너에게 다이브](https://www.disneyplus.com/ko-kr/browse/entity-7b77afd2-5d57-4b33-901f-8ccc69362e71) `EP 12 (최종화)` | - |
@@ -55,21 +33,21 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 10 CHANNEL A`** | - | [키드냅 게임](https://www.ichannela.com/program/template/program_refine.do?cateCode=0502&subCateCode=050228&pgmCode=PGM24124) `EP 04` | - | - | - | [너에게 다이브](https://www.ichannela.com) `EP 11` | [너에게 다이브](https://www.ichannela.com) `EP 12 (최종화)` | - |
 | **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 03` | [나의 유죄인간](https://www.tving.com) `EP 04` | - | [내가 떨릴 수 있게](https://www.tving.com) `EP 07~08` | - | [100일의 거짓말](https://www.tving.com) `EP 07`<br>[파이널 테이블](https://www.tving.com) `EP 03` | [100일의 거짓말](https://www.tving.com) `EP 08`<br>[파이널 테이블](https://www.tving.com) `EP 04` | - |
 | **`KR 14 WAVVE`** | [욕망의 덫](https://www.wavve.com) `EP 56`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 21`<br>[여름방학](https://www.wavve.com) `EP 01 (첫방)` | [욕망의 덫](https://www.wavve.com) `EP 57`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 22` | [욕망의 덫](https://www.wavve.com) `EP 58`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 23` | [욕망의 덫](https://www.wavve.com) `EP 59`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 24` | [욕망의 덫](https://www.wavve.com) `EP 60`<br>[닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 07`<br>[라이어](https://www.wavve.com) `EP 01 (첫방, KST 21:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 25` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 08`<br>[라이어](https://www.wavve.com) `EP 02`<br>[너 말고 다른 연애](https://www.wavve.com) `EP 13` | [너 말고 다른 연애](https://www.wavve.com) `EP 14 (최종화)` | - |
-| **`KR 15 COUPANG PLAY`** | - | - | - | - | - | [너 말고 다른 연애](https://www.coupangplay.com) `EP 13` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 14 (최종화)` | - |
+| **`KR 15 COUPANG PLAY`** | - | - | - | - | [직장인들 시즌 3](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402) `EP 10 (본편 최종화, KST 17:00)` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 13` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 14 (최종화)` | - |
 
-## 다음 주 편성표 (2026년 11월 1주차 (11/2 ~ 11/8))
+## 이번 주 편성표 (2026년 11월 1주차 (11/2 ~ 11/8))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
-| 채널 / OTT | 월 (11/2) | 화 (11/3) | 수 (11/4) | 목 (11/5) | 금 (11/6) | 토 (11/7) | 일 (11/8) | 전편 공개 (Batch) |
+| 채널 / OTT | 월 (11/2) (오늘) | 화 (11/3) | 수 (11/4) | 목 (11/5) | 금 (11/6) | 토 (11/7) | 일 (11/8) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`CH 01 NETFLIX`** | - | - | - | - | [가능한 사랑](https://www.netflix.com) `영화 스트리밍 공개`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 09` | [100일의 거짓말](https://www.netflix.com) `EP 09`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 10` | [100일의 거짓말](https://www.netflix.com) `EP 10` | [나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개`<br>[꿀알바](https://www.netflix.com) `8부작 전편 공개 (10/30~)` |
+| **`CH 01 NETFLIX`** | [심장소리](https://www.netflix.com) `단편영화 스트리밍 공개 (신작 아님, 라이브러리 추가)` | - | - | - | [가능한 사랑](https://www.netflix.com) `영화 스트리밍 공개`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 09` | [100일의 거짓말](https://www.netflix.com) `EP 09`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 10` | [100일의 거짓말](https://www.netflix.com) `EP 10` | [나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개`<br>[꿀알바](https://www.netflix.com) `8부작 전편 공개 (10/30~)` |
 | **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 09` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 10` | [재혼 황후](https://www.hulu.com) `EP 01~04 (첫공개)`<br>[메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 05` | - | - | - | - | - |
 | **`CH 03 PRIME VIDEO`** | [나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09) `EP 05` | [나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09) `EP 06` | - | - | - | [파이널 테이블](https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U) `EP 05` | [파이널 테이블](https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U) `EP 06` | - |
 | **`CH 05 RAKUTEN VIKI`** | [엄마가 미쳤어요](https://www.viki.com) `EP 26` | [엄마가 미쳤어요](https://www.viki.com) `EP 27` | [엄마가 미쳤어요](https://www.viki.com) `EP 28` | [엄마가 미쳤어요](https://www.viki.com) `EP 29`<br>[내가 떨릴 수 있게](https://www.viki.com) `EP 09~10 (최종화)` | [엄마가 미쳤어요](https://www.viki.com) `EP 30` | - | - | - |
 | **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 61`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 26` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 62`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 27` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 63`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 28` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 64`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 29` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 65`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 30` | - | - | - |
 | **`KR 01 SBS`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 09` | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 10` | - | - |
 | **`KR 02 MBC`** | - | - | - | - | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 03` | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 04` | - | - |
-| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 61` | [욕망의 덫](https://vod.kbs.co.kr) `EP 62` | [욕망의 덫](https://vod.kbs.co.kr) `EP 63` | [욕망의 덫](https://vod.kbs.co.kr) `EP 64` | [욕망의 덫](https://vod.kbs.co.kr) `EP 65` | - | - | - |
+| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 61` | [욕망의 덫](https://vod.kbs.co.kr) `EP 62` | [욕망의 덫](https://vod.kbs.co.kr) `EP 63` | [욕망의 덫](https://vod.kbs.co.kr) `EP 64` | [욕망의 덫](https://vod.kbs.co.kr) `EP 65` | [사랑이 온다](https://program.kbs.co.kr/2tv/drama/loveonthemenu) `EP 28 (KST 20:00)` | - | - |
 | **`KR 05 tvN`** | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 05` | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 06` | - | - | - | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 09` | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 10` | - |
 | **`KR 06 JTBC`** | - | - | - | - | - | [파이널 테이블](https://tv.jtbc.co.kr) `EP 05` | [파이널 테이블](https://tv.jtbc.co.kr) `EP 06` | - |
 | **`KR 07 ENA`** | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 09` | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 10` | - | - | - | - | - | - |
@@ -77,6 +55,28 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 10 CHANNEL A`** | - | [키드냅 게임](https://www.ichannela.com/program/template/program_refine.do?cateCode=0502&subCateCode=050228&pgmCode=PGM24124) `EP 05` | - | - | - | - | - | - |
 | **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 05` | [나의 유죄인간](https://www.tving.com) `EP 06` | - | [내가 떨릴 수 있게](https://www.tving.com) `EP 09~10 (최종화)` | - | [100일의 거짓말](https://www.tving.com) `EP 09`<br>[파이널 테이블](https://www.tving.com) `EP 05` | [100일의 거짓말](https://www.tving.com) `EP 10`<br>[파이널 테이블](https://www.tving.com) `EP 06` | - |
 | **`KR 14 WAVVE`** | [욕망의 덫](https://www.wavve.com) `EP 61`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 26` | [욕망의 덫](https://www.wavve.com) `EP 62`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 27` | [욕망의 덫](https://www.wavve.com) `EP 63`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 28` | [욕망의 덫](https://www.wavve.com) `EP 64`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 29` | [욕망의 덫](https://www.wavve.com) `EP 65`<br>[닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 09`<br>[라이어](https://www.wavve.com) `EP 03`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 30` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 10`<br>[라이어](https://www.wavve.com) `EP 04` | - | - |
+| **`KR 15 COUPANG PLAY`** | - | - | - | - | [직장인들 시즌 3](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402) `미방분 특별편 (KST 17:00)` | - | - | - |
+
+## 다음 주 편성표 (2026년 11월 2주차 (11/9 ~ 11/15))
+각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
+
+| 채널 / OTT | 월 (11/9) | 화 (11/10) | 수 (11/11) | 목 (11/12) | 금 (11/13) | 토 (11/14) | 일 (11/15) | 전편 공개 (Batch) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **`CH 01 NETFLIX`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 11` | [100일의 거짓말](https://www.netflix.com) `EP 11`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 12 (최종화)` | [100일의 거짓말](https://www.netflix.com) `EP 12` | [가능한 사랑](https://www.netflix.com) `영화 스트리밍 공개`<br>[나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개`<br>[꿀알바](https://www.netflix.com) `8부작 전편 공개 (10/30~)` |
+| **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 11` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 12 (최종화)` | [재혼 황후](https://www.hulu.com) `EP 05~06`<br>[메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 06` | - | - | - | - | - |
+| **`CH 03 PRIME VIDEO`** | [나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09) `EP 07` | [나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09) `EP 08` | - | - | - | [파이널 테이블](https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U) `EP 07` | [파이널 테이블](https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U) `EP 08` | - |
+| **`CH 05 RAKUTEN VIKI`** | [엄마가 미쳤어요](https://www.viki.com) `EP 31` | [엄마가 미쳤어요](https://www.viki.com) `EP 32` | [엄마가 미쳤어요](https://www.viki.com) `EP 33` | [엄마가 미쳤어요](https://www.viki.com) `EP 34` | [엄마가 미쳤어요](https://www.viki.com) `EP 35` | - | - | - |
+| **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 66`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 31` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 67`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 32` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 68`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 33` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 69`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 34` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 70`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 35` | - | - | - |
+| **`KR 01 SBS`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 11` | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 12 (최종화)` | - | - |
+| **`KR 02 MBC`** | - | - | - | - | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 05` | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 06` | - | - |
+| **`KR 03 KBS2`** | [욕망의 덫](https://vod.kbs.co.kr) `EP 66` | [욕망의 덫](https://vod.kbs.co.kr) `EP 67` | [욕망의 덫](https://vod.kbs.co.kr) `EP 68` | [욕망의 덫](https://vod.kbs.co.kr) `EP 69` | [욕망의 덫](https://vod.kbs.co.kr) `EP 70` | [문무](https://www.kbs.co.kr) `EP 01 (첫방)` | [문무](https://www.kbs.co.kr) `EP 02` | - |
+| **`KR 05 tvN`** | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 07` | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 08` | - | - | - | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 11` | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 12` | - |
+| **`KR 06 JTBC`** | - | - | - | - | - | [파이널 테이블](https://tv.jtbc.co.kr) `EP 07` | [파이널 테이블](https://tv.jtbc.co.kr) `EP 08` | - |
+| **`KR 07 ENA`** | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 11` | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 12 (최종화)` | - | - | - | - | - | - |
+| **`KR 08 KBS1`** | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 31` | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 32` | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 33` | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 34` | [엄마가 미쳤어요](https://www.kbs.co.kr) `EP 35` | - | - | - |
+| **`KR 10 CHANNEL A`** | - | [키드냅 게임](https://www.ichannela.com/program/template/program_refine.do?cateCode=0502&subCateCode=050228&pgmCode=PGM24124) `EP 06` | - | - | - | - | - | - |
+| **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 07` | [나의 유죄인간](https://www.tving.com) `EP 08` | - | - | - | [100일의 거짓말](https://www.tving.com) `EP 11`<br>[파이널 테이블](https://www.tving.com) `EP 07` | [100일의 거짓말](https://www.tving.com) `EP 12`<br>[파이널 테이블](https://www.tving.com) `EP 08` | - |
+| **`KR 14 WAVVE`** | [욕망의 덫](https://www.wavve.com) `EP 66`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 31` | [욕망의 덫](https://www.wavve.com) `EP 67`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 32` | [욕망의 덫](https://www.wavve.com) `EP 68`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 33` | [욕망의 덫](https://www.wavve.com) `EP 69`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 34` | [욕망의 덫](https://www.wavve.com) `EP 70`<br>[닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 11`<br>[라이어](https://www.wavve.com) `EP 05`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 35` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 12 (최종화)`<br>[라이어](https://www.wavve.com) `EP 06`<br>[문무](https://www.wavve.com) `EP 01 (첫방)` | [문무](https://www.wavve.com) `EP 02` | - |
 | **`KR 15 COUPANG PLAY`** | - | - | - | - | - | - | - | - |
 
 ---
@@ -117,6 +117,8 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 시급 50배의 고액 아르바이트를 미끼로 하는 수상한 인력사무소를 배경으로, 빚에 쫓기던 청년 혁준이 악몽 같은 노동 현장에 투입되면서 벌어지는 생계형 호러 시리즈. Netflix, 2026년 10월 30일 전편 공개.
 - **[눈동자 ()](https://www.netflix.com)** `[전편 공개: 2026-10-07~]` `(확인: 2026-10-09)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 영화 | 신민아, 김남희
   > 염지호 감독의 서스펜스 스릴러. 유전병으로 시력을 잃어가는 사진작가 서진(신민아, 쌍둥이 1인 2역)이 쌍둥이 동생의 의문스러운 죽음을 파헤치다 거대한 실체와 마주한다. 스페인 영화 《줄리아의 눈》(2010) 리메이크. 2026년 6월 24일 극장 개봉, 8월 VOD 서비스를 거쳐 10월 7일 한국 넷플릭스 공개(미국 넷플릭스 제공 여부는 미확인).
+- **[심장소리 (Heartbeat)](https://www.netflix.com)** `[전편 공개: 2026-11-02~]` `(확인: 2026-11-02)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 단편영화 | 김건우, 전도연, 설경구(목소리)
+  > 어머니가 전화를 받지 않자 불안해진 소년 철이가 집으로 달려가는 이창동 감독의 단편영화. 영화제에서 먼저 선보인 기존 작품으로, 2026년 11월 2일 Netflix에서 전 세계 스트리밍 공개.
 
 ### `CH 02 HULU / D+`
 - **[재벌X형사 시즌 2 (Flex x Cop Season 2)](https://www.hulu.com/series/flex-x-cop-07a3f852-a6a5-42a3-8bd1-ec4fd5a5698a)** `[방영일: 2026-08-07, 2026-08-08, 2026-08-14, 2026-08-15, 2026-08-21, 2026-08-22, 2026-08-28, 2026-08-29, 2026-09-04, 2026-09-05, 2026-09-11, 2026-09-12, 2026-09-18, 2026-09-19]` `(확인: 2026-10-19)` — 📊 시청률 11.8% (14회 최종화, 닐슨코리아 전국가구) | 14부작 | 안보현, 정은채, 강상준, 김신비
@@ -189,7 +191,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 10년 차 연인이 익숙했던 관계에서 낯선 감정과 마주하는 현실 공감 멜로. KBS2, 2026년 9월 12일 첫방(매주 토·일); Prime Video 동시 공개.
 - **[문무 (The Great King Munmu)](https://www.kbs.co.kr)** `[방영일: 2026-11-14, 2026-11-15, 2026-11-21, 2026-11-22, 2026-11-28, 2026-11-29]` `(확인: 2026-10-02)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 28부작 | 이현욱, 장혁, 김강우, 박성웅
   > 삼국통일을 이뤄낸 신라 문무왕과 지도자들의 처절하고 고독한 대서사를 다룬 300억 대작 사극. KBS2 토일드라마로 2026년 11월 14일 첫방.
-- **[사랑이 온다 ()](https://program.kbs.co.kr/2tv/drama/loveonthemenu)** `[방영일: 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25, 2026-10-31, 2026-11-01]` `(확인: 2026-10-26)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 총 회차 공식 확인 중 | 하석진, 안희연, 박유나, 배정남, 권해효
+- **[사랑이 온다 ()](https://program.kbs.co.kr/2tv/drama/loveonthemenu)** `[방영일: 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25, 2026-10-31, 2026-11-01, 2026-11-07]` `(확인: 2026-11-02)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 총 회차 공식 확인 중 | 하석진, 안희연, 박유나, 배정남, 권해효
   > 상처 입은 가족들과 두 남녀가 서로를 보듬으며 다시 일상을 차려가는 패밀리 드라마. KBS2 매주 토·일 오후 8시(KST) 방송. 미국 제공 여부는 별도 확인 중.
 
 ### `KR 05 tvN`
@@ -275,8 +277,8 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ### `KR 15 COUPANG PLAY`
 - **[너 말고 다른 연애 (A Love Other Than Yours)](https://www.coupangplay.com)** `[방영일: 2026-09-12, 2026-09-13, 2026-09-19, 2026-09-20, 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25, 2026-10-31, 2026-11-01]` `(확인: 2026-10-26)` — 📊 시청률 2.3% (6회, 닐슨코리아 전국가구) | 14부작 | 서강준, 안은진, 이주안, 조아람
   > 10년 차 연인이 익숙했던 관계에서 낯선 감정과 마주하는 현실 공감 멜로. KBS2, 2026년 9월 12일 첫방(매주 토·일); Prime Video 동시 공개.
-- **[직장인들 시즌 3 (The White Collars Season 3)](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402)** `[방영일: 2026-08-29, 2026-09-05, 2026-09-11, 2026-09-25, 2026-10-02, 2026-10-16, 2026-10-23]` `(확인: 2026-10-26)` — 📊 시청률 해당 없음 (OTT 예능) | 오피스 코미디 예능 · 총 회차 확인 중 | 신동엽, 김민교, 백현진, 이수지, 현봉식, 김원훈, 강지영, 차정원, 지예은, 심자윤
-  > 마케팅 회사 DY기획의 사원들과 스타 의뢰인들이 벌이는 직장 생활을 그린 오피스 코미디 예능. 시즌 3는 2026년 8월 29일 첫 공개됐으며, 3화부터 매주 금요일 오후 5시(KST) 쿠팡플레이에서 공개된다.
+- **[직장인들 시즌 3 (The White Collars Season 3)](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402)** `[방영일: 2026-08-29, 2026-09-05, 2026-09-11, 2026-09-25, 2026-10-02, 2026-10-16, 2026-10-23, 2026-10-30, 2026-11-06]` `(확인: 2026-11-02)` — 📊 시청률 해당 없음 (OTT 예능) | 오피스 코미디 예능 · 본편 10화 + 미방분 특별편 | 신동엽, 김민교, 백현진, 이수지, 현봉식, 김원훈, 강지영, 차정원, 지예은, 심자윤
+  > 마케팅 회사 DY기획의 직원들이 벌이는 직장 생활을 그린 오피스 코미디 예능. 시즌 3는 2026년 8월 29일 시작해 10월 30일 10화로 본편을 마쳤으며, 11월 6일 금요일 오후 5시(KST) 미방분 특별편을 공개한다.
 
 ---
 
