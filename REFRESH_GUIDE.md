@@ -7,7 +7,7 @@ tags: [kdrama, refresh, workflow]
 # 🔄 데이터 최신화 워크플로우
 
 ## 왜 이 문서가 있나요?
-안티그래비티(로컬 Gemini 에이전트)는 실시간 웹 검색 없이 `dramas.json`을 채우다 보니, 이미 종영한 드라마나 실제로 존재하지 않는 편성 정보가 섞여 들어가는 문제가 있었습니다 (2026-08-19 확인·수정).
+공식 출처를 확인하지 않고 편성을 채우면 종영작이나 잘못 계산한 공개일·회차가 들어갈 수 있습니다. 생성 파일이 최신이라는 사실만으로 실제 조사까지 완료된 것은 아닙니다.
 
 이 문제를 막으려면 웹 검색이 가능한 담당자가 정기적으로 아래 절차를 따라 `dramas.json`을 실제 소스로 검증·갱신해야 합니다.
 
@@ -56,9 +56,7 @@ tags: [kdrama, refresh, workflow]
      `batchEp`에 "(신작 아님, 라이브러리 추가)"라고 표시해서 브랜드뉴 신작과 헷갈리지 않게 해줘.
 1b. **한국 채널(KR) 트래킹도 같이 해줘 (2026-09-14 추가).** 사이트에 미국/한국/함께 토글이 생겨서
     `platforms` 배열에 미국 플랫폼과 별도로 한국 방영 채널(SBS/MBC/KBS2/KBS Joy/tvN/JTBC/ENA)도 넣을 수 있어.
-    - 위에서 조사한 작품이 실제로 한국 지상파/케이블에서도 방영 중이면(대부분 그럼), `platforms`에
-      `{"name": "SBS", "label": "SBS", "url": "..."}` 처럼 KR 채널 항목을 하나 더 추가해줘(날짜/schedule은
-      기존 것 그대로 재사용 — 사이멀캐스트라 같은 날짜임).
+    - 위에서 조사한 작품이 한국에서도 방영 중이면 `platforms`에 `{"name": "SBS", "label": "SBS", "url": "..."}` 같은 KR 항목을 추가해줘. KR 본방 날짜를 US 스트리밍 날짜로 자동 재사용하지 말고 서비스별 실제 날짜를 확인해줘.
     - **미국 플랫폼이 아직 안 잡혀도 괜찮아.** 한국에서 방영 중인 작품인데 6개 US 채널 어디에도 없으면,
       `platforms`에 KR 채널만 넣어서 정상 등록해(예전처럼 "확인 대기 중"으로 빼고 dramas.json에서 제외하지 말 것).
     - 채널 URL은 정확한 회차 링크가 없으면 해당 방송사 공식 홈페이지/프로그램 메인 페이지로 대체(가짜 URL 금지).
@@ -81,7 +79,7 @@ tags: [kdrama, refresh, workflow]
      "크로스 2 (미션 크로스 2)"로 임의로 늘린 사례 있었음 — 원제 그대로만 쓰기).
 4. python3 fetch_kdrama_schedule.py 를 실행해서 K_DRAMA_TV_GUIDE.md와 kdrama_tv_guide.html을 동기화해줘.
 5. README.md의 "변경 이력" 섹션에 오늘 날짜로 무엇을 갱신했는지 한 줄 남겨줘.
-6. git add -A && git commit -m "..." && git push 로 GitHub Pages에 반영해줘 (jacopast/kdrama-tv-guide, main 브랜치).
+6. git status와 diff를 검토하고 이번 작업 파일만 명시적으로 stage한 뒤 commit/push로 GitHub Pages에 반영해줘 (jacopast/kdrama-tv-guide, main 브랜치).
    별도 Artifact는 발행하지 않고 GitHub Pages만 유지합니다.
 ```
 
@@ -103,14 +101,14 @@ tags: [kdrama, refresh, workflow]
 - `add_drama.py`로 새 드라마를 추가하면 선택한 요일 카테고리(월화/수목/금토/주말/OTT배치)를 기반으로 실제 `schedule`/`isBatch` 필드가 만들어집니다. 다만 구체적인 회차 날짜·번호는 비어있으니, 정확한 걸 원하면 REFRESH_GUIDE 프롬프트로 웹 검색 기반 검증을 한 번 더 돌리세요.
 
 ## 확인 대기 중 (미국 플랫폼 미확정 — 한국 채널로만 편성표에 노출됨)
-현재 없음. (2026-09-14: 신병4: 사보타주는 한국 채널(ENA)로 `dramas.json`에 이미 추가됨 — 미국 플랫폼(티빙/지니TV는 6대 US 채널 밖)만 계속 미확인 상태.)
+아래 최신 조사 기록의 미확인 항목을 추적합니다. 미국 서비스 제공 여부와 실제 최초 입점 날짜는 별도 확인합니다.
 
 다음 리서치 때 미국 스트리밍 플랫폼이 새로 확인되는 작품이 있으면 그 작품의 `platforms`에 US 채널 항목을 추가해 주세요(기존 KR 항목은 유지).
 
 ## 🇰🇷🇺🇸 한국/미국 이중 트래킹 (2026-09-14 신설)
 사이트에 **미국 / 한국 / 함께** 3단 토글이 생기면서, `dramas.json`의 `platforms` 배열은 이제 작품당 여러 개(미국 스트리밍 채널 + 한국 방영 채널)를 가질 수 있습니다.
 - **채널 목록**: `fetch_kdrama_schedule.py`의 `CHANNELS`(그리고 `kdrama_tv_guide.html`의 동일 배열)에 `region` 필드(`"US"` | `"KR"`)로 US 6개, KR 7개(SBS/MBC/KBS2/KBS Joy/tvN/JTBC/ENA) 채널이 등록돼 있습니다.
-- **날짜는 하나만 관리**: 대부분의 사이멀캐스트 작품은 한국 본방과 미국 스트리밍이 같은 날짜이므로, `schedule`(또는 `releaseDate`)은 지금처럼 하나만 채우고 `platforms`에 US·KR 항목을 각각 추가하면 됩니다. 시차 때문에 날짜가 실제로 갈리는 경우(예: 자정 직후 방영)는 아직 지원하지 않으니, 그런 사례를 발견하면 이 문서에 먼저 기록하고 스키마 확장 여부를 논의하세요.
+- **플랫폼별 날짜**: 실제 동시 공개가 확인된 경우에만 작품의 기본 `schedule`을 공유합니다. 다르면 해당 플랫폼 객체에 자체 `schedule` 또는 `releaseDate`를 넣습니다. 서비스 제공만 확인되고 날짜는 모르면 `"schedule": {}`로 기본 날짜 상속을 막고 아래 보류 목록에 남깁니다. Hulu(US)와 Disney+(KR)는 `regions`를 각각 명시하고, 한국 모드에서 Hulu 링크를 선택하지 않는지도 검수합니다.
 - **한 지역에서만 공개된 작품(플랫폼 항목별 `regions`)**: Netflix/Disney+/Prime Video/Apple TV+ 채널은 기본적으로 미국·한국 겸용이라, 플랫폼 항목에 그 채널만 적으면 두 지역 모드에 다 나옵니다. 특정 작품이 한쪽 지역에서만 공개됐으면(예: 개인적인 택시 — 한국 넷플릭스 전용, 미국 넷플릭스 미제공) 그 플랫폼 항목에 `"regions": ["KR"]`(또는 `["US"]`)를 적어 주세요. 그러면 반대쪽 지역 모드에서는 그 작품·채널이 빠지고, "함께" 모드에는 그대로 나옵니다. label에 "(KR 전용)"이라고만 적는 걸로는 걸러지지 않습니다.
 - **한국에서만 방영 중이고 미국 플랫폼이 아직 없는 작품**: 예전엔 아예 `dramas.json`에서 제외했지만, 이제는 **KR 채널만 넣은 `platforms`로 정상 등록**합니다(신병4: 사보타주 사례 참고). 미국 플랫폼이 없다고 빼지 마세요 — "확인 대기 중" 섹션은 이제 US 플랫폼 확인 여부만 추적합니다.
 - **리서치 확장**: 정기 리서치 때 기존 6개 US 플랫폼 확인과 함께, **네이버 TV 편성표 / 나무위키 방영중 드라마 목록 / 각 방송사(SBS·MBC·KBS·tvN·JTBC·ENA) 공식 편성표**로 이번 주 방영 중인 한국 드라마도 훑어서 빠진 게 있으면 KR 채널로 추가해 주세요.
@@ -172,3 +170,35 @@ tags: [kdrama, refresh, workflow]
 - 『직장인들 시즌 3』: [쿠팡 10/29 공식 추천](https://news.coupang.com/archives/67985/?print=print)의 10/30 최종화와 [11/2 종영 공식 보도](https://news.coupang.com/archives/68070/)의 본편1~10화·11/6 17시 미방분 특별편을 대조. 특별편을 11화로 만들지 않고 별도 표시. 본편 종영 후 금요일 반복 편성을 생성하지 않는다.
 - 『사랑이 온다』: [KBS 11/7 편성표](https://schedule.kbs.co.kr/?area_type=10&search_day=20261107)를 실제 렌더링해 본방20시28회 확인. 재방27회와 구분. 11/8 이후는 원문 확인 전 추가하지 않음.
 - 『심장소리』: [Netflix 한국 공식 발표](https://about.netflix.com/ko/news/heartbeat-arrives-netflix-november-2)와 [영문 발표](https://about.netflix.com/en/news/heartbeat-arrives-netflix-november-2)에서 정식 제목·이창동 감독·김건우/전도연/설경구(목소리)·11/2 글로벌 스트리밍일 확인. 영화제 선공개와 Netflix 입점을 구분하고 기존작 라이브러리 추가로 표시. 작품 직링크 미확보로 공식 홈에서 제목 검색 안내, 포스터는 빈 값.
+
+## 2026-11-03 재조사: 추가·정정과 미확인 범위
+
+총 56편(신규 등록 10편). 확인일 갱신은 이번에 실제 대조한 항목에만 적용했습니다. 이 기록은 전체 회차와 모든 신규 카탈로그 후보가 확정됐다는 뜻이 아닙니다.
+
+| 작품 | 반영 근거 |
+|---|---|
+| 굿파트너2 | [SBS 공식 보도](https://ent.sbs.co.kr/amp/article.do?article_id=E10010323490), 11/20 21:50 첫방·장나라/김혜윤/박해진/표지훈. 이후 날짜·총 회차는 추정하지 않음 |
+| 뜨거운 안녕 | [tvN 공식 프로그램](https://tvn.cjenm.com/ko/happyanding/), 11/11 22:50 첫방. [편성 변경 보도](https://enews.imbc.com/News/ViewAmp/521781)의 수목 편성과 대조 |
+| 보스의 노골적 취향 | [MBN 공식](https://www.mbn.co.kr/pages/vod/programMain.php?progCode=1044), 11/11 22:20 첫방·수목. Viki Coming Soon을 미국의 확정 공개일로 바꾸지 않음 |
+| 옆자리, 프란체스카 | [제작 발표 보도](https://enews.imbc.com/News/RetrieveNewsInfo/523345), 11/6 Wavve 첫 공개. 일괄 공개 여부·총 회차 미확인 |
+| 유일무이 로맨스 | [제작 발표 보도](https://enews.imbc.com/News/RetrieveNewsInfo/521088), 11/9 18:00 TVING 첫 공개. 해외 Viu/ABEMA 제공을 미국 제공으로 확대하지 않음 |
+| 대리수능 | [제작 발표 보도](https://enews.imbc.com/News/RetrieveNewsInfo/522999), 11/23 TVING 첫 공개 |
+| KBS 드라마스페셜 2026 사운드:트랙 | [KBS 공식](https://kstar.kbs.co.kr/list_view.html?idx=413426)의 11/18 21:50 첫방·8편, [후속 공식 보도](https://kstar.kbs.co.kr/list_view.html?idx=413436)의 11/19 22:00 『연극이 끝난 후』 |
+| 가족관계증명서 | [MBC 공식 프로그램](https://m.imbc.com/program/1006903100000100000)의 10/29~11/3 70~73회 다시보기와 11/4 74회 예고. [첫방 보도](https://enews.imbc.com/News/RetrieveNewsInfo/505845)의 7/6 첫방. 이후 매일 회차를 계산해 넣지 않음 |
+| 사랑의 온도 / 리멤버 - 아들의 전쟁 | [미국 10/30 Netflix 입점 보도](https://www.whats-on-netflix.com/news/k-dramas-temperature-of-love-remember-coming-netflix-october-2026/)와 [Netflix 사랑의 온도](https://www.netflix.com/title/80999068)·[리멤버](https://www.netflix.com/title/80998942)의 제목·출연진을 대조. US 전용 기존작 라이브러리 추가로 표시 |
+| 나인 투 식스 | [SBS 공식 발표](https://cf.ent.sbs.co.kr/news/article.do?article_id=E10010323620), 11/25 21:00 첫방. 잘못된 11/18 첫방 및 그 기준으로 계산된 미래 회차를 철회 |
+| 욕망의 덫 / 엄마가 미쳤어요 | [KBS 날짜별 국내 편성표](https://schedule.kbs.co.kr/?area_type=10&search_day=20261103)를 실제 렌더링. 10/5~30, 11/2~6을 각각 열어 본방/재방·KBS WORLD를 분리. 욕망의 덫 10/27 플레이오프 중계로 결방, 11/3은 50회. 이후 잘못 계산된 11/9~30 회차는 철회. 엄마가 미쳤어요 11/2~6 26~30회 일치 |
+| 사랑이 온다 / 문무 | [11/7](https://schedule.kbs.co.kr/?area_type=10&search_day=20261107)·[11/8](https://schedule.kbs.co.kr/?area_type=10&search_day=20261108)에서 사랑이 온다 28·29회, 문무 본방 전 스페셜 1·2부 확인. [문무 KBS 보도](https://kstar.kbs.co.kr/list_view.html?idx=413823)에서 11/14 첫방·28부작 확인 |
+| 연애박사 / 메리 베리 러브 / 재혼 황후 | [ENA 공식](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) 및 [미국 공식 11월 라인업](https://press.disneyplus.com/news/next-on-disney-plus-november-2026) 대조. 재혼 황후 11/3 공개 정정은 유지. 과거 11/4 안내와 혼동 주의 |
+| 크래시2: 분노의 도로 | [ENA 공식](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=52)의 11/16 22:00 첫방·출연진, [Viki](https://www.viki.com/tv/41539c)의 Coming Soon 대조. 근거 미확보 Hulu 등록을 제거하고 Viki에는 날짜 상속을 막는 빈 schedule 적용. 총 회차는 공식 확인 중 |
+| 가능한 사랑 / 꿀알바 | [Netflix 가능한 사랑](https://about.netflix.com/en/news/possible-love-premieres-november-6) 11/6 글로벌 스트리밍과 [꿀알바](https://about.netflix.com/en/news/dead-end-job-sets-october-30-premiere-drops-teaser-trailer-and-poster) 10/30 공개일을 재확인 |
+| 내가 떨릴 수 있게 | [Viki 공식](https://www.viki.com/tv/41700c)의 정식 영제 Make Me Tingle과 공개 중인 8회 대조·작품 링크 보완. 미국 후속 회차 날짜 전체를 확인했다는 뜻은 아님 |
+| 나의 유죄인간 / 파이널 테이블 | [Prime 나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09)의 북미 페이지에서 1~6회 날짜 10/18·19·25·26·11/1·2 확인. 국내 월화 편성을 미국에 그대로 상속하던 오류를 서비스별 schedule로 분리. [Prime 파이널 테이블](https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U) 1~4회 10/24·25·31·11/1 확인 및 요리 경연 드라마 줄거리 정정. 두 작품 모두 확인한 회차 이후 미국 날짜는 추정하지 않음 |
+
+### 다음 확인에서 빠뜨리면 안 되는 항목
+
+- 기존 활성작 『100일의 거짓말』·『닥터X』·『라이어』·『나의 유죄인간』·『키드냅 게임』·『파이널 테이블』·『푸른길』의 미래 회차 전체와 지역별 스트리밍 날짜는 아직 이번 조사에서 전부 확정하지 못했습니다. 최신 공식 원문을 확보하기 전 verifiedAt을 일괄 변경하지 않습니다. Prime 파이널 테이블에서는 10/24·25·31, 11/1 1~4회를 직접 대조했습니다.
+- 『욕망의 덫』 10/5 이전 과거 회차 재검증, 11/9 이후 편성, 일일극·주말극의 미국 서비스별 날짜, 『여름방학』 Viki 후속 회차 날짜, 『밑도 끝도 없이 너다』 후속 회차, 『신병4』 Viki 최초 입점일, 『응급남녀』 Prime US 구독 입점일을 추적합니다. KBS WORLD의 지연 편성을 KBS 한국 본방으로 쓰지 않습니다.
+- JustWatch Netflix US 신규 목록에서 The Village: Achiara's Secret(10/30), Poetry(11/1), A Couple of Lies(10/29)를 후보로 발견했습니다. 공식 한국 제목·작품 식별·실제 US 구독 입점일 교차확인 전 등록하지 않습니다. 트래커는 『심장소리』를 11/1로 표시하지만 Netflix 공식은 11/2이므로 공식 날짜를 유지합니다.
+- Viki Coming Soon/Just Added의 Finally Spring, Seoul in Love, The Price of Loyalty, Colony, The Painted Soul, Quite the Girl, You Maniac, Overdo, The Lament of Autumn은 원제·한국 작품 여부·US 날짜 검증 대기입니다. KOCOWA Just Arrived의 The Point Men, Secret: Untold Melody, 200 Pounds Beauty, Moonlit Winter, Shoot Me in the Heart, The Highway Family, Boss, Shine on in Seoul, My AI Partner: Strange Love도 같은 기준으로 추적합니다. 홈페이지 노출 날짜를 최초 입점일로 바꾸지 않습니다.
+- 매주 현재 방영작 명단 대조표, US 6개 서비스와 KR 방송사/OTT 조사 결과, 미확인 사유·담당자·다음 확인일을 남깁니다. 일부 수정 커밋이나 최신 생성 시간만으로 전체 조사를 완료 처리하지 않습니다.

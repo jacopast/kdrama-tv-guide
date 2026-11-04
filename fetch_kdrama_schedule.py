@@ -97,7 +97,9 @@ def format_cell(d, channel_id, ep_label):
 
 
 def drama_platform_for(d, channel_id):
-    return next((p for p in d.get("platforms", []) if channel_id in p["name"]), None)
+    return next((p for p in d.get("platforms", [])
+                 if channel_id in p["name"] or
+                 (channel_id == "Hulu" and "Disney+" in p["name"])), None)
 
 
 def batch_window_for(release_date_str, episodes_str):
@@ -122,7 +124,7 @@ def effective_for_channel(d, platform):
         "isBatch": platform.get("isBatch", d.get("isBatch", False)),
         "releaseDate": platform.get("releaseDate") or d.get("releaseDate"),
         "batchEp": platform.get("batchEp") or d.get("batchEp"),
-        "schedule": platform.get("schedule") or d.get("schedule", {}),
+        "schedule": platform.get("schedule", d.get("schedule", {})),
     }
 
 

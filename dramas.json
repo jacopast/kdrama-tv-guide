@@ -160,63 +160,109 @@
       "2026-09-30": "EP 38",
       "2026-10-01": "EP 39",
       "2026-10-02": "EP 40",
-      "2026-10-05": "EP 41",
-      "2026-10-06": "EP 42",
-      "2026-10-07": "EP 43",
-      "2026-10-08": "EP 44",
-      "2026-10-09": "EP 45",
-      "2026-10-12": "EP 46",
-      "2026-10-13": "EP 47",
-      "2026-10-14": "EP 48",
-      "2026-10-15": "EP 49",
-      "2026-10-16": "EP 50",
-      "2026-10-19": "EP 51",
-      "2026-10-20": "EP 52",
-      "2026-10-21": "EP 53",
-      "2026-10-22": "EP 54",
-      "2026-10-23": "EP 55",
-      "2026-10-26": "EP 56",
-      "2026-10-27": "EP 57",
-      "2026-10-28": "EP 58",
-      "2026-10-29": "EP 59",
-      "2026-10-30": "EP 60",
-      "2026-11-02": "EP 61",
-      "2026-11-03": "EP 62",
-      "2026-11-04": "EP 63",
-      "2026-11-05": "EP 64",
-      "2026-11-06": "EP 65",
-      "2026-11-09": "EP 66",
-      "2026-11-10": "EP 67",
-      "2026-11-11": "EP 68",
-      "2026-11-12": "EP 69",
-      "2026-11-13": "EP 70",
-      "2026-11-16": "EP 71",
-      "2026-11-17": "EP 72",
-      "2026-11-18": "EP 73",
-      "2026-11-19": "EP 74",
-      "2026-11-20": "EP 75",
-      "2026-11-23": "EP 76",
-      "2026-11-24": "EP 77",
-      "2026-11-25": "EP 78",
-      "2026-11-26": "EP 79",
-      "2026-11-27": "EP 80",
-      "2026-11-30": "EP 81"
+      "2026-10-05": "EP 30",
+      "2026-10-06": "EP 31",
+      "2026-10-07": "EP 32",
+      "2026-10-08": "EP 33",
+      "2026-10-09": "EP 34",
+      "2026-10-12": "EP 35",
+      "2026-10-13": "EP 36",
+      "2026-10-14": "EP 37",
+      "2026-10-15": "EP 38",
+      "2026-10-16": "EP 39",
+      "2026-10-19": "EP 40",
+      "2026-10-20": "EP 41",
+      "2026-10-21": "EP 42",
+      "2026-10-22": "EP 43",
+      "2026-10-23": "EP 44",
+      "2026-10-26": "EP 45",
+      "2026-10-27": "결방 (프로야구 플레이오프 중계)",
+      "2026-10-28": "EP 46",
+      "2026-10-29": "EP 47",
+      "2026-10-30": "EP 48",
+      "2026-11-02": "EP 49 (KST 19:50)",
+      "2026-11-03": "EP 50 (KST 19:50)",
+      "2026-11-04": "EP 51 (KST 19:50)",
+      "2026-11-05": "EP 52 (KST 19:50)",
+      "2026-11-06": "EP 53 (KST 19:50)"
     },
     "isBatch": false,
     "episodes": "106부작 (KBS2 일일드라마)",
     "rating": "TBD (다음 확인 시 업데이트)",
     "cast": "장서희, 전혜원, 주새벽, 설정환, 장세현, 유태웅, 윤해영",
-    "synopsis": "살인 누명을 쓰고 삶을 송두리째 빼앗긴 여성이 거대한 욕망에 맞서 자신의 인생을 되찾아가는 운명 복원 리벤지극. KBS2, 2026년 8월 10일 첫방(매주 월~금).",
+    "synopsis": "살인 누명을 쓰고 삶을 송두리째 빼앗긴 여성이 거대한 욕망에 맞서 자신의 인생을 되찾아가는 운명 복원 리벤지극. KBS2, 2026년 8월 10일 첫방(매주 월~금). 10/5~11/6 회차를 KBS 국내 편성표로 정정. 11/9 이후 회차와 미국 서비스별 공개일은 확인 중. 미국 Viki/KOCOWA의 11월 후속 날짜는 별도 확인 중이며 국내 편성을 자동 적용하지 않음.",
     "platforms": [
       {
         "name": "Kocowa",
         "label": "KOCOWA+",
-        "url": "https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire"
+        "url": "https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire",
+        "schedule": {
+          "2026-08-10": "EP 01",
+          "2026-08-11": "EP 02",
+          "2026-08-12": "EP 03",
+          "2026-08-13": "EP 04",
+          "2026-08-14": "EP 05",
+          "2026-08-17": "EP 06",
+          "2026-08-18": "EP 07",
+          "2026-08-19": "EP 08",
+          "2026-08-20": "EP 09",
+          "2026-08-21": "EP 10",
+          "2026-08-24": "EP 11",
+          "2026-08-25": "EP 12",
+          "2026-08-26": "EP 13",
+          "2026-08-27": "EP 14",
+          "2026-08-28": "EP 15",
+          "2026-08-31": "EP 16",
+          "2026-09-01": "EP 17",
+          "2026-09-02": "EP 18",
+          "2026-09-03": "EP 19",
+          "2026-09-04": "EP 20",
+          "2026-09-07": "EP 21",
+          "2026-09-08": "EP 22",
+          "2026-09-09": "EP 23",
+          "2026-09-10": "EP 24",
+          "2026-09-11": "EP 25",
+          "2026-09-14": "EP 26",
+          "2026-09-15": "EP 27",
+          "2026-09-16": "EP 28",
+          "2026-09-17": "EP 29",
+          "2026-09-18": "EP 30",
+          "2026-09-21": "EP 31",
+          "2026-09-22": "EP 32",
+          "2026-09-23": "EP 33",
+          "2026-09-24": "EP 34",
+          "2026-09-25": "EP 35",
+          "2026-09-28": "EP 36",
+          "2026-09-29": "EP 37",
+          "2026-09-30": "EP 38",
+          "2026-10-01": "EP 39",
+          "2026-10-02": "EP 40",
+          "2026-10-05": "EP 30",
+          "2026-10-06": "EP 31",
+          "2026-10-07": "EP 32",
+          "2026-10-08": "EP 33",
+          "2026-10-09": "EP 34",
+          "2026-10-12": "EP 35",
+          "2026-10-13": "EP 36",
+          "2026-10-14": "EP 37",
+          "2026-10-15": "EP 38",
+          "2026-10-16": "EP 39",
+          "2026-10-19": "EP 40",
+          "2026-10-20": "EP 41",
+          "2026-10-21": "EP 42",
+          "2026-10-22": "EP 43",
+          "2026-10-23": "EP 44",
+          "2026-10-26": "EP 45",
+          "2026-10-27": "결방 (프로야구 플레이오프 중계)",
+          "2026-10-28": "EP 46",
+          "2026-10-29": "EP 47",
+          "2026-10-30": "EP 48"
+        }
       },
       {
         "name": "KBS2",
         "label": "KBS2",
-        "url": "https://vod.kbs.co.kr"
+        "url": "https://program.kbs.co.kr/2tv/drama/yokmang"
       },
       {
         "name": "Wavve",
@@ -225,7 +271,7 @@
       }
     ],
     "poster": "posters/a-trap-called-desire.jpg",
-    "verifiedAt": "2026-10-02"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "our-sticky-love",
@@ -454,7 +500,7 @@
       }
     ],
     "poster": "posters/possible-love.jpg",
-    "verifiedAt": "2026-09-07",
+    "verifiedAt": "2026-11-03",
     "type": "movie"
   },
   {
@@ -1003,17 +1049,71 @@
       {
         "name": "KBS1",
         "label": "KBS1",
-        "url": "https://www.kbs.co.kr"
+        "url": "https://program.kbs.co.kr/1tv/drama/mompossible"
       },
       {
         "name": "Kocowa",
         "label": "KOCOWA+",
-        "url": "https://www.kocowa.com/en_us/main"
+        "url": "https://www.kocowa.com/en_us/main",
+        "schedule": {
+          "2026-09-28": "EP 01 (첫방)",
+          "2026-09-29": "EP 02",
+          "2026-09-30": "EP 03",
+          "2026-10-01": "EP 04",
+          "2026-10-02": "EP 05",
+          "2026-10-05": "EP 06",
+          "2026-10-06": "EP 07",
+          "2026-10-07": "EP 08",
+          "2026-10-08": "EP 09",
+          "2026-10-09": "EP 10",
+          "2026-10-12": "EP 11",
+          "2026-10-13": "EP 12",
+          "2026-10-14": "EP 13",
+          "2026-10-15": "EP 14",
+          "2026-10-16": "EP 15",
+          "2026-10-19": "EP 16",
+          "2026-10-20": "EP 17",
+          "2026-10-21": "EP 18",
+          "2026-10-22": "EP 19",
+          "2026-10-23": "EP 20",
+          "2026-10-26": "EP 21",
+          "2026-10-27": "EP 22",
+          "2026-10-28": "EP 23",
+          "2026-10-29": "EP 24",
+          "2026-10-30": "EP 25"
+        }
       },
       {
         "name": "Viki",
         "label": "Rakuten Viki",
-        "url": "https://www.viki.com"
+        "url": "https://www.viki.com",
+        "schedule": {
+          "2026-09-28": "EP 01 (첫방)",
+          "2026-09-29": "EP 02",
+          "2026-09-30": "EP 03",
+          "2026-10-01": "EP 04",
+          "2026-10-02": "EP 05",
+          "2026-10-05": "EP 06",
+          "2026-10-06": "EP 07",
+          "2026-10-07": "EP 08",
+          "2026-10-08": "EP 09",
+          "2026-10-09": "EP 10",
+          "2026-10-12": "EP 11",
+          "2026-10-13": "EP 12",
+          "2026-10-14": "EP 13",
+          "2026-10-15": "EP 14",
+          "2026-10-16": "EP 15",
+          "2026-10-19": "EP 16",
+          "2026-10-20": "EP 17",
+          "2026-10-21": "EP 18",
+          "2026-10-22": "EP 19",
+          "2026-10-23": "EP 20",
+          "2026-10-26": "EP 21",
+          "2026-10-27": "EP 22",
+          "2026-10-28": "EP 23",
+          "2026-10-29": "EP 24",
+          "2026-10-30": "EP 25"
+        }
       },
       {
         "name": "Wavve",
@@ -1073,9 +1173,9 @@
     "episodes": "120부작",
     "cast": "김희정, 강경헌, 김영옥, 양희경, 조미령, 정민아, 동하",
     "rating": "10.2% (12회, 닐슨코리아 전국가구)",
-    "synopsis": "두 엄마와 자녀들이 얽히며 펼쳐지는 가족 성장 드라마. KBS1, 2026년 9월 28일 첫방.",
+    "synopsis": "두 엄마와 자녀들이 얽히며 펼쳐지는 가족 성장 드라마. KBS1, 2026년 9월 28일 첫방. KBS 국내 편성표에서 11/2~6 26~30회, 매일 20:30 KST 확인. 이후 편성은 변경될 수 있음. 미국 Viki/KOCOWA의 11월 후속 날짜는 별도 확인 중이며 국내 편성을 자동 적용하지 않음.",
     "poster": "posters/mom-gone-crazy.jpg",
-    "verifiedAt": "2026-10-19"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "love-doctor",
@@ -1090,12 +1190,18 @@
       {
         "name": "Hulu",
         "label": "Hulu / Disney+",
-        "url": "https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154"
+        "url": "https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154",
+        "regions": [
+          "US"
+        ]
       },
       {
         "name": "Disney+",
         "label": "Disney+",
-        "url": "https://www.disneyplus.com/browse/entity-994e7dec-fcbd-416e-ab2e-b4de8cc6d154"
+        "url": "https://www.disneyplus.com/browse/entity-994e7dec-fcbd-416e-ab2e-b4de8cc6d154",
+        "regions": [
+          "KR"
+        ]
       }
     ],
     "isBatch": false,
@@ -1118,7 +1224,7 @@
     "rating": "2.3% (4회, 닐슨코리아 전국유료가구)",
     "synopsis": "로봇 연구실에서 만난 박사과정생과 석사과정생의 청춘 로맨스. 故 안판석 감독 유작. ENA·Disney+, 2026년 10월 5일 첫방(매주 월·화 22:00).",
     "poster": "posters/love-doctor.jpg",
-    "verifiedAt": "2026-10-19"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "my-guilty-human",
@@ -1133,7 +1239,18 @@
       {
         "name": "Prime Video",
         "label": "Prime Video",
-        "url": "https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09"
+        "url": "https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09",
+        "regions": [
+          "US"
+        ],
+        "schedule": {
+          "2026-10-18": "EP 01 (Prime 공식 회차 날짜)",
+          "2026-10-19": "EP 02 (Prime 공식 회차 날짜)",
+          "2026-10-25": "EP 03 (Prime 공식 회차 날짜)",
+          "2026-10-26": "EP 04 (Prime 공식 회차 날짜)",
+          "2026-11-01": "EP 05 (Prime 공식 회차 날짜)",
+          "2026-11-02": "EP 06 (Prime 공식 회차 날짜)"
+        }
       },
       {
         "name": "TVING",
@@ -1159,9 +1276,9 @@
     "episodes": "12부작",
     "cast": "임시완, 설인아, 김정현, 연우",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "예측 불허의 사건에 휘말린 남녀의 긴장감 넘치는 로맨틱 서스펜스. tvN, 2026년 10월 19일 첫방(매주 월·화); Prime Video 글로벌 독점.",
+    "synopsis": "살인 사건의 용의자를 감시하기 위해 남자 비서로 위장 잠입한 형사와 재벌 후계자의 로맨틱 서스펜스. tvN 월화 20:50 KST. 미국 Prime의 공식 회차 날짜는 국내 본방과 별도로 관리하며 7회 이후 미국 날짜는 확인 중.",
     "poster": "posters/my-guilty-human.jpg",
-    "verifiedAt": "2026-10-19"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "kidnap-game",
@@ -1205,7 +1322,16 @@
       {
         "name": "Prime Video",
         "label": "Prime Video",
-        "url": "https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U"
+        "url": "https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U",
+        "regions": [
+          "US"
+        ],
+        "schedule": {
+          "2026-10-24": "EP 01",
+          "2026-10-25": "EP 02",
+          "2026-10-31": "EP 03",
+          "2026-11-01": "EP 04"
+        }
       },
       {
         "name": "TVING",
@@ -1231,14 +1357,14 @@
     "episodes": "12부작",
     "cast": "안효섭, 홍화연, 장률, 정유진",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "절대적 위기 속에서 마지막 한 판의 승부를 펼치는 인물들의 심리 스릴러. JTBC 토일드라마로 2026년 10월 24일 첫방(밤 10시 40분); Prime Video 글로벌 공개.",
+    "synopsis": "세계적인 셰프 강한과 식당을 지키려는 송이, 완벽주의 셰프 우진 등이 요리 경연에서 경쟁하고 서로 위로를 얻는 드라마. JTBC 토일 22:40 KST. 미국 Prime 공식 페이지의 1~4회 날짜를 확인했으며 이후 미국 날짜는 확인 중.",
     "poster": "posters/final-table.jpg",
-    "verifiedAt": "2026-10-02"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "make-me-tremble",
     "title": "내가 떨릴 수 있게",
-    "engTitle": "Make Me Tremble",
+    "engTitle": "Make Me Tingle",
     "platforms": [
       {
         "name": "TVING",
@@ -1248,7 +1374,12 @@
       {
         "name": "Viki",
         "label": "Rakuten Viki",
-        "url": "https://www.viki.com"
+        "url": "https://www.viki.com/tv/41700c",
+        "schedule": {
+          "2026-10-15": "EP 01~04 (첫공개)",
+          "2026-10-22": "EP 05~06",
+          "2026-10-29": "EP 07~08"
+        }
       }
     ],
     "isBatch": false,
@@ -1261,9 +1392,9 @@
     "episodes": "10부작",
     "cast": "남지현, 김재영",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "사랑 없이는 안 하는 여자와 사랑 없이도 잘 하는 남자의 성(性)장 로맨틱 코미디. TVING 오리지널, Viki 글로벌 서비스.",
+    "synopsis": "사랑 없이는 안 하는 여자와 사랑 없이도 잘 하는 남자의 성(性)장 로맨틱 코미디. TVING 오리지널, Viki 글로벌 서비스. 미국 Viki/KOCOWA의 11월 후속 날짜는 별도 확인 중이며 국내 편성을 자동 적용하지 않음.",
     "poster": "posters/make-me-tremble.jpg",
-    "verifiedAt": "2026-10-02"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "the-remarried-empress",
@@ -1273,12 +1404,18 @@
       {
         "name": "Hulu",
         "label": "Hulu / Disney+",
-        "url": "https://www.hulu.com/series/the-remarried-empress"
+        "url": "https://www.hulu.com/series/the-remarried-empress",
+        "regions": [
+          "US"
+        ]
       },
       {
         "name": "Disney+",
         "label": "Disney+",
-        "url": "https://www.disneyplus.com/en-gb/browse/entity-b02d61cd-3aab-4412-b33d-3512712a91f0"
+        "url": "https://www.disneyplus.com/en-gb/browse/entity-b02d61cd-3aab-4412-b33d-3512712a91f0",
+        "regions": [
+          "KR"
+        ]
       }
     ],
     "isBatch": false,
@@ -1291,7 +1428,7 @@
     "episodes": "10부작",
     "cast": "신민아, 주지훈, 이종석, 이세영",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "동대제국의 완벽한 황후 나비에가 이혼 후 서왕국 왕자 하인리와의 재혼을 선언하며 펼쳐지는 로맨스 판타지 대서사극. Disney+ 오리지널. 팬들의 성원에 힘입어 당초 예정보다 하루 앞당겨진 2026년 11월 3일 1~4화 기습 첫 공개, 이후 매주 수요일 2화씩 순차 공개(10부작).",
+    "synopsis": "동대제국의 황후 나비에가 이혼 후 서왕국 왕자 하인리와의 재혼을 선언하며 펼쳐지는 로맨스 판타지. Disney+ 오리지널. 2026년 11월 3일 1~4화 첫 공개, 이후 11월 11일·18일·25일 각 2화 순차 공개(10부작).",
     "poster": "posters/the-remarried-empress.jpg",
     "verifiedAt": "2026-11-03"
   },
@@ -1303,7 +1440,7 @@
       {
         "name": "KBS2",
         "label": "KBS2",
-        "url": "https://www.kbs.co.kr"
+        "url": "https://program.kbs.co.kr/2tv/drama/munmu"
       },
       {
         "name": "Wavve",
@@ -1313,6 +1450,8 @@
     ],
     "isBatch": false,
     "schedule": {
+      "2026-11-07": "방송 전 스페셜 (KST 21:20)",
+      "2026-11-08": "방송 전 스페셜 2부 (KST 21:20)",
       "2026-11-14": "EP 01 (첫방)",
       "2026-11-15": "EP 02",
       "2026-11-21": "EP 03",
@@ -1325,7 +1464,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "삼국통일을 이뤄낸 신라 문무왕과 지도자들의 처절하고 고독한 대서사를 다룬 300억 대작 사극. KBS2 토일드라마로 2026년 11월 14일 첫방.",
     "poster": "posters/the-great-king-munmu.jpg",
-    "verifiedAt": "2026-10-02"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "crash-season-2",
@@ -1335,12 +1474,16 @@
       {
         "name": "ENA",
         "label": "ENA",
-        "url": "https://ktena.co.kr"
+        "url": "https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=52"
       },
       {
-        "name": "Hulu",
-        "label": "Hulu / Disney+",
-        "url": "https://www.hulu.com"
+        "name": "Viki",
+        "label": "Rakuten Viki (Coming Soon, 미국 공개일 확인 중)",
+        "url": "https://www.viki.com/tv/41539c",
+        "regions": [
+          "US"
+        ],
+        "schedule": {}
       }
     ],
     "isBatch": false,
@@ -1351,12 +1494,12 @@
       "2026-11-24": "EP 04",
       "2026-11-30": "EP 05"
     },
-    "episodes": "12부작",
-    "cast": "이민기, 곽선영, 허성태, 이호철, 박지성",
+    "episodes": "총 회차 공식 확인 중",
+    "cast": "이민기, 곽선영, 허성태, 이호철, 문희, 박지성",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "국가수사본부 광역수사대로 격상된 교통범죄수사팀(T.C.I)이 전국 단위 대형 교통 범죄를 소탕하는 활극. ENA 월화드라마 및 Disney+ 공개.",
+    "synopsis": "교통범죄수사팀의 두 번째 수사 이야기. ENA 공식 첫 방송은 11월 16일 22:00 KST. Viki는 Coming Soon으로 미국 공개 날짜 미확정. Hulu의 이번 시즌 공개 근거는 확인되지 않아 제외.",
     "poster": "",
-    "verifiedAt": "2026-10-02"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "nine-to-six",
@@ -1366,7 +1509,7 @@
       {
         "name": "SBS",
         "label": "SBS",
-        "url": "https://programs.sbs.co.kr"
+        "url": "https://programs.sbs.co.kr/drama/ninetosix/main"
       },
       {
         "name": "Wavve",
@@ -1376,17 +1519,14 @@
     ],
     "isBatch": false,
     "schedule": {
-      "2026-11-18": "EP 01 (첫방)",
-      "2026-11-19": "EP 02",
-      "2026-11-25": "EP 03",
-      "2026-11-26": "EP 04"
+      "2026-11-25": "EP 01 (첫방)"
     },
     "episodes": "16부작",
     "cast": "박민영, 육성재, 고수",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "일에 몰두해 연애를 미뤄왔던 법무팀 차장과 다정한 연하남 인턴의 현실 공감 오피스 로맨스. SBS 수목드라마, 2026년 11월 18일 첫방.",
+    "synopsis": "일과 사랑의 균형을 찾아가는 오피스 로맨스. SBS 공식 발표 기준 2026년 11월 25일 수요일 밤 9시 첫방. 후속 회차별 날짜는 공식 편성 확인 후 보강.",
     "poster": "posters/nine-to-six.jpg",
-    "verifiedAt": "2026-10-02"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "blue-road",
@@ -1439,7 +1579,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "한국의 공간 기획자 유빈과 일본의 딸기 농부 카린이 아름다운 섬에서 만나 펼치는 한일 합작 로맨틱 코미디. CJ ENM·닛폰TV 공동제작, Disney+·Hulu 2026년 10월 7일 첫공개(매주 수요일).",
     "poster": "posters/merry-berry-love.jpg",
-    "verifiedAt": "2026-10-05"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "dead-end-job",
@@ -1461,7 +1601,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "시급 50배의 고액 아르바이트를 미끼로 하는 수상한 인력사무소를 배경으로, 빚에 쫓기던 청년 혁준이 악몽 같은 노동 현장에 투입되면서 벌어지는 생계형 호러 시리즈. Netflix, 2026년 10월 30일 전편 공개.",
     "poster": "posters/dead-end-job.jpg",
-    "verifiedAt": "2026-10-05"
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "nundongja",
@@ -1603,14 +1743,262 @@
       "2026-10-25": "EP 25",
       "2026-10-31": "EP 26 (KST 20:00)",
       "2026-11-01": "EP 27 (KST 20:00)",
-      "2026-11-07": "EP 28 (KST 20:00)"
+      "2026-11-07": "EP 28 (KST 20:00)",
+      "2026-11-08": "EP 29 (KST 20:00)"
     },
     "episodes": "총 회차 공식 확인 중",
     "rating": "TBD (다음 확인 시 업데이트)",
     "cast": "하석진, 안희연, 박유나, 배정남, 권해효",
     "synopsis": "상처 입은 가족들과 두 남녀가 서로를 보듬으며 다시 일상을 차려가는 패밀리 드라마. KBS2 매주 토·일 오후 8시(KST) 방송. 미국 제공 여부는 별도 확인 중.",
     "poster": "",
-    "verifiedAt": "2026-11-02"
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "good-partner-2",
+    "title": "굿파트너2",
+    "engTitle": "Good Partner 2",
+    "platforms": [
+      {
+        "name": "SBS",
+        "label": "SBS",
+        "url": "https://ent.sbs.co.kr/amp/article.do?article_id=E10010323490"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-20": "EP 01 (첫방)"
+    },
+    "episodes": "회차 수 확인 중",
+    "cast": "장나라, 김혜윤, 표지훈, 박해진",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "서로 다른 방식으로 이혼 사건을 맡는 변호사들의 이야기. SBS 금토드라마, 11월 20일 밤 9시 50분 첫방. 미국 플랫폼은 확인 중.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "happy-anding",
+    "title": "뜨거운 안녕",
+    "engTitle": "Happy Anding",
+    "platforms": [
+      {
+        "name": "tvN",
+        "label": "tvN",
+        "url": "https://tvn.cjenm.com/ko/happyanding/"
+      },
+      {
+        "name": "TVING",
+        "label": "TVING (KR)",
+        "url": "https://www.tving.com/more/band/AP0060",
+        "regions": [
+          "KR"
+        ]
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-11": "EP 01 (첫방)"
+    },
+    "episodes": "회차 수 확인 중",
+    "cast": "강훈, 조현철, 김정진, 이이담, 문희, 윤가이",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "무명 개그맨 세 사람이 새로운 내일을 찾는 청춘 이야기. tvN 편성 변경 발표 기준 11월 11일 수요일 밤 10시 50분 첫방, 수·목 방송. 미국 플랫폼은 확인 중.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "what-a-boss-wants",
+    "title": "보스의 노골적 취향",
+    "engTitle": "What a Boss Wants",
+    "platforms": [
+      {
+        "name": "MBN",
+        "label": "MBN",
+        "url": "https://www.mbn.co.kr/pages/vod/programMain.php?progCode=1044"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-11": "EP 01 (첫방)"
+    },
+    "episodes": "회차 수 확인 중",
+    "cast": "성훈, 오세영, 이정신",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "논리를 중시하는 재벌 보스와 인디밴드 보컬의 로맨스. MBN 공식 편성 기준 11월 11일 밤 10시 20분 첫방, 수·목 방송. 미국 공개일은 확인 중.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "francesca-next-door",
+    "title": "옆자리, 프란체스카",
+    "engTitle": "",
+    "platforms": [
+      {
+        "name": "Wavve",
+        "label": "Wavve (KR)",
+        "url": "https://www.wavve.com",
+        "regions": [
+          "KR"
+        ]
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-06": "첫 공개 (회차 확인 중)"
+    },
+    "episodes": "회차 수 확인 중",
+    "cast": "한수아, 김현진, 이승규",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "고등학교를 무대로 뱀파이어와 학생들의 만남을 그린 '안녕, 프란체스카' 스핀오프. 제작사 MBC 보도 기준 11월 6일 Wavve 독점 공개. 전편 일괄 공개로 단정하지 않음.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "the-one-and-only-romance",
+    "title": "유일무이 로맨스",
+    "engTitle": "",
+    "platforms": [
+      {
+        "name": "TVING",
+        "label": "TVING (KR)",
+        "url": "https://www.tving.com/more/band/AP0060",
+        "regions": [
+          "KR"
+        ]
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-09": "첫 공개 (18:00 KST, 회차 확인 중)"
+    },
+    "episodes": "회차 수 확인 중",
+    "cast": "박수영, 김현진",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "취업 준비생과 톱스타가 서로의 팬이 되어가는 동명 웹툰 원작 로맨스. 11월 9일 오후 6시 TVING 공개. Viu·ABEMA의 지역 제공을 미국 제공으로 확대하지 않음.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "the-substitute",
+    "title": "대리수능",
+    "engTitle": "The Substitute",
+    "platforms": [
+      {
+        "name": "TVING",
+        "label": "TVING (KR)",
+        "url": "https://www.tving.com",
+        "regions": [
+          "KR"
+        ]
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-23": "첫 공개 (회차 확인 중)"
+    },
+    "episodes": "회차 수 확인 중",
+    "cast": "배현성, 차강윤, 박윤호, 엄지원",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "수능을 둘러싼 위험한 거래에 휘말리는 청춘들의 범죄 스릴러. 티빙 제작 발표 보도 기준 11월 23일 첫 공개. 미국 플랫폼과 후속 회차 일정은 확인 중.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "kbs-drama-special-2026-soundtrack",
+    "title": "KBS 드라마스페셜 2026 사운드:트랙",
+    "engTitle": "",
+    "platforms": [
+      {
+        "name": "KBS2",
+        "label": "KBS2",
+        "url": "https://program.kbs.co.kr/2tv/drama/soundtrack/"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-11-18": "첫 방송 (21:50 KST)",
+      "2026-11-19": "연극이 끝난 후 (22:00 KST)"
+    },
+    "episodes": "단막극 8편",
+    "cast": "강홍석, 임수향, 김시은, 경수진, 김원해 외 (작품별 상이)",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "여덟 곡의 노래에서 출발하는 독립 단막극 기획. KBS 공식 예고 기준 11월 18일 밤 9시 50분 시작. 공식 기사로 확인한 11월 19일 '연극이 끝난 후'를 함께 기록하고 나머지 작품별 날짜는 확인 후 보강.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "family-register",
+    "title": "가족관계증명서",
+    "engTitle": "Family Register",
+    "platforms": [
+      {
+        "name": "MBC",
+        "label": "MBC",
+        "url": "https://m.imbc.com/program/1006903100000100000"
+      }
+    ],
+    "isBatch": false,
+    "schedule": {
+      "2026-07-06": "EP 01 (첫방)",
+      "2026-10-29": "EP 70",
+      "2026-10-30": "EP 71",
+      "2026-11-02": "EP 72",
+      "2026-11-03": "EP 73",
+      "2026-11-04": "EP 74"
+    },
+    "episodes": "총 회차 수 확인 중",
+    "cast": "박세영, 한고은, 임지은, 성이언, 박솔라, 서도영, 전승빈",
+    "rating": "TBD (다음 확인 시 업데이트)",
+    "synopsis": "가족의 비밀과 편견 속에서 자신의 삶을 찾는 여성의 이야기. MBC 월~금 저녁 7시 5분 방송. 프로그램 공식 다시보기와 예고에서 날짜별 70~74회를 확인했으며 미확인 회차는 역산하지 않음.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "temperature-of-love-netflix-us",
+    "title": "사랑의 온도",
+    "engTitle": "Temperature of Love",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US (라이브러리 추가)",
+        "url": "https://www.netflix.com/title/80999068",
+        "regions": [
+          "US"
+        ]
+      }
+    ],
+    "isBatch": true,
+    "releaseDate": "2026-10-30",
+    "batchEp": "Netflix US 라이브러리 추가 (신작 아님)",
+    "episodes": "20부작 (스트리밍 편집본)",
+    "cast": "서현진, 양세종, 김재욱, 조보아",
+    "rating": "TBD",
+    "synopsis": "작가 지망생과 셰프의 재회를 그린 2017년 SBS 드라마. Netflix 작품 페이지와 미국 입점 보도를 대조해 10월 30일 US 라이브러리 추가로 기록. 한국 첫방일과 구분.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
+  },
+  {
+    "id": "remember-netflix-us",
+    "title": "리멤버 - 아들의 전쟁",
+    "engTitle": "Remember",
+    "platforms": [
+      {
+        "name": "Netflix",
+        "label": "Netflix US (라이브러리 추가)",
+        "url": "https://www.netflix.com/title/80998942",
+        "regions": [
+          "US"
+        ]
+      }
+    ],
+    "isBatch": true,
+    "releaseDate": "2026-10-30",
+    "batchEp": "Netflix US 라이브러리 추가 (신작 아님)",
+    "episodes": "20부작",
+    "cast": "유승호, 박민영, 박성웅, 남궁민",
+    "rating": "TBD",
+    "synopsis": "아버지의 누명을 벗기려는 변호사의 이야기인 SBS 드라마. Netflix 작품 정보와 미국 입점 보도를 대조해 10월 30일 US 라이브러리 추가로 기록. 동명 영화와 구분.",
+    "poster": "",
+    "verifiedAt": "2026-11-03"
   },
   {
     "id": "heartbeat-lee-chang-dong",
