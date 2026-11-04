@@ -173,7 +173,7 @@ tags: [kdrama, refresh, workflow]
 
 ## 2026-11-03 재조사: 추가·정정과 미확인 범위
 
-총 56편(신규 등록 10편). 확인일 갱신은 이번에 실제 대조한 항목에만 적용했습니다. 이 기록은 전체 회차와 모든 신규 카탈로그 후보가 확정됐다는 뜻이 아닙니다.
+총 58편(신규 등록 12편). 확인일 갱신은 이번에 실제 대조한 항목에만 적용했습니다. 이 기록은 전체 회차와 모든 신규 카탈로그 후보가 확정됐다는 뜻이 아닙니다.
 
 | 작품 | 반영 근거 |
 |---|---|
@@ -202,3 +202,13 @@ tags: [kdrama, refresh, workflow]
 - JustWatch Netflix US 신규 목록에서 The Village: Achiara's Secret(10/30), Poetry(11/1), A Couple of Lies(10/29)를 후보로 발견했습니다. 공식 한국 제목·작품 식별·실제 US 구독 입점일 교차확인 전 등록하지 않습니다. 트래커는 『심장소리』를 11/1로 표시하지만 Netflix 공식은 11/2이므로 공식 날짜를 유지합니다.
 - Viki Coming Soon/Just Added의 Finally Spring, Seoul in Love, The Price of Loyalty, Colony, The Painted Soul, Quite the Girl, You Maniac, Overdo, The Lament of Autumn은 원제·한국 작품 여부·US 날짜 검증 대기입니다. KOCOWA Just Arrived의 The Point Men, Secret: Untold Melody, 200 Pounds Beauty, Moonlit Winter, Shoot Me in the Heart, The Highway Family, Boss, Shine on in Seoul, My AI Partner: Strange Love도 같은 기준으로 추적합니다. 홈페이지 노출 날짜를 최초 입점일로 바꾸지 않습니다.
 - 매주 현재 방영작 명단 대조표, US 6개 서비스와 KR 방송사/OTT 조사 결과, 미확인 사유·담당자·다음 확인일을 남깁니다. 일부 수정 커밋이나 최신 생성 시간만으로 전체 조사를 완료 처리하지 않습니다.
+
+### 같은 날 추가 원문 확보
+
+- [KOCOWA 공식 프란체스카 발표](https://blog.kocowa.com/francesca-next-door-a-vampire-transfer-student-meets-her-match-in-this-new-k-drama/)는 **미국 11/5**, Wavve 한국 발표는11/6. 서로 다른 platform.schedule로 반영. [유일무이 로맨스 공식 발표](https://blog.kocowa.com/one-of-a-kind-romance-brings-an-unlikely-love-story-to-kocowa/)의 KOCOWA11/9와 실제 작품 링크도 추가. 국내18시를 미국 공개시각으로 쓰지 않음.
+- [마침내, 봄](https://www.viki.com/tv/41757c)은 한국 원제·한국 작품·6회 및 11/3 ET 기준 모두 Available in4days, [도화](https://www.viki.com/tv/41671c)는 한국 원제·애니메이션·6회/현재1~4회/5~6회 Available today 확인. 두 상대 표기가 가리키는 범위가 11월이라는 점만 추론하여 **11월 미정**으로 추가. 절대 일자를 계산해 확정하지 않음.11/1은 기존 월별 미정 규칙의 표시용이며 실제 첫 공개일이 아님. 출연진/성우는 미확인.
+- Viki 상세 원문에서 Seoul in Love·The Price of Loyalty는 말레이시아, Quite the Girl·Overdo·The Lament of Autumn은 중국, You Maniac은 태국으로 확인하여 제외. 군체(Colony)는 한국 작품이지만 **USD5.99 개별 대여**만 확인되어 구독 공개작에서 제외.
+- MBC 라이어 실제 렌더링:10/30 1회·10/31 2회·11/6 3회 예고/금토21:50 확인. SBS 닥터X 실제 렌더링:1~8회 날짜·출연진·금토21:50·9회 예고 확인. 미래 전체 날짜를 확인한 것은 아님. tvN 공식 홈/편성표에서 100일의 거짓말 토일21:10 및 7·8회, 나의 유죄인간 월화20:50 및5·6회 확인.
+- 키드냅 게임의 구 공식 URL은404. [새 채널A 공식 페이지](https://www.ichannela.com/program/detail/program_title_renew.do?cateCode=050235)를 방영 드라마 목록에서 찾아 교체하고 화22:00·5회 확인. [TVING 밑도 끝도 없이, 너다](https://www.tving.com/contents/P001793160)에서 정식 원제·4인 출연진·라이프타임 토일22:50 확인, 실제 작품 링크 교체. 본방과 스트리밍 시점이 다를 수 있다는 공식 안내에 따라 후속 OTT 날짜는 추정하지 않음.
+- Netflix 후보 A Couple of Lies는 [공식 Media Center](https://media.netflix.com/en/only-on-netflix/81944880)의 스웨덴 제작으로 제외. 마을 - 아치아라의 비밀은 Netflix 싱가포르 페이지를 찾았으나 미국 제공으로 확대하지 않음. 시(Poetry)는 [11/2 공식 Tudum](https://www.netflix.com/tudum/articles/lee-chang-dong-movies)에서 제공 확인, 지역별 차이 안내와 트래커 날짜 오차 때문에 최초 US 입점일을 단정하지 않고 계속 추적.
+- KOCOWA의 [공식10/7 영화 소개](https://blog.kocowa.com/new-on-kocowa-3-korean-movies-to-add-to-your-watchlist/)에 이미 소개된200PoundsBeauty·ShootMeintheHeart·Secret:UntoldMelody는 이번 직전7일 신규 입점으로 세지 않음. 나머지 홈 후보의 정확한 최초 US 날짜는 계속 미확인.
