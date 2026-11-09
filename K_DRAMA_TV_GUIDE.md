@@ -2,47 +2,24 @@
 project: Playground
 type: guide
 status: active_weekly
-week: 2026-W45 (11/02 ~ 11/08)
+week: 2026-W46 (11/09 ~ 11/15)
 tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 11월 1주차 (11/2 ~ 11/8)` | **기준 시간**: `ET 2026-11-04 17:06 · KST 2026-11-05 07:06`
+> **기준 주차**: `2026년 11월 2주차 (11/9 ~ 11/15)` | **기준 시간**: `ET 2026-11-09 00:46 · KST 2026-11-09 14:46`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
 > **[kdrama_tv_guide.html](file:////Users/sunghwanyoon/AG/git/kdrama-tv-guide/kdrama_tv_guide.html)** 파일을 더블 클릭하여 열어보세요!
 
-## 지난 주 편성표 (2026년 10월 4주차 (10/26 ~ 11/1))
+## 지난 주 편성표 (2026년 11월 1주차 (11/2 ~ 11/8))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
-| 채널 / OTT | 월 (10/26) | 화 (10/27) | 수 (10/28) | 목 (10/29) | 금 (10/30) | 토 (10/31) | 일 (11/1) | 전편 공개 (Batch) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`CH 01 NETFLIX`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 07`<br>[꿀알바](https://www.netflix.com) `8부작 전편 공개 (10/30~)`<br>[사랑의 온도](https://www.netflix.com/title/80999068) `Netflix US 라이브러리 추가 (신작 아님)`<br>[리멤버 - 아들의 전쟁](https://www.netflix.com/title/80998942) `Netflix US 라이브러리 추가 (신작 아님)` | [100일의 거짓말](https://www.netflix.com) `EP 07`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 08` | [100일의 거짓말](https://www.netflix.com) `EP 08` | [나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개`<br>[개인적인 택시](https://www.netflix.com) `8부작 전편 공개` |
-| **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 07` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 08` | [메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 04` | - | - | [너에게 다이브](https://www.disneyplus.com/ko-kr/browse/entity-7b77afd2-5d57-4b33-901f-8ccc69362e71) `EP 11` | [너에게 다이브](https://www.disneyplus.com/ko-kr/browse/entity-7b77afd2-5d57-4b33-901f-8ccc69362e71) `EP 12 (최종화)` | - |
-| **`CH 03 PRIME VIDEO`** | [나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09) `EP 04 (Prime 공식 회차 날짜)` | - | - | - | - | [너 말고 다른 연애](https://www.amazon.com/gp/video/detail/B0HG5QDDF5) `EP 13`<br>[파이널 테이블](https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U) `EP 03` | [너 말고 다른 연애](https://www.amazon.com/gp/video/detail/B0HG5QDDF5) `EP 14 (최종화)`<br>[나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09) `EP 05 (Prime 공식 회차 날짜)`<br>[파이널 테이블](https://www.primevideo.com/detail/0N3OHMS8K24DKH0IKMV9A7BS5U) `EP 04` | - |
-| **`CH 05 RAKUTEN VIKI`** | [엄마가 미쳤어요](https://www.viki.com) `EP 21`<br>[여름방학](https://www.viki.com/tv/41747c) `EP 01 (공개 확인)` | [엄마가 미쳤어요](https://www.viki.com) `EP 22` | [엄마가 미쳤어요](https://www.viki.com) `EP 23` | [엄마가 미쳤어요](https://www.viki.com) `EP 24`<br>[내가 떨릴 수 있게](https://www.viki.com/tv/41700c) `EP 07~08` | [엄마가 미쳤어요](https://www.viki.com) `EP 25` | [너에게 다이브](https://www.viki.com) `EP 11` | [너에게 다이브](https://www.viki.com) `EP 12 (최종화)`<br>[마침내, 봄](https://www.viki.com/tv/41757c) `11월 Viki 6화 공개 예정 (미정)`<br>[도화](https://www.viki.com/tv/41671c) `11월 Viki 후속 5~6화 공개 예정 (미정)` | - |
-| **`CH 06 KOCOWA+`** | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 45`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 21` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `결방 (프로야구 플레이오프 중계)`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 22` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 46`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 23` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 47`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 24` | [욕망의 덫](https://www.kocowa.com/en_us/season/129675206/a-trap-called-desire) `EP 48`<br>[엄마가 미쳤어요](https://www.kocowa.com/en_us/main) `EP 25` | - | - | - |
-| **`KR 01 SBS`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 07` | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 08` | - | - |
-| **`KR 02 MBC`** | - | - | - | [가족관계증명서](https://m.imbc.com/program/1006903100000100000) `EP 70` | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 01 (첫방, KST 21:50)`<br>[가족관계증명서](https://m.imbc.com/program/1006903100000100000) `EP 71` | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 02` | - | - |
-| **`KR 03 KBS2`** | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `EP 45` | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `결방 (프로야구 플레이오프 중계)` | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `EP 46` | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `EP 47` | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `EP 48` | [너 말고 다른 연애](https://program.kbs.co.kr/2tv/drama/loveotherthanyours) `EP 13`<br>[사랑이 온다](https://program.kbs.co.kr/2tv/drama/loveonthemenu) `EP 26 (KST 20:00)` | [너 말고 다른 연애](https://program.kbs.co.kr/2tv/drama/loveotherthanyours) `EP 14 (최종화)`<br>[사랑이 온다](https://program.kbs.co.kr/2tv/drama/loveonthemenu) `EP 27 (KST 20:00)` | - |
-| **`KR 05 tvN`** | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 03` | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 04` | - | - | - | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 07` | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 08` | - |
-| **`KR 06 JTBC`** | - | - | - | - | - | [파이널 테이블](https://tv.jtbc.co.kr) `EP 03` | [파이널 테이블](https://tv.jtbc.co.kr) `EP 04` | - |
-| **`KR 07 ENA`** | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 07` | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 08` | - | - | - | - | - | - |
-| **`KR 08 KBS1`** | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 21` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 22` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 23` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 24` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 25` | - | - | - |
-| **`KR 10 CHANNEL A`** | - | [키드냅 게임](https://www.ichannela.com/program/detail/program_title_renew.do?cateCode=050235) `EP 04` | - | - | - | [너에게 다이브](https://www.ichannela.com) `EP 11` | [너에게 다이브](https://www.ichannela.com) `EP 12 (최종화)` | - |
-| **`KR 11 MBN`** | - | - | - | - | - | - | - | - |
-| **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 03` | [나의 유죄인간](https://www.tving.com) `EP 04` | - | [내가 떨릴 수 있게](https://www.tving.com) `EP 07~08` | - | [100일의 거짓말](https://www.tving.com) `EP 07`<br>[파이널 테이블](https://www.tving.com) `EP 03` | [100일의 거짓말](https://www.tving.com) `EP 08`<br>[파이널 테이블](https://www.tving.com) `EP 04` | - |
-| **`KR 14 WAVVE`** | [욕망의 덫](https://www.wavve.com) `EP 45`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 21`<br>[여름방학](https://www.wavve.com) `EP 01 (첫방)` | [욕망의 덫](https://www.wavve.com) `결방 (프로야구 플레이오프 중계)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 22` | [욕망의 덫](https://www.wavve.com) `EP 46`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 23` | [욕망의 덫](https://www.wavve.com) `EP 47`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 24` | [욕망의 덫](https://www.wavve.com) `EP 48`<br>[닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 07`<br>[라이어](https://www.wavve.com) `EP 01 (첫방, KST 21:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 25` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 08`<br>[라이어](https://www.wavve.com) `EP 02`<br>[너 말고 다른 연애](https://www.wavve.com) `EP 13` | [너 말고 다른 연애](https://www.wavve.com) `EP 14 (최종화)` | - |
-| **`KR 15 COUPANG PLAY`** | - | - | - | - | [직장인들 시즌 3](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402) `EP 10 (본편 최종화, KST 17:00)` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 13` | [너 말고 다른 연애](https://www.coupangplay.com) `EP 14 (최종화)` | - |
-
-## 이번 주 편성표 (2026년 11월 1주차 (11/2 ~ 11/8))
-각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
-
-| 채널 / OTT | 월 (11/2) | 화 (11/3) | 수 (11/4) (오늘) | 목 (11/5) | 금 (11/6) | 토 (11/7) | 일 (11/8) | 전편 공개 (Batch) |
+| 채널 / OTT | 월 (11/2) | 화 (11/3) | 수 (11/4) | 목 (11/5) | 금 (11/6) | 토 (11/7) | 일 (11/8) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | [심장소리](https://www.netflix.com) `단편영화 스트리밍 공개 (신작 아님, 라이브러리 추가)` | - | - | - | [가능한 사랑](https://www.netflix.com) `영화 스트리밍 공개`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 09` | [100일의 거짓말](https://www.netflix.com) `EP 09`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 10` | [100일의 거짓말](https://www.netflix.com) `EP 10` | [나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개`<br>[꿀알바](https://www.netflix.com) `8부작 전편 공개 (10/30~)`<br>[사랑의 온도](https://www.netflix.com/title/80999068) `Netflix US 라이브러리 추가 (신작 아님)`<br>[리멤버 - 아들의 전쟁](https://www.netflix.com/title/80998942) `Netflix US 라이브러리 추가 (신작 아님)` |
-| **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 09` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 10`<br>[재혼 황후](https://www.hulu.com/series/b02d61cd-3aab-4412-b33d-3512712a91f0) `EP 01~04 (첫공개)` | [메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 05` | - | - | - | - | - |
+| **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 09` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 10`<br>[재혼 황후](https://www.hulu.com/series/b02d61cd-3aab-4412-b33d-3512712a91f0) `EP 01~04 (첫공개)` | [메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 05` | - | [라이어](https://www.hulu.com/series/the-perfect-lie-0facd8bd-5d72-40a3-bdf9-de81110d6462) `EP 03` | [라이어](https://www.hulu.com/series/the-perfect-lie-0facd8bd-5d72-40a3-bdf9-de81110d6462) `EP 04` | - | - |
 | **`CH 03 PRIME VIDEO`** | [나의 유죄인간](https://www.primevideo.com/detail/0INEYNSINLQC82ZUIFLK7VNV09) `EP 06 (Prime 공식 회차 날짜)` | - | - | - | - | - | - | - |
 | **`CH 05 RAKUTEN VIKI`** | - | - | - | - | - | - | - | [마침내, 봄](https://www.viki.com/tv/41757c) `11월 Viki 6화 공개 예정 (미정)` |
 | **`CH 06 KOCOWA+`** | - | - | - | [옆자리, 프란체스카](https://www.kocowa.com/en_us/main) `미국 KOCOWA+ 첫 공개 (회차 확인 중)` | - | - | - | - |
@@ -59,13 +36,13 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 14 WAVVE`** | [욕망의 덫](https://www.wavve.com) `EP 49 (KST 19:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 26` | [욕망의 덫](https://www.wavve.com) `EP 50 (KST 19:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 27` | [욕망의 덫](https://www.wavve.com) `EP 51 (KST 19:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 28` | [욕망의 덫](https://www.wavve.com) `EP 52 (KST 19:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 29` | [욕망의 덫](https://www.wavve.com) `EP 53 (KST 19:50)`<br>[닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 09`<br>[라이어](https://www.wavve.com) `EP 03`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 30`<br>[옆자리, 프란체스카](https://www.wavve.com) `첫 공개 (회차 확인 중)` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 10`<br>[라이어](https://www.wavve.com) `EP 04`<br>[문무](https://www.wavve.com) `방송 전 스페셜 (KST 21:20)` | [문무](https://www.wavve.com) `방송 전 스페셜 2부 (KST 21:20)` | - |
 | **`KR 15 COUPANG PLAY`** | - | - | - | - | [직장인들 시즌 3](https://www.coupangplay.com/titles/d2b06b64-60ca-4b06-a2bc-004006d47402) `미방분 특별편 (KST 17:00)` | - | - | - |
 
-## 다음 주 편성표 (2026년 11월 2주차 (11/9 ~ 11/15))
+## 이번 주 편성표 (2026년 11월 2주차 (11/9 ~ 11/15))
 각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
 
-| 채널 / OTT | 월 (11/9) | 화 (11/10) | 수 (11/11) | 목 (11/12) | 금 (11/13) | 토 (11/14) | 일 (11/15) | 전편 공개 (Batch) |
+| 채널 / OTT | 월 (11/9) (오늘) | 화 (11/10) | 수 (11/11) | 목 (11/12) | 금 (11/13) | 토 (11/14) | 일 (11/15) | 전편 공개 (Batch) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **`CH 01 NETFLIX`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 11` | [100일의 거짓말](https://www.netflix.com) `EP 11`<br>[닥터X: 하얀 마피아의 시대](https://www.netflix.com/title/82682379) `EP 12 (최종화)` | [100일의 거짓말](https://www.netflix.com) `EP 12` | [가능한 사랑](https://www.netflix.com) `영화 스트리밍 공개`<br>[나를 충전해줘](https://www.netflix.com/title/82016402) `10부작 전편 공개`<br>[꿀알바](https://www.netflix.com) `8부작 전편 공개 (10/30~)`<br>[사랑의 온도](https://www.netflix.com/title/80999068) `Netflix US 라이브러리 추가 (신작 아님)`<br>[리멤버 - 아들의 전쟁](https://www.netflix.com/title/80998942) `Netflix US 라이브러리 추가 (신작 아님)` |
-| **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 11` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 12 (최종화)` | [재혼 황후](https://www.hulu.com/series/b02d61cd-3aab-4412-b33d-3512712a91f0) `EP 05~06`<br>[메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 06` | - | - | - | - | - |
+| **`CH 02 HULU / D+`** | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 11` | [연애박사](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154) `EP 12 (최종화)` | [재혼 황후](https://www.hulu.com/series/b02d61cd-3aab-4412-b33d-3512712a91f0) `EP 05~06`<br>[메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 06` | - | [라이어](https://www.hulu.com/series/the-perfect-lie-0facd8bd-5d72-40a3-bdf9-de81110d6462) `EP 05` | [라이어](https://www.hulu.com/series/the-perfect-lie-0facd8bd-5d72-40a3-bdf9-de81110d6462) `EP 06` | - | - |
 | **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
 | **`CH 05 RAKUTEN VIKI`** | - | - | - | - | - | - | - | [마침내, 봄](https://www.viki.com/tv/41757c) `11월 Viki 6화 공개 예정 (미정)` |
 | **`CH 06 KOCOWA+`** | [유일무이 로맨스](https://www.kocowa.com/en_us/season/131760188/one-of-a-kind-romance) `미국 KOCOWA+ 첫 공개 (회차 확인 중)` | - | - | - | - | - | - | - |
@@ -80,6 +57,29 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 11 MBN`** | - | - | [보스의 노골적 취향](https://www.mbn.co.kr/pages/vod/programMain.php?progCode=1044) `EP 01 (첫방)` | - | - | - | - | - |
 | **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 07`<br>[유일무이 로맨스](https://www.tving.com/more/band/AP0060) `첫 공개 (18:00 KST, 회차 확인 중)` | [나의 유죄인간](https://www.tving.com) `EP 08` | [뜨거운 안녕](https://www.tving.com/more/band/AP0060) `EP 01 (첫방)` | - | - | [100일의 거짓말](https://www.tving.com) `EP 11`<br>[파이널 테이블](https://www.tving.com) `EP 07` | [100일의 거짓말](https://www.tving.com) `EP 12`<br>[파이널 테이블](https://www.tving.com) `EP 08` | - |
 | **`KR 14 WAVVE`** | [엄마가 미쳤어요](https://www.wavve.com) `EP 31` | [엄마가 미쳤어요](https://www.wavve.com) `EP 32` | [엄마가 미쳤어요](https://www.wavve.com) `EP 33` | [엄마가 미쳤어요](https://www.wavve.com) `EP 34` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 11`<br>[라이어](https://www.wavve.com) `EP 05`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 35` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 12 (최종화)`<br>[라이어](https://www.wavve.com) `EP 06`<br>[문무](https://www.wavve.com) `EP 01 (첫방)` | [문무](https://www.wavve.com) `EP 02` | - |
+| **`KR 15 COUPANG PLAY`** | - | - | - | - | - | - | - | - |
+
+## 다음 주 편성표 (2026년 11월 3주차 (11/16 ~ 11/22))
+각 드라마 제목을 클릭하면 해당 OTT의 본방 시청 페이지로 바로 이동합니다.
+
+| 채널 / OTT | 월 (11/16) | 화 (11/17) | 수 (11/18) | 목 (11/19) | 금 (11/20) | 토 (11/21) | 일 (11/22) | 전편 공개 (Batch) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **`CH 01 NETFLIX`** | - | - | - | - | [푸른길](https://www.netflix.com) `8부작 전편 공개 (11/20~)` | [100일의 거짓말](https://www.netflix.com) `EP 13` | [100일의 거짓말](https://www.netflix.com) `EP 14` | [꿀알바](https://www.netflix.com) `8부작 전편 공개 (10/30~)`<br>[사랑의 온도](https://www.netflix.com/title/80999068) `Netflix US 라이브러리 추가 (신작 아님)`<br>[리멤버 - 아들의 전쟁](https://www.netflix.com/title/80998942) `Netflix US 라이브러리 추가 (신작 아님)` |
+| **`CH 02 HULU / D+`** | - | - | [재혼 황후](https://www.hulu.com/series/b02d61cd-3aab-4412-b33d-3512712a91f0) `EP 07~08`<br>[메리 베리 러브](https://www.hulu.com/series/merry-berry-love-dfa34bdf-143d-4053-aec9-ab38496249de) `EP 07` | - | [라이어](https://www.hulu.com/series/the-perfect-lie-0facd8bd-5d72-40a3-bdf9-de81110d6462) `EP 07` | [라이어](https://www.hulu.com/series/the-perfect-lie-0facd8bd-5d72-40a3-bdf9-de81110d6462) `EP 08` | - | - |
+| **`CH 03 PRIME VIDEO`** | - | - | - | - | - | - | - | - |
+| **`CH 05 RAKUTEN VIKI`** | - | - | - | - | - | - | - | [마침내, 봄](https://www.viki.com/tv/41757c) `11월 Viki 6화 공개 예정 (미정)` |
+| **`CH 06 KOCOWA+`** | - | - | - | - | - | - | - | - |
+| **`KR 01 SBS`** | - | - | - | - | [굿파트너2](https://ent.sbs.co.kr/amp/article.do?article_id=E10010323490) `EP 01 (첫방)` | - | - | - |
+| **`KR 02 MBC`** | - | - | - | - | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 07` | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 08` | - | - |
+| **`KR 03 KBS2`** | - | - | [KBS 드라마스페셜 2026 사운드:트랙](https://program.kbs.co.kr/2tv/drama/soundtrack/) `첫 방송 (21:50 KST)` | [KBS 드라마스페셜 2026 사운드:트랙](https://program.kbs.co.kr/2tv/drama/soundtrack/) `연극이 끝난 후 (22:00 KST)` | - | [문무](https://program.kbs.co.kr/2tv/drama/munmu) `EP 03` | [문무](https://program.kbs.co.kr/2tv/drama/munmu) `EP 04` | - |
+| **`KR 05 tvN`** | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 09` | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 10` | - | - | - | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 13` | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 14` | - |
+| **`KR 06 JTBC`** | - | - | - | - | - | [파이널 테이블](https://tv.jtbc.co.kr) `EP 09` | [파이널 테이블](https://tv.jtbc.co.kr) `EP 10` | - |
+| **`KR 07 ENA`** | [크래시2: 분노의 도로](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=52) `EP 01 (첫방)` | [크래시2: 분노의 도로](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=52) `EP 02` | - | - | - | - | - | - |
+| **`KR 08 KBS1`** | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 36` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 37` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 38` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 39` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 40` | - | - | - |
+| **`KR 10 CHANNEL A`** | - | [키드냅 게임](https://www.ichannela.com/program/detail/program_title_renew.do?cateCode=050235) `EP 07` | - | - | - | - | - | - |
+| **`KR 11 MBN`** | - | - | - | - | - | - | - | - |
+| **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 09` | [나의 유죄인간](https://www.tving.com) `EP 10` | - | - | - | [100일의 거짓말](https://www.tving.com) `EP 13`<br>[파이널 테이블](https://www.tving.com) `EP 09` | [100일의 거짓말](https://www.tving.com) `EP 14`<br>[파이널 테이블](https://www.tving.com) `EP 10` | - |
+| **`KR 14 WAVVE`** | [엄마가 미쳤어요](https://www.wavve.com) `EP 36` | [엄마가 미쳤어요](https://www.wavve.com) `EP 37` | [엄마가 미쳤어요](https://www.wavve.com) `EP 38` | [엄마가 미쳤어요](https://www.wavve.com) `EP 39` | [라이어](https://www.wavve.com) `EP 07`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 40` | [라이어](https://www.wavve.com) `EP 08`<br>[문무](https://www.wavve.com) `EP 03` | [문무](https://www.wavve.com) `EP 04` | - |
 | **`KR 15 COUPANG PLAY`** | - | - | - | - | - | - | - | - |
 
 ---
@@ -132,10 +132,12 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 재벌 3세 낙하산 형사 진이수가 새 파트너와 함께 더 거대한 재벌가 부패 카르텔을 쫓는 통쾌한 수사극. SBS, 2026년 8월 7일 첫방(매주 금·토), 시즌1 뛰어넘는 화제성으로 출발.
 - **[결혼의 완성 (더 허즈번드) (The Husband)](https://www.hulu.com)** `[방영일: 2026-07-04, 2026-07-05, 2026-07-11, 2026-07-12, 2026-07-18, 2026-07-19, 2026-07-25, 2026-07-26, 2026-08-01, 2026-08-02, 2026-08-08, 2026-08-09]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 남궁민, 이설, 김대명, 이상희
   > 이혼을 논의하던 신경외과 병원장 강태주 앞에서 다음 날 아내 고세윤이 납치당하며 극한의 위기에 빠지는 이야기. KBS2, 2026년 7월 4일 첫방(매주 토·일).
-- **[킬러들의 쇼핑몰 시즌2 (A Shop for Killers: Season 2)](https://www.hulu.com)** `[방영일: 2026-07-22, 2026-07-29, 2026-08-05, 2026-08-12]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 8부작 | 이동욱, 김혜준, 현리, 오카다 마사키
+- **[킬러들의 쇼핑몰 시즌2 (A Shop for Killers: Season 2)](https://www.hulu.com/series/a-shop-for-killers-7d607023-2f51-40f8-9316-b554b7a05c41)** `[방영일: 2026-07-22, 2026-07-29, 2026-08-05, 2026-08-12]` `(확인: 2026-08-19)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 8부작 | 이동욱, 김혜준, 현리, 오카다 마사키
   > 무기상점을 물려받은 지안과 죽음에서 돌아온 진만이, 자존심을 구긴 바빌론이 해외 용병까지 끌어들여 복수에 나서면서 다시 맞서 싸우는 액션 스릴러. Disney+ 글로벌/Hulu 미국, 2026년 7월 22일 첫방(매주 수요일 2회차씩 공개).
 - **[메이드 인 코리아 시즌 2 (Made in Korea Season 2)](https://www.hulu.com/series/made-in-korea-a79b0790-13c2-4593-bbfb-339908512cb8)** `[방영일: 2026-09-09, 2026-09-16, 2026-09-23]` `(확인: 2026-09-11)` — 📊 시청률 TBD (스트리밍 오리지널, 닐슨코리아 시청률 미집계) | 6부작 (최종 시즌) | 현빈, 정우성, 우도환
   > 9년 뒤 KCIA 부국장 자리까지 오른 백기태(현빈)와, 그를 무너뜨리기 위해 돌아온 검사 장건영(정우성)의 마지막 대결. Disney+·Hulu 오리지널, 2026년 9월 9일 공개(매주 수요일 2화씩), 시즌1(2025년 12월 24일 공개)에 이은 최종 시즌.
+- **[라이어 (The Perfect Lie)](https://www.hulu.com/series/the-perfect-lie-0facd8bd-5d72-40a3-bdf9-de81110d6462)** `[방영일: 2026-10-30, 2026-10-31, 2026-11-06, 2026-11-07, 2026-11-13, 2026-11-14, 2026-11-20, 2026-11-21, 2026-11-27, 2026-11-28]` `(확인: 2026-11-09)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 유연석, 서현진, 옥자연, 김지현, 이천희
+  > 하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 30일 금요일 밤 9시 50분 첫방. 미국은 Hulu에서 영문 제목 『The Perfect Lie』로 공개.
 - **[너에게 다이브 (Dive Into You)](https://www.disneyplus.com/ko-kr/browse/entity-7b77afd2-5d57-4b33-901f-8ccc69362e71)** `[방영일: 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25, 2026-10-31, 2026-11-01]` `(확인: 2026-10-19)` — 📊 시청률 0.6% (3회, 닐슨코리아 전국가구) | 12부작 | 김지연, 박서함, 장세혁, 문승유
   > 오래된 캠코더를 통해 과거로 돌아갈 수 있게 된 쌍둥이 남매가 첫사랑을 구하려는 판타지 로맨틱 코미디. Channel A·Disney+ 2026년 9월 26일 첫 공개, Rakuten Viki 글로벌 공개.
 - **[연애박사 (Between Steps)](https://www.hulu.com/series/between-steps-994e7dec-fcbd-416e-ab2e-b4de8cc6d154)** `[방영일: 2026-10-05, 2026-10-06, 2026-10-12, 2026-10-13, 2026-10-19, 2026-10-20, 2026-10-26, 2026-10-27, 2026-11-02, 2026-11-03, 2026-11-09, 2026-11-10]` `(확인: 2026-11-03)` — 📊 시청률 2.3% (4회, 닐슨코리아 전국유료가구) | 12부작 | 추영우, 김소현
@@ -196,8 +198,8 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 서로 다른 방식으로 이혼 사건을 맡는 변호사들의 이야기. SBS 금토드라마, 11월 20일 밤 9시 50분 첫방. 미국 플랫폼은 확인 중.
 
 ### `KR 02 MBC`
-- **[라이어 (Liar)](https://m.imbc.com/program/1006930100000100000)** `[방영일: 2026-10-30, 2026-10-31, 2026-11-06, 2026-11-07, 2026-11-13, 2026-11-14, 2026-11-20, 2026-11-21, 2026-11-27, 2026-11-28]` `(확인: 2026-11-03)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 유연석, 서현진, 옥자연, 김지현, 이천희
-  > 하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 30일 금요일 밤 9시 50분 첫방.
+- **[라이어 (The Perfect Lie)](https://m.imbc.com/program/1006930100000100000)** `[방영일: 2026-10-30, 2026-10-31, 2026-11-06, 2026-11-07, 2026-11-13, 2026-11-14, 2026-11-20, 2026-11-21, 2026-11-27, 2026-11-28]` `(확인: 2026-11-09)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 유연석, 서현진, 옥자연, 김지현, 이천희
+  > 하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 30일 금요일 밤 9시 50분 첫방. 미국은 Hulu에서 영문 제목 『The Perfect Lie』로 공개.
 - **[가족관계증명서 (Family Register)](https://m.imbc.com/program/1006903100000100000)** `[방영일: 2026-07-06, 2026-10-29, 2026-10-30, 2026-11-02, 2026-11-03, 2026-11-04]` `(확인: 2026-11-03)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 총 회차 수 확인 중 | 박세영, 한고은, 임지은, 성이언, 박솔라, 서도영, 전승빈
   > 가족의 비밀과 편견 속에서 자신의 삶을 찾는 여성의 이야기. MBC 월~금 저녁 7시 5분 방송. 프로그램 공식 다시보기와 예고에서 날짜별 70~74회를 확인했으며 미확인 회차는 역산하지 않음.
 
@@ -294,8 +296,8 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 살인 누명을 쓰고 삶을 송두리째 빼앗긴 여성이 거대한 욕망에 맞서 자신의 인생을 되찾아가는 운명 복원 리벤지극. KBS2, 2026년 8월 10일 첫방(매주 월~금). 10/5~11/6 회차를 KBS 국내 편성표로 정정. 11/9 이후 회차와 미국 서비스별 공개일은 확인 중. 미국 Viki/KOCOWA의 11월 후속 날짜는 별도 확인 중이며 국내 편성을 자동 적용하지 않음.
 - **[닥터X: 하얀 마피아의 시대 (Doctor X: Mafia in White)](https://www.wavve.com)** `[방영일: 2026-10-09, 2026-10-10, 2026-10-16, 2026-10-17, 2026-10-23, 2026-10-24, 2026-10-30, 2026-10-31, 2026-11-06, 2026-11-07, 2026-11-13, 2026-11-14]` `(확인: 2026-11-03)` — 📊 시청률 19.5% (6회, 닐슨코리아 전국가구) | 12부작 | 김지원, 이정은, 손현주, 김우석
   > 일본 원작 '닥터 X'의 한국판. 천재 외과의사 계수정이 병원 안 부조리에 메스를 들이대는 의학 수사극. SBS 금토드라마, 2026년 10월 9일 첫방 확정.
-- **[라이어 (Liar)](https://www.wavve.com)** `[방영일: 2026-10-30, 2026-10-31, 2026-11-06, 2026-11-07, 2026-11-13, 2026-11-14, 2026-11-20, 2026-11-21, 2026-11-27, 2026-11-28]` `(확인: 2026-11-03)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 유연석, 서현진, 옥자연, 김지현, 이천희
-  > 하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 30일 금요일 밤 9시 50분 첫방.
+- **[라이어 (The Perfect Lie)](https://www.wavve.com)** `[방영일: 2026-10-30, 2026-10-31, 2026-11-06, 2026-11-07, 2026-11-13, 2026-11-14, 2026-11-20, 2026-11-21, 2026-11-27, 2026-11-28]` `(확인: 2026-11-09)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 유연석, 서현진, 옥자연, 김지현, 이천희
+  > 하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 30일 금요일 밤 9시 50분 첫방. 미국은 Hulu에서 영문 제목 『The Perfect Lie』로 공개.
 - **[너 말고 다른 연애 (A Love Other Than Yours)](https://www.wavve.com)** `[방영일: 2026-09-12, 2026-09-13, 2026-09-19, 2026-09-20, 2026-09-26, 2026-09-27, 2026-10-03, 2026-10-04, 2026-10-10, 2026-10-11, 2026-10-17, 2026-10-18, 2026-10-24, 2026-10-25, 2026-10-31, 2026-11-01]` `(확인: 2026-10-26)` — 📊 시청률 2.3% (6회, 닐슨코리아 전국가구) | 14부작 | 서강준, 안은진, 이주안, 조아람
   > 10년 차 연인이 익숙했던 관계에서 낯선 감정과 마주하는 현실 공감 멜로. KBS2, 2026년 9월 12일 첫방(매주 토·일); Prime Video 동시 공개.
 - **[엄마가 미쳤어요 (Mission: Mompossible)](https://www.wavve.com)** `[방영일: 2026-09-28, 2026-09-29, 2026-09-30, 2026-10-01, 2026-10-02, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-12, 2026-10-13, 2026-10-14, 2026-10-15, 2026-10-16, 2026-10-19, 2026-10-20, 2026-10-21, 2026-10-22, 2026-10-23, 2026-10-26, 2026-10-27, 2026-10-28, 2026-10-29, 2026-10-30, 2026-11-02, 2026-11-03, 2026-11-04, 2026-11-05, 2026-11-06, 2026-11-09, 2026-11-10, 2026-11-11, 2026-11-12, 2026-11-13, 2026-11-16, 2026-11-17, 2026-11-18, 2026-11-19, 2026-11-20, 2026-11-23, 2026-11-24, 2026-11-25, 2026-11-26, 2026-11-27, 2026-11-30]` `(확인: 2026-11-03)` — 📊 시청률 10.2% (12회, 닐슨코리아 전국가구) | 120부작 | 김희정, 강경헌, 김영옥, 양희경, 조미령, 정민아, 동하
