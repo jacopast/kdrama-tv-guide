@@ -1857,7 +1857,7 @@
       {
         "name": "TVING",
         "label": "TVING (KR)",
-        "url": "https://www.tving.com/more/band/AP0060",
+        "url": "https://www.tving.com/contents/P001793179",
         "regions": [
           "KR"
         ]
@@ -1865,14 +1865,15 @@
     ],
     "isBatch": false,
     "schedule": {
-      "2026-11-11": "EP 01 (첫방)"
+      "2026-11-11": "EP 01 (첫방)",
+      "2026-11-12": "EP 02 (KST 22:50)"
     },
     "episodes": "회차 수 확인 중",
     "cast": "강훈, 조현철, 김정진, 이이담, 문희, 윤가이",
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "무명 개그맨 세 사람이 새로운 내일을 찾는 청춘 이야기. tvN 편성 변경 발표 기준 11월 11일 수요일 밤 10시 50분 첫방, 수·목 방송. 미국 플랫폼은 확인 중.",
     "poster": "",
-    "verifiedAt": "2026-11-03"
+    "verifiedAt": "2026-11-12"
   },
   {
     "id": "what-a-boss-wants",

@@ -7,7 +7,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 ---
 
 # 한국·미국 K-드라마 생방송 편성표 (지난 주 + 이번 주 + 다음 주)
-> **기준 주차**: `2026년 11월 2주차 (11/9 ~ 11/15)` | **기준 시간**: `ET 2026-11-12 23:42 · KST 2026-11-13 13:42`
+> **기준 주차**: `2026년 11월 2주차 (11/9 ~ 11/15)` | **기준 시간**: `ET 2026-11-12 23:57 · KST 2026-11-13 13:57`
 
 > [!TIP] **레트로 웹 대시보드 바로가기**
 > 브라우저에서 타이포 중심의 미니멀한 화면으로, 지난 주/이번 주/다음 주 탭을 눌러가며 보려면:
@@ -49,13 +49,13 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
 | **`KR 01 SBS`** | - | - | - | - | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 11` | [닥터X: 하얀 마피아의 시대](https://programs.sbs.co.kr/drama/doctorx/main) `EP 12 (최종화)` | - | - |
 | **`KR 02 MBC`** | [가족관계증명서](https://m.imbc.com/program/1006903100000100000) `EP 76` | [가족관계증명서](https://m.imbc.com/program/1006903100000100000) `EP 77` | [가족관계증명서](https://m.imbc.com/program/1006903100000100000) `EP 78` | [가족관계증명서](https://m.imbc.com/program/1006903100000100000) `EP 79` | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 05`<br>[가족관계증명서](https://m.imbc.com/program/1006903100000100000) `EP 80 (예고 확인)` | [라이어](https://m.imbc.com/program/1006930100000100000) `EP 06` | - | - |
 | **`KR 03 KBS2`** | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `EP 53 (KST 19:50)` | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `EP 54 (KST 19:50)` | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `EP 55 (KST 19:50)` | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `EP 56 (KST 19:50)` | [욕망의 덫](https://program.kbs.co.kr/2tv/drama/yokmang) `EP 57 (KST 19:50)` | [문무](https://program.kbs.co.kr/2tv/drama/munmu) `EP 01 (첫방)`<br>[사랑이 온다](https://program.kbs.co.kr/2tv/drama/loveonthemenu) `EP 30 (KST 20:00)` | [문무](https://program.kbs.co.kr/2tv/drama/munmu) `EP 02`<br>[사랑이 온다](https://program.kbs.co.kr/2tv/drama/loveonthemenu) `EP 31 (KST 20:00)` | - |
-| **`KR 05 tvN`** | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 07` | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 08` | [뜨거운 안녕](https://tvn.cjenm.com/ko/happyanding/) `EP 01 (첫방)` | - | - | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 11` | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 12` | - |
+| **`KR 05 tvN`** | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 07` | [나의 유죄인간](https://tvn.cjenm.com/ko/Love-in-Disguise/) `EP 08` | [뜨거운 안녕](https://tvn.cjenm.com/ko/happyanding/) `EP 01 (첫방)` | [뜨거운 안녕](https://tvn.cjenm.com/ko/happyanding/) `EP 02 (KST 22:50)` | - | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 11` | [100일의 거짓말](https://tvn.cjenm.com/ko/100-Days-of-Deception/) `EP 12` | - |
 | **`KR 06 JTBC`** | - | - | - | - | - | [파이널 테이블](https://tv.jtbc.co.kr) `EP 07` | [파이널 테이블](https://tv.jtbc.co.kr) `EP 08` | - |
 | **`KR 07 ENA`** | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 11` | [연애박사](https://ktena.co.kr/bbs/board.php?bo_table=drama&wr_id=51) `EP 12 (최종화)` | - | - | - | - | - | - |
 | **`KR 08 KBS1`** | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 31` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 32` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 33` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 34` | [엄마가 미쳤어요](https://program.kbs.co.kr/1tv/drama/mompossible) `EP 35` | - | - | - |
 | **`KR 10 CHANNEL A`** | - | [키드냅 게임](https://www.ichannela.com/program/detail/program_title_renew.do?cateCode=050235) `EP 06` | - | - | - | - | - | - |
 | **`KR 11 MBN`** | - | - | [보스의 노골적 취향](https://www.mbn.co.kr/pages/vod/programMain.php?progCode=1044) `EP 01 (첫방)` | [보스의 노골적 취향](https://www.mbn.co.kr/pages/vod/programMain.php?progCode=1044) `EP 02 (KST 22:20)` | - | - | - | - |
-| **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 07`<br>[유일무이 로맨스](https://www.tving.com/more/band/AP0060) `첫 공개 (18:00 KST, 회차 확인 중)` | [나의 유죄인간](https://www.tving.com) `EP 08` | [뜨거운 안녕](https://www.tving.com/more/band/AP0060) `EP 01 (첫방)` | - | - | [100일의 거짓말](https://www.tving.com) `EP 11`<br>[파이널 테이블](https://www.tving.com) `EP 07` | [100일의 거짓말](https://www.tving.com) `EP 12`<br>[파이널 테이블](https://www.tving.com) `EP 08` | - |
+| **`KR 13 TVING`** | [나의 유죄인간](https://www.tving.com) `EP 07`<br>[유일무이 로맨스](https://www.tving.com/more/band/AP0060) `첫 공개 (18:00 KST, 회차 확인 중)` | [나의 유죄인간](https://www.tving.com) `EP 08` | [뜨거운 안녕](https://www.tving.com/contents/P001793179) `EP 01 (첫방)` | [뜨거운 안녕](https://www.tving.com/contents/P001793179) `EP 02 (KST 22:50)` | - | [100일의 거짓말](https://www.tving.com) `EP 11`<br>[파이널 테이블](https://www.tving.com) `EP 07` | [100일의 거짓말](https://www.tving.com) `EP 12`<br>[파이널 테이블](https://www.tving.com) `EP 08` | - |
 | **`KR 14 WAVVE`** | [욕망의 덫](https://www.wavve.com) `EP 53 (KST 19:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 31` | [욕망의 덫](https://www.wavve.com) `EP 54 (KST 19:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 32` | [욕망의 덫](https://www.wavve.com) `EP 55 (KST 19:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 33` | [욕망의 덫](https://www.wavve.com) `EP 56 (KST 19:50)`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 34` | [욕망의 덫](https://www.wavve.com) `EP 57 (KST 19:50)`<br>[닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 11`<br>[라이어](https://www.wavve.com) `EP 05`<br>[엄마가 미쳤어요](https://www.wavve.com) `EP 35` | [닥터X: 하얀 마피아의 시대](https://www.wavve.com) `EP 12 (최종화)`<br>[라이어](https://www.wavve.com) `EP 06`<br>[문무](https://www.wavve.com) `EP 01 (첫방)` | [문무](https://www.wavve.com) `EP 02` | - |
 | **`KR 15 COUPANG PLAY`** | - | - | - | - | - | - | - | - |
 
@@ -240,7 +240,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 일제강점기 밀정이 된 경성 최고의 소매치기와 조선총독부 엘리트 통역관이 적의 심장부에서 마주하며 벌어지는 100일간의 첩보 로맨스. tvN, 2026년 10월 10일 첫방(매주 토·일 21:10), 본방 후 Netflix에서 다시보기 독점 공개.
 - **[나의 유죄인간 (Love in Disguise)](https://tvn.cjenm.com/ko/Love-in-Disguise/)** `[방영일: 2026-10-19, 2026-10-20, 2026-10-26, 2026-10-27, 2026-11-02, 2026-11-03, 2026-11-09, 2026-11-10, 2026-11-16, 2026-11-17, 2026-11-23, 2026-11-24]` `(확인: 2026-11-12)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 12부작 | 임시완, 설인아, 김정현, 연우
   > 살인 사건의 용의자를 감시하기 위해 남자 비서로 위장 잠입한 형사와 재벌 후계자의 로맨틱 서스펜스. tvN 월화 20:50 KST. 미국 Prime의 공식 회차 날짜는 국내 본방과 별도로 관리하며 9회 이후 미국 날짜는 확인 중.
-- **[뜨거운 안녕 (Happy Anding)](https://tvn.cjenm.com/ko/happyanding/)** `[방영일: 2026-11-11]` `(확인: 2026-11-03)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 강훈, 조현철, 김정진, 이이담, 문희, 윤가이
+- **[뜨거운 안녕 (Happy Anding)](https://tvn.cjenm.com/ko/happyanding/)** `[방영일: 2026-11-11, 2026-11-12]` `(확인: 2026-11-12)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 강훈, 조현철, 김정진, 이이담, 문희, 윤가이
   > 무명 개그맨 세 사람이 새로운 내일을 찾는 청춘 이야기. tvN 편성 변경 발표 기준 11월 11일 수요일 밤 10시 50분 첫방, 수·목 방송. 미국 플랫폼은 확인 중.
 
 ### `KR 06 JTBC`
@@ -294,7 +294,7 @@ tags: [kdrama, streaming, us_tv_guide, tv_schedule, channel_matrix, live_weekly]
   > 사랑 없이는 안 하는 여자와 사랑 없이도 잘 하는 남자의 성(性)장 로맨틱 코미디. TVING 오리지널, Viki 글로벌 서비스. 미국 Viki/KOCOWA의 11월 후속 날짜는 별도 확인 중이며 국내 편성을 자동 적용하지 않음.
 - **[밑도 끝도 없이, 너다 ()](https://www.tving.com/contents/P001793160)** `[방영일: 2026-10-24]` `(확인: 2026-11-03)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 정용화, 홍승희, 이이경, 박유나
   > 남자배우와 자신을 드라마 여주인공이라 믿는 여자가 만나는 로맨틱 코미디. 라이프타임 한국 본방 토일22:50 KST. TVING 공식 페이지는 본방과 스트리밍 시점이 다를 수 있다고 안내하므로 후속 TVING 날짜는 확인 전 추가하지 않음. 미국 제공은 미확인.
-- **[뜨거운 안녕 (Happy Anding)](https://www.tving.com/more/band/AP0060)** `[방영일: 2026-11-11]` `(확인: 2026-11-03)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 강훈, 조현철, 김정진, 이이담, 문희, 윤가이
+- **[뜨거운 안녕 (Happy Anding)](https://www.tving.com/contents/P001793179)** `[방영일: 2026-11-11, 2026-11-12]` `(확인: 2026-11-12)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 강훈, 조현철, 김정진, 이이담, 문희, 윤가이
   > 무명 개그맨 세 사람이 새로운 내일을 찾는 청춘 이야기. tvN 편성 변경 발표 기준 11월 11일 수요일 밤 10시 50분 첫방, 수·목 방송. 미국 플랫폼은 확인 중.
 - **[유일무이 로맨스 (One of a Kind Romance)](https://www.tving.com/more/band/AP0060)** `[방영일: 2026-11-09]` `(확인: 2026-11-03)` — 📊 시청률 TBD (다음 확인 시 업데이트) | 회차 수 확인 중 | 박수영, 김현진
   > 취업 준비생과 톱스타가 서로의 팬이 되어가는 동명 웹툰 원작 로맨스. 한국 TVING11/9 18:00 KST, 미국 KOCOWA+11/9 첫 공개. 미국 공개시각과 후속 회차 일정은 확인 중.
