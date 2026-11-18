@@ -63,17 +63,17 @@
     "platforms": [
       {
         "name": "Kocowa",
-        "label": "KOCOWA+",
+        "label": "KOCOWA+ (공식 홈·작품 검색 필요)",
         "url": "https://www.kocowa.com/en_us/main"
       },
       {
         "name": "KBS Joy",
-        "label": "KBS Joy",
+        "label": "KBS Joy (공식 홈·작품 검색 필요)",
         "url": "https://www.kbsn.co.kr"
       }
     ],
     "poster": "posters/ok-lets-get-divorced.jpg",
-    "verifiedAt": "2026-09-07"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "flex-x-cop-2",
@@ -146,20 +146,20 @@
       "2026-09-10": "EP 24",
       "2026-09-11": "EP 25",
       "2026-09-14": "EP 26",
-      "2026-09-15": "EP 27",
-      "2026-09-16": "EP 28",
-      "2026-09-17": "EP 29",
-      "2026-09-18": "EP 30",
-      "2026-09-21": "EP 31",
-      "2026-09-22": "EP 32",
-      "2026-09-23": "EP 33",
-      "2026-09-24": "EP 34",
-      "2026-09-25": "EP 35",
-      "2026-09-28": "EP 36",
-      "2026-09-29": "EP 37",
-      "2026-09-30": "EP 38",
-      "2026-10-01": "EP 39",
-      "2026-10-02": "EP 40",
+      "2026-09-15": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-09-16": "EP 27",
+      "2026-09-17": "EP 28",
+      "2026-09-18": "EP 29",
+      "2026-09-21": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-09-22": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-09-23": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-09-24": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-09-25": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-09-28": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-09-29": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-09-30": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-10-01": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
+      "2026-10-02": "본방 회차 없음 (KBS 공식 회차 목록 기준)",
       "2026-10-05": "EP 30",
       "2026-10-06": "EP 31",
       "2026-10-07": "EP 32",
@@ -200,7 +200,7 @@
     "episodes": "106부작 (KBS2 일일드라마)",
     "rating": "TBD (다음 확인 시 업데이트)",
     "cast": "장서희, 전혜원, 주새벽, 설정환, 장세현, 유태웅, 윤해영",
-    "synopsis": "살인 누명을 쓰고 삶을 송두리째 빼앗긴 여성이 거대한 욕망에 맞서 자신의 인생을 되찾아가는 운명 복원 리벤지극. KBS2, 2026년 8월 10일 첫방(매주 월~금). 10/5~11/6 회차를 KBS 국내 편성표로 정정. 11/9 이후 회차와 미국 서비스별 공개일은 확인 중. 미국 Viki/KOCOWA의 11월 후속 날짜는 별도 확인 중이며 국내 편성을 자동 적용하지 않음.",
+    "synopsis": "살인 누명을 쓰고 삶을 송두리째 빼앗긴 여성이 거대한 욕망에 맞서 자신의 인생을 되찾아가는 운명 복원 리벤지극. KBS2 월~금 19:50 방송. KBS 공식 다시보기 60편을 대조해 9/15·9/21~10/2 본방 회차 없음, 9/18 29회·10/5 30회·11/18 60회를 확인. 미국 KOCOWA+는 60화 제공 중이나 날짜별 미국 공개 일정은 별도 확인 중이며 국내 편성을 자동 적용하지 않음.",
     "platforms": [
       {
         "name": "Kocowa",
@@ -233,20 +233,20 @@
           "2026-09-10": "EP 24",
           "2026-09-11": "EP 25",
           "2026-09-14": "EP 26",
-          "2026-09-15": "EP 27",
-          "2026-09-16": "EP 28",
-          "2026-09-17": "EP 29",
-          "2026-09-18": "EP 30",
-          "2026-09-21": "EP 31",
-          "2026-09-22": "EP 32",
-          "2026-09-23": "EP 33",
-          "2026-09-24": "EP 34",
-          "2026-09-25": "EP 35",
-          "2026-09-28": "EP 36",
-          "2026-09-29": "EP 37",
-          "2026-09-30": "EP 38",
-          "2026-10-01": "EP 39",
-          "2026-10-02": "EP 40",
+          "2026-09-15": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-16": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-17": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-18": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-21": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-22": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-23": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-24": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-25": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-28": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-29": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-09-30": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-10-01": "미국 공개일 확인 중 (기존 회차 표기 철회)",
+          "2026-10-02": "미국 공개일 확인 중 (기존 회차 표기 철회)",
           "2026-10-05": "EP 30",
           "2026-10-06": "EP 31",
           "2026-10-07": "EP 32",
@@ -276,12 +276,12 @@
       },
       {
         "name": "Wavve",
-        "label": "Wavve",
+        "label": "Wavve (공식 홈·작품 검색 필요)",
         "url": "https://www.wavve.com"
       }
     ],
     "poster": "posters/a-trap-called-desire.jpg",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "our-sticky-love",
@@ -353,17 +353,17 @@
     "platforms": [
       {
         "name": "Hulu",
-        "label": "Hulu / Disney+",
+        "label": "Hulu / Disney+ (공식 홈·작품 검색 필요)",
         "url": "https://www.hulu.com"
       },
       {
         "name": "KBS2",
-        "label": "KBS2",
+        "label": "KBS2 (공식 홈·작품 검색 필요)",
         "url": "https://vod.kbs.co.kr"
       }
     ],
     "poster": "posters/the-husband.jpg",
-    "verifiedAt": "2026-08-19"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "spooky-in-love",
@@ -396,12 +396,12 @@
       },
       {
         "name": "tvN",
-        "label": "tvN",
+        "label": "tvN (공식 홈·작품 검색 필요)",
         "url": "https://tvn.cjenm.com"
       }
     ],
     "poster": "posters/spooky-in-love.jpg",
-    "verifiedAt": "2026-11-12"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "the-east-palace",
@@ -456,17 +456,17 @@
       },
       {
         "name": "tvN",
-        "label": "tvN",
+        "label": "tvN (공식 홈·작품 검색 필요)",
         "url": "https://tvn.cjenm.com"
       },
       {
         "name": "TVING",
-        "label": "TVING",
+        "label": "TVING (공식 홈·작품 검색 필요)",
         "url": "https://www.tving.com"
       }
     ],
     "poster": "posters/four-hands-two-sonatas.jpg",
-    "verifiedAt": "2026-11-12"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "the-scandal",
@@ -566,12 +566,12 @@
       },
       {
         "name": "JTBC",
-        "label": "JTBC",
+        "label": "JTBC (공식 홈·작품 검색 필요)",
         "url": "https://jtbc.co.kr"
       }
     ],
     "poster": "posters/the-apartment.jpg",
-    "verifiedAt": "2026-11-12"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "a-shop-for-killers-s2",
@@ -629,12 +629,12 @@
     "platforms": [
       {
         "name": "ENA",
-        "label": "ENA",
+        "label": "ENA (공식 홈·작품 검색 필요)",
         "url": "https://ktena.co.kr"
       },
       {
         "name": "TVING",
-        "label": "TVING",
+        "label": "TVING (공식 홈·작품 검색 필요)",
         "url": "https://www.tving.com"
       }
     ],
@@ -658,7 +658,7 @@
     "rating": "5.2% (12회 최종화, 닐슨코리아 전국유료가구)",
     "synopsis": "유튜브 애니메이션 원작 군대 코미디 시리즈의 네 번째 시즌. 어느덧 상병이 된 박민석 앞에 미스터리한 신병 김현욱과 엘리트 대대장 변혁진이 새로 합류. ENA, 2026년 8월 24일 첫방(매주 월·화 밤 10시), 국내 OTT는 티빙·지니TV — 미국 스트리밍 플랫폼은 아직 미확인.",
     "poster": "posters/new-recruit-4-sabotage.jpg",
-    "verifiedAt": "2026-10-19"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "glorious-day",
@@ -668,7 +668,7 @@
       {
         "name": "KBS1",
         "label": "KBS1",
-        "url": "https://vod.kbs.co.kr"
+        "url": "https://program.kbs.co.kr/1tv/drama/happydays/pc/list.html?smenu=c2cc5a"
       }
     ],
     "isBatch": false,
@@ -685,15 +685,15 @@
       "2026-09-14": "EP 119",
       "2026-09-15": "EP 120",
       "2026-09-16": "EP 121",
-      "2026-09-17": "EP 122",
-      "2026-09-18": "EP 123 (최종화 추정)"
+      "2026-09-17": "EP 122 (최종화)",
+      "2026-09-18": "신규 회차 없음 (9/17 EP 122 종영)"
     },
-    "episodes": "122부작(연장분 포함, 방영 중 5/20·6/3 스포츠/개표방송으로 결방)",
-    "cast": "윤종훈, 엄현경, 김혜옥, 윤다훈, 문희경",
+    "episodes": "122부작",
+    "cast": "윤종훈, 엄현경, 정윤, 윤다영",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "건축사 고결과 스타트업 개발자 조은애가 얽히며 벌어지는 홈드라마. KBS1, 2026년 3월 30일 첫방(매주 월~금 20:30), 총 122부작으로 2026년 9월 중 종영 예정. 방영 중 결방(스포츠 중계·개표방송)이 있어 회차 번호는 확인된 결방일(5/20, 6/3) 기준으로 계산했고 최대 ±1화 오차 가능 — 다음 확인 때 실제 회차로 보정 필요.",
+    "synopsis": "세상 제일 완벽남과 허당녀의 일촉즉발 생사 쟁탈전. 저마다 내 인생의 주인공이 되고픈 다양한 세대가 만들어가는 멜로 가족 드라마. KBS1 월~금 20:30 방송, 2026년 3월 30일 시작해 9월 17일 122회로 종영. 공식 다시보기 전체 122편으로 회차를 확인.",
     "poster": "posters/glorious-day.jpg",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "the-ordinary-jackpot",
@@ -707,7 +707,7 @@
       },
       {
         "name": "tvN",
-        "label": "tvN",
+        "label": "tvN (공식 홈·작품 검색 필요)",
         "url": "https://tvn.cjenm.com"
       },
       {
@@ -741,7 +741,7 @@
     "rating": "6.2% (10회 최종화, 닐슨코리아 전국유료가구)",
     "synopsis": "위아래로 치이며 하루하루를 버티던 팀장 공은태가 로또 1등(13억)에 당첨된 후, 사직서 대신 당첨금을 품고 이전과는 다른 마음가짐으로 출근하는 K-직장인 오피스 드라마. tvN 월화드라마로 2026년 9월 14일 첫방(매주 월·화 21:00), 10부작. TVING에서는 tvN 본방보다 나흘 앞서 매주 목요일 18시에 2회씩 선공개(9/10부터) — 이제 TVING 채널 칸에는 그 선공개 날짜가 실제로 반영됨.",
     "poster": "posters/the-ordinary-jackpot.jpg",
-    "verifiedAt": "2026-10-19"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "take-charge-of-my-heart",
@@ -805,7 +805,7 @@
       },
       {
         "name": "TVING",
-        "label": "TVING",
+        "label": "TVING (공식 홈·작품 검색 필요)",
         "url": "https://www.tving.com"
       }
     ],
@@ -833,7 +833,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "일제강점기 밀정이 된 경성 최고의 소매치기와 조선총독부 엘리트 통역관이 적의 심장부에서 마주하며 벌어지는 100일간의 첩보 로맨스. tvN, 2026년 10월 10일 첫방(매주 토·일 21:10), 본방 후 Netflix에서 다시보기 독점 공개.",
     "poster": "posters/100-days-of-deception.jpg",
-    "verifiedAt": "2026-11-09"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "doctor-x-white-mafia",
@@ -847,7 +847,7 @@
       },
       {
         "name": "Wavve",
-        "label": "Wavve",
+        "label": "Wavve (공식 홈·작품 검색 필요)",
         "url": "https://www.wavve.com"
       },
       {
@@ -879,7 +879,7 @@
     "rating": "19.5% (6회, 닐슨코리아 전국가구)",
     "synopsis": "일본 원작 '닥터 X'의 한국판. 천재 외과의사 계수정이 병원 안 부조리에 메스를 들이대는 의학 수사극. SBS 금토드라마, 2026년 10월 9일 첫방 확정.",
     "poster": "posters/doctor-x-white-mafia.jpg",
-    "verifiedAt": "2026-11-03"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "liar",
@@ -901,7 +901,7 @@
       },
       {
         "name": "Wavve",
-        "label": "Wavve",
+        "label": "Wavve (공식 홈·작품 검색 필요)",
         "url": "https://www.wavve.com"
       }
     ],
@@ -923,7 +923,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "하나의 기억을 두고 정반대로 주장하는 두 남녀의 충돌을 그린 심리 스릴러. MBC 금토드라마로 2026년 10월 30일 금요일 밤 9시 50분 첫방. 미국은 Hulu에서 영문 제목 『The Perfect Lie』로 공개.",
     "poster": "posters/liar.jpg",
-    "verifiedAt": "2026-11-09"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "not-your-love",
@@ -961,12 +961,12 @@
       },
       {
         "name": "Coupang Play",
-        "label": "Coupang Play",
+        "label": "Coupang Play (공식 홈·작품 검색 필요)",
         "url": "https://www.coupangplay.com"
       },
       {
         "name": "Wavve",
-        "label": "Wavve",
+        "label": "Wavve (공식 홈·작품 검색 필요)",
         "url": "https://www.wavve.com"
       }
     ],
@@ -994,7 +994,7 @@
     "rating": "2.3% (6회, 닐슨코리아 전국가구)",
     "synopsis": "10년 차 연인이 익숙했던 관계에서 낯선 감정과 마주하는 현실 공감 멜로. KBS2, 2026년 9월 12일 첫방(매주 토·일); Prime Video 동시 공개.",
     "poster": "posters/not-your-love.jpg",
-    "verifiedAt": "2026-11-09"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "fly-high-butterfly",
@@ -1008,7 +1008,7 @@
       },
       {
         "name": "TVING",
-        "label": "TVING",
+        "label": "TVING (공식 홈·작품 검색 필요)",
         "url": "https://www.tving.com"
       }
     ],
@@ -1030,7 +1030,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "미용실을 배경으로, 손님과 미용사들이 서로의 내밀한 이야기를 나누며 성장하는 드라마. JTBC, 2026년 9월 19일 첫방(매주 토·일).",
     "poster": "posters/fly-high-butterfly.jpg",
-    "verifiedAt": "2026-09-14"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "dive-into-you",
@@ -1039,7 +1039,7 @@
     "platforms": [
       {
         "name": "Channel A",
-        "label": "Channel A",
+        "label": "Channel A (공식 홈·작품 검색 필요)",
         "url": "https://www.ichannela.com"
       },
       {
@@ -1076,7 +1076,7 @@
     "rating": "0.6% (3회, 닐슨코리아 전국가구)",
     "synopsis": "오래된 캠코더를 통해 과거로 돌아갈 수 있게 된 쌍둥이 남매가 첫사랑을 구하려는 판타지 로맨틱 코미디. Channel A·Disney+ 2026년 9월 26일 첫 공개, Rakuten Viki 글로벌 공개.",
     "poster": "posters/dive-into-you.jpg",
-    "verifiedAt": "2026-11-09"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "mom-gone-crazy",
@@ -1154,7 +1154,7 @@
       },
       {
         "name": "Wavve",
-        "label": "Wavve",
+        "label": "Wavve (공식 홈·작품 검색 필요)",
         "url": "https://www.wavve.com"
       }
     ],
@@ -1212,7 +1212,7 @@
     "rating": "10.2% (12회, 닐슨코리아 전국가구)",
     "synopsis": "두 엄마와 자녀들이 얽히며 펼쳐지는 가족 성장 드라마. KBS1, 2026년 9월 28일 첫방. KBS 국내 편성표에서 11/2~6 26~30회, 매일 20:30 KST 확인. 이후 편성은 변경될 수 있음. 미국 Viki/KOCOWA의 11월 후속 날짜는 별도 확인 중이며 국내 편성을 자동 적용하지 않음. 11월 16일 확인: KOCOWA+ 36회, Viki 30회 제공 및 31회 예고. 미국 서비스별 후속 공개일은 확인 중.",
     "poster": "posters/mom-gone-crazy.jpg",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "love-doctor",
@@ -1289,7 +1289,8 @@
           "2026-11-02": "EP 06 (Prime 공식 회차 날짜)",
           "2026-11-08": "EP 07 (Prime 공식 회차 날짜)",
           "2026-11-09": "EP 08 (Prime 공식 회차 날짜)",
-          "2026-11-15": "EP 09 (Prime 공식 회차 날짜)"
+          "2026-11-15": "EP 09 (Prime 공식 회차 날짜)",
+          "2026-11-16": "EP 10 (Prime 공식 회차 날짜)"
         }
       },
       {
@@ -1318,7 +1319,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "살인 사건의 용의자를 감시하기 위해 남자 비서로 위장 잠입한 형사와 재벌 후계자의 로맨틱 서스펜스. tvN 월화 20:50 KST. 미국 Prime의 공식 회차 날짜는 국내 본방과 별도로 관리하며 10회 이후 미국 날짜는 확인 중.",
     "poster": "posters/my-guilty-human.jpg",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "kidnap-game",
@@ -1379,7 +1380,7 @@
       },
       {
         "name": "TVING",
-        "label": "TVING",
+        "label": "TVING (공식 홈·작품 검색 필요)",
         "url": "https://www.tving.com"
       }
     ],
@@ -1403,7 +1404,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "세계적인 셰프 강한과 식당을 지키려는 송이, 완벽주의 셰프 우진 등이 요리 경연에서 경쟁하고 서로 위로를 얻는 드라마. JTBC 토요일 22:40·일요일 22:30 KST. 미국 Prime 공식 페이지의 1~8회 날짜는 국내 본방과 별도로 관리하며 이후 미국 날짜는 확인 중.",
     "poster": "posters/final-table.jpg",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "make-me-tremble",
@@ -1412,7 +1413,7 @@
     "platforms": [
       {
         "name": "TVING",
-        "label": "TVING",
+        "label": "TVING (공식 홈·작품 검색 필요)",
         "url": "https://www.tving.com"
       },
       {
@@ -1438,7 +1439,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "사랑 없이는 안 하는 여자와 사랑 없이도 잘 하는 남자의 성(性)장 로맨틱 코미디. TVING 오리지널, Viki 글로벌 서비스. 미국 Viki의 11월 후속 날짜는 별도 확인 중이며 국내 편성을 자동 적용하지 않음. 11월 16일 미국 Viki에서 10화 전편 제공 확인. 미국 9~10화 최초 공개일은 확인 중.",
     "poster": "posters/make-me-tremble.jpg",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "the-remarried-empress",
@@ -1488,7 +1489,7 @@
       },
       {
         "name": "Wavve",
-        "label": "Wavve",
+        "label": "Wavve (공식 홈·작품 검색 필요)",
         "url": "https://www.wavve.com"
       },
       {
@@ -1517,7 +1518,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "삼국통일을 이뤄낸 신라 문무왕과 지도자들의 처절하고 고독한 대서사를 다룬 300억 대작 사극. KBS2 토일드라마로 2026년 11월 14일 첫방. 미국 KOCOWA+ 공식 영제는 Sword & Silence이며 11월 16일 1~2회 제공 확인. 미국 회차별 공개 날짜는 확인 중.",
     "poster": "posters/the-great-king-munmu.jpg",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "crash-season-2",
@@ -1568,7 +1569,7 @@
       },
       {
         "name": "Wavve",
-        "label": "Wavve",
+        "label": "Wavve (공식 홈·작품 검색 필요)",
         "url": "https://www.wavve.com"
       },
       {
@@ -1584,12 +1585,12 @@
     "schedule": {
       "2026-11-25": "EP 01 (첫방)"
     },
-    "episodes": "16부작",
+    "episodes": "12부작 (제작공급계약 공시 기준)",
     "cast": "박민영, 육성재, 고수",
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "일과 사랑의 균형을 찾아가는 오피스 로맨스. SBS 공식 발표 기준 2026년 11월 25일 수요일 밤 9시 첫방. 후속 회차별 날짜는 공식 편성 확인 후 보강. 미국 등 해외는 Prime Video로 11월 25일 동시 공개(중국 본토·한국 제외).",
     "poster": "posters/nine-to-six.jpg",
-    "verifiedAt": "2026-11-09"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "blue-road",
@@ -1741,7 +1742,7 @@
     "platforms": [
       {
         "name": "Wavve",
-        "label": "Wavve",
+        "label": "Wavve (공식 홈·작품 검색 필요)",
         "url": "https://www.wavve.com"
       },
       {
@@ -1761,12 +1762,12 @@
     "schedule": {
       "2026-10-26": "EP 01 (첫방)"
     },
-    "episodes": "총 회차 확인 중 (Viki 7화 제공·8화 예고)",
+    "episodes": "총 회차 확인 중 (Viki 8화 제공·9화 예고)",
     "cast": "조이현, 진영",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "하이틴 청춘 로맨스. Wavve 온리(OTT 독점) 드라마로 2026년 10월 26일 밤 10시 50분 공개, 한국 케이블 라이프타임에서도 방송; 미국 Rakuten Viki에서 2026년 10월 26일 1화 공개 확인. 미국 Viki에서 1~6화 제공과 7화 예고를 확인했으며 추가 회차의 절대 공개 날짜는 확인 중.",
+    "synopsis": "하이틴 청춘 로맨스. Wavve 온리(OTT 독점) 드라마로 2026년 10월 26일 밤 10시 50분 공개, 한국 케이블 라이프타임에서도 방송; 미국 Rakuten Viki에서 2026년 10월 26일 1화 공개 확인. 미국 Viki에서 1~8화 제공과 9화 예고를 확인했으며 추가 회차의 절대 공개 날짜는 확인 중.",
     "poster": "",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "the-white-collars-season-3",
@@ -1911,14 +1912,15 @@
     "schedule": {
       "2026-11-11": "EP 01 (첫방)",
       "2026-11-12": "EP 02 (KST 22:50)",
-      "2026-11-18": "EP 03 (KST 22:50)"
+      "2026-11-18": "EP 03 (KST 22:50)",
+      "2026-11-19": "EP 04 (tvN 편성표 KST 22:55)"
     },
     "episodes": "회차 수 확인 중",
     "cast": "강훈, 조현철, 김정진, 이이담, 문희, 윤가이",
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "무명 개그맨 세 사람이 새로운 내일을 찾는 청춘 이야기. tvN 편성 변경 발표 기준 11월 11일 수요일 밤 10시 50분 첫방, 수·목 방송. 미국 플랫폼은 확인 중.",
     "poster": "",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "what-a-boss-wants",
@@ -1944,14 +1946,15 @@
     "schedule": {
       "2026-11-11": "EP 01 (첫방)",
       "2026-11-12": "EP 02 (KST 22:20)",
-      "2026-11-18": "EP 03 (예고 확인, KST 22:20)"
+      "2026-11-18": "EP 03 (KST 22:20)",
+      "2026-11-19": "EP 04 (예고 확인, KST 22:20)"
     },
     "episodes": "회차 수 확인 중",
     "cast": "성훈, 오세영, 이정신",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "논리를 중시하는 재벌 보스와 인디밴드 보컬의 로맨스. MBN 수·목 밤 10시 20분 방송. 미국 Viki에서 1~2화 제공을 확인했으며, 날짜별 미국 공개 일정은 확인 중.",
+    "synopsis": "논리를 중시하는 재벌 보스와 인디밴드 보컬의 로맨스. MBN 수·목 밤 10시 20분 방송. 미국 Viki에서 1~3화 제공을 확인했으며, 날짜별 미국 공개 일정은 확인 중.",
     "poster": "",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "francesca-next-door",
@@ -1960,7 +1963,7 @@
     "platforms": [
       {
         "name": "Wavve",
-        "label": "Wavve (KR)",
+        "label": "Wavve (KR) (공식 홈·작품 검색 필요)",
         "url": "https://www.wavve.com",
         "regions": [
           "KR"
@@ -1987,7 +1990,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "고등학교를 무대로 뱀파이어와 학생들의 만남을 그린 '안녕, 프란체스카' 스핀오프. 미국 KOCOWA+는11/5, 한국 Wavve는11/6 첫 공개. 총 회차와 일괄 공개 여부는 확인 중. 미국 KOCOWA+에서 1~4화 제공을 확인했으며 회차별 미국 공개 날짜는 확인 중.",
     "poster": "",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "the-one-and-only-romance",
@@ -2033,7 +2036,7 @@
     "platforms": [
       {
         "name": "TVING",
-        "label": "TVING (KR)",
+        "label": "TVING (KR) (공식 홈·작품 검색 필요)",
         "url": "https://www.tving.com",
         "regions": [
           "KR"
@@ -2058,7 +2061,7 @@
     "rating": "TBD (다음 확인 시 업데이트)",
     "synopsis": "수능을 둘러싼 위험한 거래에 휘말리는 청춘들의 범죄 스릴러. 티빙 제작 발표 보도 기준 11월 23일 첫 공개. 미국 플랫폼과 후속 회차 일정은 확인 중.",
     "poster": "",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "kbs-drama-special-2026-soundtrack",
@@ -2118,14 +2121,16 @@
       "2026-11-12": "EP 79",
       "2026-11-13": "EP 80 (예고 확인)",
       "2026-11-16": "EP 81 (KST 19:05)",
-      "2026-11-17": "EP 82 (예고 확인, KST 19:05)"
+      "2026-11-17": "EP 82 (KST 19:05)",
+      "2026-11-18": "EP 83 (KST 19:05)",
+      "2026-11-19": "EP 84 (예고 확인, KST 19:05)"
     },
     "episodes": "총 회차 수 확인 중",
     "cast": "박세영, 한고은, 임지은, 성이언, 박솔라, 서도영, 전승빈",
     "rating": "TBD (다음 확인 시 업데이트)",
-    "synopsis": "가족의 비밀과 편견 속에서 자신의 삶을 찾는 여성의 이야기. MBC 월~금 저녁 7시 5분 방송. 공식 다시보기에서 77회 11월 10일·78회 11월 11일·79회 11월 12일, 예고에서 80회 11월 13일을 확인. 미국 KOCOWA+ 제공 중이며 날짜별 미국 공개 일정은 확인 중.",
+    "synopsis": "가족의 비밀과 편견 속에서 자신의 삶을 찾는 여성의 이야기. MBC 월~금 저녁 7시 5분 방송. 공식 다시보기에서 11월 18일 83회, 예고에서 11월 19일 84회를 확인. 미국 KOCOWA+는 83화 제공 중이며 날짜별 미국 공개 일정은 확인 중.",
     "poster": "",
-    "verifiedAt": "2026-11-16"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "temperature-of-love-netflix-us",
@@ -2242,14 +2247,14 @@
     ],
     "isBatch": false,
     "schedule": {
-      "2026-11-01": "11월 후속 회차 (정확한 날짜 미정; 1~8화 제공 확인)"
+      "2026-11-01": "11월 후속 회차 (정확한 날짜 미정; 1~10화 제공 확인)"
     },
-    "episodes": "총 회차 확인 중 (Viki 9~10화 예고)",
+    "episodes": "총 회차 확인 중 (Viki 10화 제공)",
     "cast": "성우 공식 확인 중",
     "rating": "확인 중",
-    "synopsis": "그림에 봉인된 혼이 풀려나며 벌어지는 판타지 로맨스 애니메이션. 미국 Viki에서 1~8화 제공과 9~10화 예고를 확인. 정확한 최초 공개일·후속 회차 절대 날짜와 성우 정보는 확인 중.",
+    "synopsis": "그림에 봉인된 혼이 풀려나며 벌어지는 판타지 로맨스 애니메이션. 미국 Viki에서 1~10화 제공를 확인. 정확한 최초 공개일·후속 회차 절대 날짜와 성우 정보는 확인 중.",
     "poster": "",
-    "verifiedAt": "2026-11-12"
+    "verifiedAt": "2026-11-18"
   },
   {
     "id": "gift",
